@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('engine');
+  this.route('stage');
+  this.route('menu-bar');
+  this.route('curtain');
+  this.route('plugins');
 });
 
 export default Router;
