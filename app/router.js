@@ -7,7 +7,13 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('engine');
+  this.route('engine', function() {
+    this.route('installation');
+    this.route('configuration');
+    this.route('fixtures');
+    this.route('components');
+    this.route('plugins');
+  });
   this.route('stage');
   this.route('menu-bar');
   this.route('curtain');

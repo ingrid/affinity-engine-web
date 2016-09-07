@@ -1,11 +1,12 @@
 <div class="top-bar">
   <div class="top-bar-left">
     <ul class="menu">
-      <li>{{#link-to "engine"}}Affinity Engine{{/link-to}}</li>
-      <li>{{#link-to "stage"}}Stage{{/link-to}}</li>
-      <li>{{#link-to "menu-bar"}}Menu Bar{{/link-to}}</li>
-      <li>{{#link-to "curtain"}}Curtain{{/link-to}}</li>
-      <li>{{#link-to "plugins"}}Plugins{{/link-to}}</li>
+      {{#active-link}}{{#link-to "index"}}:){{/link-to}}{{/active-link}}
+      {{#active-link}}{{#link-to "engine"}}{{t "application.routes.engine"}}{{/link-to}}{{/active-link}}
+      {{#active-link}}{{#link-to "stage"}}{{t "application.routes.stage"}}{{/link-to}}{{/active-link}}
+      {{#active-link}}{{#link-to "menu-bar"}}{{t "application.routes.menuBar"}}{{/link-to}}{{/active-link}}
+      {{#active-link}}{{#link-to "curtain"}}{{t "application.routes.curtain"}}{{/link-to}}{{/active-link}}
+      {{#active-link}}{{#link-to "plugins"}}{{t "application.routes.plugins"}}{{/link-to}}{{/active-link}}
     </ul>
   </div>
 </div>

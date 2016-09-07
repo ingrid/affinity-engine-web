@@ -23,9 +23,11 @@
     "broccoli-clean-css": "^1.1.0",
     "ember-ajax": "^2.0.1",
     "ember-cli": "2.7.0",
+    "ember-cli-active-link-wrapper": "0.2.0",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-babel": "^5.1.6",
     "ember-cli-dependency-checker": "^1.2.0",
+    "ember-cli-document-title": "0.3.1",
     "ember-cli-foundation-6-sass": "0.0.13",
     "ember-cli-htmlbars": "^1.0.3",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
@@ -38,9 +40,12 @@
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "^2.7.0",
+    "ember-expanding-sidebars": "0.0.4",
     "ember-export-application-global": "^1.0.5",
+    "ember-intl": "2.13.1",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
+    "liquid-fire": "0.24.1",
     "loader.js": "^4.0.1"
   }
 }

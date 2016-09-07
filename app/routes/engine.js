@@ -1,4 +1,16 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+const {
+  Route,
+  get
+} = Ember;
+
+const { inject: { service } } = Ember;
+
+export default Route.extend({
+  intl: service(),
+
+  titleToken() {
+    return get(this, 'intl').t('application.routes.engine');
+  }
 });
