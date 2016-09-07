@@ -1,8 +1,12 @@
 application:
   routes:
     affinityEngine: 'Affinity Engine'
-    engine: 'Engine'
-    stage: 'Stage'
-    menuBar: 'Menu Bar'
+    components: 'Components'
+    configuration: 'Configuration'
     curtain: 'Curtain'
+    engine: 'Engine'
+    fixtures: 'Fixtures'
+    installation: 'Installation'
+    menuBar: 'Menu Bar'
     plugins: 'Plugins'
+    stage: 'Stage'

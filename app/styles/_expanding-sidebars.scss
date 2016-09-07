@@ -1,0 +1,15 @@
+.ember-expanding-sidebar {
+  @extend .menu;
+  @extend .vertical;
+
+  text-align: right;
+
+  a {
+    display: inline-block !important;
+  }
+
+  .ember-expanding-sidebar {
+    border-right: 2px dashed #333;
+    margin-right: $horizontal-rhythm + 5;
+  }
+}

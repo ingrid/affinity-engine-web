@@ -1,1 +1,28 @@
-{{outlet}}
+<div class="columns small-3 fixed">
+  {{ember-expanding-sidebar
+    parentRoute="engine"
+    sections=(array (hash
+      route="index"
+      name=(t "application.routes.engine")
+    ) (hash
+      route="installation"
+      name=(t "application.routes.installation")
+    ) (hash
+      route="configuration"
+      name=(t "application.routes.configuration")
+    ) (hash
+      route="fixtures"
+      name=(t "application.routes.fixtures")
+    ) (hash
+      route="components"
+      name=(t "application.routes.components")
+    ) (hash
+      route="plugins"
+      name=(t "application.routes.plugins")
+    ))
+  }}
+</div>
+
+<div class="columns small-6 small-offset-3 end">
+  {{outlet}}
+</div>
