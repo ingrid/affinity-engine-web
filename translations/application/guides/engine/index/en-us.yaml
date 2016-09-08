@@ -1,0 +1,5 @@
+application:
+  guides:
+    engine:
+      index:
+        intro: "<p>The Affinity Engine is a game engine written in JavaScript, which means its games can be played directly in a browser. It's <strong>configurable</strong>, <strong>composable</strong>, <strong>extensible</strong>, <strong>accessable</strong>, and <strong>legible</strong>. In other words, it's easy to pick up for novice programmers, and it's underpinnings are abstract enough that more experienced developers can painlessly extend its abilities.</p>"
