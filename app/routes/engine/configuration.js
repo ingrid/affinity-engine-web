@@ -1,16 +1,10 @@
 import Ember from 'ember';
+import RouteTitleMixin from 'affinity-engine-web/mixins/route-title';
 
 const {
-  Route,
-  get
+  Route
 } = Ember;
 
-const { inject: { service } } = Ember;
-
-export default Route.extend({
-  intl: service(),
-
-  titleToken() {
-    return get(this, 'intl').t('application.routes.configuration');
-  }
+export default Route.extend(RouteTitleMixin, {
+  _titleKey: 'configuration'
 });

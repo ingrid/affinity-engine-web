@@ -44,6 +44,8 @@ export default Service.extend({
               name: t('plugins')
             }
           }
+        }, stage: {
+          name: t('stage')
         }, 'menu-bar': {
           name: t('menuBar')
         }, curtain: {

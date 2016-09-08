@@ -1,15 +1,15 @@
 application:
   routes:
-    affinityEngine: 'Affinity Engine'
-    components: 'Components'
-    configuration: 'Configuration'
-    curtain: 'Curtain'
-    engine: 'Engine'
-    fixtures: 'Fixtures'
-    helpfulLinks: 'Helpful Links'
-    installation: 'Installation'
-    menuBar: 'Menu Bar'
-    overview: 'Overview'
-    plugins: 'Plugins'
-    quickStart: 'Quick Start'
-    stage: 'Stage'
+    affinityEngine: "Affinity Engine"
+    components: "Components"
+    configuration: "Configuration"
+    curtain: "Curtain"
+    engine: "Engine"
+    fixtures: "Fixtures"
+    helpfulLinks: "Helpful Links"
+    installation: "Installation"
+    menuBar: "Menu Bar"
+    overview: "Overview"
+    plugins: "Plugins"
+    quickStart: "Quick Start"
+    stage: "Stage"

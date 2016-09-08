@@ -6,5 +6,5 @@ const {
 } = Ember;
 
 export default Route.extend(RouteTitleMixin, {
-  _titleKey: 'engine'
+  _titleKey: 'overview'
 });
