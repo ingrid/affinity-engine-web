@@ -1,14 +1,16 @@
-<div class="top-bar">
-  <div class="top-bar-left columns medium-6 medium-offset-3 end">
-    <ul class="menu">
-      {{#active-link}}{{#link-to "index"}}:){{/link-to}}{{/active-link}}
-      {{#active-link}}{{#link-to "engine"}}{{t "application.routes.affinityEngine"}}{{/link-to}}{{/active-link}}
-      {{#active-link}}{{#link-to "stage"}}{{t "application.routes.stage"}}{{/link-to}}{{/active-link}}
-      {{#active-link}}{{#link-to "menu-bar"}}{{t "application.routes.menuBar"}}{{/link-to}}{{/active-link}}
-      {{#active-link}}{{#link-to "curtain"}}{{t "application.routes.curtain"}}{{/link-to}}{{/active-link}}
-      {{#active-link}}{{#link-to "plugins"}}{{t "application.routes.plugins"}}{{/link-to}}{{/active-link}}
-    </ul>
+{{#responsive-dropdown title=(t "application.routes.affinityEngine")}}
+  <div class="top-bar">
+    <div class="top-bar-left columns medium-6 medium-offset-3 end">
+      <ul class="menu vertical medium-horizontal">
+        {{#active-link}}{{#link-to "index"}}:){{/link-to}}{{/active-link}}
+        {{#active-link}}{{#link-to "engine"}}{{t "application.routes.affinityEngine"}}{{/link-to}}{{/active-link}}
+        {{#active-link}}{{#link-to "stage"}}{{t "application.routes.stage"}}{{/link-to}}{{/active-link}}
+        {{#active-link}}{{#link-to "menu-bar"}}{{t "application.routes.menuBar"}}{{/link-to}}{{/active-link}}
+        {{#active-link}}{{#link-to "curtain"}}{{t "application.routes.curtain"}}{{/link-to}}{{/active-link}}
+        {{#active-link}}{{#link-to "plugins"}}{{t "application.routes.plugins"}}{{/link-to}}{{/active-link}}
+      </ul>
+    </div>
   </div>
-</div>
+{{/responsive-dropdown}}
 
 {{outlet}}

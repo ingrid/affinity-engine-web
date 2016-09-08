@@ -1,0 +1,16 @@
+<div class="hide-for-medium">
+  {{#liquid-if isExpanded}}
+    {{yield}}
+  {{/liquid-if}}
+  <a class="button expanded margin-bottom-0" {{action "toggleIsExpanded"}}>{{title}}
+    {{#if isExpanded}}
+      {{fa-icon "caret-up"}}
+    {{else}}
+      {{fa-icon "caret-down"}}
+    {{/if}}
+  </a>
+</div>
+
+<div class="show-for-medium">
+  {{yield}}
+</div>

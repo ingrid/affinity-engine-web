@@ -1,29 +1,31 @@
-<div class="columns small-3">
-  {{ember-expanding-sidebar
-    parentRoute="engine"
-    sections=(array (hash
-      route="index"
-      name=(t "application.routes.engine")
-    ) (hash
-      route="installation"
-      name=(t "application.routes.installation")
-    ) (hash
-      route="configuration"
-      name=(t "application.routes.configuration")
-    ) (hash
-      route="fixtures"
-      name=(t "application.routes.fixtures")
-    ) (hash
-      route="components"
-      name=(t "application.routes.components")
-    ) (hash
-      route="plugins"
-      name=(t "application.routes.plugins")
-    ))
-  }}
-</div>
+{{#responsive-dropdown title=(t "application.helpers.tableOfContents")}}
+  <div class="columns medium-3">
+    {{ember-expanding-sidebar
+      parentRoute="engine"
+      sections=(array (hash
+        route="index"
+        name=(t "application.routes.engine")
+      ) (hash
+        route="installation"
+        name=(t "application.routes.installation")
+      ) (hash
+        route="configuration"
+        name=(t "application.routes.configuration")
+      ) (hash
+        route="fixtures"
+        name=(t "application.routes.fixtures")
+      ) (hash
+        route="components"
+        name=(t "application.routes.components")
+      ) (hash
+        route="plugins"
+        name=(t "application.routes.plugins")
+      ))
+    }}
+  </div>
+{{/responsive-dropdown}}
 
-<div class="columns small-6 end">
+<div class="columns small-12 medium-6 end">
   <h1>{{t "application.routes.affinityEngine"}}</h1>
 
   {{outlet}}

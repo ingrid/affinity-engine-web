@@ -13,3 +13,9 @@
     margin-right: $horizontal-rhythm + 5;
   }
 }
+
+@include breakpoint(small only) {
+  .ember-expanding-sidebar {
+    text-align: left;
+  }
+}

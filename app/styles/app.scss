@@ -1,5 +1,7 @@
 @import "variables";
-@import "settings";
 @import "foundation";
+
 @include foundation-everything;
-@import "expanding-sidebars";
+
+@import "components";
+@import "helpers";
