@@ -21,24 +21,26 @@ export default Service.extend({
         engine: {
           name: t('affinityEngine'),
           routes: {
-            'index': {
+            index: {
               name: t('engine')
-            }, 'installation': {
+            }, installation: {
               name: t('installation'),
               routes: {
-                'helpful-links': {
+                index: {
+                  name: t('overview')
+                }, 'helpful-links': {
                   name: t('helpfulLinks')
                 }, 'quick-start': {
                   name: t('quickStart')
                 }
               }
-            }, 'configuration': {
+            }, configuration: {
               name: t('configuration')
-            }, 'fixtures': {
+            }, fixtures: {
               name: t('fixtures')
-            }, 'components': {
+            }, components: {
               name: t('components')
-            }, 'plugins': {
+            }, plugins: {
               name: t('plugins')
             }
           }

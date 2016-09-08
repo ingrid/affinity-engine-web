@@ -9,6 +9,7 @@ application:
     helpfulLinks: 'Helpful Links'
     installation: 'Installation'
     menuBar: 'Menu Bar'
+    overview: 'Overview'
     plugins: 'Plugins'
     quickStart: 'Quick Start'
     stage: 'Stage'
