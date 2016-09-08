@@ -25,11 +25,9 @@ export default Component.extend({
   currentRouteName: alias('applicationController.currentRouteName'),
 
   init(...args) {
-    const applicationController = getOwner(this).lookup('controller:application');
+    this._super(...args);
 
-    set(this, 'applicationController', applicationController);
-
-    return this._super(...args);
+    set(this, 'applicationController', getOwner(this).lookup('controller:application'));
   },
 
   isActive: computed('currentRouteName', 'fullRoute', {

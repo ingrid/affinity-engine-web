@@ -2,7 +2,7 @@
   {{#link-to "index" classNames="button expanded margin-bottom-0"}}:){{/link-to}}
 </div>
 
-{{#responsive-dropdown title=(t "application.routes.affinityEngine")}}
+{{#responsive-navigation-dropdown depth=1}}
   <div class="top-bar">
     <div class="top-bar-left columns medium-6 medium-offset-3 end">
       <ul class="menu vertical medium-horizontal">
@@ -14,6 +14,6 @@
       </ul>
     </div>
   </div>
-{{/responsive-dropdown}}
+{{/responsive-navigation-dropdown}}
 
 {{outlet}}
