@@ -1,0 +1,8 @@
+{{#active-link}}{{#link-to fullRoute}}{{options.name}}{{/link-to}}{{/active-link}}
+
+{{#liquid-if isActive}}
+  {{expanding-sidebar
+    parentRoute=fullRoute
+    classNames="margin-left-1 vertical"
+  }}
+{{/liquid-if}}

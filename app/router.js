@@ -8,7 +8,10 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('engine', function() {
-    this.route('installation');
+    this.route('installation', function() {
+      this.route('helpful-links');
+      this.route('quick-start');
+    });
     this.route('configuration');
     this.route('fixtures');
     this.route('components');

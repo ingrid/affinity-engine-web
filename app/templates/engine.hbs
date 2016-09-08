@@ -1,26 +1,8 @@
 {{#responsive-dropdown title=(t "application.helpers.tableOfContents")}}
   <div class="columns medium-3">
-    {{ember-expanding-sidebar
+    {{expanding-sidebar
       parentRoute="engine"
-      sections=(array (hash
-        route="index"
-        name=(t "application.routes.engine")
-      ) (hash
-        route="installation"
-        name=(t "application.routes.installation")
-      ) (hash
-        route="configuration"
-        name=(t "application.routes.configuration")
-      ) (hash
-        route="fixtures"
-        name=(t "application.routes.fixtures")
-      ) (hash
-        route="components"
-        name=(t "application.routes.components")
-      ) (hash
-        route="plugins"
-        name=(t "application.routes.plugins")
-      ))
+      classNames="vertical"
     }}
   </div>
 {{/responsive-dropdown}}
