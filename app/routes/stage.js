@@ -5,6 +5,4 @@ const {
   Route
 } = Ember;
 
-export default Route.extend(RouteTitleMixin, {
-  _titleKey: 'stage'
-});
+export default Route.extend(RouteTitleMixin);

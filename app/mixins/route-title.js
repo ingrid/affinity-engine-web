@@ -2,15 +2,22 @@ import Ember from 'ember';
 
 const {
   Mixin,
+  computed,
   get
 } = Ember;
 
 const { inject: { service } } = Ember;
 
 export default Mixin.create({
-  intl: service(),
+  routeSequencer: service(),
 
   titleToken() {
-    return get(this, 'intl').t(`application.routes.${get(this, '_titleKey')}`);
-  }
+    return get(this, '_translatedToken');
+  },
+
+  _translatedToken: computed({
+    get() {
+      return get(this, `routeSequencer.routes.${get(this, 'routeName').split('.').join('.routes.')}.name`);
+    }
+  })
 });
