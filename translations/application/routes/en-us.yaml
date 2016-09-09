@@ -13,3 +13,4 @@ application:
     plugins: "Plugins"
     quickStart: "Quick Start"
     stage: "Stage"
+    welcome: "Welcome"

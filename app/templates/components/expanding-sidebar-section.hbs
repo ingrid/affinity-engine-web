@@ -1,8 +1,10 @@
 {{#active-link}}{{#link-to fullRoute}}{{options.name}}{{/link-to}}{{/active-link}}
 
-{{#liquid-if isActive}}
-  {{expanding-sidebar
-    parentRoute=fullRoute
-    classNames="nested vertical"
-  }}
-{{/liquid-if}}
+{{#if shouldNest}}
+  {{#liquid-if isActive}}
+    {{expanding-sidebar
+      parentRoute=fullRoute
+      classNames="nested vertical"
+    }}
+  {{/liquid-if}}
+{{/if}}

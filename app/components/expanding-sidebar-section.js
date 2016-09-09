@@ -3,7 +3,6 @@ import Ember from 'ember';
 const {
   Component,
   computed,
-  get,
   getOwner,
   getProperties,
   isPresent,
@@ -11,13 +10,8 @@ const {
 } = Ember;
 
 const {
-  alias,
-  and,
-  notEmpty
+  alias
 } = computed;
-
-const { String: { camelize } } = Ember;
-const { inject: { service } } = Ember;
 
 export default Component.extend({
   tagName: '',

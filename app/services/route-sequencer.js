@@ -18,11 +18,13 @@ export default Service.extend({
       };
 
       return {
-        engine: {
-          name: t('affinityEngine'),
+        index: {
+          name: t('welcome')
+        }, engine: {
+          name: t('engine'),
           routes: {
             index: {
-              name: t('engine')
+              name: t('overview')
             }, installation: {
               name: t('installation'),
               routes: {

@@ -1,17 +1,10 @@
-<div class="hide-for-medium">
-  {{#link-to "index" classNames="button expanded margin-bottom-0"}}:){{/link-to}}
-</div>
-
-{{#responsive-navigation-dropdown depth=1}}
+{{#responsive-navigation-dropdown depth=2}}
   <div class="top-bar">
     <div class="top-bar-left columns medium-6 medium-offset-3 end">
-      <ul class="menu vertical medium-horizontal">
-        {{#active-link classNames="show-for-medium"}}{{#link-to "index"}}:){{/link-to}}{{/active-link}}
-
-        {{#each-in routeSequencer.routes as |route options|}}
-          {{#active-link}}{{#link-to route}}{{options.name}}{{/link-to}}{{/active-link}}
-        {{/each-in}}
-      </ul>
+      {{expanding-sidebar
+        shouldNest=false
+        classNames="vertical medium-horizontal"
+      }}
     </div>
   </div>
 {{/responsive-navigation-dropdown}}

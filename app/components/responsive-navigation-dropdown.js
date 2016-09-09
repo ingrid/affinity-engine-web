@@ -20,6 +20,7 @@ const { String: { camelize } } = Ember;
 const { inject: { service } } = Ember;
 
 export default Component.extend({
+  intl: service(),
   routeSequencer: service(),
 
   currentRouteName: alias('applicationController.currentRouteName'),
@@ -36,14 +37,17 @@ export default Component.extend({
     get() {
       const { startIndex, depth } = getProperties(this, 'startIndex', 'depth');
       const routes = get(this, 'routeSequencer.routes');
-
-      return get(this, 'currentRouteName').split('.').reduce((paths, segment) => {
+      const segments = get(this, 'currentRouteName').split('.').reduce((paths, segment) => {
         const previousPath = paths[paths.length - 1];
 
         paths.push(isPresent(previousPath) ? `${previousPath}.routes.${segment}` : segment);
 
         return paths;
-      }, []).map((path) => get(routes, `${path}.name`)).filter((name) => isPresent(name)).slice(startIndex, depth).join(' | ');
+      }, []).map((path) => get(routes, `${path}.name`)).filter((name) => isPresent(name));
+
+      segments.unshift(get(this, 'intl').t('application.routes.affinityEngine'));
+
+      return segments.slice(startIndex, depth).join(' | ');
     }
   })
 });
