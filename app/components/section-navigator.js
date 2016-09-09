@@ -4,6 +4,7 @@ const {
   Component,
   computed,
   get,
+  getOwner,
   getProperties,
   isBlank,
   isPresent,
@@ -74,6 +75,6 @@ export default Component.extend({
     const route = isPresent(parentRoute) ? `${parentRoute}.${key}` : key;
     const name = get(siblingRoutes[key], 'name');
 
-    return { route, name, arrow: arrow.repeat(level + 1) }
+    return { route, name, arrow: arrow.repeat(level + 1) };
   }
 });

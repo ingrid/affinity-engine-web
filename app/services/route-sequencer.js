@@ -55,7 +55,7 @@ export default Service.extend({
         }, plugins: {
           name: t('plugins')
         }
-      }
+      };
     }
   })
 });
