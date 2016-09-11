@@ -1,6 +1,7 @@
 @import "fonts";
 @import "variables";
 @import "foundation";
+@import "foundation-overrides";
 
 @include foundation-everything;
 @include foundation-flex-classes;
