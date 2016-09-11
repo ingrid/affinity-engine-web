@@ -30,10 +30,12 @@ export default Service.extend({
               routes: {
                 index: {
                   name: t('overview')
-                }, 'helpful-links': {
-                  name: t('helpfulLinks')
-                }, 'quick-start': {
-                  name: t('quickStart')
+                }, 'tooling': {
+                  name: t('toolingSetup')
+                }, 'ember': {
+                  name: t('emberSetup')
+                }, 'bundles' : {
+                  name: t('bundles')
                 }
               }
             }, configuration: {

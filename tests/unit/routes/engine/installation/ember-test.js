@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:engine/installation/quick-start', 'Unit | Route | engine/installation/quick start', {
+moduleFor('route:engine/installation/ember', 'Unit | Route | engine/installation/ember', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
