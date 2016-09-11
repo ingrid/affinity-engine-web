@@ -1,6 +1,10 @@
 .menu {
+  a {
+    opacity: 0.6;
+  }
+
   .active > a {
-    margin-top: 2px;
     border-radius: 25px;
+    margin-top: 2px;
   }
 }

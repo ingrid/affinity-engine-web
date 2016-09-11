@@ -7,5 +7,5 @@ application:
           emberSummary: "If you've never worked on an Ember project before, check out the second section, [Ember Setup](/engine/installation/ember). It'll get you oriented with npm, bower, and Ember CLI."
           installSummary: "In the [final section](/engine/installation/bundles), you'll find several options for installing the Affinity Engine, whether you're handpicking modules or getting one of the convenient bundles or event the quickstart."
           emberInstallAffinityEngine: "`ember install affinity-engine`"
-          encouragementHeader: "##### A Word of Encouragement"
+          encouragementHeader: "**A Word of Encouragement**"
           encouragement: "Getting the Affinity Engine setup can be a big process, and if you've never worked with the command line before, it'll also require you to interface with your computer in a new and challenging way. The upswing is that the Affinity Engine is built with incredibly powerful tools, and it extends that power to make game design that much easier for you. Although the setup might be daunting, bear with it and you'll have a simple, extensible, and highly customizable game engine at your disposal."

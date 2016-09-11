@@ -1,4 +1,5 @@
 .aside {
-  background-color: $aside-background-color;
-  font-size: $aside-font-size;
+  background-color: map-get($foundation-palette, warning);
+  color: $light-gray;
+  font-size: $global-font-size * 0.95;
 }
