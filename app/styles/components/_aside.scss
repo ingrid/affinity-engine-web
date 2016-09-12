@@ -1,4 +1,7 @@
 .aside {
+  @extend .padding-1;
+  @extend .margin-bottom-1;
+
   background-color: map-get($foundation-palette, warning);
   color: $light-gray;
   font-size: $global-font-size * 0.95;
