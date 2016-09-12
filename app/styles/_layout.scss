@@ -14,13 +14,17 @@
   }
 
   @for $i from 0 through $step-count {
-    .#{$base-property}#{$step-name-prefix}-#{$i}#{$step-name-postfix} {
-      @if $sub-properties {
-        @each $property in $sub-properties {
-          #{$base-property}-#{$property}: rem-calc(($i * $step-size) + $step-offset);
+    @each $breakpoint, $breakpoint-size in $breakpoints {
+      @include breakpoint($breakpoint) {
+        .#{$breakpoint}-#{$base-property}#{$step-name-prefix}-#{$i}#{$step-name-postfix} {
+          @if $sub-properties {
+            @each $property in $sub-properties {
+              #{$base-property}-#{$property}: rem-calc(($i * $step-size) + $step-offset);
+            }
+          } @else {
+            #{$base-property}: rem-calc(($i * $step-size) + $step-offset);
+          }
         }
-      } @else {
-        #{$base-property}: rem-calc(($i * $step-size) + $step-offset);
       }
     }
   }

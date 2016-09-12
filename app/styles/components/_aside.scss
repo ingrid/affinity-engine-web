@@ -1,6 +1,6 @@
 .aside {
-  @extend .padding-1;
-  @extend .margin-bottom-1;
+  @extend .small-padding-1;
+  @extend .small-margin-bottom-1;
 
   background-color: map-get($foundation-palette, warning);
   color: $light-gray;

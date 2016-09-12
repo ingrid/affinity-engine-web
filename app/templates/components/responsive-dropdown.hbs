@@ -2,7 +2,7 @@
   {{#liquid-if isExpanded}}
     {{yield}}
   {{/liquid-if}}
-  <a class="button expanded margin-bottom-0" {{action "toggleIsExpanded"}}>{{title}}
+  <a class="button expanded small-margin-bottom-0" {{action "toggleIsExpanded"}}>{{title}}
     {{#if isExpanded}}
       {{fa-icon "caret-up"}}
     {{else}}
