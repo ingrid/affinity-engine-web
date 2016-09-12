@@ -39,7 +39,12 @@ export default Service.extend({
                 }
               }
             }, configuration: {
-              name: t('configuration')
+              name: t('configuration'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }
+              }
             }, fixtures: {
               name: t('fixtures')
             }, components: {
