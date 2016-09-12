@@ -34,8 +34,8 @@ export default Service.extend({
                   name: t('toolingSetup')
                 }, 'ember': {
                   name: t('emberSetup')
-                }, 'bundles' : {
-                  name: t('bundles')
+                }, 'affinity-engine' : {
+                  name: t('affinityEngineInstallation')
                 }
               }
             }, configuration: {

@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:engine/installation/bundles', 'Unit | Route | engine/installation/bundles', {
+moduleFor('route:engine/installation/affinity-engine', 'Unit | Route | engine/installation/affinity engine', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

@@ -11,7 +11,7 @@ Router.map(function() {
     this.route('installation', function() {
       this.route('tooling');
       this.route('ember');
-      this.route('bundles');
+      this.route('affinity-engine');
     });
     this.route('configuration');
     this.route('fixtures');
