@@ -1,0 +1,11 @@
+<ul class="menu simple">
+  {{#each headers as |header|}}
+    <li class="arrow-seperated vertical-align-baseline-important">
+      {{#link-to header.route}}
+        {{#dynamic-tag tagName=header.tagName classNames="medium-display-inline-block arrow-holder"}}
+          {{header.name}}
+        {{/dynamic-tag}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>

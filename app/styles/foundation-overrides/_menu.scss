@@ -7,4 +7,10 @@
     border-radius: 25px;
     margin-top: 2px;
   }
+
+  .arrow-seperated:not(:last-child) {
+    .arrow-holder::after {
+      content: ">";
+    }
+  }
 }
