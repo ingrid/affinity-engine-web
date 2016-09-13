@@ -1,16 +1,5 @@
-{{#responsive-navigation-dropdown startIndex=2}}
-  <div class="columns medium-3">
-    {{expanding-sidebar
-      parentRoute="engine"
-      classNames="vertical"
-    }}
-  </div>
-{{/responsive-navigation-dropdown}}
+<h1>{{#link-to "engine"}}{{t "application.routes.affinityEngine"}}{{/link-to}}</h1>
 
-<div class="columns small-12 medium-9 small-margin-top-1 medium-padding-right-2">
-  <h1>{{#link-to "engine"}}{{t "application.routes.affinityEngine"}}{{/link-to}}</h1>
+{{liquid-outlet}}
 
-  {{liquid-outlet}}
-
-  {{section-navigator level=0}}
-</div>
+{{section-navigator level=0}}

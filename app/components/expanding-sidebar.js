@@ -10,7 +10,7 @@ const {
 const { inject: { service } } = Ember;
 
 export default Component.extend({
-  classNames: ['menu'],
+  classNames: ['menu', 'vertical'],
   tagName: 'ul',
 
   shouldNest: true,
