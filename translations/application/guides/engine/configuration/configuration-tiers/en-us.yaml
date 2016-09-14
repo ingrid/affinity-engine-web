@@ -1,0 +1,6 @@
+application:
+  guides:
+    engine:
+      configuration:
+        configurationTiers:
+          intro: ""
