@@ -16,6 +16,7 @@ Router.map(function() {
     this.route('configuration', function() {
       this.route('configuration-tiers');
       this.route('setup');
+      this.route('defaults');
     });
     this.route('fixtures');
     this.route('components');

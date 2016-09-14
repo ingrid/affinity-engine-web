@@ -6,7 +6,7 @@
 @include foundation-flex-classes;
 @include foundation-flex-grid;
 
-@import "foundation-overrides";
 @import "layout";
+@import "foundation-overrides";
 @import "components";
 @import "helpers";

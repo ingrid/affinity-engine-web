@@ -43,6 +43,8 @@ export default Service.extend({
               routes: {
                 index: {
                   name: t('overview')
+                }, defaults: {
+                  name: t('defaults')
                 }, 'configuration-tiers': {
                   name: t('configurationTiers')
                 }, setup: {

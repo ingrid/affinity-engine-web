@@ -12,3 +12,7 @@ a {
     }
   }
 }
+
+pre {
+  @extend .small-margin-bottom-1;
+}
