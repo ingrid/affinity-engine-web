@@ -45,10 +45,10 @@ export default Service.extend({
                   name: t('overview')
                 }, defaults: {
                   name: t('defaults')
+                }, usage: {
+                  name: t('usage')
                 }, 'configuration-tiers': {
                   name: t('configurationTiers')
-                }, setup: {
-                  name: t('setup')
                 }
               }
             }, fixtures: {

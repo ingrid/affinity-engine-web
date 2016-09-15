@@ -14,7 +14,7 @@ application:
     menuBar: "Menu Bar"
     overview: "Overview"
     plugins: "Plugins"
-    setup: "Setup"
     stage: "Stage"
     toolingSetup: "Tooling Setup"
+    usage: "Usage"
     welcome: "Welcome"

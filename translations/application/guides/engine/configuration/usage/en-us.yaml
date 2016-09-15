@@ -1,0 +1,18 @@
+application:
+  guides:
+    engine:
+      configuration:
+        usage:
+          definingHeading: "Defining Your Config"
+          definingIntro: "You can define your own configs, too. If there's a conflict between your configs and the default configs, your configs will always win. You can even define multiple configs, so that each engine you're running has unique theming and behavior."
+          definingFormat: "As with the default configs, your own configs are POJOs (plain old JavaScript objects). You can also think of them as key-value definitions. For instance:"
+          definingRealWorldExample: "In the above example, you're setting `key` to have the value of a string, `'value'`. A more real-to-life example might look like:"
+          definingExplanation: "In this example, you're configuring your engine to use the `animationLibrary` of `'popmotion'`. Even if the default configs use `'velocity'` or `'jquery'`, your engine will now use `'popmotion'` instead."
+          usageHeading: "Using Your Config"
+          usageIntro: "The simplest way to use your config is to define it within the controller that manages your `affinity-engine`. For instance, if your engine is rendered in `templates/application.hbs` template, then you can define your config in `controllers/application.js`. If that controller doesn't exist yet, you can use Ember CLI's command line generator:"
+          usageController: "Then within the controller you would define the config like so:"
+          usageTemplate: "And finally, you'd pass the config into the engine through the `application.hbs` template:"
+          usageMultipleKeys: "If you have other engines running, you can define unique configs for each one in their respective controllers. If you can multiple engines on a single controller, you can even define multiple configs on that controller under different keys:"
+          sharingHeading: "Sharing Your Config"
+          sharingIntro: "Often you'll want to use a single config for all your engines. You can do that by defining your config within the `affinity-engine/config.js` file. For instance:"
+          sharingModules: "Note the `export default` in front of the config. This is essential, as it turns your config into a module that can be imported into any/all of your controllers:" 

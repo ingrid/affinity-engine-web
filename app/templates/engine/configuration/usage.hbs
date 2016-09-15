@@ -1,0 +1,74 @@
+<h4>{{{m "application.guides.engine.configuration.usage.definingHeading"}}}</h4>
+{{{m "application.guides.engine.configuration.usage.definingIntro"}}}
+{{{m "application.guides.engine.configuration.usage.definingFormat"}}}
+
+{{format-markdown "```js
+{
+  key: 'value'
+}
+```"}}
+
+{{{m "application.guides.engine.configuration.usage.definingRealWorldExample"}}}
+
+{{format-markdown "```js
+{
+  animationLibrary: 'popmotion'
+}
+```"}}
+
+{{{m "application.guides.engine.configuration.usage.definingExplanation"}}}
+
+<h4>{{{m "application.guides.engine.configuration.usage.usageHeading"}}}</h4>
+{{{m "application.guides.engine.configuration.usage.usageIntro"}}}
+
+{{format-markdown "```bash
+ember generate controller application
+```"}}
+
+{{{m "application.guides.engine.configuration.usage.usageController"}}}
+
+{{format-markdown "```js
+import Ember from 'ember';
+
+export default Ember.Controller.extend({
+  myConfig: {
+    animationLibrary: 'popmotion'
+  }
+});
+```"}}
+
+{{{m "application.guides.engine.configuration.usage.usageTemplate"}}}
+
+{{format-markdown "```hbs
+{{#affinity-engine config=myConfig as |engine|}}
+  . . . .
+{{/affinity-engine}}
+```"}}
+
+{{{m "application.guides.engine.configuration.usage.usageMultipleKeys"}}}
+
+<h4>{{{m "application.guides.engine.configuration.usage.sharingHeading"}}}</h4>
+{{{m "application.guides.engine.configuration.usage.sharingIntro"}}}
+
+{{format-markdown "```js
+// my-app/affinity-engine/config.js
+
+export default {
+  animationLibrary: 'popmotion'
+}
+```"}}
+
+{{{m "application.guides.engine.configuration.usage.sharingModules"}}}
+
+{{format-markdown "```js
+import Ember from 'ember';
+import config from 'my-app/affinity-engine/config';
+
+export default Ember.Controller.extend({
+  myConfig: config
+});
+```"}}
+
+<hr>
+
+{{section-navigator level=2}}
