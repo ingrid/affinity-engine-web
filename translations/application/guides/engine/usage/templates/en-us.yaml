@@ -1,0 +1,15 @@
+application:
+  guides:
+    engine:
+      usage:
+        templates:
+          routesHeader: "Ember.js Routes"
+          routesIntro: "Ember.js is a web framework, and principally, people use it to make single page apps (SPAs) like this documentation you're reading. SPAs still let you navigate between routes, like from `affinityengine.org/engine/installation` to `affinityengine.org/engine/usage`. When you're navigate from one route to another, it might seem as though you're *downloading* new pages, but these pages are actually just being *rendered*. When you arrived at the first page, you actually loaded the whole website. Now, Ember.js is just rendering templates for you as you navigate around."
+          routesMore: "You can read more about Ember.js routes [here](https://guides.emberjs.com/v2.8.0/routing/). Reading up on routes is purely optional, though. You don't need to understand the details to make an Affinity Engine game, though if you do learn more about routes, they can open up some interesting possibilities for your game. For instance, you could have a separate engine running in each route, and each engine could be a separate level of your game."
+          templatesHeader: "Ember.js Templates"
+          templates: "Each route is responsible for rendering a template. For instance, `affinityengine.org/engine/usage/templates` renders a template containing all the text you see right now. It's in these templates that you'll render your Affinity Engine games. You can read more about templates [here](https://guides.emberjs.com/v2.8.0/templates/handlebars-basics/). Once again, this is purely optional, but understanding templates will give you more flexibility as you build out your game."
+          simpleHeader: "Easy Implementation"
+          simpleIntro: "In your Ember.js project folder, go to `my-app/templates/application.hbs`. Replace its content with:"
+          simpleConclusion: "Now, your Ember project is a pure Affinity Engine. The only thing it will render is your game, and you don't need to worry about routing any longer."
+          sidebarHeader: "**Feel free to skip to the bottom**"
+          sidebarContent: "You don't need to understand routes and templates to use the Affinity Engine. For an easy solution, check out the last section on this page, 'Easy Implementation'."
