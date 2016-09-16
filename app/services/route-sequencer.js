@@ -38,6 +38,21 @@ export default Service.extend({
                   name: t('affinityEngineInstallation')
                 }
               }
+            }, usage: {
+              name: t('usage'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, 'engine-id': {
+                  name: t('engineId')
+                }, focus: {
+                  name: t('focus')
+                }, 'block-component': {
+                  name: t('engineBlockComponent')
+                }, preloading: {
+                  name: t('preloadingAssets')
+                }
+              }
             }, configuration: {
               name: t('configuration'),
               routes: {

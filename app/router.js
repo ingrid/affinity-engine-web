@@ -13,6 +13,12 @@ Router.map(function() {
       this.route('ember');
       this.route('affinity-engine');
     });
+    this.route('usage', function() {
+      this.route('block-component');
+      this.route('engine-id');
+      this.route('focus');
+      this.route('preloading');
+    });
     this.route('configuration', function() {
       this.route('configuration-tiers');
       this.route('defaults');
