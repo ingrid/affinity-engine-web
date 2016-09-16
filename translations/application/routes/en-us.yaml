@@ -19,6 +19,7 @@ application:
     plugins: "Plugins"
     preloadingAssets: "Preloading Assets"
     stage: "Stage"
+    templates: "Templates"
     toolingSetup: "Tooling Setup"
     usage: "Usage"
     welcome: "Welcome"

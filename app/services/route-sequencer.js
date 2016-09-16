@@ -43,6 +43,8 @@ export default Service.extend({
               routes: {
                 index: {
                   name: t('overview')
+                }, templates: {
+                  name: t('templates')
                 }, 'engine-id': {
                   name: t('engineId')
                 }, focus: {

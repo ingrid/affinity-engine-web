@@ -18,6 +18,7 @@ Router.map(function() {
       this.route('engine-id');
       this.route('focus');
       this.route('preloading');
+      this.route('templates');
     });
     this.route('configuration', function() {
       this.route('configuration-tiers');
