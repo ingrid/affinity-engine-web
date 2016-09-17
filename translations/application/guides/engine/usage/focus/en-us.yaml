@@ -1,0 +1,7 @@
+application:
+  guides:
+    engine:
+      usage:
+        focus:
+          intro: "Some Affinity Engine modules respond to keyboard events, such as the user pressing the arrow keys or spacebar. In cases where you have multiple engines on a single page, it's important to know which engine is currently focused, so that only that engine responds to keyboard events. If the user clicks on an engine or tabs into it, it will automatically gain focus. Similarly, if user clicks outside of the engine or tabs out of it, it will lose focus."
+          exampleIntro: "You can force an engine to gain focus the moment it enters the frame by setting `isFocused` to true. If you plan to only have a single engine running, you'll probably want to set this to true:"
