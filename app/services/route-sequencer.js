@@ -50,7 +50,7 @@ export default Service.extend({
                 }, 'engine-id': {
                   name: t('engineId')
                 }, preloading: {
-                  name: t('preloadingAssets')
+                  name: t('isLoadedAndCompletePreload')
                 }
               }
             }, configuration: {
