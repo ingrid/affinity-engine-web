@@ -3,4 +3,7 @@ application:
     engine:
       usage:
         engineId:
-          intro: ""
+          multipleEngines: "It's possible to have multiple Affinity Engines running in a single Ember app. These engines might be running simultaneously in a single route, or they might be running individually in their own routes. In either case, you'll probably want to define an unique `engineId` for each one."
+          needForAnIdentifier: "The `engineId` is used internally by the engine to associate its many services and components. If you do not provide an `engineId` when there are multiple engines running, it can result in interactions within one engine changing the state of another engine."
+          exampleIntro: "You can define an `engineId` like so:"
+          advancedUsage: "Note that save states are keyed to the `engineId`, as well. So if you change the `engineId`, any saved states for the engine will be lost. Alternatively, if you had engines share an `engineId`, they would also share their save state, making it possible to have a single gaming experience that spans multiple routes."
