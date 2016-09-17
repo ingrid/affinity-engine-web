@@ -49,8 +49,6 @@ export default Service.extend({
                   name: t('engineId')
                 }, focus: {
                   name: t('isFocused')
-                }, 'block-component': {
-                  name: t('engineBlockComponent')
                 }, preloading: {
                   name: t('preloadingAssets')
                 }

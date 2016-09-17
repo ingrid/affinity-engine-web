@@ -3,13 +3,11 @@ application:
     engine:
       usage:
         templates:
-          sidebarHeader: "**Feel free to skip to the bottom**"
-          sidebarContent: "This section offers a high-level overview of Ember.js routing and templating. You don't need to understand routes and templates to use the Affinity Engine, so feel free to skip to the last section on this page, 'Easy Implementation'. This will be enough for the vast majority of Affinity Engine games."
-          routesHeader: "Ember.js Routes"
-          routesIntro: "Ember.js is a web framework, and principally, people use it to make single page apps (SPAs) like this documentation you're reading. SPAs still let you navigate between routes, like from `affinityengine.org/engine/installation` to `affinityengine.org/engine/usage`. When you navigate from one route to another, it might seem as though you're *downloading* new pages, but these pages are actually just being *rendered*. When you arrived at the first page, you actually loaded the whole website. Now, Ember.js is just rendering templates for you as you navigate around."
-          routesMore: "You can read more about Ember.js routes [here](https://guides.emberjs.com/v2.8.0/routing/). Reading up on routes is purely optional, though. You don't need to understand the details to make an Affinity Engine game, though if you do learn more about routes, they can open up some interesting possibilities for your game. For instance, you could have a separate engine running in each route, and each engine could be a separate level of your game."
-          templatesHeader: "Ember.js Templates"
-          templates: "Each route is responsible for rendering a template. For instance, `affinityengine.org/engine/usage/templates` renders a template containing all the text you see right now. It's in these templates that you'll render your Affinity Engine games. You can read more about templates [here](https://guides.emberjs.com/v2.8.0/templates/handlebars-basics/). Once again, this is purely optional, but understanding templates will give you more flexibility as you build out your game."
-          simpleHeader: "Easy Implementation"
-          simpleIntro: "In your Ember.js project folder, go to `my-app/templates/application.hbs`. Replace its content with:"
-          simpleConclusion: "Now, your Ember project is a pure Affinity Engine. The only thing it will render is your game, and you don't need to worry about routing any longer."
+          applicationHeader: "The `application` Template"
+          applicationIntro: "If you only plan to have a single Affinity Engine running in your project, the simplest solution is to open `my-app/templates/application.hbs` and replace its contents with:"
+          applicationExplanation: "Now your Ember project is a pure Affinity Engine. The only thing it will render is your game, and you don't need to worry about any sort of routing."
+          advancedRouting: "Some games may benefit from Ember's advanced router. If you want to learn more about how to route between multiple templates, you can consult the Ember guides [here](https://guides.emberjs.com/v2.8.0/routing/). You could then render an unique engine in each route."
+          blockComponentsHeader: "Block Components"
+          blockComponentsFirstExample: "The Affinity Engine is a block component, which means that you can compose other components and pure html into it. For instance, you could do something like this:"
+          blockComponentsSecondExample: "In this case, the paragraph 'Hello world!' will appear inside of the engine. This is particularly useful when you start composing together Affinity Engine modules. For instance, this will render an `affinity-engine-stage` within the engine:"
+          blockParams: "You might have noticed that we're passing an `engine` param into the block. This param has several values, all unique to this particular instance of the `affinity-engine`. One of these params is the `engineId`, which you'll learn more about [here](/engine/usage/engine-id). The others help when preloading assets, which you'll learn more about [here](/engine/usage/preloading)."

@@ -23,7 +23,7 @@ Router.map(function() {
     this.route('configuration', function() {
       this.route('configuration-tiers');
       this.route('defaults');
-      this.route('usage');
+      this.route('usage', function() {});
     });
     this.route('fixtures');
     this.route('components');

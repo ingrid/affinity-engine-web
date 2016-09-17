@@ -9,7 +9,6 @@ application:
     defaults: "Defaults"
     emberSetup: "Ember Setup"
     engine: "Engine"
-    engineBlockComponent: "The Block Component"
     engineId: "`engineId`"
     fixtures: "Fixtures"
     installation: "Installation"
