@@ -45,10 +45,10 @@ export default Service.extend({
                   name: t('overview')
                 }, templates: {
                   name: t('templates')
-                }, 'engine-id': {
-                  name: t('engineId')
                 }, focus: {
                   name: t('isFocused')
+                }, 'engine-id': {
+                  name: t('engineId')
                 }, preloading: {
                   name: t('preloadingAssets')
                 }

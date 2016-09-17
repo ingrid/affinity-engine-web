@@ -1,4 +1,14 @@
-
+{{{m "application.guides.engine.usage.preloading.intro"}}}
+{{format-markdown '```hbs
+{{#affinity-engine as |engine|}}
+  {{#if engine.isLoaded}}
+    <p>The game is loaded!</p>
+  {{else}}
+    {{affinity-engine-curtain completePreload=engine.completePreload}}
+  {{/if}}
+{{/affinity-engine}}
+```'}}
+{{{m "application.guides.engine.usage.preloading.attributes"}}}
 
 <hr>
 

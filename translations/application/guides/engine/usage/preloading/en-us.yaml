@@ -1,0 +1,11 @@
+application:
+  guides:
+    engine:
+      usage:
+        preloading:
+          intro: "Due to the nature of the web, images, music, and other asset files aren't downloaded until a website uses them--which is to say, a song won't start downloading until it begins playing. This can lead to visual flickers and audio hick-ups, even over fast connections. The `affinity-engine` component can coordinate with a preloader module to fix this, though. In the below example, we'll use a simplified implementation of the `affinity-engine-curtain` preloader to demonstrate what this might look like:"
+          attributes: "You'll notice that we're using two new attributes on the `engine` param, including `isLoaded` and `completePreload`:
+
+* `engine.completePreload`: this action is called once the `affinity-engine-curtain` has completely preloaded its assets. When run, it changes `engine.isLoaded` from `false` to `true`.
+
+* `engine.isLoaded`: this attribute tracks the current state of the preloading process. It is initially `false`."
