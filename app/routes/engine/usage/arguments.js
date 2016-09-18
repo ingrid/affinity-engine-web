@@ -1,4 +1,8 @@
 import Ember from 'ember';
+import RouteTitleMixin from 'affinity-engine-web/mixins/route-title';
 
-export default Ember.Route.extend({
-});
+const {
+  Route
+} = Ember;
+
+export default Route.extend(RouteTitleMixin);

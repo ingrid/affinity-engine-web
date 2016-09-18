@@ -1,0 +1,21 @@
+application:
+  guides:
+    engine:
+      usage:
+        blockParams:
+          usingBlockComponents:
+            header: "Block Components"
+            htmlExample: "The `affintiy-engine` is a block component, which means that you can compose other components and pure html into it. For instance, you could do something like this:"
+            moduleExample: "In this case, the paragraph 'Hello world!' will appear inside of the engine. This is particularly useful when you start composing together Affinity Engine modules. For instance, this will render an `affinity-engine-stage` within the engine:"
+            params: "You might have noticed that we're passing an `engine` into the block. It contains several params, all unique to this particular instance of the `affinity-engine`. One of these params is the `engineId`, which we've already encountered [here](/engine/usage/arguments). The others help when preloading assets."
+          engineId:
+            header: "`engineId`"
+            info: "As before, the `engineId` is an unique identifier for your engine. In order for your engine to communicate with its modules, you'll need to pass the `engineId` into them, too. You'd so like:"
+          preloading:
+            header: "Preloading Assets"
+            intro: "Due to the nature of the web, media assets like images and music files aren't downloaded until a website uses them--which is to say, a song won't start downloading until it begins playing. This can lead to visual flickers and audio hick-ups, even over fast connections. The `affinity-engine` component can coordinate with a preloader module to fix this, though. In the below example, we'll use a simplified implementation of the `affinity-engine-curtain` preloader to demonstrate what this might look like:"
+            attributes: "You'll notice that we're using two new params, including `isLoaded` and `completePreload`:
+
+* `engine.completePreload`: this action is called once the `affinity-engine-curtain` has completely preloaded its assets. When run, it changes `engine.isLoaded` from `false` to `true`.
+
+* `engine.isLoaded`: this attribute tracks the current state of the preloading process. It is initially `false`."

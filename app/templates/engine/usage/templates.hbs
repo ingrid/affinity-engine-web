@@ -7,21 +7,6 @@
 {{{m "application.guides.engine.usage.templates.applicationExplanation"}}}
 {{{m "application.guides.engine.usage.templates.advancedRouting"}}}
 
-<h4>{{{m "application.guides.engine.usage.templates.blockComponentsHeader"}}}</h4>
-{{{m "application.guides.engine.usage.templates.blockComponentsFirstExample"}}}
-{{format-markdown '```hbs
-{{#affinity-engine}}
-  <p>Hello world!</p>
-{{/affinity-engine}}
-```'}}
-{{{m "application.guides.engine.usage.templates.blockComponentsSecondExample"}}}
-{{format-markdown '```hbs
-{{#affinity-engine as |engine|}}
-  {{affinity-engine-stage engineId=engine.engineId}}
-{{/affinity-engine}}
-```'}}
-{{{m "application.guides.engine.usage.templates.blockParams"}}}
-
 <hr>
 
 {{section-navigator level=2}}
