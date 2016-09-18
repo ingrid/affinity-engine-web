@@ -45,12 +45,10 @@ export default Service.extend({
                   name: t('overview')
                 }, templates: {
                   name: t('templates')
-                }, focus: {
-                  name: t('isFocused')
-                }, 'engine-id': {
-                  name: t('engineId')
-                }, preloading: {
-                  name: t('isLoadedAndCompletePreload')
+                }, arguments: {
+                  name: t('arguments')
+                }, 'block-params': {
+                  name: t('blockParams')
                 }
               }
             }, configuration: {
