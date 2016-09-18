@@ -43,8 +43,8 @@ export default Service.extend({
               routes: {
                 index: {
                   name: t('overview')
-                }, templates: {
-                  name: t('templates')
+                }, 'basic-routing': {
+                  name: t('basicRouting')
                 }, arguments: {
                   name: t('arguments')
                 }, 'block-params': {

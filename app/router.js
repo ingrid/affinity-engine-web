@@ -14,9 +14,9 @@ Router.map(function() {
       this.route('affinity-engine');
     });
     this.route('usage', function() {
+      this.route('basic-routing');
       this.route('block-params');
       this.route('arguments');
-      this.route('templates');
     });
     this.route('configuration', function() {
       this.route('configuration-tiers');
