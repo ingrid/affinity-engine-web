@@ -3,8 +3,5 @@ application:
     engine:
       configuration:
         configurationTiers:
-          defaultsHeader: "Defaults"
-          defaultsEngineIntro: "At the highest level of configuration are your default values. These values are not defined by you, but by the modules you're using. For instance, the `affinity-engine` module has a default configuration that looks something like this:"
-          defaultsEngineConclusion: "Note that it defines the `animationLibrary` as `jquery`. This means that unless you or another module specifies something else, your engine will use `jquery` to animate everything."
-          defaultsVelocityIntro: "In the `affinity-engine-animator-velocity` plugin, the config looks something like this:"
-          defaultsVelocityConclusion: "Now both the `affinity-engine` config and the `affinity-engine-animator-velocity` config define `animationLibrary`. If you include both in your project, then `affinity-engine-animator-velocity`'s config will win this conflict, since it has a higher `priority` (1 vs 0). That means that your engine will use `velocity` instead of `jquery`. However, since `affinity-engine-animator-velocity` does not specify a `menuColumns`, the engine will continue using the default defined in the `affinity-engine` config."
+          intro: "What if you want to configure your game to use `velocity` for most animations, but you wanted `popmotion` to handle your text animations? That's possible using configuration tiers like so:"
+          conclusion: "In this example, we first specify a global configuration with `animationLibrary: 'velocity'`, and then we provide a specific override just for the `text` direction. When a module lists what attributes you can configure, it'll also let you know what configuration tiers it's observing and in what order. When determining its value, the module will check to see if its highest priority tier is set. If not, it checks the next highest, all the way down to the lowest priority."
