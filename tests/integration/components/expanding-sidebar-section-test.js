@@ -12,13 +12,4 @@ test('it renders', function(assert) {
   this.render(hbs`{{expanding-sidebar-section}}`);
 
   assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#expanding-sidebar-section}}
-      template block text
-    {{/expanding-sidebar-section}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });

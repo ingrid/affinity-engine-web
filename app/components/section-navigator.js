@@ -30,13 +30,13 @@ export default Component.extend({
 
   currentRouteSegment: computed({
     get() {
-      return get(this, 'currentRouteName').split('.')[get(this, 'level')];
+      return (get(this, 'currentRouteName') || '').split('.')[get(this, 'level')];
     }
   }),
 
   parentRoute: computed({
     get() {
-      return get(this, 'currentRouteName').split('.').slice(0, get(this, 'level')).join('.');
+      return (get(this, 'currentRouteName') || '').split('.').slice(0, get(this, 'level')).join('.');
     }
   }),
 

@@ -34,7 +34,8 @@ export default Component.extend({
     get() {
       const { startIndex, depth } = getProperties(this, 'startIndex', 'depth');
       const routes = get(this, 'routeSequencer.routes');
-      const segments = get(this, 'currentRouteName').split('.').reduce((paths, segment) => {
+      const currentRouteName = get(this, 'currentRouteName') || '';
+      const segments = currentRouteName.split('.').reduce((paths, segment) => {
         const previousPath = paths[paths.length - 1];
 
         paths.push(isPresent(previousPath) ? `${previousPath}.routes.${segment}` : segment);

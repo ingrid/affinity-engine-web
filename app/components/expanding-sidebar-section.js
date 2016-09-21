@@ -3,6 +3,7 @@ import Ember from 'ember';
 const {
   Component,
   computed,
+  get,
   getOwner,
   getProperties,
   isPresent,
@@ -26,12 +27,10 @@ export default Component.extend({
 
   isActive: computed('currentRouteName', 'fullRoute', {
     get() {
-      const {
-        currentRouteName,
-        fullRoute
-      } = getProperties(this, 'currentRouteName', 'fullRoute');
+      const currentRouteName = get(this, 'currentRouteName') || '';
+      const fullRoute = get(this, 'fullRoute');
 
-      return currentRouteName.indexOf(`${fullRoute}.`) === 0;
+      return (currentRouteName || '').indexOf(`${fullRoute}.`) === 0;
     }
   }).readOnly(),
 

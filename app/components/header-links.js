@@ -5,8 +5,6 @@ const {
   computed,
   get,
   getOwner,
-  getProperties,
-  isPresent,
   set
 } = Ember;
 
@@ -29,7 +27,8 @@ export default Component.extend({
 
   headers: computed('currentRouteName', {
     get() {
-      const currentRouteSegments = get(this, 'currentRouteName').split('.');
+      const currentRouteName = get(this, 'currentRouteName') || '';
+      const currentRouteSegments = currentRouteName.split('.');
       const routes = get(this, 'routeSequencer.routes');
 
       return currentRouteSegments.map((segment, index) => {

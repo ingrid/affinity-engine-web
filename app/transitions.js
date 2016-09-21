@@ -1,6 +1,6 @@
 export default function() {
   this.transition(
-    this.toRoute((routeName) => true),
+    this.toRoute(() => true),
     this.use('toRight')
   );
 
