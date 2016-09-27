@@ -8,6 +8,8 @@
     "font-awesome": "~4.5.0",
     "showdown": "^1.4.3",
     "marked": "^0.3.6",
-    "highlightjs": "^9.6.0"
+    "highlightjs": "^9.6.0",
+    "PreloadJS": "0.6.2",
+    "SoundJS": "0.6.2"
   }
 }

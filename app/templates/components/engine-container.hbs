@@ -1,0 +1,4 @@
+{{#affinity-engine engineId=scene isFocused=true as |engine|}}
+  {{affinity-engine-stage engineId=engine.engineId initialScene=scene}}
+  {{yield engine=engine}}
+{{/affinity-engine}}
