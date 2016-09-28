@@ -28,7 +28,7 @@ export default Component.extend({
       id: 'ember',
       name: 'Ember',
       namePosition: 'right',
-      height: 320,
+      height: 360,
       keyframes: [{
         id: 'ember-neutral'
       }, {
@@ -44,7 +44,7 @@ export default Component.extend({
     }, {
       id: 'diy',
       name: 'Diy',
-      height: 330,
+      height: 385,
       keyframes: [{
         id: 'diy-neutral'
       }, {

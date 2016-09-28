@@ -3,13 +3,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: $ae-text-block-height;
+  height: 150px;
   line-height: $ae-text-block-line-height;
   font-size: $ae-text-block-font-size;
   padding: $ae-text-block-padding-ends $ae-text-block-padding-sides;
   margin: $ae-text-block-margin;
   border-width: $ae-text-block-border-width;
-  border-radius: $ae-text-block-border-radius;
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 
   .ae-text-caption {
     position: absolute;
