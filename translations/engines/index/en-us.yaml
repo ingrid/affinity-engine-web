@@ -1,0 +1,17 @@
+engines:
+  index:
+    emberIntro: "Hi! *neutral* My name's Ember."
+    diyIntro: "And I'm Diy."
+    emberAffinityIntro: "And this is the Affinity Engine. *obviously* A game engine, in case that isn't obvious."
+    diyDocumentation: "The engine itself is nearly ready for beta, but there's . . . *embarrassed* still a lot of documentation to write."
+    emberDocumentation: "We are working hard on it, but it could take awhile longer."
+    diyCheckIn: "Feel free to keep checking in on us, though!"
+    emberMailingList: "Or just sign up for our mailing list. *neutral* We'll let you know when we hit big milestones."
+    diyKickstarter: "If you sign up, we'll also let you know when we launch our Kickstarter. It'll fund a whole cast of characters and background images, all by <a href='http://daaakota.deviantart.com/' target='_blank'>Dakota Bardy</a>. We'll put them under a Creative Commons licence so that you can use them in your own games."
+    emberKickstarter: "And the Kickstarter will also fund important accessibility research on the engine."
+    diyReadMore: "Until then, feel free to read more about the engine."
+    emberOpensource: "But first, I want to mention that the engine is entirely free and open-source."
+    diyBrowser: "And you can play its games directly in a browser, without even installing a plugin like Unity or Flash."
+    emberModular: "And the engine is modular. We may look like we're in a visual novel right now, but you can extend the engine to make other types of games too."
+    diyBye: "We hope you come back to see us again!"
+    emberBye: "Agreed! Open source projects like this need community like you to survive."
