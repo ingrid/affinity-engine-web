@@ -1,4 +1,4 @@
-{{#affinity-engine engineId=scene fixtures=fixtures isFocused=isFocused as |engine|}}
+{{#affinity-engine engineId=scene config=config fixtures=fixtures isFocused=isFocused as |engine|}}
   {{#if engine.isLoaded}}
     {{affinity-engine-stage engineId=engine.engineId initialScene=scene}}
     {{yield engine=engine}}

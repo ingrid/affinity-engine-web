@@ -1,0 +1,35 @@
+.ae-text.ae-bottom-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: $ae-text-block-height;
+  line-height: $ae-text-block-line-height;
+  font-size: $ae-text-block-font-size;
+  padding: $ae-text-block-padding-ends $ae-text-block-padding-sides;
+  margin: $ae-text-block-margin;
+  border-width: $ae-text-block-border-width;
+  border-radius: $ae-text-block-border-radius;
+
+  .ae-text-caption {
+    position: absolute;
+    top: $ae-text-caption-block-top;
+    padding: $ae-text-caption-block-padding-ends $ae-text-caption-block-padding-sides;
+    font-size: $ae-text-caption-block-font-size;
+    border-width: $ae-text-block-border-width;
+    border-radius: $ae-text-block-border-radius;
+
+    &.left {
+      left: $ae-text-caption-block-side;
+    }
+
+    &.right {
+      right: $ae-text-caption-block-side;
+    }
+
+    &.center {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

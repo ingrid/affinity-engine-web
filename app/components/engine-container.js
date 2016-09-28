@@ -9,10 +9,25 @@ export default Component.extend({
 
   isFocused: true,
 
+  config: {
+    component: {
+      stage: {
+        direction: {
+          text: {
+            classNames: {
+              structural: 'ae-bottom-block'
+            },
+          }
+        }
+      }
+    }
+  },
+
   fixtures: {
     characters: [{
       id: 'ember',
       name: 'Ember',
+      namePosition: 'right',
       height: 375,
       keyframes: [{
         id: 'ember-neutral'
