@@ -2200,7 +2200,7 @@ select {
   .form-error.is-visible {
     display: block; }
 
-.button {
+.button, .ember-chimp button {
   display: inline-block;
   text-align: center;
   line-height: 1;
@@ -2215,97 +2215,97 @@ select {
   font-size: 0.9rem;
   background-color: #FF3800;
   color: #FFFCC4; }
-  [data-whatinput='mouse'] .button {
+  [data-whatinput='mouse'] .button, [data-whatinput='mouse'] .ember-chimp button, .ember-chimp [data-whatinput='mouse'] button {
     outline: 0; }
-  .button:hover, .button:focus {
+  .button:hover, .ember-chimp button:hover, .button:focus, .ember-chimp button:focus {
     background-color: #d93000;
     color: #FFFCC4; }
-  .button.tiny {
+  .button.tiny, .ember-chimp button.tiny {
     font-size: 0.6rem; }
-  .button.small {
+  .button.small, .ember-chimp button.small {
     font-size: 0.75rem; }
-  .button.large {
+  .button.large, .ember-chimp button.large {
     font-size: 1.25rem; }
-  .button.expanded {
+  .button.expanded, .ember-chimp button.expanded {
     display: block;
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
-  .button.primary {
+  .button.primary, .ember-chimp button.primary {
     background-color: #FF3800;
     color: #FFFCC4; }
-    .button.primary:hover, .button.primary:focus {
+    .button.primary:hover, .ember-chimp button.primary:hover, .button.primary:focus, .ember-chimp button.primary:focus {
       background-color: #cc2d00;
       color: #FFFCC4; }
-  .button.secondary {
+  .button.secondary, .ember-chimp button.secondary {
     background-color: #777;
     color: #FFFCC4; }
-    .button.secondary:hover, .button.secondary:focus {
+    .button.secondary:hover, .ember-chimp button.secondary:hover, .button.secondary:focus, .ember-chimp button.secondary:focus {
       background-color: #5f5f5f;
       color: #FFFCC4; }
-  .button.success {
+  .button.success, .ember-chimp button.success {
     background-color: #3adb76;
     color: #FFFCC4; }
-    .button.success:hover, .button.success:focus {
+    .button.success:hover, .ember-chimp button.success:hover, .button.success:focus, .ember-chimp button.success:focus {
       background-color: #22bb5b;
       color: #FFFCC4; }
-  .button.warning {
+  .button.warning, .ember-chimp button.warning {
     background-color: #009393;
     color: #FFFCC4; }
-    .button.warning:hover, .button.warning:focus {
+    .button.warning:hover, .ember-chimp button.warning:hover, .button.warning:focus, .ember-chimp button.warning:focus {
       background-color: #007676;
       color: #FFFCC4; }
-  .button.alert {
+  .button.alert, .ember-chimp button.alert {
     background-color: #ec5840;
     color: #FFFCC4; }
-    .button.alert:hover, .button.alert:focus {
+    .button.alert:hover, .ember-chimp button.alert:hover, .button.alert:focus, .ember-chimp button.alert:focus {
       background-color: #da3116;
       color: #FFFCC4; }
-  .button.hollow {
+  .button.hollow, .ember-chimp button.hollow {
     border: 1px solid #FF3800;
     color: #FF3800; }
-    .button.hollow, .button.hollow:hover, .button.hollow:focus {
+    .button.hollow, .ember-chimp button.hollow, .button.hollow:hover, .ember-chimp button.hollow:hover, .button.hollow:focus, .ember-chimp button.hollow:focus {
       background-color: transparent; }
-    .button.hollow:hover, .button.hollow:focus {
+    .button.hollow:hover, .ember-chimp button.hollow:hover, .button.hollow:focus, .ember-chimp button.hollow:focus {
       border-color: #801c00;
       color: #801c00; }
-    .button.hollow.primary {
+    .button.hollow.primary, .ember-chimp button.hollow.primary {
       border: 1px solid #FF3800;
       color: #FF3800; }
-      .button.hollow.primary:hover, .button.hollow.primary:focus {
+      .button.hollow.primary:hover, .ember-chimp button.hollow.primary:hover, .button.hollow.primary:focus, .ember-chimp button.hollow.primary:focus {
         border-color: #801c00;
         color: #801c00; }
-    .button.hollow.secondary {
+    .button.hollow.secondary, .ember-chimp button.hollow.secondary {
       border: 1px solid #777;
       color: #777; }
-      .button.hollow.secondary:hover, .button.hollow.secondary:focus {
+      .button.hollow.secondary:hover, .ember-chimp button.hollow.secondary:hover, .button.hollow.secondary:focus, .ember-chimp button.hollow.secondary:focus {
         border-color: #3c3c3c;
         color: #3c3c3c; }
-    .button.hollow.success {
+    .button.hollow.success, .ember-chimp button.hollow.success {
       border: 1px solid #3adb76;
       color: #3adb76; }
-      .button.hollow.success:hover, .button.hollow.success:focus {
+      .button.hollow.success:hover, .ember-chimp button.hollow.success:hover, .button.hollow.success:focus, .ember-chimp button.hollow.success:focus {
         border-color: #157539;
         color: #157539; }
-    .button.hollow.warning {
+    .button.hollow.warning, .ember-chimp button.hollow.warning {
       border: 1px solid #009393;
       color: #009393; }
-      .button.hollow.warning:hover, .button.hollow.warning:focus {
+      .button.hollow.warning:hover, .ember-chimp button.hollow.warning:hover, .button.hollow.warning:focus, .ember-chimp button.hollow.warning:focus {
         border-color: #004a4a;
         color: #004a4a; }
-    .button.hollow.alert {
+    .button.hollow.alert, .ember-chimp button.hollow.alert {
       border: 1px solid #ec5840;
       color: #ec5840; }
-      .button.hollow.alert:hover, .button.hollow.alert:focus {
+      .button.hollow.alert:hover, .ember-chimp button.hollow.alert:hover, .button.hollow.alert:focus, .ember-chimp button.hollow.alert:focus {
         border-color: #881f0e;
         color: #881f0e; }
-  .button.disabled, .button[disabled] {
+  .button.disabled, .ember-chimp button.disabled, .button[disabled], .ember-chimp button[disabled] {
     opacity: 0.25;
     cursor: not-allowed; }
-    .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+    .button.disabled:hover, .ember-chimp button.disabled:hover, .button.disabled:focus, .ember-chimp button.disabled:focus, .button[disabled]:hover, .ember-chimp button[disabled]:hover, .button[disabled]:focus, .ember-chimp button[disabled]:focus {
       background-color: #FF3800;
       color: #FFFCC4; }
-  .button.dropdown::after {
+  .button.dropdown::after, .ember-chimp button.dropdown::after {
     content: '';
     display: block;
     width: 0;
@@ -2319,7 +2319,7 @@ select {
     float: right;
     margin-left: 1em;
     display: inline-block; }
-  .button.arrow-only::after {
+  .button.arrow-only::after, .ember-chimp button.arrow-only::after {
     margin-left: 0;
     float: none;
     top: -0.1em; }
@@ -2447,99 +2447,99 @@ select {
     display: table; }
   .button-group::after {
     clear: both; }
-  .button-group .button {
+  .button-group .button, .button-group .ember-chimp button, .ember-chimp .button-group button {
     margin: 0;
     margin-right: 1px;
     margin-bottom: 1px;
     font-size: 0.9rem; }
-    .button-group .button:last-child {
+    .button-group .button:last-child, .button-group .ember-chimp button:last-child, .ember-chimp .button-group button:last-child {
       margin-right: 0; }
-  .button-group.tiny .button {
+  .button-group.tiny .button, .button-group.tiny .ember-chimp button, .ember-chimp .button-group.tiny button {
     font-size: 0.6rem; }
-  .button-group.small .button {
+  .button-group.small .button, .button-group.small .ember-chimp button, .ember-chimp .button-group.small button {
     font-size: 0.75rem; }
-  .button-group.large .button {
+  .button-group.large .button, .button-group.large .ember-chimp button, .ember-chimp .button-group.large button {
     font-size: 1.25rem; }
   .button-group.expanded {
     margin-right: -1px; }
     .button-group.expanded::before, .button-group.expanded::after {
       display: none; }
-    .button-group.expanded .button:first-child:nth-last-child(2), .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button {
+    .button-group.expanded .button:first-child:nth-last-child(2), .button-group.expanded .ember-chimp button:first-child:nth-last-child(2), .ember-chimp .button-group.expanded button:first-child:nth-last-child(2), .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .button-group.expanded .ember-chimp button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .ember-chimp .button-group.expanded button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .button-group.expanded .ember-chimp .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ button, .ember-chimp .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ button, .button-group.expanded .ember-chimp button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ button, .ember-chimp .button-group.expanded button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ button {
       display: inline-block;
       width: calc(50% - 1px);
       margin-right: 1px; }
-      .button-group.expanded .button:first-child:nth-last-child(2):last-child, .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child {
+      .button-group.expanded .button:first-child:nth-last-child(2):last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(2):last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(2):last-child, .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .button-group.expanded .ember-chimp .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ button:last-child, .ember-chimp .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ button:last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ button:last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ button:last-child {
         margin-right: -6px; }
-    .button-group.expanded .button:first-child:nth-last-child(3), .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button {
+    .button-group.expanded .button:first-child:nth-last-child(3), .button-group.expanded .ember-chimp button:first-child:nth-last-child(3), .ember-chimp .button-group.expanded button:first-child:nth-last-child(3), .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .button-group.expanded .ember-chimp button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .ember-chimp .button-group.expanded button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .button-group.expanded .ember-chimp .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ button, .ember-chimp .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ button, .button-group.expanded .ember-chimp button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ button, .ember-chimp .button-group.expanded button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ button {
       display: inline-block;
       width: calc(33.33333% - 1px);
       margin-right: 1px; }
-      .button-group.expanded .button:first-child:nth-last-child(3):last-child, .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child {
+      .button-group.expanded .button:first-child:nth-last-child(3):last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(3):last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(3):last-child, .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .button-group.expanded .ember-chimp .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ button:last-child, .ember-chimp .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ button:last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ button:last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ button:last-child {
         margin-right: -6px; }
-    .button-group.expanded .button:first-child:nth-last-child(4), .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button {
+    .button-group.expanded .button:first-child:nth-last-child(4), .button-group.expanded .ember-chimp button:first-child:nth-last-child(4), .ember-chimp .button-group.expanded button:first-child:nth-last-child(4), .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .button-group.expanded .ember-chimp button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .ember-chimp .button-group.expanded button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .button-group.expanded .ember-chimp .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ button, .ember-chimp .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ button, .button-group.expanded .ember-chimp button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ button, .ember-chimp .button-group.expanded button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ button {
       display: inline-block;
       width: calc(25% - 1px);
       margin-right: 1px; }
-      .button-group.expanded .button:first-child:nth-last-child(4):last-child, .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child {
+      .button-group.expanded .button:first-child:nth-last-child(4):last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(4):last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(4):last-child, .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .button-group.expanded .ember-chimp .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ button:last-child, .ember-chimp .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ button:last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ button:last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ button:last-child {
         margin-right: -6px; }
-    .button-group.expanded .button:first-child:nth-last-child(5), .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button {
+    .button-group.expanded .button:first-child:nth-last-child(5), .button-group.expanded .ember-chimp button:first-child:nth-last-child(5), .ember-chimp .button-group.expanded button:first-child:nth-last-child(5), .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .button-group.expanded .ember-chimp button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .ember-chimp .button-group.expanded button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .button-group.expanded .ember-chimp .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ button, .ember-chimp .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ button, .button-group.expanded .ember-chimp button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ button, .ember-chimp .button-group.expanded button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ button {
       display: inline-block;
       width: calc(20% - 1px);
       margin-right: 1px; }
-      .button-group.expanded .button:first-child:nth-last-child(5):last-child, .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child {
+      .button-group.expanded .button:first-child:nth-last-child(5):last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(5):last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(5):last-child, .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .button-group.expanded .ember-chimp .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ button:last-child, .ember-chimp .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ button:last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ button:last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ button:last-child {
         margin-right: -6px; }
-    .button-group.expanded .button:first-child:nth-last-child(6), .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button {
+    .button-group.expanded .button:first-child:nth-last-child(6), .button-group.expanded .ember-chimp button:first-child:nth-last-child(6), .ember-chimp .button-group.expanded button:first-child:nth-last-child(6), .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .button-group.expanded .ember-chimp button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .ember-chimp .button-group.expanded button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .button-group.expanded .ember-chimp .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ button, .ember-chimp .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ button, .button-group.expanded .ember-chimp button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ button, .ember-chimp .button-group.expanded button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ button {
       display: inline-block;
       width: calc(16.66667% - 1px);
       margin-right: 1px; }
-      .button-group.expanded .button:first-child:nth-last-child(6):last-child, .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child {
+      .button-group.expanded .button:first-child:nth-last-child(6):last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(6):last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(6):last-child, .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .button-group.expanded .ember-chimp .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ button:last-child, .ember-chimp .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ button:last-child, .button-group.expanded .ember-chimp button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ button:last-child, .ember-chimp .button-group.expanded button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ button:last-child {
         margin-right: -6px; }
-  .button-group.primary .button {
+  .button-group.primary .button, .button-group.primary .ember-chimp button, .ember-chimp .button-group.primary button {
     background-color: #FF3800;
     color: #FFFCC4; }
-    .button-group.primary .button:hover, .button-group.primary .button:focus {
+    .button-group.primary .button:hover, .button-group.primary .ember-chimp button:hover, .ember-chimp .button-group.primary button:hover, .button-group.primary .button:focus, .button-group.primary .ember-chimp button:focus, .ember-chimp .button-group.primary button:focus {
       background-color: #cc2d00;
       color: #FFFCC4; }
-  .button-group.secondary .button {
+  .button-group.secondary .button, .button-group.secondary .ember-chimp button, .ember-chimp .button-group.secondary button {
     background-color: #777;
     color: #FFFCC4; }
-    .button-group.secondary .button:hover, .button-group.secondary .button:focus {
+    .button-group.secondary .button:hover, .button-group.secondary .ember-chimp button:hover, .ember-chimp .button-group.secondary button:hover, .button-group.secondary .button:focus, .button-group.secondary .ember-chimp button:focus, .ember-chimp .button-group.secondary button:focus {
       background-color: #5f5f5f;
       color: #FFFCC4; }
-  .button-group.success .button {
+  .button-group.success .button, .button-group.success .ember-chimp button, .ember-chimp .button-group.success button {
     background-color: #3adb76;
     color: #FFFCC4; }
-    .button-group.success .button:hover, .button-group.success .button:focus {
+    .button-group.success .button:hover, .button-group.success .ember-chimp button:hover, .ember-chimp .button-group.success button:hover, .button-group.success .button:focus, .button-group.success .ember-chimp button:focus, .ember-chimp .button-group.success button:focus {
       background-color: #22bb5b;
       color: #FFFCC4; }
-  .button-group.warning .button {
+  .button-group.warning .button, .button-group.warning .ember-chimp button, .ember-chimp .button-group.warning button {
     background-color: #009393;
     color: #FFFCC4; }
-    .button-group.warning .button:hover, .button-group.warning .button:focus {
+    .button-group.warning .button:hover, .button-group.warning .ember-chimp button:hover, .ember-chimp .button-group.warning button:hover, .button-group.warning .button:focus, .button-group.warning .ember-chimp button:focus, .ember-chimp .button-group.warning button:focus {
       background-color: #007676;
       color: #FFFCC4; }
-  .button-group.alert .button {
+  .button-group.alert .button, .button-group.alert .ember-chimp button, .ember-chimp .button-group.alert button {
     background-color: #ec5840;
     color: #FFFCC4; }
-    .button-group.alert .button:hover, .button-group.alert .button:focus {
+    .button-group.alert .button:hover, .button-group.alert .ember-chimp button:hover, .ember-chimp .button-group.alert button:hover, .button-group.alert .button:focus, .button-group.alert .ember-chimp button:focus, .ember-chimp .button-group.alert button:focus {
       background-color: #da3116;
       color: #FFFCC4; }
-  .button-group.stacked .button, .button-group.stacked-for-small .button, .button-group.stacked-for-medium .button {
+  .button-group.stacked .button, .button-group.stacked .ember-chimp button, .ember-chimp .button-group.stacked button, .button-group.stacked-for-small .button, .button-group.stacked-for-small .ember-chimp button, .ember-chimp .button-group.stacked-for-small button, .button-group.stacked-for-medium .button, .button-group.stacked-for-medium .ember-chimp button, .ember-chimp .button-group.stacked-for-medium button {
     width: 100%; }
-    .button-group.stacked .button:last-child, .button-group.stacked-for-small .button:last-child, .button-group.stacked-for-medium .button:last-child {
+    .button-group.stacked .button:last-child, .button-group.stacked .ember-chimp button:last-child, .ember-chimp .button-group.stacked button:last-child, .button-group.stacked-for-small .button:last-child, .button-group.stacked-for-small .ember-chimp button:last-child, .ember-chimp .button-group.stacked-for-small button:last-child, .button-group.stacked-for-medium .button:last-child, .button-group.stacked-for-medium .ember-chimp button:last-child, .ember-chimp .button-group.stacked-for-medium button:last-child {
       margin-bottom: 0; }
   @media screen and (min-width: 43.125em) {
-    .button-group.stacked-for-small .button {
+    .button-group.stacked-for-small .button, .button-group.stacked-for-small .ember-chimp button, .ember-chimp .button-group.stacked-for-small button {
       width: auto;
       margin-bottom: 0; } }
   @media screen and (min-width: 64em) {
-    .button-group.stacked-for-medium .button {
+    .button-group.stacked-for-medium .button, .button-group.stacked-for-medium .ember-chimp button, .ember-chimp .button-group.stacked-for-medium button {
       width: auto;
       margin-bottom: 0; } }
   @media screen and (max-width: 43.0625em) {
     .button-group.stacked-for-small.expanded {
       display: block; }
-      .button-group.stacked-for-small.expanded .button {
+      .button-group.stacked-for-small.expanded .button, .button-group.stacked-for-small.expanded .ember-chimp button, .ember-chimp .button-group.stacked-for-small.expanded button {
         display: block;
         margin-right: 0; } }
 
@@ -4008,7 +4008,7 @@ table.hover tr:nth-of-type(even):hover {
 .float-left {
   float: left !important; }
 
-.float-right {
+.float-right, .ember-chimp button {
   float: right !important; }
 
 .float-center {
@@ -4016,11 +4016,11 @@ table.hover tr:nth-of-type(even):hover {
   margin-left: auto;
   margin-right: auto; }
 
-.clearfix::before, .clearfix::after {
+.clearfix::before, .ember-chimp::before, .clearfix::after, .ember-chimp::after {
   content: ' ';
   display: table; }
 
-.clearfix::after {
+.clearfix::after, .ember-chimp::after {
   clear: both; }
 
 .align-right {
@@ -7761,6 +7761,12 @@ a code {
   max-width: 667px;
   position: relative;
   margin: 30px auto; }
+
+.ember-chimp {
+  max-width: 667px;
+  margin: 15px auto; }
+  .ember-chimp input, .ember-chimp input:focus {
+    background-color: #fff; }
 
 @media screen and (min-width: 43.125em) {
   .sidebar {

@@ -570,6 +570,14 @@ define('affinity-engine-web/components/ember-animation-box', ['exports', 'ember-
     }
   });
 });
+define('affinity-engine-web/components/ember-chimp', ['exports', 'ember-chimp/components/ember-chimp'], function (exports, _emberChimpComponentsEmberChimp) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberChimpComponentsEmberChimp['default'];
+    }
+  });
+});
 define('affinity-engine-web/components/ember-flex-menu-option-button', ['exports', 'ember-flex-menu/components/ember-flex-menu-option-button'], function (exports, _emberFlexMenuComponentsEmberFlexMenuOptionButton) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -2710,6 +2718,78 @@ define("affinity-engine-web/templates/components/dynamic-tag", ["exports"], func
         return morphs;
       },
       statements: [["content", "yield", ["loc", [null, [1, 0], [1, 9]]], 0, 0, 0, 0]],
+      locals: [],
+      templates: []
+    };
+  })());
+});
+define("affinity-engine-web/templates/components/ember-chimp", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.7.3",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 11,
+            "column": 0
+          }
+        },
+        "moduleName": "affinity-engine-web/templates/components/ember-chimp.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createElement("label");
+        var el2 = dom.createTextNode("\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2, "class", "label-text");
+        var el3 = dom.createComment("");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("div");
+        dom.setAttribute(el1, "class", "chimp-says");
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("button");
+        dom.setAttribute(el1, "type", "submit");
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var element0 = dom.childAt(fragment, [0]);
+        var morphs = new Array(4);
+        morphs[0] = dom.createMorphAt(dom.childAt(element0, [1]), 0, 0);
+        morphs[1] = dom.createMorphAt(element0, 3, 3);
+        morphs[2] = dom.createMorphAt(dom.childAt(fragment, [2]), 0, 0);
+        morphs[3] = dom.createMorphAt(dom.childAt(fragment, [4]), 0, 0);
+        return morphs;
+      },
+      statements: [["content", "label", ["loc", [null, [2, 26], [2, 35]]], 0, 0, 0, 0], ["inline", "input", [], ["key-press", "valueDidChange", "placeholder", ["subexpr", "@mut", [["get", "placeholder", ["loc", [null, [4, 22], [4, 33]]], 0, 0, 0, 0]], [], [], 0, 0], "value", ["subexpr", "@mut", [["get", "value", ["loc", [null, [5, 16], [5, 21]]], 0, 0, 0, 0]], [], [], 0, 0], "type", "email", "name", "EMAIL"], ["loc", [null, [3, 2], [7, 24]]], 0, 0], ["content", "chimpSays", ["loc", [null, [9, 24], [9, 37]]], 0, 0, 0, 0], ["inline", "if", [["get", "isLoading", ["loc", [null, [10, 27], [10, 36]]], 0, 0, 0, 0], ["get", "loadingText", ["loc", [null, [10, 37], [10, 48]]], 0, 0, 0, 0], ["get", "buttonText", ["loc", [null, [10, 49], [10, 59]]], 0, 0, 0, 0]], [], ["loc", [null, [10, 22], [10, 61]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5552,7 +5632,7 @@ define("affinity-engine-web/templates/index", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 6,
+            "line": 12,
             "column": 0
           }
         },
@@ -5572,6 +5652,10 @@ define("affinity-engine-web/templates/index", ["exports"], function (exports) {
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
+        var el1 = dom.createElement("hr");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
@@ -5580,13 +5664,13 @@ define("affinity-engine-web/templates/index", ["exports"], function (exports) {
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var morphs = new Array(3);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
         morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        morphs[2] = dom.createMorphAt(fragment, 6, 6, contextualElement);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.common.slogan"], [], ["loc", [null, [1, 0], [1, 35]]], 0, 0], ["inline", "engine-container", [], ["scene", "index/welcome"], ["loc", [null, [3, 0], [3, 42]]], 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
+      statements: [["inline", "engine-container", [], ["scene", "index/welcome"], ["loc", [null, [1, 0], [1, 42]]], 0, 0], ["inline", "ember-chimp", [], ["formAction", "//affinityengine.us14.list-manage.com/subscribe/post?u=e829149c8295cbea476288bdc&amp;id=e51b574373", "label", "Join our mailing list:", "placeholder", "Email Address"], ["loc", [null, [3, 0], [7, 2]]], 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [11, 0], [11, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5925,7 +6009,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+ad14c5f2"});
+  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+36cdf2f1"});
 }
 
 /* jshint ignore:end */
