@@ -1,7 +1,7 @@
 <div class="hide-for-medium">
-  {{#liquid-if isExpanded}}
+  {{#if isExpanded}}
     {{yield}}
-  {{/liquid-if}}
+  {{/if}}
   <a class="button expanded small-margin-bottom-0" {{action "toggleIsExpanded"}}>{{title}}
     {{#if isExpanded}}
       {{fa-icon "caret-up"}}

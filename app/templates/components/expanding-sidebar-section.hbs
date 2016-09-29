@@ -1,10 +1,10 @@
 {{#active-link}}{{#link-to fullRoute}}{{options.name}}{{/link-to}}{{/active-link}}
 
 {{#if shouldNest}}
-  {{#liquid-if isActive}}
+  {{#if isActive}}
     {{expanding-sidebar
       parentRoute=fullRoute
       classNames="nested vertical"
     }}
-  {{/liquid-if}}
+  {{/if}}
 {{/if}}
