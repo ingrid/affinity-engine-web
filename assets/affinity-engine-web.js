@@ -225,8 +225,8 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
         while (1) switch (context$1$0.prev = context$1$0.next) {
           case 0:
             script.backdrop('diy-bedroom').fadeIn();
-            diy = script.character('diy').transition({ left: '27%', top: '-4%' }).fadeIn();
-            ember = script.character('ember').transition({ left: '72%', top: '1%' }).fadeIn();
+            diy = script.character('diy').transition({ left: '17%', top: '-4%' }).fadeIn();
+            ember = script.character('ember').transition({ left: '83%', top: '1%' }).fadeIn();
             context$1$0.next = 5;
             return ember.expression('smiling')._.text('engines.index.emberIntro');
 
@@ -3883,7 +3883,7 @@ define("affinity-engine-web/templates/components/section-navigator", ["exports"]
         morphs[1] = dom.createMorphAt(dom.childAt(fragment, [2]), 1, 1);
         return morphs;
       },
-      statements: [["block", "liquid-if", [["get", "previous.route", ["loc", [null, [2, 15], [2, 29]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [2, 2], [4, 16]]]], ["block", "liquid-if", [["get", "next.route", ["loc", [null, [8, 15], [8, 25]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [8, 2], [10, 16]]]]],
+      statements: [["block", "if", [["get", "previous.route", ["loc", [null, [2, 8], [2, 22]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [2, 2], [4, 9]]]], ["block", "if", [["get", "next.route", ["loc", [null, [8, 8], [8, 18]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [8, 2], [10, 9]]]]],
       locals: [],
       templates: [child0, child1]
     };
@@ -5925,7 +5925,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+52198db2"});
+  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+ad14c5f2"});
 }
 
 /* jshint ignore:end */

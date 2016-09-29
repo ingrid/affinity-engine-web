@@ -1,0 +1,9 @@
+{
+  "name": "Affinity Engine",
+  "short_name": "Affinity Engine",
+  "start_url": "http://affinityengine.org",
+  "display": "standalone",
+  "background_color": "#FFFCC4",
+  "description": "Make games you'll love",
+  "orientation": "landscape"
+}

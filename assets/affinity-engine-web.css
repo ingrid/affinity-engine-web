@@ -530,10 +530,12 @@
   width: 100%;
   display: flex;
   position: absolute; }
-  .ae-stage-direction-image-type.ae-cover .ae-stage-direction-image-frame-container {
+  .ae-stage-direction-image-type.ae-cover .ae-stage-direction-image-frame, .ae-stage-direction-image-type.ae-cover .ae-stage-direction-image-frame-container, .ae-stage-direction-image-type.ae-cover .ember-animation-box-active-instance {
     height: 100%;
-    width: 100%;
+    width: 100%; }
+  .ae-stage-direction-image-type.ae-cover .ae-stage-direction-image-frame {
     object-fit: cover;
+    object-position: 50% 50%;
     color: transparent; }
 
 .ae-stage-direction-text-container {
