@@ -1,0 +1,9 @@
+.ember-chimp {
+  max-width: 667px;
+  margin: $vertical-rhythm auto;
+
+  button {
+    @extend .button;
+    @extend .float-right;
+  }
+}
