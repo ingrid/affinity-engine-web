@@ -1,6 +1,12 @@
 .ember-chimp {
+  @extend .clearfix;
+
   max-width: 667px;
   margin: $vertical-rhythm auto;
+
+  input, input:focus {
+    background-color: #fff;
+  }
 
   button {
     @extend .button;
