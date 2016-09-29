@@ -44,7 +44,7 @@ export default Component.extend({
     }, {
       id: 'diy',
       name: 'Diy',
-      height: 385,
+      height: 380,
       keyframes: [{
         id: 'diy-neutral'
       }, {
@@ -77,5 +77,12 @@ export default Component.extend({
       caption: 'Diy\'s bedroom',
       src: 'affinity-engine/backdrops/diy-bedroom.png'
     }]
+  },
+
+  progressBarOptions: {
+    color: 'rgb(250, 250, 250)',
+    trailColor: 'rgba(250, 250, 250, 0.62)',
+    strokeWidth: 4,
+    trailWidth: 4 * 0.62
   }
 });
