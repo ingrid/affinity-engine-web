@@ -1,11 +1,11 @@
 <li>
-  {{#if previous.route}}
+  {{#liquid-if previous.route}}
     {{#link-to previous.route}}{{previous.arrow}} {{previous.name}}{{/link-to}}
-  {{/if}}
+  {{/liquid-if}}
 </li>
 
 <li class="text-align-right">
-  {{#if next.route}}
+  {{#liquid-if next.route}}
     {{#link-to next.route}}{{next.name}} {{next.arrow}}{{/link-to}}
-  {{/if}}
+  {{/liquid-if}}
 </li>
