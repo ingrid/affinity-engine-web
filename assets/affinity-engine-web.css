@@ -7811,6 +7811,8 @@ a code {
     .ae-text.ae-bottom-block .ae-text-caption.center {
       left: 50%;
       transform: translateX(-50%); }
+  .ae-text.ae-bottom-block .lxl-letter {
+    transform: perspective(500px); }
 
 .text-align-right {
   text-align: right; }
