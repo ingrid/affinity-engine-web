@@ -518,12 +518,14 @@
   position: absolute;
   height: 100%;
   width: 100%; }
+  .ae-stage-direction-image-type.ae-figure .ember-animation-box-active-instance {
+    position: absolute; }
   .ae-stage-direction-image-type.ae-figure .ae-animation-box-wrapper {
     position: absolute;
-    bottom: 0;
-    transform: translateX(-50%); }
+    bottom: 0; }
   .ae-stage-direction-image-type.ae-figure .ae-stage-direction-image-frame {
-    max-width: none; }
+    max-width: none;
+    transform: translateX(-50%); }
 
 .ae-stage-direction-image-type.ae-cover {
   height: 100%;

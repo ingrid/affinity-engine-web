@@ -4,7 +4,7 @@ define('affinity-engine-web/tests/affinity-engine/stage/scenes/index/welcome.jsh
   QUnit.module('JSHint | affinity-engine/stage/scenes/index/welcome.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'affinity-engine/stage/scenes/index/welcome.js should pass jshint.');
+    assert.ok(false, 'affinity-engine/stage/scenes/index/welcome.js should pass jshint.\naffinity-engine/stage/scenes/index/welcome.js: line 29, col 5, Expected an operator and instead saw \'yield\'.\naffinity-engine/stage/scenes/index/welcome.js: line 29, col 10, Missing semicolon.\naffinity-engine/stage/scenes/index/welcome.js: line 32, col 5, Expected an operator and instead saw \'yield\'.\naffinity-engine/stage/scenes/index/welcome.js: line 32, col 10, Missing semicolon.\n\n4 errors');
   });
 });
 define('affinity-engine-web/tests/app.jshint', ['exports'], function (exports) {
