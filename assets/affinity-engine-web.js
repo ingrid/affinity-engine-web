@@ -6030,7 +6030,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+6df545e2"});
+  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+de25a076"});
 }
 
 /* jshint ignore:end */
