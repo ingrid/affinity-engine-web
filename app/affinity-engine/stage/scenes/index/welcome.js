@@ -20,8 +20,9 @@ export default Scene.extend({
     yield ember.expression('proud')._.text('engines.index.emberOpensource');
     yield diy._.text('engines.index.diyBrowser');
     yield ember._.text('engines.index.emberModular');
-    yield diy.expression('excited')._.text('engines.index.diyBye');
+    yield diy.expression('excited')._.text('engines.index.diyEasyScripts');
     yield ember.expression('smiling')._.text('engines.index.emberBye');
+    yield diy.expression('excited')._.text('engines.index.diyBye');
 
     yield script.pause(500);
 

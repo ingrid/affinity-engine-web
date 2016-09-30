@@ -35,4 +35,8 @@
       transform: translateX(-50%);
     }
   }
+
+  .lxl-letter {
+    transform: perspective(500px);
+  }
 }

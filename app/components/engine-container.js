@@ -17,6 +17,15 @@ export default Component.extend({
             classNames: {
               structural: 'ae-bottom-block'
             },
+            lxlTransition: {
+              effect: {
+                translateX: [0, '5px'],
+                translateY: [0, '-2px'],
+                scaleX: [1, 1.25],
+                scaleY: [1, 1.25]
+              },
+              rate: 10
+            }
           }
         }
       }
