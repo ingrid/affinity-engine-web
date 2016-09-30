@@ -39,15 +39,15 @@ export default Component.extend({
       namePosition: 'right',
       height: 360,
       keyframes: [{
-        id: 'ember-neutral'
+        id: 'ember-default'
       }, {
-        id: 'ember-neutral',
+        id: 'ember-smiling',
         expression: 'smiling'
       }, {
-        id: 'ember-neutral',
+        id: 'ember-proud',
         expression: 'proud'
       }, {
-        id: 'ember-neutral',
+        id: 'ember-obviously',
         expression: 'obviously'
       }]
     }, {
@@ -55,15 +55,15 @@ export default Component.extend({
       name: 'Diy',
       height: 380,
       keyframes: [{
-        id: 'diy-neutral'
+        id: 'diy-default'
       }, {
-        id: 'diy-neutral',
+        id: 'diy-smiling',
         expression: 'smiling'
       }, {
-        id: 'diy-neutral',
+        id: 'diy-embarrassed',
         expression: 'embarrassed'
       }, {
-        id: 'diy-neutral',
+        id: 'diy-excited',
         expression: 'excited'
       }]
     }],
@@ -74,13 +74,37 @@ export default Component.extend({
       }]
     }],
     keyframes: [{
-      id: 'ember-neutral',
+      id: 'ember-default',
       caption: 'Ember',
-      src: 'affinity-engine/characters/ember/neutral.png'
+      src: 'affinity-engine/characters/ember/default.png'
     }, {
-      id: 'diy-neutral',
+      id: 'ember-smiling',
+      caption: 'Ember',
+      src: 'affinity-engine/characters/ember/smiling.png'
+    }, {
+      id: 'ember-proud',
+      caption: 'Ember',
+      src: 'affinity-engine/characters/ember/proud.png'
+    }, {
+      id: 'ember-obviously',
+      caption: 'Ember',
+      src: 'affinity-engine/characters/ember/obviously.png'
+    }, {
+      id: 'diy-default',
       caption: 'Diy',
-      src: 'affinity-engine/characters/diy/neutral.png'
+      src: 'affinity-engine/characters/diy/default.png'
+    }, {
+      id: 'diy-smiling',
+      caption: 'Diy',
+      src: 'affinity-engine/characters/diy/smiling.png'
+    }, {
+      id: 'diy-embarrassed',
+      caption: 'Diy',
+      src: 'affinity-engine/characters/diy/embarrassed.png'
+    }, {
+      id: 'diy-excited',
+      caption: 'Diy',
+      src: 'affinity-engine/characters/diy/excited.png'
     }, {
       id: 'diy-bedroom',
       caption: 'Diy\'s bedroom',
