@@ -1,0 +1,9 @@
+application:
+  guides:
+    engine:
+      fixtures:
+        index:
+          intro: "Fixtures are mini-configurations for reoccurring elements in your game, such as characters, backdrops, sounds effects, and songs. Within these fixtures, you'll define the essential qualities of your elements. For instance, with a character fixture, you might define their name, which images to use for them, and any overrides you have for the default config."
+          definingSummary: "In this chapter, we'll first learn how to [define](/engine/fixtures/defining) a fixture."
+          usageSummary: "After that, we'll consider [different places](/engine/fixtures/usage) in which you can define your fixtures, as well as how to inject them into your `affinity-engine` component."
+          configurationSummary: "Finally, we'll discuss ways to override the [default configuration](/engine/fixtures/configuration) on a per-fixture basis."

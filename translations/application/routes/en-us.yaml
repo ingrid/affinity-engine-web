@@ -10,6 +10,7 @@ application:
     configurationTiers: "Configuration Tiers"
     curtain: "Curtain"
     defaults: "Defaults"
+    defining: "Defining"
     emberSetup: "Ember Setup"
     engine: "Engine"
     fixtures: "Fixtures"
