@@ -4,8 +4,14 @@ const {
   Controller
 } = Ember;
 
+const { computed: { alias } } = Ember;
 const { inject: { service } } = Ember;
 
 export default Controller.extend({
-  routeSequencer: service()
+  queryParams: ['version'],
+
+  docVersionTracker: service(),
+  routeSequencer: service(),
+
+  version: alias('docVersionTracker.version')
 });
