@@ -50,6 +50,7 @@
     "ember-export-application-global": "^1.0.5",
     "ember-intl": "2.13.1",
     "ember-load-initializers": "^0.5.1",
+    "ember-markdown-it": "0.0.5",
     "ember-moment": "7.0.0-beta.3",
     "ember-progress-bar": "0.0.5",
     "ember-resolver": "^2.0.3",

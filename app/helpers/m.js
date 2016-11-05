@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import markdownit from 'markdown-it';
 
 const {
   Helper,
@@ -10,7 +11,11 @@ const { computed: { readOnly } } = Ember;
 const { inject: { service } } = Ember;
 const { Handlebars: { SafeString } } = Ember;
 
-const converter = new showdown.Converter();
+const converter = markdownit({
+  html: true,
+  linkify: true,
+  typographer: true
+});
 
 export default Helper.extend({
   intl: service(),
@@ -21,7 +26,7 @@ export default Helper.extend({
     const key = params[0];
     const intl = get(this, 'intl');
     const translation = intl.t(key, interpolations);
-    const html = converter.makeHtml(translation);
+    const html = converter.render(translation);
 
     return new SafeString(html.replace(/<a /g, '<a target="_blank"'));
   },

@@ -1,11 +1,11 @@
 export default function() {
   this.transition(
     this.toRoute(() => true),
-    this.use('toRight')
+    this.use('scrollThen', 'toRight', { duration: 250 })
   );
 
   this.transition(
     this.toRoute((routeName) => (routeName.match(/\./g) || []).length === 0 || routeName === 'index'),
-    this.use('toDown')
+    this.use('scrollThen', 'toDown')
   );
 }
