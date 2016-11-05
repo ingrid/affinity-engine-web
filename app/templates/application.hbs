@@ -1,19 +1,18 @@
 {{#responsive-navigation-dropdown depth=2}}
-  <div class="top-bar">
-    <div class="top-bar-left columns medium-6 medium-offset-3 end">
-      {{expanding-sidebar
-        shouldNest=false
-        classNames="vertical medium-horizontal"
-      }}
-    </div>
+  <div class="topbar">
+    {{expanding-sidebar
+      shouldNest=false
+      classNames="vertical medium-horizontal"
+    }}
+    {{doc-version-selector}}
   </div>
 {{/responsive-navigation-dropdown}}
 
-<div class="columns medium-3 small-padding-0 medium-padding-1 medium-margin-top-4 sidebar">
+<div class="columns medium-3 small-padding-0 medium-padding-1 medium-margin-top-5 sidebar">
   {{liquid-outlet "sidebar"}}
 </div>
 
-<div class="columns small-12 medium-9 medium-offset-3 end small-margin-top-1 small-margin-bottom-1 medium-margin-top-5 medium-padding-right-2">
+<div class="columns small-12 medium-9 medium-offset-3 end small-margin-top-1 small-margin-bottom-1 medium-margin-top-6 medium-padding-right-2">
   {{header-links}}
 
   {{liquid-outlet}}

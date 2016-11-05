@@ -1,0 +1,20 @@
+@include breakpoint(medium) {
+  .topbar {
+    display: -webkit-flex;
+    display: flex;
+
+    position: fixed;
+    width: 100%;
+    padding: $vertical-rhythm * 0.6 $horizontal-rhythm;
+    z-index: 10;
+    background-color: $body-background;
+    box-shadow: 0 2px 2px $dark-gray;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}

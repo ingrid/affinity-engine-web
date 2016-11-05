@@ -43,5 +43,9 @@ export default Helper.extend({
 
   _recomputeOnLocaleChange: observer('_locale', function() {
     this.recompute();
+  }),
+
+  _recomputeOnVersionChange: observer('_version', function() {
+    this.recompute();
   })
 });

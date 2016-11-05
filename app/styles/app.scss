@@ -18,6 +18,7 @@
 @include foundation-flex-classes;
 @include foundation-flex-grid;
 
+@import "ember-power-select";
 @import "layout";
 @import "foundation-overrides";
 @import "components";

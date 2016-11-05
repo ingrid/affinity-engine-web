@@ -1,8 +1,0 @@
-@include breakpoint(medium) {
-  .top-bar {
-    box-shadow: 0 2px 2px $dark-gray;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-  }
-}

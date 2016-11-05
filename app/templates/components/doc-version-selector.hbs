@@ -1,0 +1,11 @@
+<label class="ember-power-select-label">{{m "application.common.version"}}</label> 
+
+{{#power-select
+  options=formattedVersions
+  searchEnabled=false
+  selected=formattedSelectedVersion
+  onchange=(action "changeVersion")
+  as |version|
+}}
+  {{version}}
+{{/power-select}}
