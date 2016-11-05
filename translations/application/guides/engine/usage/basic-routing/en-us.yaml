@@ -1,8 +1,0 @@
-application:
-  guides:
-    engine:
-      usage:
-        basicRouting:
-          intro: "If you only plan to have a single Affinity Engine running in your project, the simplest solution is to open `my-app/templates/application.hbs` and replace its contents with:"
-          explanation: "Now your Ember project is a pure Affinity Engine. The only thing it will render is your game, and you don't need to worry about any sort of routing."
-          routing: "Some games may benefit from Ember's advanced router. If you want to learn more about how to route between multiple templates, you can consult the Ember guides [here](https://guides.emberjs.com/v2.8.0/routing/). You could then render an unique engine in each route."
