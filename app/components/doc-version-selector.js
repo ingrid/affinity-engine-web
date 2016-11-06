@@ -30,12 +30,12 @@ export default Component.extend({
   }),
 
   _formatVersion(version) {
-    return `${version.replace('-', '.')}.0`;
+    return `v${version.replace(/\_/g, '.')}`;
   },
 
   actions: {
     changeVersion(version) {
-      set(this, 'docVersionTracker.version', version.substring(0, version.length - 2).replace('.', '-'));
+      set(this, 'docVersionTracker.version', version.substring(1).replace(/\./g, '_'));
     }
   }
 });

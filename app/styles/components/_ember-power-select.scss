@@ -1,16 +1,15 @@
+.ember-power-select-container {
+  padding: 0.7rem 1rem;
+}
+
 .ember-power-select-trigger {
   display: inline-block;
   vertical-align: middle;
+  padding-right: $horizontal-rhythm * 1.5;
 }
 
-.ember-power-select-label {
-  display: inline;
-
-  p {
-    display: inline;
-  }
-}
-
-.ember-power-select-container {
-  padding: 0.7rem 1rem;
+.ember-power-select-search-input, .ember-power-select-search-input:focus {
+  background-color: transparent;
+  height: 30px;
+  margin-bottom: 0;
 }
