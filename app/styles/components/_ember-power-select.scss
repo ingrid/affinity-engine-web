@@ -3,8 +3,6 @@
 }
 
 .ember-power-select-trigger {
-  display: inline-block;
-  vertical-align: middle;
   padding-right: $horizontal-rhythm * 1.5;
 }
 
@@ -12,4 +10,10 @@
   background-color: transparent;
   height: 30px;
   margin-bottom: 0;
+}
+
+@include breakpoint(small down) {
+  .ember-power-select-container {
+    width: 100%;
+  }
 }

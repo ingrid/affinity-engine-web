@@ -1,6 +1,6 @@
 engines:
   index:
-    emberIntro: "[[expression 'smiling']] Hi! [[pause 750]] [[expression 'default']] My name's Ember. alskdjf a;lksjd flkasj dflkajs dlkfj alskdjf ;alksdjf aijwef;o ijs dlkf laksdjf ;aisjef ksaj dlfkjas ldkfj a;lksdjf ;lkasj dflkajs dlkfja s;ldfj ;laksdj fl;aksjd flkaj sdlfkja sldkfj alskdfjl as."
+    emberIntro: "[[expression 'smiling']] Hi! [[pause 750]] [[expression 'default']] My name's Ember."
     diyIntro: "[[expression 'smiling']] And I'm Diy."
     emberAffinityIntro: "[[expression 'proud']] And this is the Affinity Engine. [[pause 1000]] [[expression 'obviously']] A game engine, [[pause 500]] in case that isn't obvious."
     diyDocumentation: "The engine itself is nearly ready for <strong>beta,</strong> [[pause 250]] but there's [[pause 250]] [[expression 'embarrassed']] [[pause 750]] still a lot of documentation to write."

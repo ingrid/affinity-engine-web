@@ -1,4 +1,4 @@
 application:
   common:
+    affinityEngine: "Affinity Engine"
     slogan: "Make games you'll love"
-    version: "Version:"

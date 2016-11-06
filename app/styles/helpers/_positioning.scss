@@ -1,0 +1,10 @@
+.stack {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
