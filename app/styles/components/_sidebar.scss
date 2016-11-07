@@ -1,6 +1,5 @@
 @include breakpoint(medium) {
   .sidebar {
-    position: fixed;
     border-right: 3px dashed $dark-gray;
     height: 100vh;
   }

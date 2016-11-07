@@ -1,28 +1,32 @@
-{{#responsive-navigation-dropdown depth=2}}
-  <div class="topbar">
-    {{#link-to "index" classNames="show-for-large columns large-3 nowrap"}}
-      <img src="/tiny-logo.png" class="vertical-align-top large-margin-right-1">
-      <span class="stack vertical-align-middle opacity-60">
-        <strong class="font-size-140">{{t "application.common.affinityEngine"}}</strong>
-        <span class="font-size-80">{{t "application.common.slogan"}}</span>
-      </span>
-    {{/link-to}}
-    {{expanding-sidebar
-      shouldNest=false
-      classNames="columns large-7 medium-10 small-12 vertical medium-horizontal"
-    }}
-    <div class="columns large-2 medium-2 small-12">
-      {{doc-version-selector classNames="float-right"}}
+<div class="page-layout">
+  {{#responsive-navigation-dropdown depth=2}}
+    <div class="topbar">
+      {{#link-to "index" classNames="show-for-large columns large-3 nowrap"}}
+        <img src="/tiny-logo.png" class="vertical-align-top large-margin-right-1">
+        <span class="stack vertical-align-middle opacity-60">
+          <strong class="font-size-140">{{t "application.common.affinityEngine"}}</strong>
+          <span class="font-size-80">{{t "application.common.slogan"}}</span>
+        </span>
+      {{/link-to}}
+      {{expanding-sidebar
+        shouldNest=false
+        classNames="columns large-7 medium-10 small-12 vertical medium-horizontal"
+      }}
+      <div class="columns large-2 medium-2 small-12">
+        {{doc-version-selector classNames="float-right"}}
+      </div>
+    </div>
+  {{/responsive-navigation-dropdown}}
+
+  <div class="main-layout">
+    <div class="sidebar columns small-12 medium-3 small-padding-0 medium-padding-1">
+      {{liquid-outlet "sidebar"}}
+    </div>
+
+    <div class="main columns small-12 medium-9 small-padding-ends-1 medium-padding-right-2 medium-padding-left-2">
+      {{header-links}}
+
+      {{liquid-outlet}}
     </div>
   </div>
-{{/responsive-navigation-dropdown}}
-
-<div class="columns medium-3 small-padding-0 medium-padding-1 medium-margin-top-5 sidebar">
-  {{liquid-outlet "sidebar"}}
-</div>
-
-<div class="columns small-12 medium-9 medium-offset-3 end small-margin-top-1 small-margin-bottom-1 medium-margin-top-6 medium-padding-right-2">
-  {{header-links}}
-
-  {{liquid-outlet}}
 </div>

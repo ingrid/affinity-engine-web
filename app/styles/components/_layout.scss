@@ -1,0 +1,38 @@
+.page-layout {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-layout {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+.main {
+  overflow-y: auto;
+}
+
+@include breakpoint(small down) {
+  .main {
+    flex: 1 0 0;
+  }
+}
+
+@include breakpoint(medium) {
+  .main-layout {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .main {
+    margin-top: 2px;
+  }
+}
