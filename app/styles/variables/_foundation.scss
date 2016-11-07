@@ -49,17 +49,17 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #FF3800,
+  primary: #FF0000,
   secondary: #777,
   success: #3adb76,
   warning: #009393,
   alert: #ec5840,
 );
-$light-gray: #F0EDBB;
-$medium-gray: #E0DEB1;
-$dark-gray: #D1CFA7;
-$black: #00585F;
-$white: #FFFCC4;
+$light-gray: #D3C6C6;
+$medium-gray: #998E8E;
+$dark-gray: #5E5757;
+$black: #272222;
+$white: #FFF;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Comfortaa', cursive;
@@ -133,12 +133,12 @@ $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
-$code-color: $black;
+$code-color: #abb2bf;
 $code-font-family: $font-family-monospace;
 $code-font-weight: $global-weight-normal;
-$code-background: $light-gray;
-$code-border: 1px solid $medium-gray;
-$code-padding: rem-calc(2 5 1);
+$code-background: #282c34;
+$code-border: 1px solid #998E8E;
+$code-padding: rem-calc(3 5);
 $anchor-color: $primary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;

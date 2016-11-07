@@ -26,7 +26,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   app.import("bower_components/highlightjs/highlight.pack.js");
-  app.import("bower_components/highlightjs/styles/purebasic.css");
+  app.import("bower_components/highlightjs/styles/atom-one-dark.css");
 
   return app.toTree();
 };
