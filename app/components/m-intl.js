@@ -70,10 +70,7 @@ export default Component.extend({
       const key = isPresent(version) ? `${version}.${path}` : path;
       const translation = intl.findTranslationByKey(key);
 
-      let html = converter.render(translation);
-      html.replace(/<a /g, '<a target="_blank"');
-
-      return html;
+      return converter.render(translation).replace(/<a /g, '<a target="_blank"');
     }
   }),
 

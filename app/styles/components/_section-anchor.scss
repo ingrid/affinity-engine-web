@@ -26,7 +26,10 @@
 }
 
 .section-anchor-scroll-point {
-  display: inline-block;
-  height: 0;
-  width: 0;
+  display: block;
+  height: $vertical-rhythm;
+
+  &:first-of-type {
+    height: 0;
+  }
 }

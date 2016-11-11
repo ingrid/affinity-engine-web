@@ -1,8 +1,24 @@
 .aside {
+  @extend .column;
+  @extend .small-12;
+  @extend .medium-4;
   @extend .small-padding-1;
   @extend .small-margin-bottom-1;
+  font-size: $global-font-size * 0.9;
+  color: #302929;
 
-  background-color: map-get($foundation-palette, warning);
-  color: $light-gray;
-  font-size: $global-font-size * 0.95;
+  &.javascript {
+    background-color: map-get($foundation-palette, success);
+  }
+
+  &.ember {
+    background-color: map-get($foundation-palette, warning);
+  }
+}
+
+.with-aside {
+  @extend .column;
+  @extend .small-12;
+  @extend .medium-8;
+  @extend .small-padding-left-0;
 }

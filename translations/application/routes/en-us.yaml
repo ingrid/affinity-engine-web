@@ -1,5 +1,6 @@
 application:
   routes:
+    acknowledgements: "Acknowledgements"
     affinityEngine: "Affinity Engine"
     affinityEngineInstallation: "Affinity Engine and Bundles"
     arguments: "Arguments"
@@ -14,6 +15,7 @@ application:
     emberSetup: "Ember Setup"
     engine: "Engine"
     fixtures: "Fixtures"
+    howToUseThisDocumentation: "How to Use This Documentation"
     installation: "Installation"
     menuBar: "Menu Bar"
     overview: "Overview"

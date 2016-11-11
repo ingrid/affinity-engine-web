@@ -1,0 +1,16 @@
+.section-navigator-blank {
+  cursor: default;
+  color: $medium-gray;
+
+  &:hover {
+    color: $medium-gray;
+  }
+
+  &.left {
+    margin-left: 40px;
+  }
+
+  &.right {
+    margin-right: 40px;
+  }
+}

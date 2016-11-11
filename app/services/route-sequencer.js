@@ -18,8 +18,17 @@ export default Service.extend({
       };
 
       return {
-        index: {
-          name: t('welcome')
+        welcome: {
+          name: t('welcome'),
+          routes: {
+            index: {
+              name: t('overview')
+            }, 'how-to-use-this-documentation': {
+              name: t('howToUseThisDocumentation')
+            }, acknowledgements: {
+              name: t('acknowledgements')
+            }
+          }
         }, engine: {
           name: t('engine'),
           routes: {

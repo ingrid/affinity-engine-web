@@ -35,6 +35,10 @@ Router.map(function() {
   this.route('menu-bar');
   this.route('curtain');
   this.route('plugins');
+  this.route('welcome', function() {
+    this.route('how-to-use-this-documentation');
+    this.route('acknowledgements');
+  });
 });
 
 export default Router;
