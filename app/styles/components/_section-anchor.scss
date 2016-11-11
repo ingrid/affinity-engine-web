@@ -1,5 +1,6 @@
 .section-anchor {
   display: block;
+  cursor: pointer;
   color: $anchor-color;
   margin-bottom: $vertical-rhythm / 1.5;
 
@@ -22,4 +23,10 @@
       opacity: 1;
     }
   }
+}
+
+.section-anchor-scroll-point {
+  display: inline-block;
+  height: 0;
+  width: 0;
 }

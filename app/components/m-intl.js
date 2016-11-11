@@ -36,6 +36,18 @@ function stringInsertAt(index, string, substring) {
   return string.slice(0, index) + substring + string.slice(index);
 }
 
+function scrollToAnchor() {
+  if (window.location.hash) {
+    const position = Ember.$(`a[name="${window.location.hash.substring(1)}"]`).position();
+
+    if (position) {
+      const $main = Ember.$('.main');
+
+      $main.scrollTop(position.top + $main.position().top);
+    }
+  }
+}
+
 export default Component.extend({
   intl: service(),
   docVersionTracker: service(),
@@ -43,6 +55,8 @@ export default Component.extend({
   _locale: readOnly('i18n.locale'),
   _version: readOnly('docVersionTracker.version'),
   _versions: readOnly('docVersionTracker.versions'),
+
+  _clipboards: computed(() => []),
 
   text: computed('path', '_locale', '_version', {
     get() {
@@ -66,6 +80,8 @@ export default Component.extend({
   didRender(...args) {
     this._super(...args);
 
+    const clipboards = get(this, '_clipboards');
+
     ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].forEach((tag) => {
       this.$(tag).each(function() {
         const $elem = Ember.$(this);
@@ -74,24 +90,26 @@ export default Component.extend({
 
         requestAnimationFrame(() => {
           $elem
-            .before(`<a class="section-anchor" name="${text}"></a>`)
+            .before(`<a class="section-anchor-scroll-point" name="${text}"></a>`)
             .append('<i class="fa fa-link"></i>')
             .attr('data-clipboard-text', href)
             .addClass('section-anchor');
 
-          new Clipboard($elem.get(0));
+          const clipboard = new Clipboard($elem.get(0));
 
-          if (window.location.hash) {
-            const position = Ember.$(`a[name="${window.location.hash.substring(1)}"]`).position();
+          clipboards.push(clipboard);
+          clipboard.on('success', (e) => {
+            history.pushState(null, null, `#${text}`);
+            scrollToAnchor();
+          });
 
-            if (position) {
-              const $main = Ember.$('.main');
-
-              $main.scrollTop(position.top + $main.position().top);
-            }
-          }
+          scrollToAnchor();
         });
       });
     });
+  },
+
+  willDestroy(...args) {
+    get(this, '_clipboards').forEach((clipboard) => clipboard.destroy());
   }
 });

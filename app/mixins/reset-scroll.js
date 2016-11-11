@@ -1,9 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
-  willTransition() {
-    this._super();
+  actions: {
+    willTransition(...args) {
+      this._super(...args);
 
-    Ember.$('.main').scrollTop(0);
+      Ember.$('.main').scrollTop(0);
+    }
   }
 });
