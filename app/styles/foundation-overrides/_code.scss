@@ -1,7 +1,7 @@
-$code-anchor-color: #e06c75;
+$code-anchor-color: map-get($foundation-palette, primary);
 $code-anchor-color-hover: scale-color($code-anchor-color, $lightness: -14%);
 
-a {
+a, .section-anchor {
   code {
     color: $code-anchor-color;
     text-decoration: $anchor-text-decoration;

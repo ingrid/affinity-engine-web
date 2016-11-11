@@ -9,6 +9,7 @@
     "highlightjs": "^9.6.0",
     "PreloadJS": "0.6.2",
     "SoundJS": "0.6.2",
-    "markdown-it": "^8.1.0"
+    "markdown-it": "^8.1.0",
+    "clipboard": "^1.5.15"
   }
 }

@@ -6,6 +6,9 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
       stringifyPath: 'markdown',
+      'ember-font-awesome': {
+        useScss: true
+      },
       babel: {
         includePolyfill: true,
         stage: 1
@@ -27,6 +30,7 @@ module.exports = function(defaults) {
 
   app.import("bower_components/highlightjs/highlight.pack.js");
   app.import("bower_components/highlightjs/styles/atom-one-dark.css");
+  app.import("bower_components/clipboard/dist/clipboard.min.js");
 
   return app.toTree();
 };

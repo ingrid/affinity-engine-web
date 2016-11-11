@@ -45,11 +45,11 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+$global-font-size: 110%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #FF0000,
+  primary: #e06c75,
   secondary: #777,
   success: #3adb76,
   warning: #009393,
@@ -57,8 +57,8 @@ $foundation-palette: (
 );
 $light-gray: #D3C6C6;
 $medium-gray: #998E8E;
-$dark-gray: #5E5757;
-$black: #272222;
+$dark-gray: #abb2bf;
+$black: #282c34;
 $white: #FFF;
 $body-background: $white;
 $body-font-color: $black;
