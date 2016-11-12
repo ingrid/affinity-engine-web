@@ -23,11 +23,7 @@ Router.map(function() {
       this.route('defaults');
       this.route('usage');
     });
-    this.route('fixtures', function() {
-      this.route('defining');
-      this.route('usage');
-      this.route('configuration');
-    });
+    this.route('fixtures', function() {});
     this.route('components');
     this.route('plugins');
   });

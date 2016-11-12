@@ -74,18 +74,7 @@ export default Service.extend({
                 }
               }
             }, fixtures: {
-              name: t('fixtures'),
-              routes: {
-                index: {
-                  name: t('overview')
-                }, defining: {
-                  name: t('defining')
-                }, usage: {
-                  name: t('usage')
-                }, configuration: {
-                  name: t('configuration')
-                }
-              }
+              name: t('fixtures')
             }, components: {
               name: t('components')
             }, plugins: {
