@@ -5,7 +5,8 @@
   @extend .small-padding-1;
   @extend .small-margin-bottom-1;
   font-size: $global-font-size * 0.9;
-  color: #302929;
+  font-weight: 600;
+  color: $black;
 
   h1 {
     font-size: $global-font-size;

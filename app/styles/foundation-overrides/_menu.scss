@@ -1,11 +1,15 @@
 .menu {
+
   a {
-    // opacity: 0.6;
+    border-radius: 25px;
   }
 
   .active > a {
-    border-radius: 25px;
     margin-top: 2px;
+
+    &:hover {
+      background-color: $anchor-color-hover;
+    }
   }
 
   .arrow-seperated:not(:last-child) {
