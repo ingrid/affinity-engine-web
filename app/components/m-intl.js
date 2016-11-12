@@ -82,6 +82,9 @@ export default Component.extend({
     ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].forEach((tag) => {
       this.$(tag).each(function() {
         const $elem = Ember.$(this);
+
+        if ($elem.parent().prop('tagName') === 'ASIDE') { return; }
+
         const text = underscore($elem.text());
         const href = `${window.location.protocol}//${window.location.host}${window.location.pathname}#${text}${window.location.search}`;
 

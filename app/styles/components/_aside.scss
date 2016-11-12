@@ -7,12 +7,28 @@
   font-size: $global-font-size * 0.9;
   color: #302929;
 
+  h1 {
+    font-size: $global-font-size;
+  }
+
   &.javascript {
     background-color: map-get($foundation-palette, success);
+
+    h1:before {
+      @extend .fa;
+      @extend .fa-code;
+      margin-right: $horizontal-rhythm / 2;
+    }
   }
 
   &.ember {
     background-color: map-get($foundation-palette, warning);
+
+    h1:before {
+      @extend .fa;
+      @extend .fa-fire;
+      margin-right: $horizontal-rhythm / 2;
+    }
   }
 }
 
