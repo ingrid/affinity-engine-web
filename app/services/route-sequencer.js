@@ -45,6 +45,8 @@ export default Service.extend({
                   name: t('emberSetup')
                 }, 'affinity-engine' : {
                   name: t('affinityEngineInstallation')
+                }, 'quickstarts' : {
+                  name: t('quickstarts')
                 }
               }
             }, usage: {

@@ -2,7 +2,7 @@ application:
   routes:
     acknowledgements: "Acknowledgements"
     affinityEngine: "Affinity Engine"
-    affinityEngineInstallation: "Affinity Engine and Bundles"
+    affinityEngineInstallation: "Affinity Engine"
     arguments: "Arguments"
     basicRouting: "Basic Routing"
     blockParams: "Block Params"
@@ -20,6 +20,7 @@ application:
     menuBar: "Menu Bar"
     overview: "Overview"
     plugins: "Plugins"
+    quickstarts: "Bundles and Quickstarts"
     stage: "Stage"
     toolingSetup: "Tooling Setup"
     usage: "Usage"

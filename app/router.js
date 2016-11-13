@@ -12,6 +12,7 @@ Router.map(function() {
       this.route('tooling');
       this.route('ember');
       this.route('affinity-engine');
+      this.route('quickstarts');
     });
     this.route('usage', function() {
       this.route('basic-routing');
