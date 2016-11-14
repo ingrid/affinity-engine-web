@@ -11,36 +11,36 @@ export default Scene.extend({
 
     yield ember._.text('engines.index.emberIntro');
     yield diy._.text('engines.index.diyIntro');
-    diy.expression('default');
+    diy.expression('neutral');
     yield ember._.text('engines.index.emberAffinityIntro');
-    ember.expression('default');
+    ember.expression('neutral');
     yield diy._.text('engines.index.diyDocumentation');
     yield ember._.text('engines.index.emberDocumentation');
     yield diy._.text('engines.index.diyCheckIn');
     yield ember._.text('engines.index.emberMailingList');
-    ember.expression('default');
+    ember.expression('neutral');
     yield diy._.text('engines.index.diyKickstarter');
-    diy.expression('default');
+    diy.expression('neutral');
     yield ember._.text('engines.index.emberKickstarter');
     yield diy._.text('engines.index.diyReadMore');
-    diy.expression('default');
+    diy.expression('neutral');
     yield ember._.text('engines.index.emberOpensource');
-    ember.expression('default')
+    ember.expression('neutral')
     yield diy._.text('engines.index.diyBrowser');
     yield ember._.text('engines.index.emberModular');
-    ember.expression('default')
+    ember.expression('neutral')
     yield diy._.text('engines.index.diyEasyScripts');
-    diy.expression('default');
+    diy.expression('neutral');
     yield ember._.text('engines.index.emberBye');
     yield diy._.text('engines.index.diyBye');
 
     yield script.pause(150);
 
-    ember.expression('default');
+    ember.expression('neutral');
 
     yield script.pause(125);
 
-    diy.expression('default');
+    diy.expression('neutral');
 
     yield script.pause(250);
 

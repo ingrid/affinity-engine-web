@@ -38,40 +38,52 @@ export default Component.extend({
       name: 'Ember',
       namePosition: 'right',
       height: 360,
-      keyframes: [{
-        id: 'ember-default'
-      }, {
-        id: 'ember-smiling',
-        expression: 'smiling'
-      }, {
-        id: 'ember-proud',
-        expression: 'proud'
-      }, {
-        id: 'ember-obviously',
-        expression: 'obviously'
-      }]
+      defaultState: { expression: 'neutral' },
+      layerOrder: [
+        'base'
+      ],
+      layers: {
+        base: [{
+          state: { expression: 'neutral' },
+          keyframe: 'ember-default'
+        }, {
+          state: { expression: 'smiling' },
+          keyframe: 'ember-smiling'
+        }, {
+          state: { expression: 'proud' },
+          keyframe: 'ember-proud'
+        }, {
+          state: { expression: 'obviously' },
+          keyframe: 'ember-obviously'
+        }]
+      }
     }, {
       id: 'diy',
       name: 'Diy',
       height: 380,
-      keyframes: [{
-        id: 'diy-default'
-      }, {
-        id: 'diy-smiling',
-        expression: 'smiling'
-      }, {
-        id: 'diy-embarrassed',
-        expression: 'embarrassed'
-      }, {
-        id: 'diy-excited',
-        expression: 'excited'
-      }]
+      defaultState: { expression: 'neutral' },
+      layerOrder: [
+        'base'
+      ],
+      layers: {
+        base: [{
+          state: { expression: 'neutral' },
+          keyframe: 'diy-default'
+        }, {
+          state: { expression: 'smiling' },
+          keyframe: 'diy-smiling'
+        }, {
+          state: { expression: 'embarrassed' },
+          keyframe: 'diy-embarrassed'
+        }, {
+          state: { expression: 'excited' },
+          keyframe: 'diy-excited'
+        }]
+      }
     }],
     backdrops: [{
       id: 'diy-bedroom',
-      keyframes: [{
-        id: 'diy-bedroom'
-      }]
+      keyframe: 'diy-bedroom'
     }],
     keyframes: [{
       id: 'ember-default',
