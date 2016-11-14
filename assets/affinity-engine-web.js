@@ -6,11 +6,11 @@
 
 /* jshint ignore:end */
 
-define('affinity-engine-web/adapters/affinity-engine/local-save', ['exports', 'affinity-engine-rewindable-save-adapter/adapters/affinity-engine/local-save'], function (exports, _affinityEngineRewindableSaveAdapterAdaptersAffinityEngineLocalSave) {
+define('affinity-engine-web/adapters/affinity-engine/local-save', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/adapters/affinity-engine/local-save'], function (exports, _affinityEngineDataManagerRewindableLokijsAdaptersAffinityEngineLocalSave) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _affinityEngineRewindableSaveAdapterAdaptersAffinityEngineLocalSave['default'];
+      return _affinityEngineDataManagerRewindableLokijsAdaptersAffinityEngineLocalSave['default'];
     }
   });
 });
@@ -22,6 +22,14 @@ define('affinity-engine-web/affinity-engine/configs/affinity-engine-curtain', ['
     enumerable: true,
     get: function get() {
       return _affinityEngineCurtainAffinityEngineConfigsAffinityEngineCurtain['default'];
+    }
+  });
+});
+define('affinity-engine-web/affinity-engine/configs/affinity-engine-preloader-createjs', ['exports', 'affinity-engine-preloader-createjs/affinity-engine/configs/affinity-engine-preloader-createjs'], function (exports, _affinityEnginePreloaderCreatejsAffinityEngineConfigsAffinityEnginePreloaderCreatejs) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEnginePreloaderCreatejsAffinityEngineConfigsAffinityEnginePreloaderCreatejs['default'];
     }
   });
 });
@@ -38,6 +46,14 @@ define('affinity-engine-web/affinity-engine/configs/animator-velocity', ['export
     enumerable: true,
     get: function get() {
       return _affinityEngineAnimatorVelocityAffinityEngineConfigsAnimatorVelocity['default'];
+    }
+  });
+});
+define('affinity-engine-web/affinity-engine/configs/data-manager-rewindable-lokijs', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/affinity-engine/configs/data-manager-rewindable-lokijs'], function (exports, _affinityEngineDataManagerRewindableLokijsAffinityEngineConfigsDataManagerRewindableLokijs) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineDataManagerRewindableLokijsAffinityEngineConfigsDataManagerRewindableLokijs['default'];
     }
   });
 });
@@ -62,14 +78,6 @@ define('affinity-engine-web/affinity-engine/configs/director/image', ['exports',
     enumerable: true,
     get: function get() {
       return _affinityEngineStageDirectionImageAffinityEngineConfigsStageImage['default'];
-    }
-  });
-});
-define('affinity-engine-web/affinity-engine/configs/rewindable-save-adapter', ['exports', 'affinity-engine-rewindable-save-adapter/affinity-engine/configs/rewindable-save-adapter'], function (exports, _affinityEngineRewindableSaveAdapterAffinityEngineConfigsRewindableSaveAdapter) {
-  Object.defineProperty(exports, 'default', {
-    enumerable: true,
-    get: function get() {
-      return _affinityEngineRewindableSaveAdapterAffinityEngineConfigsRewindableSaveAdapter['default'];
     }
   });
 });
@@ -225,8 +233,8 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
         while (1) switch (context$1$0.prev = context$1$0.next) {
           case 0:
             script.backdrop('diy-bedroom').fadeIn();
-            diy = script.character('diy').transition({ left: '17%', top: '-4%' }).fadeIn(750);
-            ember = script.character('ember').transition({ left: '83%', top: '1%' }).fadeIn(750);
+            diy = script.character('diy').transition({ left: '17%', top: '-4%', translateX: '-50%' }).fadeIn(750);
+            ember = script.character('ember').transition({ left: '83%', top: '1%', translateX: '-50%' }).fadeIn(750);
             context$1$0.next = 5;
             return script.pause(1250);
 
@@ -239,12 +247,12 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
             return diy._.text('engines.index.diyIntro');
 
           case 9:
-            diy.expression('default');
+            diy.expression('neutral');
             context$1$0.next = 12;
             return ember._.text('engines.index.emberAffinityIntro');
 
           case 12:
-            ember.expression('default');
+            ember.expression('neutral');
             context$1$0.next = 15;
             return diy._.text('engines.index.diyDocumentation');
 
@@ -261,12 +269,12 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
             return ember._.text('engines.index.emberMailingList');
 
           case 21:
-            ember.expression('default');
+            ember.expression('neutral');
             context$1$0.next = 24;
             return diy._.text('engines.index.diyKickstarter');
 
           case 24:
-            diy.expression('default');
+            diy.expression('neutral');
             context$1$0.next = 27;
             return ember._.text('engines.index.emberKickstarter');
 
@@ -275,12 +283,12 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
             return diy._.text('engines.index.diyReadMore');
 
           case 29:
-            diy.expression('default');
+            diy.expression('neutral');
             context$1$0.next = 32;
             return ember._.text('engines.index.emberOpensource');
 
           case 32:
-            ember.expression('default');
+            ember.expression('neutral');
             context$1$0.next = 35;
             return diy._.text('engines.index.diyBrowser');
 
@@ -289,12 +297,12 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
             return ember._.text('engines.index.emberModular');
 
           case 37:
-            ember.expression('default');
+            ember.expression('neutral');
             context$1$0.next = 40;
             return diy._.text('engines.index.diyEasyScripts');
 
           case 40:
-            diy.expression('default');
+            diy.expression('neutral');
             context$1$0.next = 43;
             return ember._.text('engines.index.emberBye');
 
@@ -308,14 +316,14 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
 
           case 47:
 
-            ember.expression('default');
+            ember.expression('neutral');
 
             context$1$0.next = 50;
             return script.pause(125);
 
           case 50:
 
-            diy.expression('default');
+            diy.expression('neutral');
 
             context$1$0.next = 53;
             return script.pause(250);
@@ -347,6 +355,24 @@ define('affinity-engine-web/app', ['exports', 'ember', 'affinity-engine-web/reso
   (0, _emberLoadInitializers['default'])(App, _affinityEngineWebConfigEnvironment['default'].modulePrefix);
 
   exports['default'] = App;
+});
+define("affinity-engine-web/cldrs/0_1_0", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "0_1_0", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/1", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "1", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/acknowledgements", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "acknowledgements", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
 define("affinity-engine-web/cldrs/affinity", ["exports"], function (exports) {
   /*jslint eqeq: true*/
@@ -381,6 +407,12 @@ define("affinity-engine-web/cldrs/block", ["exports"], function (exports) {
 define("affinity-engine-web/cldrs/common", ["exports"], function (exports) {
   /*jslint eqeq: true*/
   exports["default"] = [{ "locale": "common", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/components", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "components", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
@@ -424,9 +456,15 @@ define("affinity-engine-web/cldrs/engines", ["exports"], function (exports) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
-define("affinity-engine-web/cldrs/guides", ["exports"], function (exports) {
+define("affinity-engine-web/cldrs/fixtures", ["exports"], function (exports) {
   /*jslint eqeq: true*/
-  exports["default"] = [{ "locale": "guides", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+  exports["default"] = [{ "locale": "fixtures", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/how", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "how-to-use-this-documentation", "parentLocale": "how-to-use-this" }, { "locale": "how-to-use-this", "parentLocale": "how-to-use" }, { "locale": "how-to-use", "parentLocale": "how-to" }, { "locale": "how-to", "parentLocale": "how" }, { "locale": "how", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
@@ -442,15 +480,27 @@ define("affinity-engine-web/cldrs/installation", ["exports"], function (exports)
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
-define("affinity-engine-web/cldrs/routes", ["exports"], function (exports) {
+define("affinity-engine-web/cldrs/markdown", ["exports"], function (exports) {
   /*jslint eqeq: true*/
-  exports["default"] = [{ "locale": "routes", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+  exports["default"] = [{ "locale": "markdown", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
-define("affinity-engine-web/cldrs/setup", ["exports"], function (exports) {
+define("affinity-engine-web/cldrs/plugins", ["exports"], function (exports) {
   /*jslint eqeq: true*/
-  exports["default"] = [{ "locale": "setup", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+  exports["default"] = [{ "locale": "plugins", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/quickstarts", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "quickstarts", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/routes", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "routes", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
@@ -496,6 +546,14 @@ define('affinity-engine-web/components/affinity-engine-stage-direction-image-key
     enumerable: true,
     get: function get() {
       return _affinityEngineStageDirectionImageComponentsAffinityEngineStageDirectionImageKeyframe['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-stage-direction-image-layer', ['exports', 'affinity-engine-stage-direction-image/components/affinity-engine-stage-direction-image-layer'], function (exports, _affinityEngineStageDirectionImageComponentsAffinityEngineStageDirectionImageLayer) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineStageDirectionImageComponentsAffinityEngineStageDirectionImageLayer['default'];
     }
   });
 });
@@ -589,6 +647,69 @@ define('affinity-engine-web/components/app-version', ['exports', 'ember-cli-app-
     name: name
   });
 });
+define('affinity-engine-web/components/basic-dropdown', ['exports', 'ember-basic-dropdown/components/basic-dropdown'], function (exports, _emberBasicDropdownComponentsBasicDropdown) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberBasicDropdownComponentsBasicDropdown['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/basic-dropdown/content', ['exports', 'ember-basic-dropdown/components/basic-dropdown/content'], function (exports, _emberBasicDropdownComponentsBasicDropdownContent) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberBasicDropdownComponentsBasicDropdownContent['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/basic-dropdown/trigger', ['exports', 'ember-basic-dropdown/components/basic-dropdown/trigger'], function (exports, _emberBasicDropdownComponentsBasicDropdownTrigger) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberBasicDropdownComponentsBasicDropdownTrigger['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/doc-version-selector', ['exports', 'ember'], function (exports, _ember) {
+  var Component = _ember['default'].Component;
+  var computed = _ember['default'].computed;
+  var _get = _ember['default'].get;
+  var set = _ember['default'].set;
+  var readOnly = _ember['default'].computed.readOnly;
+  var service = _ember['default'].inject.service;
+  exports['default'] = Component.extend({
+    classNames: ['ember-power-select-container'],
+
+    docVersionTracker: service(),
+
+    formattedSelectedVersion: computed('docVersionTracker.version', {
+      get: function get() {
+        return this._formatVersion(_get(this, 'docVersionTracker.version'));
+      }
+    }),
+
+    formattedVersions: computed({
+      get: function get() {
+        var _this = this;
+
+        return _get(this, 'docVersionTracker.versions').map(function (version) {
+          return _this._formatVersion(version);
+        });
+      }
+    }),
+
+    _formatVersion: function _formatVersion(version) {
+      return 'v' + version.replace(/\_/g, '.');
+    },
+
+    actions: {
+      changeVersion: function changeVersion(version) {
+        set(this, 'docVersionTracker.version', version.substring(1).replace(/\./g, '_'));
+      }
+    }
+  });
+});
 define('affinity-engine-web/components/dynamic-tag', ['exports', 'ember'], function (exports, _ember) {
   exports['default'] = _ember['default'].Component.extend({});
 });
@@ -656,6 +777,14 @@ define('affinity-engine-web/components/ember-progress-bar', ['exports', 'ember-p
     }
   });
 });
+define('affinity-engine-web/components/ember-wormhole', ['exports', 'ember-wormhole/components/ember-wormhole'], function (exports, _emberWormholeComponentsEmberWormhole) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberWormholeComponentsEmberWormhole['default'];
+    }
+  });
+});
 define('affinity-engine-web/components/engine-container', ['exports', 'ember'], function (exports, _ember) {
   var Component = _ember['default'].Component;
   exports['default'] = Component.extend({
@@ -692,40 +821,48 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
         name: 'Ember',
         namePosition: 'right',
         height: 360,
-        keyframes: [{
-          id: 'ember-default'
-        }, {
-          id: 'ember-smiling',
-          expression: 'smiling'
-        }, {
-          id: 'ember-proud',
-          expression: 'proud'
-        }, {
-          id: 'ember-obviously',
-          expression: 'obviously'
-        }]
+        defaultState: { expression: 'neutral' },
+        layerOrder: ['base'],
+        layers: {
+          base: [{
+            state: { expression: 'neutral' },
+            keyframe: 'ember-default'
+          }, {
+            state: { expression: 'smiling' },
+            keyframe: 'ember-smiling'
+          }, {
+            state: { expression: 'proud' },
+            keyframe: 'ember-proud'
+          }, {
+            state: { expression: 'obviously' },
+            keyframe: 'ember-obviously'
+          }]
+        }
       }, {
         id: 'diy',
         name: 'Diy',
         height: 380,
-        keyframes: [{
-          id: 'diy-default'
-        }, {
-          id: 'diy-smiling',
-          expression: 'smiling'
-        }, {
-          id: 'diy-embarrassed',
-          expression: 'embarrassed'
-        }, {
-          id: 'diy-excited',
-          expression: 'excited'
-        }]
+        defaultState: { expression: 'neutral' },
+        layerOrder: ['base'],
+        layers: {
+          base: [{
+            state: { expression: 'neutral' },
+            keyframe: 'diy-default'
+          }, {
+            state: { expression: 'smiling' },
+            keyframe: 'diy-smiling'
+          }, {
+            state: { expression: 'embarrassed' },
+            keyframe: 'diy-embarrassed'
+          }, {
+            state: { expression: 'excited' },
+            keyframe: 'diy-excited'
+          }]
+        }
       }],
       backdrops: [{
         id: 'diy-bedroom',
-        keyframes: [{
-          id: 'diy-bedroom'
-        }]
+        keyframe: 'diy-bedroom'
       }],
       keyframes: [{
         id: 'ember-default',
@@ -1035,6 +1172,177 @@ define("affinity-engine-web/components/lm-container", ["exports", "liquid-fire/c
     }
   });
 });
+define('affinity-engine-web/components/m-intl', ['exports', 'ember', 'markdown-it', 'affinity-engine-web/utils/markdown-it-highlight'], function (exports, _ember, _markdownIt, _affinityEngineWebUtilsMarkdownItHighlight) {
+  var Component = _ember['default'].Component;
+  var computed = _ember['default'].computed;
+  var _get = _ember['default'].get;
+  var isPresent = _ember['default'].isPresent;
+  var observer = _ember['default'].observer;
+  var readOnly = _ember['default'].computed.readOnly;
+  var service = _ember['default'].inject.service;
+  var SafeString = _ember['default'].Handlebars.SafeString;
+  var underscore = _ember['default'].String.underscore;
+
+  var converter = (0, _markdownIt['default'])({
+    html: true,
+    linkify: true,
+    typographer: true
+  }).use(_affinityEngineWebUtilsMarkdownItHighlight['default']);
+
+  function getMatchIndexes(str, toMatch) {
+    var re = new RegExp(toMatch, "g"),
+        indexMatches = [],
+        match;
+
+    while (match = re.exec(str)) {
+      indexMatches.push(match.index);
+    }
+
+    return indexMatches;
+  }
+
+  function stringInsertAt(index, string, substring) {
+    return string.slice(0, index) + substring + string.slice(index);
+  }
+
+  function scrollToAnchor() {
+    if (window.location.hash) {
+      var position = _ember['default'].$('a[name="' + window.location.hash.substring(1) + '"]').position();
+
+      if (position) {
+        var $main = _ember['default'].$('.main');
+
+        $main.scrollTop(position.top + $main.position().top);
+      }
+    }
+  }
+
+  exports['default'] = Component.extend({
+    intl: service(),
+    docVersionTracker: service(),
+
+    _locale: readOnly('i18n.locale'),
+    _version: readOnly('docVersionTracker.version'),
+    _versions: readOnly('docVersionTracker.versions'),
+
+    _clipboards: computed(function () {
+      return [];
+    }),
+
+    text: computed('path', '_locale', '_version', {
+      get: function get() {
+        var path = _get(this, 'path');
+        var intl = _get(this, 'intl');
+        var selectedVersion = _get(this, '_version');
+        var versions = _get(this, '_versions');
+        var version = versions.slice(versions.indexOf(selectedVersion)).find(function (version) {
+          return intl.exists(version + '.' + path);
+        });
+        var key = isPresent(version) ? version + '.' + path : path;
+        var translation = intl.findTranslationByKey(key);
+
+        return converter.render(translation).replace(/<a /g, '<a target="_blank"');
+      }
+    }),
+
+    didRender: function didRender() {
+      var _this = this;
+
+      this._super.apply(this, arguments);
+
+      var clipboards = _get(this, '_clipboards');
+
+      ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].forEach(function (tag) {
+        _this.$(tag).each(function () {
+          var $elem = _ember['default'].$(this);
+
+          if ($elem.parent().prop('tagName') === 'ASIDE') {
+            return;
+          }
+
+          var text = underscore($elem.text());
+          var href = window.location.protocol + '//' + window.location.host + window.location.pathname + '#' + text + window.location.search;
+
+          requestAnimationFrame(function () {
+            $elem.before('<a class="section-anchor-scroll-point" name="' + text + '"></a>').append('<i class="fa fa-link"></i>').attr('data-clipboard-text', href).addClass('section-anchor');
+
+            var clipboard = new Clipboard($elem.get(0));
+
+            clipboards.push(clipboard);
+            clipboard.on('success', function (e) {
+              history.pushState(null, null, '#' + text);
+              scrollToAnchor();
+            });
+
+            scrollToAnchor();
+          });
+        });
+      });
+    },
+
+    willDestroy: function willDestroy() {
+      _get(this, '_clipboards').forEach(function (clipboard) {
+        return clipboard.destroy();
+      });
+    }
+  });
+});
+define('affinity-engine-web/components/power-select-multiple', ['exports', 'ember-power-select/components/power-select-multiple'], function (exports, _emberPowerSelectComponentsPowerSelectMultiple) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectComponentsPowerSelectMultiple['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/power-select-multiple/trigger', ['exports', 'ember-power-select/components/power-select-multiple/trigger'], function (exports, _emberPowerSelectComponentsPowerSelectMultipleTrigger) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectComponentsPowerSelectMultipleTrigger['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/power-select', ['exports', 'ember-power-select/components/power-select'], function (exports, _emberPowerSelectComponentsPowerSelect) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectComponentsPowerSelect['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/power-select/before-options', ['exports', 'ember-power-select/components/power-select/before-options'], function (exports, _emberPowerSelectComponentsPowerSelectBeforeOptions) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectComponentsPowerSelectBeforeOptions['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/power-select/options', ['exports', 'ember-power-select/components/power-select/options'], function (exports, _emberPowerSelectComponentsPowerSelectOptions) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectComponentsPowerSelectOptions['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/power-select/search-message', ['exports', 'ember-power-select/components/power-select/search-message'], function (exports, _emberPowerSelectComponentsPowerSelectSearchMessage) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectComponentsPowerSelectSearchMessage['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/power-select/trigger', ['exports', 'ember-power-select/components/power-select/trigger'], function (exports, _emberPowerSelectComponentsPowerSelectTrigger) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectComponentsPowerSelectTrigger['default'];
+    }
+  });
+});
 define('affinity-engine-web/components/responsive-dropdown', ['exports', 'ember'], function (exports, _ember) {
   var Component = _ember['default'].Component;
   exports['default'] = Component.extend({
@@ -1279,9 +1587,15 @@ define('affinity-engine-web/components/zf-tooltip', ['exports', 'ember-cli-found
 });
 define('affinity-engine-web/controllers/application', ['exports', 'ember'], function (exports, _ember) {
   var Controller = _ember['default'].Controller;
+  var alias = _ember['default'].computed.alias;
   var service = _ember['default'].inject.service;
   exports['default'] = Controller.extend({
-    routeSequencer: service()
+    queryParams: ['version'],
+
+    docVersionTracker: service(),
+    routeSequencer: service(),
+
+    version: alias('docVersionTracker.version')
   });
 });
 define('affinity-engine-web/eab-animation-adapters/jquery', ['exports', 'ember-animation-box/eab-animation-adapters/jquery'], function (exports, _emberAnimationBoxEabAnimationAdaptersJquery) {
@@ -1299,6 +1613,83 @@ define('affinity-engine-web/eab-animation-adapters/velocity', ['exports', 'ember
       return _emberAnimationBoxEabAnimationAdaptersVelocity['default'];
     }
   });
+});
+define("affinity-engine-web/ember-stringify", ["exports"], function (exports) {
+  exports["default"] = {
+    "en-us": {
+      "0_1_0": {
+        "engine": {
+          "components": {
+            "1.md": "Affinity Engine components are self-enclosed user interfaces that you can compose into your engine to add functionality. Think of a LEGO castle, where the `affinity-engine` is the mat and its components are the individual LEGO blocks. You can snap them onto the mat or even onto each other to build out the specific castle you're envisioning.\n\nFor instance, if you want to add a menu bar to your game, you might use the `affinity-engine-menu-bar` component:\n\n```hbs\n{{#affinity-engine}}\n  {{affinity-engine-menu-bar}}\n{{/affinity-engine}}\n```\n\nIf you later want to add `affinity-engine-stage`, you could simply:\n\n```hbs\n{{#affinity-engine}}\n  {{affinity-engine-menu-bar}}\n  {{affinity-engine-stage}}\n{{/affinity-engine}}\n```\n\nYou'll find several components already available on [Ember Observer](https://emberobserver.com/?query=affinity-engine), and you can also create your own. To do so, you'll have to acquaint yourself with [Ember Components](https://guides.emberjs.com/v2.9.0/components/defining-a-component/).\n"
+          },
+          "configuration": {
+            "configuration-tiers": {
+              "1.md": "What if you want to configure your game to use `velocity` for most animations, but you wanted `popmotion` to handle your text animations? That's possible using configuration tiers like so:\n\n```js\n{\n  global: {\n    animationLibrary: 'velocity'\n  },\n  component: {\n    stage: {\n      direction: {\n        text: {\n          animationLibrary: 'popmotion'\n        }\n      }\n    }\n  }\n}\n```\n\nIn this example, we first specify a global configuration with `animationLibrary: 'velocity'`, and then we provide a specific override just for the `text` direction. When a module lists what attributes you can configure, it'll also let you know what configuration tiers it's observing and in what order. When determining its value, the module will check to see if its highest priority tier is set. If not, it checks the next highest, all the way down to the lowest priority.\n"
+            },
+            "defaults": {
+              "1.md": "At the highest level of configuration are your default values. These values are not defined by you, but by the modules you're using. For instance, the `affinity-engine` module has a default configuration that looks something like this:\n\n```js\nexport default {\n  priority: 0,\n  global: {\n    animationLibrary: 'jquery',\n    menuColumns: 1\n  }\n};\n```\n\nNote that it defines the `animationLibrary` as `jquery`. This means that unless you or another module specifies something else, your engine will use `jquery` to animate everything.\n\nIn the `affinity-engine-animator-velocity` plugin, the config looks something like this:\n\n```js\nexport default {\n  priority: 1,\n  global: {\n    animationLibrary: 'velocity'\n  }\n};\n```\n\nNow both the `affinity-engine` config and the `affinity-engine-animator-velocity` config define `animationLibrary`. If you include both in your project, then `affinity-engine-animator-velocity`'s config will win this conflict, since it has a higher `priority` (1 vs 0). That means that your engine will use `velocity` instead of `jquery`. However, since `affinity-engine-animator-velocity` does not specify a `menuColumns`, the engine will continue using the default defined in the `affinity-engine` config.\n"
+            },
+            "index": {
+              "1.md": "One of the Affinity Engine's guiding principles is *configurablity*. Every module exposes multiple points of configuration, allowing you to change the way it looks and behaves with ease. For instance, if you want your dialogue boxes to use the `paper` theme, you can specify that in your configuration. If you want the game to autosave every time the player enters a new scene, you can configure that, too. (Note that we're only getting an overview of how configuration works in the Affinity Engine. Later chapters will describe the specific attributes that you can configure.)\n\nIn this chapter, we'll first explore how [default configuration](/engine/configuration/defaults) values are set, and what happens if two modules have conflicting configurations.\n\nAfter that, we'll learn different ways in which you can [specify](/engine/configuration/usage) your configuration, and how you can provide different configuration for different Affinity Engines running in your application.\n\nFinally, we'll explore how the Affinity Engine prioritizes your configuration through [*configuration tiers*](/engine/configuration/configuration-tiers). These tiers allow you to specify general theming for your project, with specific overrides when you need it. For instance, you might style most assets with the `block` style, but use the `full` style for menu interfaces.\n"
+            },
+            "usage": {
+              "1.md": "#### Defining Your Config\n\nThe default configs aren't always what you want, and you can override them within your own configuration files. If there is ever a conflict between your configs and the default configs, your configs will win. You can even define multiple configs, so that each engine you're running has unique theming and behavior. The config should be a POJO passed into the `affinity-engine` component like so:\n\n```hbs\n{{#affinity-engine config=myConfig as |engine|}}\n  . . . .\n{{/affinity-engine}}\n```\n\nThe sections below offer more detail if you're unfamiliar with POJOs or Ember controllers and components.\n\n#### POJOs\n\n<div class=\"row\">\n\n<div class=\"with-aside small-order-2 medium-order-1\">\n\nAs with the default configs, your own configs are POJOs (plain old JavaScript objects). You can also think of them as key-value definitions. For instance:\n\n```js\n{\n  key: 'value'\n}\n```\n\nIn the above example, you're setting `key` to have the value of a string, `'value'`. A more real-to-life example might look like:\n\n```js\n{\n  animationLibrary: 'popmotion'\n}\n```\n\nIn this example, you're configuring your engine to use the `animationLibrary` of `'popmotion'`. Even if the default configs use `'velocity'` or `'jquery'`, your engine will now use `'popmotion'` instead.\n\n</div>\n\n<aside class=\"aside javascript small-order-1 medium-order-2\">\n\n<h1>Tip Section</h1>\n\nThe POJOs section is a JavaScript tip.\n\n</aside>\n\n</div>\n\n#### Defining Your Config in a Controller\n\n<div class=\"row\">\n\n<div class=\"with-aside small-order-2 medium-order-1\">\n\nThe simplest way to use your config is to define it within the controller that manages your `affinity-engine`. For instance, if your engine is rendered in `templates/application.hbs` template, then you can define your config in `controllers/application.js`. If that controller doesn't exist yet, you can use Ember CLI's command line generator:\n\n```bash\nember generate controller application\n```\n\nThen within the controller you would define the config like so:\n\n```js\nimport Ember from 'ember';\n\nexport default Ember.Controller.extend({\n  myConfig: {\n    global: {\n      animationLibrary: 'popmotion'\n    }\n  }\n});\n```\n\nAnd finally, you'd pass the config into the engine through the `application.hbs` template:\n\n```hbs\n{{#affinity-engine config=myConfig as |engine|}}\n  . . . .\n{{/affinity-engine}}\n```\n\nIf you have other engines running, you can define unique configs for each one in their respective controllers. If you want multiple engines on a single controller, you can even define multiple configs on that controller under different keys.\n\n</div>\n\n<aside class=\"aside ember small-order-1 medium-order-2\">\n\n<h1>Tip Section</h1>\n\nThe Defining Your Config in a Controller section is an Ember tip.\n\n</aside>\n\n</div>\n\n#### Sharing Your Config\n\n<div class=\"row\">\n\n<div class=\"with-aside small-order-2 medium-order-1\">\n\nOften you'll want to use a single config for all your engines. You can do that by defining your config within the `affinity-engine/config.js` file. For instance:\n\n```js\n// my-app/affinity-engine/config.js\n\nexport default {\n  global: {\n    animationLibrary: 'popmotion'\n  }\n}\n```\n\nNote the `export default` in front of the config. This is essential, as it turns your config into a module that can be imported into any/all of your controllers:\n\n```js\nimport Ember from 'ember';\nimport config from 'my-app/affinity-engine/config';\n\nexport default Ember.Controller.extend({\n  myConfig: config\n});\n```\n\n</div>\n\n<aside class=\"aside ember small-order-1 medium-order-2\">\n\n<h1>Tip Section</h1>\n\nThe Sharing Your Config section is an Ember tip.\n\n</aside>\n\n</div>\n"
+            }
+          },
+          "fixtures": {
+            "index": {
+              "1.md": "Fixtures are mini-configurations for reoccurring elements in your game, such as characters, backdrops, sounds effects, and songs. Within these fixtures, you'll define the essential qualities of your elements. For instance, with a character fixture, you might define their name, which images to use for them, and any overrides you have for the default config.\n\nFixtures are defined as a simple POJO, in which each key is an array of POJOs. This `fixtures` object is then passed in directly to the `affinity-engine` component:\n\n```js\nimport Ember from 'ember';\n\nexport default Ember.Controller.extend({\n  fixtures: {\n    characters: [{\n      id: 'diy',\n      name: 'Diy',\n      height: 90\n    }, {\n      id: 'ember',\n      name: 'Ember',\n      height: 87\n    }],\n    backdrops: [{\n      id: 'bedroom',\n      caption: 'Their bedroom'\n    }]\n  }\n});\n```\n\n```hbs\n{{affinity-engine fixtures=fixtures}}\n```\n"
+            }
+          },
+          "index": {
+            "1.md": "The `affinity-engine` module is the foundation for all Affinity Engine games. It bundles together the core logic of the engine, including a message bus, registrar, and configuration system. Not sure what any of that means? No need to worry. You can build a rich game experience without understanding the inner workings of the Affinity Engine. Later, if you want to extend the engine with custom functionality, you can return to this section to find out how.\n\nFor the time being, the most important thing is understanding is that the Affinity Engine is just a foundation. On it, you build a game out of other modules. The Affinity Engine community itself manages several of these modules, including [`affinity-engine-stage`](/stage), [`affinity-engine-menu-bar`](/menu-bar), and [`affinity-engine-data-manager-rewindable-lokijs`](/plugins/data-manager-rewindable-lokijs). It's also possible to create your own modules or to use ones that other contributors have open-sourced. You can find many options on [Ember Observer](https://emberobserver.com/).\n\nOnce you've found the modules you want to use, you can add them to your game in a few different ways, depending on the type of module it is. [Plugins](/engine/plugins) you specify in your configuration, [components](/engine/components) you compose into your template, and other modules (such as [stage directions](/stage/direction)), will become available in their own context. Check out the related chapters for detailed descriptions.\n"
+          },
+          "installation": {
+            "affinity-engine": {
+              "1.md": "```bash\nember install affinity-engine\n```\n\nTo install the Affinity Engine by itself, simply run the above command from within your Ember.js project. (You need to do this from the [command line](/engine/installation/tooling).) Note that this is just the core of the Affinity Engine. You'll then be able to hand-pick other modules that you'll need for your game, such as the [`affinity-engine-stage`](/stage) or [`affinity-engine-menu-bar`](/menu-bar). This approach gives you the greatest control over which modules you include, which can lead to slightly svleter builds.\n\nAlternatively, you can use the bundles and quickstarts described in the next section.\n"
+            },
+            "ember": {
+              "1.md": "<aside class=\"aside ember medium-12\">\n\n# Tip Section\n\nThis section shows how to create an Ember project. If you already know how to do so, feel free to skip to the next section.\n\n</aside>\n\n<div class=\"with-aside\">\n\n#### Ember CLI\n\nFirst, let's [install Ember CLI](https://ember-cli.com/user-guide/#ember-cli). Ember CLI will help you create new Ember projects, generate Affinity Engine directions, and build minified code when your game is ready for release.\n\n#### Your First Ember Project\n\nNow that all of Ember's dependencies are installed, we can create our first Ember project. Simply `ember create my-first-project`. This will create a new directory called `my-first-project` that contains a bare-bones Ember project. This is where your game will come to life.\n\nOnce your game is underway, you can test it locally by running `ember server` in the project directory. This command will prompt Ember CLI to build a copy of the game and serve it to [http://localhost:4200](http://localhost:4200). Simply visit [http://localhost:4200](http://localhost:4200) in your browser to see the game in action. Whenever you save a change to your code, it'll automatically refresh the page for you so you can see the changes in action.\n\n</div>\n\n<aside class=\"aside ember\">\n\n# Windows Users\n\nIf you're using Windows, you'll want to install the [`ember-cli-windows`](https://github.com/felixrieseberg/ember-cli-windows) addon. It'll dramatically improve performance, which can be painfully slow otherwise.\n\n</aside>\n"
+            },
+            "index": {
+              "1.md": "<div class=\"with-aside\">\n\nThis chapter is broken into four sections. Check out the first section, [Tooling Setup](/engine/installation/tooling), if you're new to software development. It'll help you get oriented with the command line and text editors, as well as setup with important tools such as NPM, Bower, and git.\n\nIf you've never worked on an Ember project before, check out the second section, [Ember Setup](/engine/installation/ember). It'll show you how to install Ember CLI and create a new Ember project.\n\nNext, you'll learn how to [install the Affinity Engine](/engine/installation/affinity-engine) itself.\n\nAnd in the final section, we'll look at [quickstarts and bundles](/engine/installation/quickstarts), which make it much easier to get the Affinity Engine setup. Although these quickstarts are especially encouraged for new developers, experienced devs may also find them to be useful time-savers.\n\n</div>\n\n<aside class=\"aside javascript\">\n\n<h1>A Word of Encouragement</h1>\n\nInstalling the Affinity Engine can be a big undertaking, and if you've never worked with the command line before, it'll also require you to interface with your computer in a new and challenging way. The upswing is that the Affinity Engine is built with incredibly powerful tools, and it extends that power to make game design that much easier for you. Although the setup might be daunting, bear with it and you'll have a simple, extensible, and highly customizable game engine at your disposal.\n\n</aside>\n"
+            },
+            "quickstarts": {
+              "1.md": "#### Bundles\n\nBundles wrap together modules that have an affinity for each other. For instance, the [`affinity-engine-vn-bundle`](https://github.com/affinity-engineaffinity-engine-vn-bundle) packages the Affinity Engine along with all the modules you'll need to make a basic visual novel. Meanwhile, the [`affinity-engine-coya-bundle`](https://github.com/affinity-engineaffinity-engine-coya-bundle) packages the Affintiy Engine with just the modules you'll need for a choose-your-own-adventure style game. To install one of these, use `ember install`. For instance, `ember install affinity-engine-vn-bundle`.\n\n#### Quickstarts\n\nQuickstarts are a lot like bundles, but they do even more. A quickstart is a bare-bones Affinity Engine project with all of its routes and configs already defined. If you clone a quickstart, you can immediately start writing scripts for your game, rather than going through the setup process detailed in the rest of the `engine` chapter.\n\nTo use a quickstart, visit its GitHub page:\n\n* [`affinity-engine-vn-quickstart`](https://github.com/affinity-engineaffinity-engine-vn-quickstart)\n* [`affinity-engine-coya-quickstart`](https://github.com/affinity-engineaffinity-engine-coya-quickstart)\n\nOnce there, download the project as a zip file. Unzip it into whatever directory works for you, then run `npm install && bower install` within that directory. After that, you can skip straight to the `stage` chapter of this documentation.\n"
+            },
+            "tooling": {
+              "1.md": "<aside class=\"aside javascript medium-12\">\n\n# Tip Section\n\nThis section covers the command line, text editors, NPM, Bower, and git. If you're already using these tools, feel free to skip to the next section.\n\n</aside>\n\n#### Using the Command Line\n\nIf you've never used the command line before (or you need a refresher), you might want to check out one of these tutorials. You don't need to have a deep understanding of the command line to use the Affinity Engine, but you will need to be able to navigate the file system:\n\n* For Linux/Mac users, try the excellent [Code Academy tutorials](https://www.codecademy.com/learn/learn-the-command-line).\n\n* For users of Windows 10, you can first [install BASH](http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) and then check out those [Code Academy tutorials](https://www.codecademy.com/learn/learn-the-command-line).\n\n* For users with older versions of Windows, give the [Lifehacker](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything) article a shot.\n\n\n#### Choosing a Text Editor\n\nWriting an Affinity Engine game means writing code, and you'll need a text editor to do that. These apps are similar to word processors such Microsoft Word or LibreOffice's Writer, but whatever you do, don't use a word processor. It'll make your life much harder, as most word processors will aggressively try to reformat your code and auto-correct your function names. Instead, try one of the many free and open-source text editors out there. Here are a few popular choices:\n\n* [Atom](https://atom.io/): an extremely user-friendly open-source project developed by Github.\n\n* [Sublime Text](https://www.sublimetext.com/): a commercial alternative to Atom with an infinite trial period.\n\n* [Vim](http://www.vim.org/): a command-line text editor for the masochistic power-user. Although hard to master, an experienced user can accomplish far more in it than in other text editors. (The [Vim Adventures](http://vim-adventures.com/) game might ease the initial learning curve.)\n\n#### Installing NPM\n\nBefore installing Ember, you'll need Node and the Node Package Manager (NPM). You can think of NPM as an open-source bazaar, where thousands of vendors freely distribute their open-source projects. Using NPM, you'll be able to install these code packages directly into your game, giving it new functionality that you don't have to write yourself. It's because of NPM that the Affinity Engine is able to exist as an ecosystem of modules, rather than as a single monolithic platform.\n\nThere are several ways to install Node and NPM, but let's do it the *maintainable* way. Node regularly releases new versions, and to make the updating process easier, we should use the Node Version Manager (NVM). NVM allows you to install new versions of Node with a single command, and it will manage these versions so that they don't conflict. To install NVM, [follow this guide](https://github.com/creationix/nvm#install-script).\n\nOnce NVM is installed, you can install your first version of Node. Check [this link](https://ember-cli.com/#node) to find out which version of Node to use for best compatibility with Ember CLI. Once you've found the version you need, install it with `nvm install vx.x`. Then run `nvm alias default vx.x`. (In both cases, replacing `x.x` with the Node version number.)\n\n#### Installing Other Global Dependencies\n\nFirst, let's install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Git is a source code manager used by millions of open source projects, including Node, Ember, and the Affinity Engine itself. When you create an Affinity Engine game, it automatically uses git, which you can use to keep track of changes to your code base. For instance, if you introduce a bug in a new release of your game, you can use git to compare the old code with the new code. You could even use git to rollback your latest changes. You don't need to understand git to use the Affinity Engine, but you do need to [install it](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). If you want to learn more about this powerful tool, check out the excellent [Atlassian documentation](https://www.atlassian.com/git/tutorials/).\n\nNext, let's [install Bower](https://bower.io/#install-bower). Like NPM, Bower is a package manager, but with a much smaller ecosystem focused entirely on client-side code. It's easier to use and install than NPM, but both are still necessary. In fact, you need NPM to install Bower.\n"
+            }
+          },
+          "plugins": {
+            "1.md": "Affinity Engine plugins are a lot like components. They're self-enclosed snippets of logic, but without a user interface. Instead, they're used internally by the Affinity Engine to change or enhance its behavior. For instance, you might use either `affinity-engine-animator-velocity` or `affinity-engine-animator-popmotion` to use either Velocity.js or Popmotion.js to handle your animations.\n\nBecause there is no user interface for plugins, you do not have to specify them in your template like you would a component. In fact, once you install a plugin, the Affinity Engine will automatically start using it.\n\nIf you want to use different plugins for different engines, you can specify which one to use in that engine's config:\n\n```js\n{\n  registrant: {\n    'affinity-engine': {\n      'animator': {\n        path: 'service:affinity-engine/animator-velocity'\n      }\n    }\n  }\n}\n\n```\n\nThe documentation for the individual plugins will go into specific detail about specify them in your config.\n"
+          },
+          "usage": {
+            "arguments": {
+              "1.md": "#### Passing Arguments into an `affinity-engine` Component\n\n<div class=\"with-aside\">\n\nIn order to configure your `affinity-engine` component, you'll need to pass arguments into it via the template. It will look something like this:\n\n```hbs\n{{#affinity-engine engineId=\"myEngine\" isFocused=true}}\n{{/affinity-engine}}\n```\n\n</div>\n\n<aside class=\"aside ember\">\n\n<h1>Ember Component Params</h1>\n\nYou'll notice that we specify the attribute we want to configure, followed by an `=`, followed by the value we want to set that attribute to. In the case of `engineId`, we pass in a string in quotes. With `isFocused`, we pass in a boolean. You could also pass in a number or variable.\n\n</aside>\n\nYou can provide the following arguments into an `affinity-engine` component:\n\n* `config`: an object containing configuration values; detailed in its own [chapter](/engine/configuration).\n\n* `fixtures`: a map of game objects; detailed in its own [chapter](/engine/fixtures).\n\n* `engineId`: an unique string identifier for the engine; explained below.\n\n* `isFocused`: a boolean that can set the engine's initial focus; explained below.\"\n\n#### `engineId`\n\nIt's possible to have multiple Affinity Engines running in a single Ember app. These engines might be running simultaneously in a single route, or they might be running individually in their own routes. In either case, you'll probably want to define an unique `engineId` for each one. (The `engineId` is used internally by the engine to associate its many services and components. If you do not provide an `engineId` when there are multiple engines running, it can result in one engine changing the state of another engine.)\n\nYou can define an `engineId` like so:\n\n```hbs\n{{#affinity-engine engineId=\"myEngine\"}}\n{{/affinity-engine}}\n```\n\nNote that save states are keyed to the `engineId`, as well. So if you change the `engineId`, any saved states for the engine will be lost. Relatedly, if you had engines share an `engineId`, they would also share their save state, making it possible to have a single gaming experience that spans multiple routes.\n\n#### `isFocused`\n\nSome Affinity Engine modules respond to keyboard events, such as the user pressing the arrow keys or spacebar. In cases where you have multiple engines on a single page, it's important to know which engine is currently focused, so that only that engine responds to keyboard events. If the user clicks on an engine or tabs into it, it will automatically gain focus. Similarly, if the user clicks outside of the engine or tabs out of it, it will lose focus.\n\nYou can force an engine to gain focus the moment it enters the frame by setting `isFocused` to true. If you plan to only have a single engine running, you'll probably want to set this to true:\n\n```hbs\n{{#affinity-engine isFocused=true}}\n{{/affinity-engine}}\n```\n"
+            },
+            "basic-routing": {
+              "1.md": "If you only plan to have a single Affinity Engine running in your project, the simplest solution is to open `my-app/templates/application.hbs` and replace its contents with:\n\n```hbs\n{{#affinity-engine}}\n{{/affinity-engine}}\n```\n\nNow your Ember project is a pure Affinity Engine. The only thing it will render is your game, and you don't need to worry about any sort of routing.\n\nSome games may benefit from Ember's advanced router. If you want to learn more about how to route between multiple templates, you can consult the Ember guides [here](https://guides.emberjs.com/v2.8.0/routing/). You could then render an unique engine in each route.\n"
+            },
+            "block-params": {
+              "1.md": "#### Block Components\n\nThe `affintiy-engine` is a block component, which means that you can compose other components and pure html into it. For instance, you could do something like this:\n\n```hbs\n{{#affinity-engine}}\n  <p>Hello world!</p>\n{{/affinity-engine}}\n```\n\nIn this case, the paragraph 'Hello world!' will appear inside of the engine. This is particularly useful when you start composing together Affinity Engine modules. For instance, this will render an `affinity-engine-stage` within the engine:\n\n```hbs\n{{#affinity-engine as |engine|}}\n  {{affinity-engine-stage engineId=engine.engineId}}\n{{/affinity-engine}}\n```\n\nYou might have noticed that we're passing an `engine` into the block. It contains several params, all unique to this particular instance of the `affinity-engine`. One of these params is the `engineId`, which we've already encountered [here](/engine/usage/arguments#engine_id). The others help when preloading assets.\n\n#### `engineId`\n\nAs before, the `engineId` is an unique identifier for your engine. In order for your engine to communicate with its modules, you'll need to pass the `engineId` into them, too. You'd so like:\n\n```hbs\n{{#affinity-engine engineId=\"myEngine\" as |engine|}}\n  {{affinity-engine-stage engineId=engine.engineId}}\n{{/affinity-engine}}\n```\n\n#### Preloading Assets\n\nDue to the nature of the web, media assets like images and music files aren't downloaded until a website uses them--which is to say, a song won't start downloading until it begins playing. This can lead to visual flickers and audio hick-ups, even over fast connections. The `affinity-engine` component can coordinate with a preloader module to fix this, though. In the below example, we'll use a simplified implementation of the `affinity-engine-curtain` preloader to demonstrate what this might look like:\n\n```hbs\n{{#affinity-engine as |engine|}}\n  {{#if engine.isLoaded}}\n    <p>The game is loaded!</p>\n  {{else}}\n    {{affinity-engine-curtain completePreload=engine.completePreload}}\n  {{/if}}\n{{/affinity-engine}}\n```\n\nYou'll notice that we're using two new params, including `isLoaded` and `completePreload`:\n\n* `engine.completePreload`: this action is called once the `affinity-engine-curtain` has completely preloaded its assets. When run, it changes `engine.isLoaded` from `false` to `true`.\n\n* `engine.isLoaded`: this attribute tracks the current state of the preloading process. It is initially `false`.\n"
+            },
+            "index": {
+              "1.md": "Now that we've created an Ember.js project and installed the `affinity-engine` module, we're ready to actually use it in our app. In this chapter, we'll learn how to do just that. We'll also learn that while the Affinity Engine itself is fairly light-weight, it has the important job of coordinating the many modules we're using. To this end, we'll also look into ways to configure the engine to work in a variety of scenarios.\n\nIn the [first section](/engine/usage/basic-routing), we'll learn a little about Ember.js routes, templates, and the `affinity-engine` component. This section provides a simple implementation for the engine, as well as links to further reading if you're interested in learning more about Ember.js.\n\nAfter that, we'll learn about [the arguments](/engine/usage/arguments) that can be passed into the `affinity-engine` component to configure it. These include `config`, `fixtures`, `engineId`, and `isFocused`.\n\nFinally, we'll introduce ourselves to the [block params](/engine/usage/block-params) that the `affinity-engine` component exposes, learning how to use these params to coordinate with child modules.\n"
+            }
+          }
+        },
+        "welcome": {
+          "acknowledgements": {
+            "1.md": "We want to thank the many codebases that have inspired the Affinity Engine to become what it has become:\n\n* [Inform](http://inform7.com/): Even back in the '90s, Inform was a seedbed for pioneering game designers. Since then, it's evolved considerably, and in its most recent iteration, has made advances in semantic coding that significantly reduce barriers for new developers. While the limitations of JavaScript keep the Affinity Engine from reading like human language, Inform's rigorous push in this direction has inspired us to make software that reads as closely to a screenplay as possible.\n* [Ren'Py](https://www.renpy.org/): Largely used for writing visual novels, Ren'Py's API is quick-to-learn and easy to read. It has explored and ultimately defined what is possible within its genre, and it has been a major source of inspiration for the Affinity Engine Stage module.\n"
+          },
+          "how-to-use-this-documentation": {
+            "1.md": "<h4>Navigation</h4>\n\nThe Affinity Engine isn't a single piece of software, but rather a whole ecosystem of modules that you can compose together to make highly customizable yet svelte games. This documentation is broken into several chapters, each describing in detail how to use one of these modules. You can find links to each of the chapters in the menu at the top of the screen. On mobile devices, this menu will expand and contract on a touch event.\n\nEach chapter is further divided into numerous sections. You can navigate between them using the sidebar on larger devices, or the second expanding topbar on mobile. There's also a menu at the bottom of each page which you can use to navigate between neighboring sections and chapters.\n\n<h4>Tips</h4>\n\n<div class=\"with-aside\">\n\nThe Affinity Engine aspires to be easy-to-use, but it still requires you to understand basic JavaScript and to master tools such as NPM, Bower, and Ember.js. While this documentation focuses on the Affinity Engine itself, it will also provide tips like the ones you see here to acquaint you with key concepts and skills.\n\n</div>\n\n<aside class=\"aside javascript\">\n\n<h1>JavaScript Tips</h1>\n\nGreen! These tips start with a <i class=\"fa fa-code\"></i>.\n\n</aside>\n\n<div class=\"with-aside\">\n\nYou'll find the tips color-coded and icon-coded for two main skill-sets. The green tips (<i class=\"fa fa-code\"></i>) will acquaint you with JavaScript itself, as well as common tools in the JavaScript ecosystem such as NPM and Bower. The orange tips (<i class=\"fa fa-fire\"></i>) focus on Ember.js, the framework that the Affinity Engine is built on top of.\n\n</div>\n\n<aside class=\"aside ember\">\n\n<h1>Ember Tips</h1>\n\nOrange! These tips start with a <i class=\"fa fa-fire\"></i>.\n\n</aside>\n"
+          }
+        }
+      }
+    }
+  };
 });
 define('affinity-engine-web/formats', ['exports'], function (exports) {
   exports['default'] = {
@@ -1332,6 +1723,18 @@ define('affinity-engine-web/formats', ['exports'], function (exports) {
     }
   };
 });
+define('affinity-engine-web/helpers/and', ['exports', 'ember', 'ember-truth-helpers/helpers/and'], function (exports, _ember, _emberTruthHelpersHelpersAnd) {
+
+  var forExport = null;
+
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersAnd.andHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersAnd.andHelper);
+  }
+
+  exports['default'] = forExport;
+});
 define('affinity-engine-web/helpers/array', ['exports', 'ember-array-helper/helpers/array'], function (exports, _emberArrayHelperHelpersArray) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -1360,6 +1763,46 @@ define('affinity-engine-web/helpers/cancel-all', ['exports', 'ember', 'ember-con
 
   exports['default'] = _ember['default'].Helper.helper(cancelHelper);
 });
+define('affinity-engine-web/helpers/ember-power-select-is-selected', ['exports', 'ember-power-select/helpers/ember-power-select-is-selected'], function (exports, _emberPowerSelectHelpersEmberPowerSelectIsSelected) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectHelpersEmberPowerSelectIsSelected['default'];
+    }
+  });
+  Object.defineProperty(exports, 'emberPowerSelectIsSelected', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectHelpersEmberPowerSelectIsSelected.emberPowerSelectIsSelected;
+    }
+  });
+});
+define('affinity-engine-web/helpers/ember-power-select-true-string-if-present', ['exports', 'ember-power-select/helpers/ember-power-select-true-string-if-present'], function (exports, _emberPowerSelectHelpersEmberPowerSelectTrueStringIfPresent) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectHelpersEmberPowerSelectTrueStringIfPresent['default'];
+    }
+  });
+  Object.defineProperty(exports, 'emberPowerSelectTrueStringIfPresent', {
+    enumerable: true,
+    get: function get() {
+      return _emberPowerSelectHelpersEmberPowerSelectTrueStringIfPresent.emberPowerSelectTrueStringIfPresent;
+    }
+  });
+});
+define('affinity-engine-web/helpers/eq', ['exports', 'ember', 'ember-truth-helpers/helpers/equal'], function (exports, _ember, _emberTruthHelpersHelpersEqual) {
+
+  var forExport = null;
+
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersEqual.equalHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersEqual.equalHelper);
+  }
+
+  exports['default'] = forExport;
+});
 define('affinity-engine-web/helpers/format-date', ['exports', 'ember-intl/helpers/format-date'], function (exports, _emberIntlHelpersFormatDate) {
   /**
    * Copyright 2015, Yahoo! Inc.
@@ -1385,9 +1828,6 @@ define('affinity-engine-web/helpers/format-html-message', ['exports', 'ember-int
       return _emberIntlHelpersFormatHtmlMessage['default'];
     }
   });
-});
-define('affinity-engine-web/helpers/format-markdown', ['exports', 'ember', 'markdown-code-highlighting/helpers/format-markdown'], function (exports, _ember, _markdownCodeHighlightingHelpersFormatMarkdown) {
-  exports['default'] = _markdownCodeHighlightingHelpersFormatMarkdown['default'];
 });
 define('affinity-engine-web/helpers/format-message', ['exports', 'ember-intl/helpers/format-message'], function (exports, _emberIntlHelpersFormatMessage) {
   /**
@@ -1441,6 +1881,30 @@ define('affinity-engine-web/helpers/format-time', ['exports', 'ember-intl/helper
     }
   });
 });
+define('affinity-engine-web/helpers/gt', ['exports', 'ember', 'ember-truth-helpers/helpers/gt'], function (exports, _ember, _emberTruthHelpersHelpersGt) {
+
+  var forExport = null;
+
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersGt.gtHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersGt.gtHelper);
+  }
+
+  exports['default'] = forExport;
+});
+define('affinity-engine-web/helpers/gte', ['exports', 'ember', 'ember-truth-helpers/helpers/gte'], function (exports, _ember, _emberTruthHelpersHelpersGte) {
+
+  var forExport = null;
+
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersGte.gteHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersGte.gteHelper);
+  }
+
+  exports['default'] = forExport;
+});
 define('affinity-engine-web/helpers/hook', ['exports', 'ember-hook/helpers/hook'], function (exports, _emberHookHelpersHook) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -1472,6 +1936,18 @@ define('affinity-engine-web/helpers/is-after', ['exports', 'ember', 'affinity-en
   exports['default'] = _emberMomentHelpersIsAfter['default'].extend({
     globalAllowEmpty: !!_ember['default'].get(_affinityEngineWebConfigEnvironment['default'], 'moment.allowEmpty')
   });
+});
+define('affinity-engine-web/helpers/is-array', ['exports', 'ember', 'ember-truth-helpers/helpers/is-array'], function (exports, _ember, _emberTruthHelpersHelpersIsArray) {
+
+  var forExport = null;
+
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersIsArray.isArrayHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersIsArray.isArrayHelper);
+  }
+
+  exports['default'] = forExport;
 });
 define('affinity-engine-web/helpers/is-before', ['exports', 'ember', 'affinity-engine-web/config/environment', 'ember-moment/helpers/is-before'], function (exports, _ember, _affinityEngineWebConfigEnvironment, _emberMomentHelpersIsBefore) {
   exports['default'] = _emberMomentHelpersIsBefore['default'].extend({
@@ -1511,33 +1987,42 @@ define('affinity-engine-web/helpers/l', ['exports', 'ember-intl/helpers/l'], fun
     }
   });
 });
-define('affinity-engine-web/helpers/m', ['exports', 'ember'], function (exports, _ember) {
-  var Helper = _ember['default'].Helper;
-  var get = _ember['default'].get;
-  var observer = _ember['default'].observer;
-  var readOnly = _ember['default'].computed.readOnly;
-  var service = _ember['default'].inject.service;
-  var SafeString = _ember['default'].Handlebars.SafeString;
+define('affinity-engine-web/helpers/lt', ['exports', 'ember', 'ember-truth-helpers/helpers/lt'], function (exports, _ember, _emberTruthHelpersHelpersLt) {
 
-  var converter = new showdown.Converter();
+  var forExport = null;
 
-  exports['default'] = Helper.extend({
-    intl: service(),
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersLt.ltHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersLt.ltHelper);
+  }
 
-    _locale: readOnly('i18n.locale'),
+  exports['default'] = forExport;
+});
+define('affinity-engine-web/helpers/lte', ['exports', 'ember', 'ember-truth-helpers/helpers/lte'], function (exports, _ember, _emberTruthHelpersHelpersLte) {
 
-    compute: function compute(params, interpolations) {
-      var key = params[0];
-      var intl = get(this, 'intl');
-      var translation = intl.t(key, interpolations);
-      var html = converter.makeHtml(translation);
+  var forExport = null;
 
-      return new SafeString(html.replace(/<a /g, '<a target="_blank"'));
-    },
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersLte.lteHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersLte.lteHelper);
+  }
 
-    _recomputeOnLocaleChange: observer('_locale', function () {
-      this.recompute();
-    })
+  exports['default'] = forExport;
+});
+define('affinity-engine-web/helpers/markdown-render', ['exports', 'ember-markdown-it/helpers/markdown-render'], function (exports, _emberMarkdownItHelpersMarkdownRender) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberMarkdownItHelpersMarkdownRender['default'];
+    }
+  });
+  Object.defineProperty(exports, 'markdownRender', {
+    enumerable: true,
+    get: function get() {
+      return _emberMarkdownItHelpersMarkdownRender.markdownRender;
+    }
   });
 });
 define('affinity-engine-web/helpers/moment-calendar', ['exports', 'ember', 'affinity-engine-web/config/environment', 'ember-moment/helpers/moment-calendar'], function (exports, _ember, _affinityEngineWebConfigEnvironment, _emberMomentHelpersMomentCalendar) {
@@ -1568,6 +2053,30 @@ define('affinity-engine-web/helpers/moment-to-now', ['exports', 'ember', 'affini
     globalAllowEmpty: !!_ember['default'].get(_affinityEngineWebConfigEnvironment['default'], 'moment.allowEmpty')
   });
 });
+define('affinity-engine-web/helpers/not-eq', ['exports', 'ember', 'ember-truth-helpers/helpers/not-equal'], function (exports, _ember, _emberTruthHelpersHelpersNotEqual) {
+
+  var forExport = null;
+
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersNotEqual.notEqualHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersNotEqual.notEqualHelper);
+  }
+
+  exports['default'] = forExport;
+});
+define('affinity-engine-web/helpers/not', ['exports', 'ember', 'ember-truth-helpers/helpers/not'], function (exports, _ember, _emberTruthHelpersHelpersNot) {
+
+  var forExport = null;
+
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersNot.notHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersNot.notHelper);
+  }
+
+  exports['default'] = forExport;
+});
 define('affinity-engine-web/helpers/now', ['exports', 'ember-moment/helpers/now'], function (exports, _emberMomentHelpersNow) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -1575,6 +2084,18 @@ define('affinity-engine-web/helpers/now', ['exports', 'ember-moment/helpers/now'
       return _emberMomentHelpersNow['default'];
     }
   });
+});
+define('affinity-engine-web/helpers/or', ['exports', 'ember', 'ember-truth-helpers/helpers/or'], function (exports, _ember, _emberTruthHelpersHelpersOr) {
+
+  var forExport = null;
+
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersOr.orHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersOr.orHelper);
+  }
+
+  exports['default'] = forExport;
 });
 define('affinity-engine-web/helpers/perform', ['exports', 'ember', 'ember-concurrency/-task-property', 'ember-concurrency/-helpers'], function (exports, _ember, _emberConcurrencyTaskProperty, _emberConcurrencyHelpers) {
   exports.performHelper = performHelper;
@@ -1625,6 +2146,18 @@ define('affinity-engine-web/helpers/task', ['exports', 'ember'], function (expor
   }
 
   exports['default'] = _ember['default'].Helper.helper(taskHelper);
+});
+define('affinity-engine-web/helpers/xor', ['exports', 'ember', 'ember-truth-helpers/helpers/xor'], function (exports, _ember, _emberTruthHelpersHelpersXor) {
+
+  var forExport = null;
+
+  if (_ember['default'].Helper) {
+    forExport = _ember['default'].Helper.helper(_emberTruthHelpersHelpersXor.xorHelper);
+  } else if (_ember['default'].HTMLBars.makeBoundHelper) {
+    forExport = _ember['default'].HTMLBars.makeBoundHelper(_emberTruthHelpersHelpersXor.xorHelper);
+  }
+
+  exports['default'] = forExport;
 });
 define('affinity-engine-web/initializers/app-version', ['exports', 'ember-cli-app-version/initializer-factory', 'affinity-engine-web/config/environment'], function (exports, _emberCliAppVersionInitializerFactory, _affinityEngineWebConfigEnvironment) {
   exports['default'] = {
@@ -1687,7 +2220,7 @@ define('affinity-engine-web/initializers/ember-data', ['exports', 'ember-data/se
       adapter: 'custom'
     });
   
-    App.PostsController = Ember.ArrayController.extend({
+    App.PostsController = Ember.Controller.extend({
       // ...
     });
   
@@ -1740,6 +2273,18 @@ define('affinity-engine-web/initializers/export-application-global', ['exports',
   function initialize() {
     var application = arguments[1] || arguments[0];
     if (_affinityEngineWebConfigEnvironment['default'].exportApplicationGlobal !== false) {
+      var theGlobal;
+      if (typeof window !== 'undefined') {
+        theGlobal = window;
+      } else if (typeof global !== 'undefined') {
+        theGlobal = global;
+      } else if (typeof self !== 'undefined') {
+        theGlobal = self;
+      } else {
+        // no reasonable global, just bail
+        return;
+      }
+
       var value = _affinityEngineWebConfigEnvironment['default'].exportApplicationGlobal;
       var globalName;
 
@@ -1749,13 +2294,13 @@ define('affinity-engine-web/initializers/export-application-global', ['exports',
         globalName = _ember['default'].String.classify(_affinityEngineWebConfigEnvironment['default'].modulePrefix);
       }
 
-      if (!window[globalName]) {
-        window[globalName] = application;
+      if (!theGlobal[globalName]) {
+        theGlobal[globalName] = application;
 
         application.reopen({
           willDestroy: function willDestroy() {
             this._super.apply(this, arguments);
-            delete window[globalName];
+            delete theGlobal[globalName];
           }
         });
       }
@@ -1821,6 +2366,34 @@ define('affinity-engine-web/initializers/transforms', ['exports', 'ember'], func
     name: 'transforms',
     before: 'store',
     initialize: _ember['default'].K
+  };
+});
+define('affinity-engine-web/initializers/truth-helpers', ['exports', 'ember', 'ember-truth-helpers/utils/register-helper', 'ember-truth-helpers/helpers/and', 'ember-truth-helpers/helpers/or', 'ember-truth-helpers/helpers/equal', 'ember-truth-helpers/helpers/not', 'ember-truth-helpers/helpers/is-array', 'ember-truth-helpers/helpers/not-equal', 'ember-truth-helpers/helpers/gt', 'ember-truth-helpers/helpers/gte', 'ember-truth-helpers/helpers/lt', 'ember-truth-helpers/helpers/lte'], function (exports, _ember, _emberTruthHelpersUtilsRegisterHelper, _emberTruthHelpersHelpersAnd, _emberTruthHelpersHelpersOr, _emberTruthHelpersHelpersEqual, _emberTruthHelpersHelpersNot, _emberTruthHelpersHelpersIsArray, _emberTruthHelpersHelpersNotEqual, _emberTruthHelpersHelpersGt, _emberTruthHelpersHelpersGte, _emberTruthHelpersHelpersLt, _emberTruthHelpersHelpersLte) {
+  exports.initialize = initialize;
+
+  function initialize() /* container, application */{
+
+    // Do not register helpers from Ember 1.13 onwards, starting from 1.13 they
+    // will be auto-discovered.
+    if (_ember['default'].Helper) {
+      return;
+    }
+
+    (0, _emberTruthHelpersUtilsRegisterHelper.registerHelper)('and', _emberTruthHelpersHelpersAnd.andHelper);
+    (0, _emberTruthHelpersUtilsRegisterHelper.registerHelper)('or', _emberTruthHelpersHelpersOr.orHelper);
+    (0, _emberTruthHelpersUtilsRegisterHelper.registerHelper)('eq', _emberTruthHelpersHelpersEqual.equalHelper);
+    (0, _emberTruthHelpersUtilsRegisterHelper.registerHelper)('not', _emberTruthHelpersHelpersNot.notHelper);
+    (0, _emberTruthHelpersUtilsRegisterHelper.registerHelper)('is-array', _emberTruthHelpersHelpersIsArray.isArrayHelper);
+    (0, _emberTruthHelpersUtilsRegisterHelper.registerHelper)('not-eq', _emberTruthHelpersHelpersNotEqual.notEqualHelper);
+    (0, _emberTruthHelpersUtilsRegisterHelper.registerHelper)('gt', _emberTruthHelpersHelpersGt.gtHelper);
+    (0, _emberTruthHelpersUtilsRegisterHelper.registerHelper)('gte', _emberTruthHelpersHelpersGte.gteHelper);
+    (0, _emberTruthHelpersUtilsRegisterHelper.registerHelper)('lt', _emberTruthHelpersHelpersLt.ltHelper);
+    (0, _emberTruthHelpersUtilsRegisterHelper.registerHelper)('lte', _emberTruthHelpersHelpersLte.lteHelper);
+  }
+
+  exports['default'] = {
+    name: 'truth-helpers',
+    initialize: initialize
   };
 });
 define('affinity-engine-web/initializers/zf-widget', ['exports', 'ember-cli-foundation-6-sass/initializers/zf-widget'], function (exports, _emberCliFoundation6SassInitializersZfWidget) {
@@ -1984,6 +2557,33 @@ define('affinity-engine-web/instance-initializers/ember-letter-by-letter/registe
     }
   });
 });
+define('affinity-engine-web/instance-initializers/inject-guides', ['exports', 'affinity-engine-web/ember-stringify'], function (exports, _affinityEngineWebEmberStringify) {
+  exports.initialize = initialize;
+
+  function travelDown(object) {
+    Object.keys(object).forEach(function (key) {
+      if (typeof object[key] === 'object') {
+        travelDown(object[key]);
+      } else if (key.substring(key.length - 3) === '.md') {
+        object[key.substring(0, key.length - 3)] = object[key];
+        delete object[key];
+      }
+    });
+  }
+
+  travelDown(_affinityEngineWebEmberStringify['default']);
+
+  function initialize(appInstance) {
+    Object.keys(_affinityEngineWebEmberStringify['default']).forEach(function (locale) {
+      appInstance.lookup('service:intl').addTranslations(locale, _affinityEngineWebEmberStringify['default'][locale]);
+    });
+  }
+
+  exports['default'] = {
+    name: 'inject-guides',
+    initialize: initialize
+  };
+});
 define('affinity-engine-web/lxl-tags/cps', ['exports', 'ember-letter-by-letter/lxl-tags/cps'], function (exports, _emberLetterByLetterLxlTagsCps) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -2059,6 +2659,17 @@ define('affinity-engine-web/lxl-tween-adapters/velocity', ['exports', 'ember-let
 define('affinity-engine-web/mixins/active-link', ['exports', 'ember-cli-active-link-wrapper/mixins/active-link'], function (exports, _emberCliActiveLinkWrapperMixinsActiveLink) {
   exports['default'] = _emberCliActiveLinkWrapperMixinsActiveLink['default'];
 });
+define('affinity-engine-web/mixins/reset-scroll', ['exports', 'ember'], function (exports, _ember) {
+  exports['default'] = _ember['default'].Mixin.create({
+    actions: {
+      willTransition: function willTransition() {
+        this._super.apply(this, arguments);
+
+        _ember['default'].$('.main').scrollTop(0);
+      }
+    }
+  });
+});
 define('affinity-engine-web/mixins/route-title', ['exports', 'ember'], function (exports, _ember) {
   var Mixin = _ember['default'].Mixin;
   var computed = _ember['default'].computed;
@@ -2092,11 +2703,11 @@ define('affinity-engine-web/mixins/sidebar-route', ['exports', 'ember'], functio
     }
   });
 });
-define('affinity-engine-web/models/affinity-engine/local-save', ['exports', 'affinity-engine-rewindable-save-adapter/models/affinity-engine/local-save'], function (exports, _affinityEngineRewindableSaveAdapterModelsAffinityEngineLocalSave) {
+define('affinity-engine-web/models/affinity-engine/local-save', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/models/affinity-engine/local-save'], function (exports, _affinityEngineDataManagerRewindableLokijsModelsAffinityEngineLocalSave) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _affinityEngineRewindableSaveAdapterModelsAffinityEngineLocalSave['default'];
+      return _affinityEngineDataManagerRewindableLokijsModelsAffinityEngineLocalSave['default'];
     }
   });
 });
@@ -2116,6 +2727,7 @@ define('affinity-engine-web/router', ['exports', 'ember', 'affinity-engine-web/c
         this.route('tooling');
         this.route('ember');
         this.route('affinity-engine');
+        this.route('quickstarts');
       });
       this.route('usage', function () {
         this.route('basic-routing');
@@ -2127,7 +2739,7 @@ define('affinity-engine-web/router', ['exports', 'ember', 'affinity-engine-web/c
         this.route('defaults');
         this.route('usage');
       });
-      this.route('fixtures');
+      this.route('fixtures', function () {});
       this.route('components');
       this.route('plugins');
     });
@@ -2135,6 +2747,10 @@ define('affinity-engine-web/router', ['exports', 'ember', 'affinity-engine-web/c
     this.route('menu-bar');
     this.route('curtain');
     this.route('plugins');
+    this.route('welcome', function () {
+      this.route('how-to-use-this-documentation');
+      this.route('acknowledgements');
+    });
   });
 
   exports['default'] = Router;
@@ -2168,109 +2784,139 @@ define('affinity-engine-web/routes/application', ['exports', 'ember'], function 
     })
   });
 });
-define('affinity-engine-web/routes/curtain', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/curtain', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine', ['exports', 'ember', 'affinity-engine-web/mixins/route-title', 'affinity-engine-web/mixins/sidebar-route'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle, _affinityEngineWebMixinsSidebarRoute) {
+define('affinity-engine-web/routes/engine', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title', 'affinity-engine-web/mixins/sidebar-route'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle, _affinityEngineWebMixinsSidebarRoute) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default'], _affinityEngineWebMixinsSidebarRoute['default'], {
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default'], _affinityEngineWebMixinsSidebarRoute['default'], {
     sidebarParentRoute: 'engine'
   });
 });
-define('affinity-engine-web/routes/engine/components', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/components', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/configuration', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/configuration', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/configuration/configuration-tiers', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/configuration/configuration-tiers', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/configuration/defaults', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/configuration/defaults', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/configuration/index', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/configuration/index', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/configuration/usage', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/configuration/usage', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/fixtures', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/fixtures', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/installation', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/fixtures/index', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/installation/affinity-engine', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/installation', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/installation/ember', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/installation/affinity-engine', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/installation/index', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/installation/ember', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/installation/tooling', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/installation/index', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/plugins', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/installation/quickstarts', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/usage', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/installation/tooling', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/usage/arguments', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/plugins', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/usage/basic-routing', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/usage', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/usage/block-params', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/usage/arguments', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/engine/usage/index', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/usage/basic-routing', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/index', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/usage/block-params', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/menu-bar', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/engine/usage/index', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/routes/plugins', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/index', ['exports', 'ember'], function (exports, _ember) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend({
+    beforeModel: function beforeModel() {
+      this.transitionTo('welcome');
+    }
+  });
 });
-define('affinity-engine-web/routes/stage', ['exports', 'ember', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsRouteTitle) {
+define('affinity-engine-web/routes/menu-bar', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
   var Route = _ember['default'].Route;
-  exports['default'] = Route.extend(_affinityEngineWebMixinsRouteTitle['default']);
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/serializers/affinity-engine/local-save', ['exports', 'affinity-engine-rewindable-save-adapter/serializers/affinity-engine/local-save'], function (exports, _affinityEngineRewindableSaveAdapterSerializersAffinityEngineLocalSave) {
+define('affinity-engine-web/routes/plugins', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
+  var Route = _ember['default'].Route;
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
+});
+define('affinity-engine-web/routes/stage', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
+  var Route = _ember['default'].Route;
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
+});
+define('affinity-engine-web/routes/welcome', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title', 'affinity-engine-web/mixins/sidebar-route'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle, _affinityEngineWebMixinsSidebarRoute) {
+  var Route = _ember['default'].Route;
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default'], _affinityEngineWebMixinsSidebarRoute['default'], {
+    sidebarParentRoute: 'welcome'
+  });
+});
+define('affinity-engine-web/routes/welcome/acknowledgements', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
+  var Route = _ember['default'].Route;
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
+});
+define('affinity-engine-web/routes/welcome/how-to-use-this-documentation', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
+  var Route = _ember['default'].Route;
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
+});
+define('affinity-engine-web/routes/welcome/index', ['exports', 'ember', 'affinity-engine-web/mixins/reset-scroll', 'affinity-engine-web/mixins/route-title'], function (exports, _ember, _affinityEngineWebMixinsResetScroll, _affinityEngineWebMixinsRouteTitle) {
+  var Route = _ember['default'].Route;
+  exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
+});
+define('affinity-engine-web/serializers/affinity-engine/local-save', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/serializers/affinity-engine/local-save'], function (exports, _affinityEngineDataManagerRewindableLokijsSerializersAffinityEngineLocalSave) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _affinityEngineRewindableSaveAdapterSerializersAffinityEngineLocalSave['default'];
+      return _affinityEngineDataManagerRewindableLokijsSerializersAffinityEngineLocalSave['default'];
     }
   });
 });
@@ -2298,19 +2944,43 @@ define('affinity-engine-web/services/affinity-engine/config', ['exports', 'affin
     }
   });
 });
-define('affinity-engine-web/services/affinity-engine/curtain', ['exports', 'affinity-engine-curtain/services/affinity-engine/curtain'], function (exports, _affinityEngineCurtainServicesAffinityEngineCurtain) {
+define('affinity-engine-web/services/affinity-engine/data-manager-rewindable-lokijs', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/services/affinity-engine/data-manager-rewindable-lokijs'], function (exports, _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijs) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _affinityEngineCurtainServicesAffinityEngineCurtain['default'];
+      return _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijs['default'];
     }
   });
 });
-define('affinity-engine-web/services/affinity-engine/curtain/sound-manager', ['exports', 'affinity-engine-curtain/services/affinity-engine/curtain/sound-manager'], function (exports, _affinityEngineCurtainServicesAffinityEngineCurtainSoundManager) {
+define('affinity-engine-web/services/affinity-engine/data-manager-rewindable-lokijs/active-state-manager', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/services/affinity-engine/data-manager-rewindable-lokijs/active-state-manager'], function (exports, _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsActiveStateManager) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _affinityEngineCurtainServicesAffinityEngineCurtainSoundManager['default'];
+      return _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsActiveStateManager['default'];
+    }
+  });
+});
+define('affinity-engine-web/services/affinity-engine/data-manager-rewindable-lokijs/autosave-manager', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/services/affinity-engine/data-manager-rewindable-lokijs/autosave-manager'], function (exports, _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsAutosaveManager) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsAutosaveManager['default'];
+    }
+  });
+});
+define('affinity-engine-web/services/affinity-engine/data-manager-rewindable-lokijs/state-point-manager', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/services/affinity-engine/data-manager-rewindable-lokijs/state-point-manager'], function (exports, _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsStatePointManager) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsStatePointManager['default'];
+    }
+  });
+});
+define('affinity-engine-web/services/affinity-engine/data-manager', ['exports', 'affinity-engine/services/affinity-engine/data-manager'], function (exports, _affinityEngineServicesAffinityEngineDataManager) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineServicesAffinityEngineDataManager['default'];
     }
   });
 });
@@ -2330,6 +3000,14 @@ define('affinity-engine-web/services/affinity-engine/focus-manager', ['exports',
     }
   });
 });
+define('affinity-engine-web/services/affinity-engine/preloader-createjs', ['exports', 'affinity-engine-preloader-createjs/services/affinity-engine/preloader-createjs'], function (exports, _affinityEnginePreloaderCreatejsServicesAffinityEnginePreloaderCreatejs) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEnginePreloaderCreatejsServicesAffinityEnginePreloaderCreatejs['default'];
+    }
+  });
+});
 define('affinity-engine-web/services/affinity-engine/preloader', ['exports', 'affinity-engine/services/affinity-engine/preloader'], function (exports, _affinityEngineServicesAffinityEnginePreloader) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -2343,46 +3021,6 @@ define('affinity-engine-web/services/affinity-engine/registrar', ['exports', 'af
     enumerable: true,
     get: function get() {
       return _affinityEngineServicesAffinityEngineRegistrar['default'];
-    }
-  });
-});
-define('affinity-engine-web/services/affinity-engine/rewindable-save-adapter', ['exports', 'affinity-engine-rewindable-save-adapter/services/affinity-engine/rewindable-save-adapter'], function (exports, _affinityEngineRewindableSaveAdapterServicesAffinityEngineRewindableSaveAdapter) {
-  Object.defineProperty(exports, 'default', {
-    enumerable: true,
-    get: function get() {
-      return _affinityEngineRewindableSaveAdapterServicesAffinityEngineRewindableSaveAdapter['default'];
-    }
-  });
-});
-define('affinity-engine-web/services/affinity-engine/rewindable-save-adapter/active-state-manager', ['exports', 'affinity-engine-rewindable-save-adapter/services/affinity-engine/rewindable-save-adapter/active-state-manager'], function (exports, _affinityEngineRewindableSaveAdapterServicesAffinityEngineRewindableSaveAdapterActiveStateManager) {
-  Object.defineProperty(exports, 'default', {
-    enumerable: true,
-    get: function get() {
-      return _affinityEngineRewindableSaveAdapterServicesAffinityEngineRewindableSaveAdapterActiveStateManager['default'];
-    }
-  });
-});
-define('affinity-engine-web/services/affinity-engine/rewindable-save-adapter/autosave-manager', ['exports', 'affinity-engine-rewindable-save-adapter/services/affinity-engine/rewindable-save-adapter/autosave-manager'], function (exports, _affinityEngineRewindableSaveAdapterServicesAffinityEngineRewindableSaveAdapterAutosaveManager) {
-  Object.defineProperty(exports, 'default', {
-    enumerable: true,
-    get: function get() {
-      return _affinityEngineRewindableSaveAdapterServicesAffinityEngineRewindableSaveAdapterAutosaveManager['default'];
-    }
-  });
-});
-define('affinity-engine-web/services/affinity-engine/rewindable-save-adapter/state-point-manager', ['exports', 'affinity-engine-rewindable-save-adapter/services/affinity-engine/rewindable-save-adapter/state-point-manager'], function (exports, _affinityEngineRewindableSaveAdapterServicesAffinityEngineRewindableSaveAdapterStatePointManager) {
-  Object.defineProperty(exports, 'default', {
-    enumerable: true,
-    get: function get() {
-      return _affinityEngineRewindableSaveAdapterServicesAffinityEngineRewindableSaveAdapterStatePointManager['default'];
-    }
-  });
-});
-define('affinity-engine-web/services/affinity-engine/save-state-manager', ['exports', 'affinity-engine/services/affinity-engine/save-state-manager'], function (exports, _affinityEngineServicesAffinityEngineSaveStateManager) {
-  Object.defineProperty(exports, 'default', {
-    enumerable: true,
-    get: function get() {
-      return _affinityEngineServicesAffinityEngineSaveStateManager['default'];
     }
   });
 });
@@ -2408,6 +3046,20 @@ define('affinity-engine-web/services/ajax', ['exports', 'ember-ajax/services/aja
     get: function get() {
       return _emberAjaxServicesAjax['default'];
     }
+  });
+});
+define('affinity-engine-web/services/doc-version-tracker', ['exports', 'ember'], function (exports, _ember) {
+  var Service = _ember['default'].Service;
+  var get = _ember['default'].get;
+  var set = _ember['default'].set;
+  exports['default'] = Service.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+
+      set(this, 'version', get(this, 'versions')[0]);
+    },
+
+    versions: ['0_1_0']
   });
 });
 define('affinity-engine-web/services/intl', ['exports', 'ember-intl/services/intl'], function (exports, _emberIntlServicesIntl) {
@@ -2458,6 +3110,14 @@ define('affinity-engine-web/services/multiton-service-manager', ['exports', 'emb
     }
   });
 });
+define('affinity-engine-web/services/resize-for-addons', ['exports', 'ember-resize-for-addons/services/resize-for-addons'], function (exports, _emberResizeForAddonsServicesResizeForAddons) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberResizeForAddonsServicesResizeForAddons['default'];
+    }
+  });
+});
 define('affinity-engine-web/services/route-sequencer', ['exports', 'ember'], function (exports, _ember) {
   var Service = _ember['default'].Service;
   var computed = _ember['default'].computed;
@@ -2475,8 +3135,17 @@ define('affinity-engine-web/services/route-sequencer', ['exports', 'ember'], fun
         };
 
         return {
-          index: {
-            name: t('welcome')
+          welcome: {
+            name: t('welcome'),
+            routes: {
+              index: {
+                name: t('overview')
+              }, 'how-to-use-this-documentation': {
+                name: t('howToUseThisDocumentation')
+              }, acknowledgements: {
+                name: t('acknowledgements')
+              }
+            }
           }, engine: {
             name: t('engine'),
             routes: {
@@ -2493,6 +3162,8 @@ define('affinity-engine-web/services/route-sequencer', ['exports', 'ember'], fun
                     name: t('emberSetup')
                   }, 'affinity-engine': {
                     name: t('affinityEngineInstallation')
+                  }, 'quickstarts': {
+                    name: t('quickstarts')
                   }
                 }
               }, usage: {
@@ -2543,7 +3214,15 @@ define('affinity-engine-web/services/route-sequencer', ['exports', 'ember'], fun
     })
   });
 });
-define("affinity-engine-web/templates/_sidebar", ["exports"], function (exports) {
+define('affinity-engine-web/services/text-measurer', ['exports', 'ember-text-measurer/services/text-measurer'], function (exports, _emberTextMeasurerServicesTextMeasurer) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberTextMeasurerServicesTextMeasurer['default'];
+    }
+  });
+});
+define("affinity-engine-web/templates/-sidebar", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     var child0 = (function () {
       return {
@@ -2556,11 +3235,11 @@ define("affinity-engine-web/templates/_sidebar", ["exports"], function (exports)
               "column": 0
             },
             "end": {
-              "line": 5,
+              "line": 6,
               "column": 0
             }
           },
-          "moduleName": "affinity-engine-web/templates/_sidebar.hbs"
+          "moduleName": "affinity-engine-web/templates/-sidebar.hbs"
         },
         isEmpty: false,
         arity: 0,
@@ -2581,7 +3260,7 @@ define("affinity-engine-web/templates/_sidebar", ["exports"], function (exports)
           morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
           return morphs;
         },
-        statements: [["inline", "expanding-sidebar", [], ["parentRoute", ["subexpr", "@mut", [["get", "parentRoute", ["loc", [null, [3, 16], [3, 27]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [2, 2], [4, 4]]], 0, 0]],
+        statements: [["inline", "expanding-sidebar", [], ["parentRoute", ["subexpr", "@mut", [["get", "parentRoute", ["loc", [null, [3, 16], [3, 27]]], 0, 0, 0, 0]], [], [], 0, 0], "classNames", "small-padding-1"], ["loc", [null, [2, 2], [5, 4]]], 0, 0]],
         locals: [],
         templates: []
       };
@@ -2596,11 +3275,11 @@ define("affinity-engine-web/templates/_sidebar", ["exports"], function (exports)
             "column": 0
           },
           "end": {
-            "line": 6,
+            "line": 7,
             "column": 0
           }
         },
-        "moduleName": "affinity-engine-web/templates/_sidebar.hbs"
+        "moduleName": "affinity-engine-web/templates/-sidebar.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -2619,13 +3298,232 @@ define("affinity-engine-web/templates/_sidebar", ["exports"], function (exports)
         dom.insertBoundary(fragment, null);
         return morphs;
       },
-      statements: [["block", "responsive-navigation-dropdown", [], ["startIndex", 2], 0, null, ["loc", [null, [1, 0], [5, 35]]]]],
+      statements: [["block", "responsive-navigation-dropdown", [], ["startIndex", 2], 0, null, ["loc", [null, [1, 0], [6, 35]]]]],
       locals: [],
       templates: [child0]
     };
   })());
 });
 define("affinity-engine-web/templates/application", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    var child0 = (function () {
+      var child0 = (function () {
+        return {
+          meta: {
+            "revision": "Ember@2.7.3",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 4,
+                "column": 6
+              },
+              "end": {
+                "line": 10,
+                "column": 6
+              }
+            },
+            "moduleName": "affinity-engine-web/templates/application.hbs"
+          },
+          isEmpty: false,
+          arity: 0,
+          cachedFragment: null,
+          hasRendered: false,
+          buildFragment: function buildFragment(dom) {
+            var el0 = dom.createDocumentFragment();
+            var el1 = dom.createTextNode("        ");
+            dom.appendChild(el0, el1);
+            var el1 = dom.createElement("img");
+            dom.setAttribute(el1, "src", "/tiny-logo.png");
+            dom.setAttribute(el1, "class", "vertical-align-top large-margin-right-1");
+            dom.appendChild(el0, el1);
+            var el1 = dom.createTextNode("\n        ");
+            dom.appendChild(el0, el1);
+            var el1 = dom.createElement("span");
+            dom.setAttribute(el1, "class", "stack vertical-align-middle opacity-60");
+            var el2 = dom.createTextNode("\n          ");
+            dom.appendChild(el1, el2);
+            var el2 = dom.createElement("strong");
+            dom.setAttribute(el2, "class", "font-size-140");
+            var el3 = dom.createComment("");
+            dom.appendChild(el2, el3);
+            dom.appendChild(el1, el2);
+            var el2 = dom.createTextNode("\n          ");
+            dom.appendChild(el1, el2);
+            var el2 = dom.createElement("span");
+            dom.setAttribute(el2, "class", "font-size-80");
+            var el3 = dom.createComment("");
+            dom.appendChild(el2, el3);
+            dom.appendChild(el1, el2);
+            var el2 = dom.createTextNode("\n        ");
+            dom.appendChild(el1, el2);
+            dom.appendChild(el0, el1);
+            var el1 = dom.createTextNode("\n");
+            dom.appendChild(el0, el1);
+            return el0;
+          },
+          buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+            var element0 = dom.childAt(fragment, [3]);
+            var morphs = new Array(2);
+            morphs[0] = dom.createMorphAt(dom.childAt(element0, [1]), 0, 0);
+            morphs[1] = dom.createMorphAt(dom.childAt(element0, [3]), 0, 0);
+            return morphs;
+          },
+          statements: [["inline", "t", ["application.common.affinityEngine"], [], ["loc", [null, [7, 40], [7, 81]]], 0, 0], ["inline", "t", ["application.common.slogan"], [], ["loc", [null, [8, 37], [8, 70]]], 0, 0]],
+          locals: [],
+          templates: []
+        };
+      })();
+      return {
+        meta: {
+          "revision": "Ember@2.7.3",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 2,
+              "column": 2
+            },
+            "end": {
+              "line": 19,
+              "column": 2
+            }
+          },
+          "moduleName": "affinity-engine-web/templates/application.hbs"
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("    ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("div");
+          dom.setAttribute(el1, "class", "topbar");
+          var el2 = dom.createTextNode("\n");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createComment("");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("      ");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createComment("");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n      ");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createElement("div");
+          dom.setAttribute(el2, "class", "columns large-2 medium-2 small-12");
+          var el3 = dom.createTextNode("\n        ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createComment("");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n      ");
+          dom.appendChild(el2, el3);
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n    ");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var element1 = dom.childAt(fragment, [1]);
+          var morphs = new Array(3);
+          morphs[0] = dom.createMorphAt(element1, 1, 1);
+          morphs[1] = dom.createMorphAt(element1, 3, 3);
+          morphs[2] = dom.createMorphAt(dom.childAt(element1, [5]), 1, 1);
+          return morphs;
+        },
+        statements: [["block", "link-to", ["index"], ["classNames", "show-for-large columns large-3 nowrap"], 0, null, ["loc", [null, [4, 6], [10, 18]]]], ["inline", "expanding-sidebar", [], ["shouldNest", false, "classNames", "columns large-7 medium-10 small-12 vertical medium-horizontal medium-padding-left-0"], ["loc", [null, [11, 6], [14, 8]]], 0, 0], ["inline", "doc-version-selector", [], ["classNames", "float-right"], ["loc", [null, [16, 8], [16, 57]]], 0, 0]],
+        locals: [],
+        templates: [child0]
+      };
+    })();
+    return {
+      meta: {
+        "revision": "Ember@2.7.3",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 33,
+            "column": 0
+          }
+        },
+        "moduleName": "affinity-engine-web/templates/application.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createElement("div");
+        dom.setAttribute(el1, "class", "page-layout");
+        var el2 = dom.createTextNode("\n");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2, "class", "main-layout");
+        var el3 = dom.createTextNode("\n    ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("div");
+        dom.setAttribute(el3, "class", "sidebar columns small-12 medium-3 small-padding-0 medium-padding-0 medium-padding-right-1");
+        var el4 = dom.createTextNode("\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createComment("");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n    ");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n\n    ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("div");
+        dom.setAttribute(el3, "class", "main columns small-12 medium-9 small-padding-ends-1 medium-padding-right-2 medium-padding-left-2");
+        var el4 = dom.createTextNode("\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createComment("");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createComment("");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n    ");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n  ");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var element2 = dom.childAt(fragment, [0]);
+        var element3 = dom.childAt(element2, [3]);
+        var element4 = dom.childAt(element3, [3]);
+        var morphs = new Array(4);
+        morphs[0] = dom.createMorphAt(element2, 1, 1);
+        morphs[1] = dom.createMorphAt(dom.childAt(element3, [1]), 1, 1);
+        morphs[2] = dom.createMorphAt(element4, 1, 1);
+        morphs[3] = dom.createMorphAt(element4, 3, 3);
+        return morphs;
+      },
+      statements: [["block", "responsive-navigation-dropdown", [], ["depth", 2], 0, null, ["loc", [null, [2, 2], [19, 37]]]], ["inline", "liquid-outlet", ["sidebar"], [], ["loc", [null, [23, 6], [23, 33]]], 0, 0], ["content", "header-links", ["loc", [null, [27, 6], [27, 22]]], 0, 0, 0, 0], ["content", "liquid-outlet", ["loc", [null, [29, 6], [29, 23]]], 0, 0, 0, 0]],
+      locals: [],
+      templates: [child0]
+    };
+  })());
+});
+define("affinity-engine-web/templates/components/doc-version-selector", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     var child0 = (function () {
       return {
@@ -2638,35 +3536,21 @@ define("affinity-engine-web/templates/application", ["exports"], function (expor
               "column": 0
             },
             "end": {
-              "line": 10,
+              "line": 8,
               "column": 0
             }
           },
-          "moduleName": "affinity-engine-web/templates/application.hbs"
+          "moduleName": "affinity-engine-web/templates/components/doc-version-selector.hbs"
         },
         isEmpty: false,
-        arity: 0,
+        arity: 1,
         cachedFragment: null,
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
           var el1 = dom.createTextNode("  ");
           dom.appendChild(el0, el1);
-          var el1 = dom.createElement("div");
-          dom.setAttribute(el1, "class", "top-bar");
-          var el2 = dom.createTextNode("\n    ");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createElement("div");
-          dom.setAttribute(el2, "class", "top-bar-left columns medium-6 medium-offset-3 end");
-          var el3 = dom.createTextNode("\n      ");
-          dom.appendChild(el2, el3);
-          var el3 = dom.createComment("");
-          dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n    ");
-          dom.appendChild(el2, el3);
-          dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode("\n  ");
-          dom.appendChild(el1, el2);
+          var el1 = dom.createComment("");
           dom.appendChild(el0, el1);
           var el1 = dom.createTextNode("\n");
           dom.appendChild(el0, el1);
@@ -2674,11 +3558,11 @@ define("affinity-engine-web/templates/application", ["exports"], function (expor
         },
         buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
           var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(dom.childAt(fragment, [1, 1]), 1, 1);
+          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
           return morphs;
         },
-        statements: [["inline", "expanding-sidebar", [], ["shouldNest", false, "classNames", "vertical medium-horizontal"], ["loc", [null, [4, 6], [7, 8]]], 0, 0]],
-        locals: [],
+        statements: [["content", "version", ["loc", [null, [7, 2], [7, 13]]], 0, 0, 0, 0]],
+        locals: ["version"],
         templates: []
       };
     })();
@@ -2692,11 +3576,11 @@ define("affinity-engine-web/templates/application", ["exports"], function (expor
             "column": 0
           },
           "end": {
-            "line": 21,
+            "line": 9,
             "column": 0
           }
         },
-        "moduleName": "affinity-engine-web/templates/application.hbs"
+        "moduleName": "affinity-engine-web/templates/components/doc-version-selector.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -2706,47 +3590,16 @@ define("affinity-engine-web/templates/application", ["exports"], function (expor
         var el0 = dom.createDocumentFragment();
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "columns medium-3 small-padding-0 medium-padding-1 medium-margin-top-4 sidebar");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "columns small-12 medium-9 medium-offset-3 end small-margin-top-1 small-margin-bottom-1 medium-margin-top-5 medium-padding-right-2");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [4]);
-        var morphs = new Array(4);
+        var morphs = new Array(1);
         morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(dom.childAt(fragment, [2]), 1, 1);
-        morphs[2] = dom.createMorphAt(element0, 1, 1);
-        morphs[3] = dom.createMorphAt(element0, 3, 3);
         dom.insertBoundary(fragment, 0);
+        dom.insertBoundary(fragment, null);
         return morphs;
       },
-      statements: [["block", "responsive-navigation-dropdown", [], ["depth", 2], 0, null, ["loc", [null, [1, 0], [10, 35]]]], ["inline", "liquid-outlet", ["sidebar"], [], ["loc", [null, [13, 2], [13, 29]]], 0, 0], ["content", "header-links", ["loc", [null, [17, 2], [17, 18]]], 0, 0, 0, 0], ["content", "liquid-outlet", ["loc", [null, [19, 2], [19, 19]]], 0, 0, 0, 0]],
+      statements: [["block", "power-select", [], ["options", ["subexpr", "@mut", [["get", "formattedVersions", ["loc", [null, [2, 10], [2, 27]]], 0, 0, 0, 0]], [], [], 0, 0], "selected", ["subexpr", "@mut", [["get", "formattedSelectedVersion", ["loc", [null, [3, 11], [3, 35]]], 0, 0, 0, 0]], [], [], 0, 0], "onchange", ["subexpr", "action", ["changeVersion"], [], ["loc", [null, [4, 11], [4, 35]]], 0, 0]], 0, null, ["loc", [null, [1, 0], [8, 17]]]]],
       locals: [],
       templates: [child0]
     };
@@ -3532,6 +4385,48 @@ define("affinity-engine-web/templates/components/header-links", ["exports"], fun
     };
   })());
 });
+define("affinity-engine-web/templates/components/m-intl", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.7.3",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 0
+          }
+        },
+        "moduleName": "affinity-engine-web/templates/components/m-intl.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(1);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        dom.insertBoundary(fragment, 0);
+        return morphs;
+      },
+      statements: [["content", "text", ["loc", [null, [1, 0], [1, 10]]], 0, 0, 0, 0]],
+      locals: [],
+      templates: []
+    };
+  })());
+});
 define("affinity-engine-web/templates/components/responsive-dropdown", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     var child0 = (function () {
@@ -3903,6 +4798,48 @@ define("affinity-engine-web/templates/components/section-navigator", ["exports"]
       };
     })();
     var child1 = (function () {
+      return {
+        meta: {
+          "revision": "Ember@2.7.3",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 4,
+              "column": 2
+            },
+            "end": {
+              "line": 6,
+              "column": 2
+            }
+          },
+          "moduleName": "affinity-engine-web/templates/components/section-navigator.hbs"
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("    ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("a");
+          dom.setAttribute(el1, "class", "section-navigator-blank left");
+          var el2 = dom.createTextNode("—");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes() {
+          return [];
+        },
+        statements: [],
+        locals: [],
+        templates: []
+      };
+    })();
+    var child2 = (function () {
       var child0 = (function () {
         return {
           meta: {
@@ -3910,11 +4847,11 @@ define("affinity-engine-web/templates/components/section-navigator", ["exports"]
             "loc": {
               "source": null,
               "start": {
-                "line": 9,
+                "line": 11,
                 "column": 4
               },
               "end": {
-                "line": 9,
+                "line": 11,
                 "column": 55
               }
             },
@@ -3942,7 +4879,7 @@ define("affinity-engine-web/templates/components/section-navigator", ["exports"]
             dom.insertBoundary(fragment, null);
             return morphs;
           },
-          statements: [["content", "next.name", ["loc", [null, [9, 27], [9, 40]]], 0, 0, 0, 0], ["content", "next.arrow", ["loc", [null, [9, 41], [9, 55]]], 0, 0, 0, 0]],
+          statements: [["content", "next.name", ["loc", [null, [11, 27], [11, 40]]], 0, 0, 0, 0], ["content", "next.arrow", ["loc", [null, [11, 41], [11, 55]]], 0, 0, 0, 0]],
           locals: [],
           templates: []
         };
@@ -3953,11 +4890,11 @@ define("affinity-engine-web/templates/components/section-navigator", ["exports"]
           "loc": {
             "source": null,
             "start": {
-              "line": 8,
+              "line": 10,
               "column": 2
             },
             "end": {
-              "line": 10,
+              "line": 12,
               "column": 2
             }
           },
@@ -3982,9 +4919,51 @@ define("affinity-engine-web/templates/components/section-navigator", ["exports"]
           morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
           return morphs;
         },
-        statements: [["block", "link-to", [["get", "next.route", ["loc", [null, [9, 15], [9, 25]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [9, 4], [9, 67]]]]],
+        statements: [["block", "link-to", [["get", "next.route", ["loc", [null, [11, 15], [11, 25]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [11, 4], [11, 67]]]]],
         locals: [],
         templates: [child0]
+      };
+    })();
+    var child3 = (function () {
+      return {
+        meta: {
+          "revision": "Ember@2.7.3",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 12,
+              "column": 2
+            },
+            "end": {
+              "line": 14,
+              "column": 2
+            }
+          },
+          "moduleName": "affinity-engine-web/templates/components/section-navigator.hbs"
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("    ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("a");
+          dom.setAttribute(el1, "class", "section-navigator-blank right");
+          var el2 = dom.createTextNode("—");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes() {
+          return [];
+        },
+        statements: [],
+        locals: [],
+        templates: []
       };
     })();
     return {
@@ -3997,7 +4976,7 @@ define("affinity-engine-web/templates/components/section-navigator", ["exports"]
             "column": 0
           },
           "end": {
-            "line": 12,
+            "line": 16,
             "column": 0
           }
         },
@@ -4034,9 +5013,9 @@ define("affinity-engine-web/templates/components/section-navigator", ["exports"]
         morphs[1] = dom.createMorphAt(dom.childAt(fragment, [2]), 1, 1);
         return morphs;
       },
-      statements: [["block", "if", [["get", "previous.route", ["loc", [null, [2, 8], [2, 22]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [2, 2], [4, 9]]]], ["block", "if", [["get", "next.route", ["loc", [null, [8, 8], [8, 18]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [8, 2], [10, 9]]]]],
+      statements: [["block", "if", [["get", "previous.route", ["loc", [null, [2, 8], [2, 22]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [2, 2], [6, 9]]]], ["block", "if", [["get", "next.route", ["loc", [null, [10, 8], [10, 18]]], 0, 0, 0, 0]], [], 2, 3, ["loc", [null, [10, 2], [14, 9]]]]],
       locals: [],
-      templates: [child0, child1]
+      templates: [child0, child1, child2, child3]
     };
   })());
 });
@@ -4146,7 +5125,7 @@ define("affinity-engine-web/templates/engine/components", ["exports"], function 
             "column": 0
           },
           "end": {
-            "line": 4,
+            "line": 6,
             "column": 0
           }
         },
@@ -4162,6 +5141,10 @@ define("affinity-engine-web/templates/engine/components", ["exports"], function 
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
+        var el1 = dom.createElement("hr");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
@@ -4170,12 +5153,12 @@ define("affinity-engine-web/templates/engine/components", ["exports"], function 
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.components.1"], ["loc", [null, [1, 0], [1, 39]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -4240,7 +5223,7 @@ define("affinity-engine-web/templates/engine/configuration/configuration-tiers",
             "column": 0
           },
           "end": {
-            "line": 21,
+            "line": 6,
             "column": 0
           }
         },
@@ -4252,14 +5235,6 @@ define("affinity-engine-web/templates/engine/configuration/configuration-tiers",
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -4275,15 +5250,13 @@ define("affinity-engine-web/templates/engine/configuration/configuration-tiers",
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(4);
+        var morphs = new Array(2);
         morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createMorphAt(fragment, 8, 8, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.configuration.configurationTiers.intro"], [], ["loc", [null, [1, 0], [1, 74]]], 0, 0], ["inline", "format-markdown", ["```js\n{\n  animationLibrary: 'velocity',\n  component: {\n    stage: {\n      direction: {\n        text: {\n          animationLibrary: 'popmotion'\n        }\n      }\n    }\n  }\n}\n```"], [], ["loc", [null, [2, 0], [15, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.configurationTiers.conclusion"], [], ["loc", [null, [16, 0], [16, 79]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [20, 0], [20, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.configuration.configuration-tiers.1"], ["loc", [null, [1, 0], [1, 62]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -4301,7 +5274,7 @@ define("affinity-engine-web/templates/engine/configuration/defaults", ["exports"
             "column": 0
           },
           "end": {
-            "line": 26,
+            "line": 6,
             "column": 0
           }
         },
@@ -4317,26 +5290,6 @@ define("affinity-engine-web/templates/engine/configuration/defaults", ["exports"
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
         var el1 = dom.createElement("hr");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -4348,18 +5301,13 @@ define("affinity-engine-web/templates/engine/configuration/defaults", ["exports"
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(7);
+        var morphs = new Array(2);
         morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createMorphAt(fragment, 14, 14, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.configuration.defaults.engineIntro"], [], ["loc", [null, [1, 0], [1, 70]]], 0, 0], ["inline", "format-markdown", ["```js\nexport default {\n  priority: 0,\n  animationLibrary: 'jquery',\n  menuColumns: 1\n};\n```"], [], ["loc", [null, [3, 0], [9, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.defaults.engineConclusion"], [], ["loc", [null, [11, 0], [11, 75]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.defaults.velocityIntro"], [], ["loc", [null, [12, 0], [12, 72]]], 0, 0], ["inline", "format-markdown", ["```js\nexport default {\n  priority: 1,\n  animationLibrary: 'velocity'\n};\n```"], [], ["loc", [null, [14, 0], [19, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.defaults.velocityConclusion"], [], ["loc", [null, [21, 0], [21, 77]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [25, 0], [25, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.configuration.defaults.1"], ["loc", [null, [1, 0], [1, 51]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -4377,7 +5325,7 @@ define("affinity-engine-web/templates/engine/configuration/index", ["exports"], 
             "column": 0
           },
           "end": {
-            "line": 16,
+            "line": 6,
             "column": 0
           }
         },
@@ -4389,41 +5337,7 @@ define("affinity-engine-web/templates/engine/configuration/index", ["exports"], 
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "column small-12 medium-8 small-padding-left-0");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("aside");
-        dom.setAttribute(el1, "class", "column small-12 medium-4 aside");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
+        var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
@@ -4438,19 +5352,13 @@ define("affinity-engine-web/templates/engine/configuration/index", ["exports"], 
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [0]);
-        var element1 = dom.childAt(fragment, [2]);
-        var morphs = new Array(7);
-        morphs[0] = dom.createUnsafeMorphAt(element0, 1, 1);
-        morphs[1] = dom.createUnsafeMorphAt(element0, 3, 3);
-        morphs[2] = dom.createUnsafeMorphAt(element0, 5, 5);
-        morphs[3] = dom.createUnsafeMorphAt(element0, 7, 7);
-        morphs[4] = dom.createUnsafeMorphAt(element1, 1, 1);
-        morphs[5] = dom.createUnsafeMorphAt(element1, 3, 3);
-        morphs[6] = dom.createMorphAt(fragment, 6, 6, contextualElement);
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.configuration.index.intro"], [], ["loc", [null, [2, 2], [2, 63]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.index.defaultsSummary"], [], ["loc", [null, [3, 2], [3, 73]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.index.usageSummary"], [], ["loc", [null, [4, 2], [4, 70]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.index.configurationTiersSummary"], [], ["loc", [null, [5, 2], [5, 83]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.index.whatIsConfigurableHeader"], [], ["loc", [null, [9, 2], [9, 82]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.index.whatIsConfigurable"], [], ["loc", [null, [10, 2], [10, 76]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [15, 0], [15, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.configuration.index.1"], ["loc", [null, [1, 0], [1, 48]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -4468,7 +5376,7 @@ define("affinity-engine-web/templates/engine/configuration/usage", ["exports"], 
             "column": 0
           },
           "end": {
-            "line": 75,
+            "line": 6,
             "column": 0
           }
         },
@@ -4480,88 +5388,6 @@ define("affinity-engine-web/templates/engine/configuration/usage", ["exports"], 
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("h4");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("h4");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("h4");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -4577,31 +5403,13 @@ define("affinity-engine-web/templates/engine/configuration/usage", ["exports"], 
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(21);
-        morphs[0] = dom.createUnsafeMorphAt(dom.childAt(fragment, [0]), 0, 0);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createUnsafeMorphAt(dom.childAt(fragment, [14]), 0, 0);
-        morphs[8] = dom.createUnsafeMorphAt(fragment, 16, 16, contextualElement);
-        morphs[9] = dom.createMorphAt(fragment, 18, 18, contextualElement);
-        morphs[10] = dom.createUnsafeMorphAt(fragment, 20, 20, contextualElement);
-        morphs[11] = dom.createMorphAt(fragment, 22, 22, contextualElement);
-        morphs[12] = dom.createUnsafeMorphAt(fragment, 24, 24, contextualElement);
-        morphs[13] = dom.createMorphAt(fragment, 26, 26, contextualElement);
-        morphs[14] = dom.createUnsafeMorphAt(fragment, 28, 28, contextualElement);
-        morphs[15] = dom.createUnsafeMorphAt(dom.childAt(fragment, [30]), 0, 0);
-        morphs[16] = dom.createUnsafeMorphAt(fragment, 32, 32, contextualElement);
-        morphs[17] = dom.createMorphAt(fragment, 34, 34, contextualElement);
-        morphs[18] = dom.createUnsafeMorphAt(fragment, 36, 36, contextualElement);
-        morphs[19] = dom.createMorphAt(fragment, 38, 38, contextualElement);
-        morphs[20] = dom.createMorphAt(fragment, 42, 42, contextualElement);
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.configuration.usage.definingHeading"], [], ["loc", [null, [1, 4], [1, 75]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.definingIntro"], [], ["loc", [null, [2, 0], [2, 69]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.definingFormat"], [], ["loc", [null, [3, 0], [3, 70]]], 0, 0], ["inline", "format-markdown", ["```js\n{\n  key: 'value'\n}\n```"], [], ["loc", [null, [5, 0], [9, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.definingRealWorldExample"], [], ["loc", [null, [11, 0], [11, 80]]], 0, 0], ["inline", "format-markdown", ["```js\n{\n  animationLibrary: 'popmotion'\n}\n```"], [], ["loc", [null, [13, 0], [17, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.definingExplanation"], [], ["loc", [null, [19, 0], [19, 75]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.usageHeading"], [], ["loc", [null, [21, 4], [21, 72]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.usageIntro"], [], ["loc", [null, [22, 0], [22, 66]]], 0, 0], ["inline", "format-markdown", ["```bash\nember generate controller application\n```"], [], ["loc", [null, [24, 0], [26, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.usageController"], [], ["loc", [null, [28, 0], [28, 71]]], 0, 0], ["inline", "format-markdown", ["```js\nimport Ember from 'ember';\n\nexport default Ember.Controller.extend({\n  myConfig: {\n    animationLibrary: 'popmotion'\n  }\n});\n```"], [], ["loc", [null, [30, 0], [38, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.usageTemplate"], [], ["loc", [null, [40, 0], [40, 69]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine config=myConfig as |engine|}}\n  . . . .\n{{/affinity-engine}}\n```"], [], ["loc", [null, [42, 0], [46, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.usageMultipleKeys"], [], ["loc", [null, [48, 0], [48, 73]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.sharingHeading"], [], ["loc", [null, [50, 4], [50, 74]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.sharingIntro"], [], ["loc", [null, [51, 0], [51, 68]]], 0, 0], ["inline", "format-markdown", ["```js\n// my-app/affinity-engine/config.js\n\nexport default {\n  animationLibrary: 'popmotion'\n}\n```"], [], ["loc", [null, [53, 0], [59, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.configuration.usage.sharingModules"], [], ["loc", [null, [61, 0], [61, 70]]], 0, 0], ["inline", "format-markdown", ["```js\nimport Ember from 'ember';\nimport config from 'my-app/affinity-engine/config';\n\nexport default Ember.Controller.extend({\n  myConfig: config\n});\n```"], [], ["loc", [null, [63, 0], [70, 6]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [74, 0], [74, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.configuration.usage.1"], ["loc", [null, [1, 0], [1, 48]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -4654,6 +5462,52 @@ define("affinity-engine-web/templates/engine/fixtures", ["exports"], function (e
     };
   })());
 });
+define("affinity-engine-web/templates/engine/fixtures/index", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.7.3",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 0
+          }
+        },
+        "moduleName": "affinity-engine-web/templates/engine/fixtures/index.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("hr");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(1);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        dom.insertBoundary(fragment, 0);
+        return morphs;
+      },
+      statements: [["inline", "m-intl", [], ["path", "engine.fixtures.index.1"], ["loc", [null, [1, 0], [1, 43]]], 0, 0]],
+      locals: [],
+      templates: []
+    };
+  })());
+});
 define("affinity-engine-web/templates/engine/index", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     return {
@@ -4699,7 +5553,7 @@ define("affinity-engine-web/templates/engine/index", ["exports"], function (expo
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.index.intro"], [], ["loc", [null, [1, 0], [1, 47]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.index.1"], ["loc", [null, [1, 0], [1, 34]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -4764,7 +5618,7 @@ define("affinity-engine-web/templates/engine/installation/affinity-engine", ["ex
             "column": 0
           },
           "end": {
-            "line": 15,
+            "line": 6,
             "column": 0
           }
         },
@@ -4776,39 +5630,7 @@ define("affinity-engine-web/templates/engine/installation/affinity-engine", ["ex
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("section");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h4");
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("section");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h4");
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
+        var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
@@ -4823,18 +5645,13 @@ define("affinity-engine-web/templates/engine/installation/affinity-engine", ["ex
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [0]);
-        var element1 = dom.childAt(fragment, [2]);
-        var morphs = new Array(6);
-        morphs[0] = dom.createUnsafeMorphAt(dom.childAt(element0, [1]), 0, 0);
-        morphs[1] = dom.createUnsafeMorphAt(element0, 3, 3);
-        morphs[2] = dom.createUnsafeMorphAt(element0, 5, 5);
-        morphs[3] = dom.createUnsafeMorphAt(dom.childAt(element1, [1]), 0, 0);
-        morphs[4] = dom.createUnsafeMorphAt(element1, 3, 3);
-        morphs[5] = dom.createMorphAt(fragment, 6, 6, contextualElement);
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.installation.affinityEngine.handPickingModulesHeader"], [], ["loc", [null, [2, 6], [2, 94]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.affinityEngine.emberInstallAffinityEngine"], [], ["loc", [null, [3, 2], [3, 92]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.affinityEngine.handPickingModules"], [], ["loc", [null, [4, 2], [4, 84]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.affinityEngine.bundlesHeader"], [], ["loc", [null, [8, 6], [8, 83]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.affinityEngine.bundles"], [], ["loc", [null, [9, 2], [9, 73]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [14, 0], [14, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.installation.affinity-engine.1"], ["loc", [null, [1, 0], [1, 57]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -4852,7 +5669,7 @@ define("affinity-engine-web/templates/engine/installation/ember", ["exports"], f
             "column": 0
           },
           "end": {
-            "line": 31,
+            "line": 6,
             "column": 0
           }
         },
@@ -4864,93 +5681,7 @@ define("affinity-engine-web/templates/engine/installation/ember", ["exports"], f
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("section");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h4");
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("section");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h4");
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("section");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h4");
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("div");
-        dom.setAttribute(el2, "class", "column small-12 medium-8 small-padding-left-0");
-        var el3 = dom.createTextNode("\n    ");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n    ");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n  ");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("aside");
-        dom.setAttribute(el2, "class", "column small-12 medium-4 aside");
-        var el3 = dom.createTextNode("\n    ");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n    ");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n  ");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
+        var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
@@ -4965,29 +5696,13 @@ define("affinity-engine-web/templates/engine/installation/ember", ["exports"], f
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [0]);
-        var element1 = dom.childAt(fragment, [2]);
-        var element2 = dom.childAt(fragment, [4]);
-        var element3 = dom.childAt(element2, [3]);
-        var element4 = dom.childAt(element2, [5]);
-        var morphs = new Array(14);
-        morphs[0] = dom.createUnsafeMorphAt(dom.childAt(element0, [1]), 0, 0);
-        morphs[1] = dom.createUnsafeMorphAt(element0, 3, 3);
-        morphs[2] = dom.createUnsafeMorphAt(element0, 5, 5);
-        morphs[3] = dom.createUnsafeMorphAt(element0, 7, 7);
-        morphs[4] = dom.createUnsafeMorphAt(dom.childAt(element1, [1]), 0, 0);
-        morphs[5] = dom.createUnsafeMorphAt(element1, 3, 3);
-        morphs[6] = dom.createUnsafeMorphAt(element1, 5, 5);
-        morphs[7] = dom.createUnsafeMorphAt(element1, 7, 7);
-        morphs[8] = dom.createUnsafeMorphAt(dom.childAt(element2, [1]), 0, 0);
-        morphs[9] = dom.createUnsafeMorphAt(element3, 1, 1);
-        morphs[10] = dom.createUnsafeMorphAt(element3, 3, 3);
-        morphs[11] = dom.createUnsafeMorphAt(element4, 1, 1);
-        morphs[12] = dom.createUnsafeMorphAt(element4, 3, 3);
-        morphs[13] = dom.createMorphAt(fragment, 8, 8, contextualElement);
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.installation.ember.npmHeader"], [], ["loc", [null, [2, 6], [2, 70]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.npmOverview"], [], ["loc", [null, [3, 2], [3, 68]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.npmNvm"], [], ["loc", [null, [4, 2], [4, 63]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.npmInstall"], [], ["loc", [null, [5, 2], [5, 67]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.remainingDependenciesHeader"], [], ["loc", [null, [9, 6], [9, 88]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.git"], [], ["loc", [null, [10, 2], [10, 60]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.bower"], [], ["loc", [null, [11, 2], [11, 62]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.emberCLI"], [], ["loc", [null, [12, 2], [12, 65]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.emberHeader"], [], ["loc", [null, [16, 6], [16, 72]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.emberOverview"], [], ["loc", [null, [18, 4], [18, 72]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.emberServer"], [], ["loc", [null, [19, 4], [19, 70]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.emberWindowsHeader"], [], ["loc", [null, [23, 4], [23, 77]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.ember.emberWindows"], [], ["loc", [null, [24, 4], [24, 71]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [30, 0], [30, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.installation.ember.1"], ["loc", [null, [1, 0], [1, 47]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5005,7 +5720,7 @@ define("affinity-engine-web/templates/engine/installation/index", ["exports"], f
             "column": 0
           },
           "end": {
-            "line": 15,
+            "line": 6,
             "column": 0
           }
         },
@@ -5017,37 +5732,7 @@ define("affinity-engine-web/templates/engine/installation/index", ["exports"], f
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "column small-12 medium-8 small-padding-left-0");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("aside");
-        dom.setAttribute(el1, "class", "column small-12 medium-4 aside");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
+        var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
@@ -5062,18 +5747,64 @@ define("affinity-engine-web/templates/engine/installation/index", ["exports"], f
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [0]);
-        var element1 = dom.childAt(fragment, [2]);
-        var morphs = new Array(6);
-        morphs[0] = dom.createUnsafeMorphAt(element0, 1, 1);
-        morphs[1] = dom.createUnsafeMorphAt(element0, 3, 3);
-        morphs[2] = dom.createUnsafeMorphAt(element0, 5, 5);
-        morphs[3] = dom.createUnsafeMorphAt(element1, 1, 1);
-        morphs[4] = dom.createUnsafeMorphAt(element1, 3, 3);
-        morphs[5] = dom.createMorphAt(fragment, 6, 6, contextualElement);
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.installation.index.toolingSummary"], [], ["loc", [null, [2, 2], [2, 71]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.index.emberSummary"], [], ["loc", [null, [3, 2], [3, 69]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.index.installSummary"], [], ["loc", [null, [4, 2], [4, 71]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.index.encouragementHeader"], [], ["loc", [null, [8, 2], [8, 76]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.index.encouragement"], [], ["loc", [null, [9, 2], [9, 70]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [14, 0], [14, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.installation.index.1"], ["loc", [null, [1, 0], [1, 47]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
+      locals: [],
+      templates: []
+    };
+  })());
+});
+define("affinity-engine-web/templates/engine/installation/quickstarts", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.7.3",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 6,
+            "column": 0
+          }
+        },
+        "moduleName": "affinity-engine-web/templates/engine/installation/quickstarts.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("hr");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
+        return morphs;
+      },
+      statements: [["inline", "m-intl", [], ["path", "engine.installation.quickstarts.1"], ["loc", [null, [1, 0], [1, 53]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5091,7 +5822,7 @@ define("affinity-engine-web/templates/engine/installation/tooling", ["exports"],
             "column": 0
           },
           "end": {
-            "line": 14,
+            "line": 6,
             "column": 0
           }
         },
@@ -5103,35 +5834,7 @@ define("affinity-engine-web/templates/engine/installation/tooling", ["exports"],
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("section");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h4");
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("section");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h4");
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
+        var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
@@ -5146,17 +5849,13 @@ define("affinity-engine-web/templates/engine/installation/tooling", ["exports"],
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [0]);
-        var element1 = dom.childAt(fragment, [2]);
-        var morphs = new Array(5);
-        morphs[0] = dom.createUnsafeMorphAt(dom.childAt(element0, [1]), 0, 0);
-        morphs[1] = dom.createUnsafeMorphAt(element0, 3, 3);
-        morphs[2] = dom.createUnsafeMorphAt(dom.childAt(element1, [1]), 0, 0);
-        morphs[3] = dom.createUnsafeMorphAt(element1, 3, 3);
-        morphs[4] = dom.createMorphAt(fragment, 6, 6, contextualElement);
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.installation.tooling.commandLineHeader"], [], ["loc", [null, [2, 6], [2, 80]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.tooling.commandLine"], [], ["loc", [null, [3, 2], [3, 70]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.tooling.textEditorsHeader"], [], ["loc", [null, [7, 6], [7, 80]]], 0, 0], ["inline", "m", ["application.guides.engine.installation.tooling.textEditors"], [], ["loc", [null, [8, 2], [8, 70]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [13, 0], [13, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.installation.tooling.1"], ["loc", [null, [1, 0], [1, 49]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5174,7 +5873,7 @@ define("affinity-engine-web/templates/engine/plugins", ["exports"], function (ex
             "column": 0
           },
           "end": {
-            "line": 4,
+            "line": 6,
             "column": 0
           }
         },
@@ -5190,6 +5889,10 @@ define("affinity-engine-web/templates/engine/plugins", ["exports"], function (ex
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
+        var el1 = dom.createElement("hr");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
@@ -5198,12 +5901,12 @@ define("affinity-engine-web/templates/engine/plugins", ["exports"], function (ex
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.plugins.1"], ["loc", [null, [1, 0], [1, 36]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5268,7 +5971,7 @@ define("affinity-engine-web/templates/engine/usage/arguments", ["exports"], func
             "column": 0
           },
           "end": {
-            "line": 31,
+            "line": 6,
             "column": 0
           }
         },
@@ -5280,68 +5983,6 @@ define("affinity-engine-web/templates/engine/usage/arguments", ["exports"], func
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("h4");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("h4");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("h4");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -5357,26 +5998,13 @@ define("affinity-engine-web/templates/engine/usage/arguments", ["exports"], func
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(16);
-        morphs[0] = dom.createUnsafeMorphAt(dom.childAt(fragment, [0]), 0, 0);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(dom.childAt(fragment, [10]), 0, 0);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createUnsafeMorphAt(fragment, 14, 14, contextualElement);
-        morphs[8] = dom.createUnsafeMorphAt(fragment, 16, 16, contextualElement);
-        morphs[9] = dom.createMorphAt(fragment, 18, 18, contextualElement);
-        morphs[10] = dom.createUnsafeMorphAt(fragment, 20, 20, contextualElement);
-        morphs[11] = dom.createUnsafeMorphAt(dom.childAt(fragment, [22]), 0, 0);
-        morphs[12] = dom.createUnsafeMorphAt(fragment, 24, 24, contextualElement);
-        morphs[13] = dom.createUnsafeMorphAt(fragment, 26, 26, contextualElement);
-        morphs[14] = dom.createMorphAt(fragment, 28, 28, contextualElement);
-        morphs[15] = dom.createMorphAt(fragment, 32, 32, contextualElement);
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.usage.arguments.usingArguments.header"], [], ["loc", [null, [1, 4], [1, 77]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.usingArguments.intro"], [], ["loc", [null, [2, 0], [2, 72]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine engineId=\"myEngine\" isFocused=true}}\n{{/affinity-engine}}\n```"], [], ["loc", [null, [3, 0], [6, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.usingArguments.explaination"], [], ["loc", [null, [7, 0], [7, 79]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.usingArguments.list"], [], ["loc", [null, [8, 0], [8, 71]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.engineId.header"], [], ["loc", [null, [10, 4], [10, 71]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.engineId.multipleEngines"], [], ["loc", [null, [11, 0], [11, 76]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.engineId.needForAnIdentifier"], [], ["loc", [null, [12, 0], [12, 80]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.engineId.exampleIntro"], [], ["loc", [null, [13, 0], [13, 73]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine engineId=\"myEngine\"}}\n{{/affinity-engine}}\n```"], [], ["loc", [null, [14, 0], [17, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.engineId.advancedUsage"], [], ["loc", [null, [18, 0], [18, 74]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.isFocused.header"], [], ["loc", [null, [20, 4], [20, 72]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.isFocused.intro"], [], ["loc", [null, [21, 0], [21, 67]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.arguments.isFocused.exampleIntro"], [], ["loc", [null, [22, 0], [22, 74]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine isFocused=true}}\n{{/affinity-engine}}\n```"], [], ["loc", [null, [23, 0], [26, 6]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [30, 0], [30, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.usage.arguments.1"], ["loc", [null, [1, 0], [1, 44]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5394,7 +6022,7 @@ define("affinity-engine-web/templates/engine/usage/basic-routing", ["exports"], 
             "column": 0
           },
           "end": {
-            "line": 12,
+            "line": 6,
             "column": 0
           }
         },
@@ -5406,18 +6034,6 @@ define("affinity-engine-web/templates/engine/usage/basic-routing", ["exports"], 
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -5433,16 +6049,13 @@ define("affinity-engine-web/templates/engine/usage/basic-routing", ["exports"], 
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(5);
+        var morphs = new Array(2);
         morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createMorphAt(fragment, 10, 10, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.usage.basicRouting.intro"], [], ["loc", [null, [1, 0], [1, 60]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine}}\n{{/affinity-engine}}\n```"], [], ["loc", [null, [2, 0], [5, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.basicRouting.explanation"], [], ["loc", [null, [6, 0], [6, 66]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.basicRouting.routing"], [], ["loc", [null, [7, 0], [7, 62]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [11, 0], [11, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.usage.basic-routing.1"], ["loc", [null, [1, 0], [1, 48]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5460,7 +6073,7 @@ define("affinity-engine-web/templates/engine/usage/block-params", ["exports"], f
             "column": 0
           },
           "end": {
-            "line": 40,
+            "line": 6,
             "column": 0
           }
         },
@@ -5472,60 +6085,6 @@ define("affinity-engine-web/templates/engine/usage/block-params", ["exports"], f
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("h4");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("h4");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("h4");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -5541,24 +6100,13 @@ define("affinity-engine-web/templates/engine/usage/block-params", ["exports"], f
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(14);
-        morphs[0] = dom.createUnsafeMorphAt(dom.childAt(fragment, [0]), 0, 0);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(dom.childAt(fragment, [12]), 0, 0);
-        morphs[7] = dom.createUnsafeMorphAt(fragment, 14, 14, contextualElement);
-        morphs[8] = dom.createMorphAt(fragment, 16, 16, contextualElement);
-        morphs[9] = dom.createUnsafeMorphAt(dom.childAt(fragment, [18]), 0, 0);
-        morphs[10] = dom.createUnsafeMorphAt(fragment, 20, 20, contextualElement);
-        morphs[11] = dom.createMorphAt(fragment, 22, 22, contextualElement);
-        morphs[12] = dom.createUnsafeMorphAt(fragment, 24, 24, contextualElement);
-        morphs[13] = dom.createMorphAt(fragment, 28, 28, contextualElement);
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.usage.blockParams.usingBlockComponents.header"], [], ["loc", [null, [1, 4], [1, 85]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.blockParams.usingBlockComponents.htmlExample"], [], ["loc", [null, [2, 0], [2, 86]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine}}\n  <p>Hello world!</p>\n{{/affinity-engine}}\n```"], [], ["loc", [null, [3, 0], [7, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.blockParams.usingBlockComponents.moduleExample"], [], ["loc", [null, [8, 0], [8, 88]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine as |engine|}}\n  {{affinity-engine-stage engineId=engine.engineId}}\n{{/affinity-engine}}\n```"], [], ["loc", [null, [9, 0], [13, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.blockParams.usingBlockComponents.params"], [], ["loc", [null, [14, 0], [14, 81]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.blockParams.engineId.header"], [], ["loc", [null, [16, 4], [16, 73]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.blockParams.engineId.info"], [], ["loc", [null, [17, 0], [17, 67]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine engineId=\"myEngine\" as |engine|}}\n  {{affinity-engine-stage engineId=engine.engineId}}\n{{/affinity-engine}}\n```"], [], ["loc", [null, [18, 0], [22, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.blockParams.preloading.header"], [], ["loc", [null, [24, 4], [24, 75]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.blockParams.preloading.intro"], [], ["loc", [null, [25, 0], [25, 70]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine as |engine|}}\n  {{#if engine.isLoaded}}\n    <p>The game is loaded!</p>\n  {{else}}\n    {{affinity-engine-curtain completePreload=engine.completePreload}}\n  {{/if}}\n{{/affinity-engine}}\n```"], [], ["loc", [null, [26, 0], [34, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.blockParams.preloading.attributes"], [], ["loc", [null, [35, 0], [35, 75]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [39, 0], [39, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.usage.block-params.1"], ["loc", [null, [1, 0], [1, 47]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5576,7 +6124,7 @@ define("affinity-engine-web/templates/engine/usage/index", ["exports"], function
             "column": 0
           },
           "end": {
-            "line": 9,
+            "line": 6,
             "column": 0
           }
         },
@@ -5588,18 +6136,6 @@ define("affinity-engine-web/templates/engine/usage/index", ["exports"], function
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -5615,16 +6151,13 @@ define("affinity-engine-web/templates/engine/usage/index", ["exports"], function
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(5);
+        var morphs = new Array(2);
         morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createMorphAt(fragment, 10, 10, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.usage.index.intro"], [], ["loc", [null, [1, 0], [1, 53]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.index.basicRoutingOverview"], [], ["loc", [null, [2, 0], [2, 68]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.index.argumentsOverview"], [], ["loc", [null, [3, 0], [3, 65]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.index.blockParamsOverview"], [], ["loc", [null, [4, 0], [4, 67]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [8, 0], [8, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "engine.usage.index.1"], ["loc", [null, [1, 0], [1, 40]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5685,7 +6218,7 @@ define("affinity-engine-web/templates/engine/usage/preloading", ["exports"], fun
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m", ["application.guides.engine.usage.preloading.intro"], [], ["loc", [null, [1, 0], [1, 58]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine as |engine|}}\n  {{#if engine.isLoaded}}\n    <p>The game is loaded!</p>\n  {{else}}\n    {{affinity-engine-curtain completePreload=engine.completePreload}}\n  {{/if}}\n{{/affinity-engine}}\n```"], [], ["loc", [null, [2, 0], [10, 6]]], 0, 0], ["inline", "m", ["application.guides.engine.usage.preloading.attributes"], [], ["loc", [null, [11, 0], [11, 63]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [15, 0], [15, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "application.guides.engine.usage.preloading.intro"], ["loc", [null, [1, 0], [1, 68]]], 0, 0], ["inline", "format-markdown", ["```hbs\n{{#affinity-engine as |engine|}}\n  {{#if engine.isLoaded}}\n    <p>The game is loaded!</p>\n  {{else}}\n    {{affinity-engine-curtain completePreload=engine.completePreload}}\n  {{/if}}\n{{/affinity-engine}}\n```"], [], ["loc", [null, [2, 0], [10, 6]]], 0, 0], ["inline", "m-intl", [], ["path", "application.guides.engine.usage.preloading.attributes"], ["loc", [null, [11, 0], [11, 73]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [15, 0], [15, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5741,7 +6274,7 @@ define("affinity-engine-web/templates/index", ["exports"], function (exports) {
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "engine-container", [], ["scene", "index/welcome"], ["loc", [null, [1, 0], [1, 42]]], 0, 0], ["inline", "ember-chimp", [], ["formAction", "//affinityengine.us14.list-manage.com/subscribe/post?u=e829149c8295cbea476288bdc&amp;id=e51b574373", "label", "Join our mailing list:", "placeholder", "Email Address"], ["loc", [null, [3, 0], [7, 2]]], 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [11, 0], [11, 29]]], 0, 0]],
+      statements: [["inline", "engine-container", [], ["scene", "index/welcome"], ["loc", [null, [1, 0], [1, 42]]], 0, 0], ["inline", "ember-chimp", [], ["formAction", "//zaffinityengine.us14.list-manage.com/subscribe/post?u=e829149c8295cbea476288bdc&amp;id=e51b574373", "label", "Join our mailing list:", "placeholder", "Email Address"], ["loc", [null, [3, 0], [7, 2]]], 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [11, 0], [11, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -5888,6 +6421,211 @@ define("affinity-engine-web/templates/stage", ["exports"], function (exports) {
     };
   })());
 });
+define("affinity-engine-web/templates/welcome", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.7.3",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 0
+          }
+        },
+        "moduleName": "affinity-engine-web/templates/welcome.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(2);
+        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
+        dom.insertBoundary(fragment, 0);
+        return morphs;
+      },
+      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
+      locals: [],
+      templates: []
+    };
+  })());
+});
+define("affinity-engine-web/templates/welcome/acknowledgements", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.7.3",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 6,
+            "column": 0
+          }
+        },
+        "moduleName": "affinity-engine-web/templates/welcome/acknowledgements.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("hr");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
+        return morphs;
+      },
+      statements: [["inline", "m-intl", [], ["path", "welcome.acknowledgements.1"], ["loc", [null, [1, 0], [1, 46]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
+      locals: [],
+      templates: []
+    };
+  })());
+});
+define("affinity-engine-web/templates/welcome/how-to-use-this-documentation", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.7.3",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 6,
+            "column": 0
+          }
+        },
+        "moduleName": "affinity-engine-web/templates/welcome/how-to-use-this-documentation.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("hr");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(2);
+        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        dom.insertBoundary(fragment, 0);
+        return morphs;
+      },
+      statements: [["inline", "m-intl", [], ["path", "welcome.how-to-use-this-documentation.1"], ["loc", [null, [1, 0], [1, 59]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
+      locals: [],
+      templates: []
+    };
+  })());
+});
+define("affinity-engine-web/templates/welcome/index", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.7.3",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 12,
+            "column": 0
+          }
+        },
+        "moduleName": "affinity-engine-web/templates/welcome/index.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("hr");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(3);
+        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
+        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
+        morphs[2] = dom.createMorphAt(fragment, 6, 6, contextualElement);
+        dom.insertBoundary(fragment, 0);
+        return morphs;
+      },
+      statements: [["inline", "engine-container", [], ["scene", "index/welcome"], ["loc", [null, [1, 0], [1, 42]]], 0, 0], ["inline", "ember-chimp", [], ["formAction", "//zaffinityengine.us14.list-manage.com/subscribe/post?u=e829149c8295cbea476288bdc&amp;id=e51b574373", "label", "Join our mailing list:", "placeholder", "Email Address"], ["loc", [null, [3, 0], [7, 2]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [11, 0], [11, 29]]], 0, 0]],
+      locals: [],
+      templates: []
+    };
+  })());
+});
 define('affinity-engine-web/transitions', ['exports'], function (exports) {
   exports['default'] = function () {
     this.transition(this.toRoute(function () {
@@ -6012,7 +6750,7 @@ define('affinity-engine-web/transitions/wait', ['exports', 'liquid-fire/transiti
   });
 });
 define("affinity-engine-web/translations/en-us", ["exports"], function (exports) {
-  exports["default"] = { "affinity-engine": { "plugins": { "save-state-manager": { "autosave": "autosave" } }, "translator-ember-intl": { "dummy": { "html": "I <em>am</em> html", "interpolated": "{name} is interpolated", "string": "I am a string" } } }, "application": { "common": { "slogan": "Make games you'll love" }, "guides": { "engine": { "configuration": { "configurationTiers": { "conclusion": "In this example, we first specify a global configuration with `animationLibrary: 'velocity'`, and then we provide a specific override just for the `text` direction. When a module lists what attributes you can configure, it'll also let you know what configuration tiers it's observing and in what order. When determining its value, the module will check to see if its highest priority tier is set. If not, it checks the next highest, all the way down to the lowest priority.", "intro": "What if you want to configure your game to use `velocity` for most animations, but you wanted `popmotion` to handle your text animations? That's possible using configuration tiers like so:" }, "defaults": { "engineConclusion": "Note that it defines the `animationLibrary` as `jquery`. This means that unless you or another module specifies something else, your engine will use `jquery` to animate everything.", "engineIntro": "At the highest level of configuration are your default values. These values are not defined by you, but by the modules you're using. For instance, the `affinity-engine` module has a default configuration that looks something like this:", "velocityConclusion": "Now both the `affinity-engine` config and the `affinity-engine-animator-velocity` config define `animationLibrary`. If you include both in your project, then `affinity-engine-animator-velocity`'s config will win this conflict, since it has a higher `priority` (1 vs 0). That means that your engine will use `velocity` instead of `jquery`. However, since `affinity-engine-animator-velocity` does not specify a `menuColumns`, the engine will continue using the default defined in the `affinity-engine` config.", "velocityIntro": "In the `affinity-engine-animator-velocity` plugin, the config looks something like this:" }, "index": { "configurationTiersSummary": "Finally, we'll explore how the Affinity Engine prioritizes your configuration through [*configuration tiers*](/engine/configuration/configuration-tiers). These tiers allow you to specify general theming for your project, with specific overrides when you need it. For instance, you might style most assets with the `block` style, but use the `full` style for menu interfaces.", "defaultsSummary": "In this chapter, we'll first explore how [default configuration](/engine/configuration/defaults) values are set, and what happens if two modules have conflicting configurations.", "intro": "One of the Affinity Engine's guiding principles is *configurablity*. Every module exposes multiple points of configuration, allowing you to change the way it looks and behaves with surprising ease. For instance, if you want your dialogue boxes to use the `paper` theme, you can specify that in your configuration. If you want the game to autosave every time the player enters a new scene, you can configure that, too.", "usageSummary": "After that, we'll learn different ways in which you can [specify](/engine/configuration/usage) your configuration, and how you can provide different configuration for different Affinity Engines running in your application.", "whatIsConfigurable": "Throughout this documentation, every module will have a *configuration* section specifying which attributes are configurable. If you're creating your own open-source module, be sure to document both your configurable attributes and configuration tiers so that your users can get the most out of your work.", "whatIsConfigurableHeader": "**What is Configurable?**" }, "setup": { "intro": "" }, "usage": { "definingExplanation": "In this example, you're configuring your engine to use the `animationLibrary` of `'popmotion'`. Even if the default configs use `'velocity'` or `'jquery'`, your engine will now use `'popmotion'` instead.", "definingFormat": "As with the default configs, your own configs are POJOs (plain old JavaScript objects). You can also think of them as key-value definitions. For instance:", "definingHeading": "Defining Your Config", "definingIntro": "You can define your own configs, too. If there's a conflict between your configs and the default configs, your configs will always win. You can even define multiple configs, so that each engine you're running has unique theming and behavior.", "definingRealWorldExample": "In the above example, you're setting `key` to have the value of a string, `'value'`. A more real-to-life example might look like:", "sharingHeading": "Sharing Your Config", "sharingIntro": "Often you'll want to use a single config for all your engines. You can do that by defining your config within the `affinity-engine/config.js` file. For instance:", "sharingModules": "Note the `export default` in front of the config. This is essential, as it turns your config into a module that can be imported into any/all of your controllers:", "usageController": "Then within the controller you would define the config like so:", "usageHeading": "Using Your Config", "usageIntro": "The simplest way to use your config is to define it within the controller that manages your `affinity-engine`. For instance, if your engine is rendered in `templates/application.hbs` template, then you can define your config in `controllers/application.js`. If that controller doesn't exist yet, you can use Ember CLI's command line generator:", "usageMultipleKeys": "If you have other engines running, you can define unique configs for each one in their respective controllers. If you can multiple engines on a single controller, you can even define multiple configs on that controller under different keys:", "usageTemplate": "And finally, you'd pass the config into the engine through the `application.hbs` template:" } }, "index": { "intro": "The `affinity-engine` module is the foundation for all Affinity Engine games. It bundles together the core logic of the engine, including a message bus, registrar, and configuration system. Not sure what any of that means? No need to worry. You can build a rich game experience without understanding the inner workings of the Affinity Engine. Later, if you want to extend the engine with custom functionality, you can return to this section to find out how.\n\nFor the time being, the most important thing is understanding is that the Affinity Engine is just a foundation. On it, you build your game out of other modules. The Affinity Engine community itself manages several of these modules, including [`affinity-engine-stage`](/stage), [`affinity-engine-menu-bar`](/menu-bar), and [`affinity-engine-rewindable-save-adapter`](/plugins/rewindable-save-adapter). It's also possible to create your own modules or to use ones that other contributors have open-sourced. You can find many options on [Ember Observer](https://emberobserver.com/).\n\nOnce you've found the modules you want to use, you can add them to your game in a few different ways, depending on the type of module it is. [Plugins](/engine/plugins) you specify in your configuration, [components](/engine/components) you compose into your template, and other modules (such as [stage directions](/stage/direction)), will become available in their own context. Check out the related chapters for detailed descriptions." }, "installation": { "affinityEngine": { "bundles": "Bundles wrap together modules that have an affinity for each other. For instance, the [`affinity-engine-vn-bundle`]() packages the Affinity Engine along with all the modules you'll need to make a basic visual novel. Meanwhile, the [`affinity-engine-coya-bundle`]() packages the Affintiy Engine with just the modules you'll need for a choose-your-own-adventure style game. To install one of these, use `ember install`. For instance, `ember install affinity-engine-vn-bundle`.", "bundlesHeader": "Using Bundles", "emberInstallAffinityEngine": "`ember install affinity-engine`", "handPickingModules": "To install the Affinity Engine by itself, simply run the above command from within your Ember.js project. (You need to do this from the [command line](/engine/installation/tooling).) Note that this is just the core of the Affinity Engine. You'll then be able to hand-pick other modules that you'll need for your game, such as the [`affinity-engine-stage`](/stage) or [`affinity-engine-menu-bar`](/menu-bar). This approach gives you the greatest control over which modules you include, which can lead to slightly svleter builds.", "handPickingModulesHeader": "Using the Standalone Version" }, "ember": { "bower": "Next, let's [install Bower](https://bower.io/#install-bower). Like NPM, Bower is a package manager, but with a much smaller ecosystem focused entirely on client-side code. It's easier to use and install than NPM, but both are still necessary. In fact, you need NPM to install Bower.", "emberCLI": "Finally, let's [install Ember CLI](https://ember-cli.com/user-guide/#ember-cli). Ember CLI will help you create new Ember projects, generate Affinity Engine directions, and build sveltly minified code when your game is ready for release.", "emberHeader": "Creating an Ember Project", "emberOverview": "Now that all our global dependencies are installed, we can create our first Ember project. Simply `ember create my-first-project`. This will create a new directory called `my-first-project` that contains a bare-bones Ember project. This is where your game will come to life.", "emberServer": "Once your game is underway, you can test it locally by running `ember server` in the project directory. This command will prompt Ember CLI to build a copy of the game and serve it to [http://localhost:4200](http://localhost:4200). Simply visit [http://localhost:4200](http://localhost:4200) in your browser to see the game in action. Whenever you save a change to your code, it'll automatically refresh the page for you so you can see the changes in action.", "emberWindows": "If you're using Windows, you'll want to install the [`ember-cli-windows`](https://github.com/felixrieseberg/ember-cli-windows) addon. It'll dramatically improve performance, which can be painfully slow otherwise.", "emberWindowsHeader": "**Windows Users**", "git": "First, let's install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Git is a source code manager used by millions of open source projects, including Node, Ember, and the Affinity Engine itself. When you create an Affinity Engine game, it automatically uses git, which you can use to keep track of changes to your code base. For instance, if you introduce a bug in a new release of your game, you can use git to compare the old code with the new code. You could even use git to rollback your latest changes. You don't need to understand git to use the Affinity Engine, but you do need to [install it](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). If you want to learn more about this powerful tool, check out the excellent [Atlassian documentation](https://www.atlassian.com/git/tutorials/).", "npmHeader": "Installing NPM", "npmInstall": "Once NVM is installed, you can install your first version of Node. Check [this link](https://ember-cli.com/#node) to find out which version of Node to use for best compatibility with Ember CLI. Once you've found the version you need, install it with `nvm install vx.x`. Then run `nvm alias default vx.x`. (In both cases, replacing `x.x` with the Node version number.)", "npmNvm": "There are several ways to install Node and NPM, but let's do it the *maintainable* way. Node regularly releases new versions, and to make the updating process easier, we should use the Node Version Manager (NVM). NVM allows you to install new versions of Node with a single command, and it will manage these versions so that they don't conflict. To install NVM, [follow this guide](https://github.com/creationix/nvm#install-script).", "npmOverview": "Before installing Ember, you'll need Node and the Node Package Manager (NPM). You can think of NPM as an open-source bazaar, where thousands of vendors freely distribute their open-source projects. Using NPM, you'll be able to install these code packages directly into your game, giving it new functionality that you don't have to write yourself. It's because of NPM that the Affinity Engine is able to exist as an ecosystem of modules, rather than as a single monolithic platform.", "remainingDependenciesHeader": "Installing Other Global Dependencies" }, "index": { "emberSummary": "If you've never worked on an Ember project before, check out the second section, [Ember Setup](/engine/installation/ember). It'll get you set up with npm, bower, and Ember CLI.", "encouragement": "Installing the Affinity Engine can be a big undertaking, and if you've never worked with the command line before, it'll also require you to interface with your computer in a new and challenging way. The upswing is that the Affinity Engine is built with incredibly powerful tools, and it extends that power to make game design that much easier for you. Although the setup might be daunting, bear with it and you'll have a simple, extensible, and highly customizable game engine at your disposal.", "encouragementHeader": "**A Word of Encouragement**", "installSummary": "In the [final section](/engine/installation/bundles), you'll find several options for installing the Affinity Engine, whether you're handpicking modules or using one of the convenient bundles or event the quickstart.", "toolingSummary": "This chapter is broken into three sections. Check out the first section, [Tooling Setup](/engine/installation/tooling), if you're new to software development. It'll help you get oriented with the command line and text editors." }, "tooling": { "commandLine": "If you've never used the command line before (or you need a refresher), you might want to check out one of these tutorials. You don't need to have a deep understanding of the command line to use the Affinity Engine, but you will need to be able to navigate the file system:\n* For Linux/Mac users, try the excellent [Code Academy tutorials](https://www.codecademy.com/learn/learn-the-command-line).\n* For users of Windows 10, you can first [install BASH](http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) and then check out those [Code Academy tutorials](https://www.codecademy.com/learn/learn-the-command-line).\n* For users with older versions of Windows, give the [Lifehacker](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything) article a shot.", "commandLineHeader": "Using the Command Line", "textEditors": "Writing an Affinity Engine game means writing code, and you'll need a text editor to do that. These apps are similar to word processors such Microsoft Word or LibreOffice's Writer, but whatever you do, don't use a word processor. It'll make your life much harder, as most word processors will aggressively try to reformat your code and auto-correct your function names. Instead, try one of the many free and open-source text editors out there. Here are a few popular choice:\n* [Atom](https://atom.io/): an extremely user-friendly open-source project developed by Github.\n* [Sublime Text](https://www.sublimetext.com/): a commercial alternative to Atom with an infinite trial period.\n* [Vim](http://www.vim.org/): a command-line text editor the masocistic power-user. Although hard to master, an experienced user can accomplish far more in it than in other text editors. (The [Vim Adventures](http://vim-adventures.com/) game might ease the initial learning curve.)", "textEditorsHeader": "Choosing a Text Editor" } }, "usage": { "arguments": { "engineId": { "advancedUsage": "Note that save states are keyed to the `engineId`, as well. So if you change the `engineId`, any saved states for the engine will be lost. Alternatively, if you had engines share an `engineId`, they would also share their save state, making it possible to have a single gaming experience that spans multiple routes.", "exampleIntro": "You can define an `engineId` like so:", "header": "`engineId`", "multipleEngines": "It's possible to have multiple Affinity Engines running in a single Ember app. These engines might be running simultaneously in a single route, or they might be running individually in their own routes. In either case, you'll probably want to define an unique `engineId` for each one.", "needForAnIdentifier": "The `engineId` is used internally by the engine to associate its many services and components. If you do not provide an `engineId` when there are multiple engines running, it can result in interactions within one engine changing the state of another engine." }, "isFocused": { "exampleIntro": "You can force an engine to gain focus the moment it enters the frame by setting `isFocused` to true. If you plan to only have a single engine running, you'll probably want to set this to true:", "header": "`isFocused`", "intro": "Some Affinity Engine modules respond to keyboard events, such as the user pressing the arrow keys or spacebar. In cases where you have multiple engines on a single page, it's important to know which engine is currently focused, so that only that engine responds to keyboard events. If the user clicks on an engine or tabs into it, it will automatically gain focus. Similarly, if user clicks outside of the engine or tabs out of it, it will lose focus." }, "usingArguments": { "explaination": "You'll notice that we specify the attribute we want to configure, followed by an `=`, followed by the value we want to set that attribute to. In the case of `engineId`, we pass in a string in quotes. With `isFocused`, we pass in a boolean. You could also pass in a number or variable.", "header": "Passing Arguments into an `affinity-engine` Component", "intro": "In order to configure your `affinity-engine` component, you'll need to pass arguments into it via the template. It will look something like this:", "list": "You can provide the following arguments into an `affinity-engine` component:\n* `config`: an object containing configuration values; detailed in its own [chapter](/engine/configuration).\n* `fixtures`: a map of game objects; detailed in its own [chapter](/engine/fixtures).\n* `engineId`: an unique string identifier for the engine; explained below.\n* `isFocused`: a boolean that can set the engine's initial focus; explained below." } }, "basicRouting": { "explanation": "Now your Ember project is a pure Affinity Engine. The only thing it will render is your game, and you don't need to worry about any sort of routing.", "intro": "If you only plan to have a single Affinity Engine running in your project, the simplest solution is to open `my-app/templates/application.hbs` and replace its contents with:", "routing": "Some games may benefit from Ember's advanced router. If you want to learn more about how to route between multiple templates, you can consult the Ember guides [here](https://guides.emberjs.com/v2.8.0/routing/). You could then render an unique engine in each route." }, "blockParams": { "engineId": { "header": "`engineId`", "info": "As before, the `engineId` is an unique identifier for your engine. In order for your engine to communicate with its modules, you'll need to pass the `engineId` into them, too. You'd so like:" }, "preloading": { "attributes": "You'll notice that we're using two new params, including `isLoaded` and `completePreload`:\n* `engine.completePreload`: this action is called once the `affinity-engine-curtain` has completely preloaded its assets. When run, it changes `engine.isLoaded` from `false` to `true`.\n* `engine.isLoaded`: this attribute tracks the current state of the preloading process. It is initially `false`.", "header": "Preloading Assets", "intro": "Due to the nature of the web, media assets like images and music files aren't downloaded until a website uses them--which is to say, a song won't start downloading until it begins playing. This can lead to visual flickers and audio hick-ups, even over fast connections. The `affinity-engine` component can coordinate with a preloader module to fix this, though. In the below example, we'll use a simplified implementation of the `affinity-engine-curtain` preloader to demonstrate what this might look like:" }, "usingBlockComponents": { "header": "Block Components", "htmlExample": "The `affintiy-engine` is a block component, which means that you can compose other components and pure html into it. For instance, you could do something like this:", "moduleExample": "In this case, the paragraph 'Hello world!' will appear inside of the engine. This is particularly useful when you start composing together Affinity Engine modules. For instance, this will render an `affinity-engine-stage` within the engine:", "params": "You might have noticed that we're passing an `engine` into the block. It contains several params, all unique to this particular instance of the `affinity-engine`. One of these params is the `engineId`, which we've already encountered [here](/engine/usage/arguments). The others help when preloading assets." } }, "index": { "argumentsOverview": "After that, we'll learn about [the arguments](/engine/usage/arguments) that can be passed into the `affinity-engine` component to configure it. These include `config`, `fixtures`, `engineId`, and `isFocused`.", "basicRoutingOverview": "In the [first section](/engine/usage/basic-routing), we'll learn a little about Ember.js routes, templates, and the `affinity-engine` component. This section provides a simple implementation for the engine, as well as links to further reading if you're interested in learning more about Ember.js.", "blockParamsOverview": "Finally, we'll introduce ourselves to the [block params](/engine/usage/block-params) that the `affinity-engine` component exposes, learning how to use these params to coordinate with child modules.", "intro": "Now that we've created an Ember.js project and installed the `affinity-engine` module, we're ready to actually implement it in our app. In this chapter, we'll learn how to do just that. We'll also learn that while the Affinity Engine itself is fairly light-weight, it has the important job of coordinating the many modules we're using. To this end, we'll also look into ways to configure the engine to work in a variety of scenarios." } } }, "welcome": { "intro": "The Affinity Engine is a composable game engine built with [Ember.js](http://emberjs.com/) and, of course, a lot of love. <3 <3 <3 It's free and open-source, and you can play its games directly in a browser. Most importantly of all, it's easy to pick up for novice programmers, and yet flexible enough that experienced developers can extend it to create ambitious applications.", "principles": "## Guiding Principles\nThe A " } }, "routes": { "affinityEngine": "Affinity Engine", "affinityEngineInstallation": "Affinity Engine and Bundles", "arguments": "Arguments", "basicRouting": "Basic Routing", "blockParams": "Block Params", "components": "Components", "configuration": "Configuration", "configurationTiers": "Configuration Tiers", "curtain": "Curtain", "defaults": "Defaults", "emberSetup": "Ember Setup", "engine": "Engine", "fixtures": "Fixtures", "installation": "Installation", "menuBar": "Menu Bar", "overview": "Overview", "plugins": "Plugins", "stage": "Stage", "toolingSetup": "Tooling Setup", "usage": "Usage", "welcome": "Welcome" } }, "engines": { "index": { "diyBrowser": "And it's good at what it does. [[pause 500]] [[expression 'smiling']] Its games are highly <strong>portable,</strong> [[pause 250]] meaning that people will be able to play them directly in a browser, [[pause 250]] even on phones and tablets. [[expression 'default']]", "diyBye": "[[expression 'smiling']] And be sure to sign up for the mailing list! We'll let you know as soon as things are ready.", "diyCheckIn": "[[expression 'default']] Feel free to keep checking in on us, though!", "diyDocumentation": "The engine itself is nearly ready for <strong>beta,</strong> [[pause 250]] but there's [[pause 250]] [[expression 'embarrassed']] [[pause 750]] still a lot of documentation to write.", "diyEasyScripts": "[[expression 'smiling']] We also pride ourselves on making an engine that's enjoyable to work with. [[pause 500]] Once you have it installed, [[pause 250]] writing games is a lot like writing screenplays.", "diyIntro": "[[expression 'smiling']] And I'm Diy.", "diyKickstarter": "If you sign up, [[pause 500]] [[expression 'smiling']] we'll also let you know when we launch our Kickstarter. It'll fund a whole cast of characters and background images, [[pause 500]] [[expression 'excited']] all by <a href='http://daaakota.deviantart.com/' target='_blank'>Dakota Bardy</a> (whose art you should definitely checkout). [[pause 750]] [[expression 'smiling']] All the art will be published under a <strong>Creative</strong> <strong>Commons</strong> <strong>licence</strong> so that you can use it to make your <strong>own</strong> <strong>games!</strong>", "diyReadMore": "[[expression 'smiling']] Until then, [[pause 500]] feel free to read more about the engine.", "emberAffinityIntro": "[[expression 'proud']] And this is the Affinity Engine. [[pause 1000]] [[expression 'obviously']] A game engine, [[pause 500]] in case that isn't obvious.", "emberBye": "[[expression 'smiling']] So come back! [[pause 500]] Open source projects like this need community to thrive.", "emberDocumentation": "We <em>are</em> working hard on it, [[pause 250]] but we need a little more time to document its [[expression 'proud']] [[pause 250]] (pretty big) [[pause 250]] [[expression 'default']] feature-set.", "emberIntro": "[[expression 'smiling']] Hi! [[pause 750]] [[expression 'default']] My name's Ember.", "emberKickstarter": "[[expression 'smiling']] And the Kickstarter will also fund [[expression 'default']] [[cps *0.7]] <strong>important</strong> <strong>accessibility</strong> <strong>research.</strong>", "emberMailingList": "[[expression 'obviously']] Or [[pause 500]] just sign up for our <strong>mailing</strong> <strong>list.</strong> [[pause 750]] [[expression 'smiling']] [[pause 250]] We'll let you know when the engine is ready.", "emberModular": "[[expression 'smiling']] And the engine is <strong>modular.</strong> [[pause 750]] We may look like we're in a visual novel right now, [[pause 250]] but you can pick-and-choose modules to make many kinds of [[expression 'proud']] games—games you'll <strong>love.</strong>", "emberOpensource": "[[expression 'proud']] It's something really special: [[pause 250]] [[expression 'smiling']] lovingly crafted code, made [[cps *0.7]] entirely <strong>free</strong> and <strong>open-source.</strong>" } } };
+  exports["default"] = { "affinity-engine": { "plugins": { "data-manager": { "autosave": "autosave" } }, "translator-ember-intl": { "dummy": { "html": "I <em>am</em> html", "interpolated": "{name} is interpolated", "string": "I am a string" } } }, "application": { "common": { "affinityEngine": "Affinity Engine", "slogan": "Make games you'll love" }, "routes": { "acknowledgements": "Acknowledgements", "affinityEngine": "Affinity Engine", "affinityEngineInstallation": "Affinity Engine", "arguments": "Arguments", "basicRouting": "Basic Routing", "blockParams": "Block Params", "components": "Components", "configuration": "Configuration", "configurationTiers": "Configuration Tiers", "curtain": "Curtain", "defaults": "Defaults", "defining": "Defining", "emberSetup": "Ember Setup", "engine": "Engine", "fixtures": "Fixtures", "howToUseThisDocumentation": "How to Use This Documentation", "installation": "Installation", "menuBar": "Menu Bar", "overview": "Overview", "plugins": "Plugins", "quickstarts": "Bundles and Quickstarts", "stage": "Stage", "toolingSetup": "Tooling Setup", "usage": "Usage", "welcome": "Welcome" } }, "engines": { "index": { "diyBrowser": "And it's good at what it does. [[pause 500]] [[expression 'smiling']] Its games are highly <strong>portable,</strong> [[pause 250]] meaning that people will be able to play them directly in a browser, [[pause 250]] even on phones and tablets. [[expression 'neutral']]", "diyBye": "[[expression 'smiling']] And be sure to sign up for the mailing list! We'll let you know as soon as things are ready.", "diyCheckIn": "[[expression 'neutral']] Feel free to keep checking in on us, though!", "diyDocumentation": "The engine itself is nearly ready for <strong>beta,</strong> [[pause 250]] but there's [[pause 250]] [[expression 'embarrassed']] [[pause 750]] still a lot of documentation to write.", "diyEasyScripts": "[[expression 'smiling']] We also pride ourselves on making an engine that's enjoyable to work with. [[pause 500]] Once you have it installed, [[pause 250]] writing games is a lot like writing screenplays.", "diyIntro": "[[expression 'smiling']] And I'm Diy.", "diyKickstarter": "If you sign up, [[pause 500]] [[expression 'smiling']] we'll also let you know when we launch our Kickstarter. It'll fund a whole cast of characters and background images, [[pause 500]] [[expression 'excited']] all by <a href='http://daaakota.deviantart.com/' target='_blank'>Dakota Bardy</a> (whose art you should definitely checkout). [[pause 750]] [[expression 'smiling']] All the art will be published under a <strong>Creative</strong> <strong>Commons</strong> <strong>licence</strong> so that you can use it to make your <strong>own</strong> <strong>games!</strong>", "diyReadMore": "[[expression 'smiling']] Until then, [[pause 500]] feel free to read more about the engine.", "emberAffinityIntro": "[[expression 'proud']] And this is the Affinity Engine. [[pause 1000]] [[expression 'obviously']] A game engine, [[pause 500]] in case that isn't obvious.", "emberBye": "[[expression 'smiling']] So come back! [[pause 500]] Open source projects like this need community to thrive.", "emberDocumentation": "We <em>are</em> working hard on it, [[pause 250]] but we need a little more time to document its [[expression 'proud']] [[pause 250]] (pretty big) [[pause 250]] [[expression 'neutral']] feature-set.", "emberIntro": "[[expression 'smiling']] Hi! [[pause 750]] [[expression 'neutral']] My name's Ember.", "emberKickstarter": "[[expression 'smiling']] And the Kickstarter will also fund [[expression 'neutral']] [[cps *0.7]] <strong>important</strong> <strong>accessibility</strong> <strong>research.</strong>", "emberMailingList": "[[expression 'obviously']] Or [[pause 500]] just sign up for our <strong>mailing</strong> <strong>list.</strong> [[pause 750]] [[expression 'smiling']] [[pause 250]] We'll let you know when the engine is ready.", "emberModular": "[[expression 'smiling']] And the engine is <strong>modular.</strong> [[pause 750]] We may look like we're in a visual novel right now, [[pause 250]] but you can pick-and-choose modules to make many kinds of [[expression 'proud']] games—games you'll <strong>love.</strong>", "emberOpensource": "[[expression 'proud']] It's something really special: [[pause 250]] [[expression 'smiling']] lovingly crafted code, made [[cps *0.7]] entirely <strong>free</strong> and <strong>open-source.</strong>" } } };
 });
 define('affinity-engine-web/utils/get-cmd-key', ['exports', 'ember-keyboard/utils/get-cmd-key'], function (exports, _emberKeyboardUtilsGetCmdKey) {
   Object.defineProperty(exports, 'default', {
@@ -6048,6 +6786,73 @@ define('affinity-engine-web/utils/listener-name', ['exports', 'ember-keyboard/ut
     }
   });
 });
+define('affinity-engine-web/utils/markdown-it-highlight', ['exports', 'ember'], function (exports, _ember) {
+  var assign = _ember['default'].assign;
+
+  var flow = function flow(fn1, fn2) {
+    return function () {
+      return fn2(fn1.apply(undefined, arguments));
+    };
+  };
+
+  var maybe = function maybe(f) {
+    return function () {
+      try {
+        return f.apply(undefined, arguments);
+      } catch (e) {
+        return false;
+      }
+    };
+  };
+
+  var get = function get(name) {
+    return function (x) {
+      return x[name];
+    };
+  };
+  var maybeValue = function maybeValue(f) {
+    return maybe(flow(f, get('value')));
+  };
+
+  // Highlight with given language.
+  var highlight = function highlight(code, lang) {
+    return maybeValue(hljs.highlight)(lang, code, true) || '';
+  };
+
+  // Highlight with given language or automatically.
+  var highlightAuto = function highlightAuto(code, lang) {
+    return lang ? highlight(code, lang) : maybeValue(hljs.highlightAuto)(code) || '';
+  };
+
+  // Wrap a render function to add `hljs` class to code blocks.
+  var wrap = function wrap(render) {
+    return function () {
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return render.apply(this, args).replace('<code class="', '<code class="hljs ').replace('<code>', '<code class="hljs">');
+    };
+  };
+
+  var highlightjs = function highlightjs(md, opts) {
+    opts = assign({}, highlightjs.defaults, opts);
+
+    md.options.highlight = opts.auto ? highlightAuto : highlight;
+    md.renderer.rules.fence = wrap(md.renderer.rules.fence);
+
+    if (opts.code) {
+      md.renderer.rules.code_block = wrap(md.renderer.rules.code_block);
+    }
+  };
+
+  highlightjs.defaults = {
+    auto: true,
+    code: true
+  };
+
+  exports['default'] = highlightjs;
+});
 /* jshint ignore:start */
 
 
@@ -6080,7 +6885,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+d0fe1ee0"});
+  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+7dcdbb16"});
 }
 
 /* jshint ignore:end */
