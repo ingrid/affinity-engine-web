@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "deploy": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -"
+    "deploy": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\" --environment=development; git push; git checkout -"
   },
   "repository": {
     "type": "git",
