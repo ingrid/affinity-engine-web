@@ -2596,6 +2596,8 @@
   position: absolute;
   height: 100%;
   width: 100%; }
+  .ae-stage-direction-image-type .ae-stage-direction-image-layer, .ae-stage-direction-image-type .ae-animation-box-wrapper, .ae-stage-direction-image-type .ae-animation-box-wrapper div {
+    height: 100%; }
   .ae-stage-direction-image-type .ae-stage-direction-image-frame {
     position: absolute;
     top: 0;
