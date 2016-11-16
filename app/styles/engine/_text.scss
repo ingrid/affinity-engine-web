@@ -36,6 +36,10 @@
     }
   }
 
+  .lxl-word {
+    perspective: 100px;
+  }
+
   .lxl-letter {
     transform: perspective(500px);
   }
