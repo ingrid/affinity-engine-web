@@ -3,7 +3,8 @@
     "document",
     "window",
     "-Promise",
-    "hljs"
+    "hljs",
+    "Clipboard"
   ],
   "browser": true,
   "boss": true,
