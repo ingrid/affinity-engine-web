@@ -295,7 +295,7 @@ define('affinity-engine-web/tests/helpers/ember-basic-dropdown', ['exports', 'em
 });
 define('affinity-engine-web/tests/helpers/ember-keyboard/register-test-helpers', ['exports', 'ember', 'ember-keyboard'], function (exports, _ember, _emberKeyboard) {
 
-  var keyEvent = function keyEvent(app, attributes, type) {
+  var keyEvent = function keyEvent(app, attributes, type, element) {
     var event = attributes.split('+').reduce(function (event, attribute) {
       if (['ctrl', 'meta', 'alt', 'shift'].indexOf(attribute) > -1) {
         event[attribute + 'Key'] = true;
@@ -306,20 +306,20 @@ define('affinity-engine-web/tests/helpers/ember-keyboard/register-test-helpers',
       return event;
     }, {});
 
-    return app.testHelpers.triggerEvent(document, type, event);
+    return app.testHelpers.triggerEvent(element || document, type, event);
   };
 
   exports['default'] = function () {
-    _ember['default'].Test.registerAsyncHelper('keyDown', function (app, attributes) {
-      return keyEvent(app, attributes, 'keydown');
+    _ember['default'].Test.registerAsyncHelper('keyDown', function (app, attributes, element) {
+      return keyEvent(app, attributes, 'keydown', element);
     });
 
-    _ember['default'].Test.registerAsyncHelper('keyUp', function (app, attributes) {
-      return keyEvent(app, attributes, 'keyup');
+    _ember['default'].Test.registerAsyncHelper('keyUp', function (app, attributes, element) {
+      return keyEvent(app, attributes, 'keyup', element);
     });
 
-    _ember['default'].Test.registerAsyncHelper('keyPress', function (app, attributes) {
-      return keyEvent(app, attributes, 'keypress');
+    _ember['default'].Test.registerAsyncHelper('keyPress', function (app, attributes, element) {
+      return keyEvent(app, attributes, 'keypress', element);
     });
   };
 });
