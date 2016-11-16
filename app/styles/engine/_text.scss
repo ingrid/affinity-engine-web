@@ -44,3 +44,21 @@
     transform: perspective(500px);
   }
 }
+
+@include breakpoint(medium) {
+  .ae-text.ae-bottom-block {
+    left: 2%;
+    right: 2%;
+    bottom: 3%;
+    height: 250px;
+    line-height: $ae-text-block-line-height * 1.3;
+    font-size: $ae-text-block-font-size * 1.3;
+    padding: $ae-text-block-padding-ends * 1.3 $ae-text-block-padding-sides * 1.3;
+
+    .ae-text-caption {
+      top: $ae-text-caption-block-top * 1.3;
+      padding: $ae-text-caption-block-padding-ends * 1.3 $ae-text-caption-block-padding-sides * 1.3;
+      font-size: $ae-text-caption-block-font-size * 1.3;
+    }
+  }
+}
