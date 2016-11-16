@@ -7,7 +7,6 @@ const {
   set
 } = Ember;
 
-const { computed: { readOnly } } = Ember;
 const { inject: { service } } = Ember;
 
 export default Component.extend({

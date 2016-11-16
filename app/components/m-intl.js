@@ -6,13 +6,11 @@ const {
   Component,
   computed,
   get,
-  isPresent,
-  observer
+  isPresent
 } = Ember;
 
 const { computed: { readOnly } } = Ember;
 const { inject: { service } } = Ember;
-const { Handlebars: { SafeString } } = Ember;
 const { String: { underscore } } = Ember;
 
 const converter = markdownit({
@@ -20,21 +18,6 @@ const converter = markdownit({
   linkify: true,
   typographer: true
 }).use(markdownItHighlight);
-
-function getMatchIndexes(str, toMatch) {
-    var re = new RegExp(toMatch, "g"),
-        indexMatches = [], match;
-
-    while (match = re.exec(str)) {
-        indexMatches.push(match.index);
-    }
-
-    return indexMatches;
-}
-
-function stringInsertAt(index, string, substring) {
-  return string.slice(0, index) + substring + string.slice(index);
-}
 
 function scrollToAnchor() {
   if (window.location.hash) {
@@ -98,7 +81,7 @@ export default Component.extend({
           const clipboard = new Clipboard($elem.get(0));
 
           clipboards.push(clipboard);
-          clipboard.on('success', (e) => {
+          clipboard.on('success', () => {
             history.pushState(null, null, `#${text}`);
             scrollToAnchor();
           });
@@ -110,6 +93,8 @@ export default Component.extend({
   },
 
   willDestroy(...args) {
+    this._super(...args);
+
     get(this, '_clipboards').forEach((clipboard) => clipboard.destroy());
   }
 });

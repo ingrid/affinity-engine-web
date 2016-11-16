@@ -25,10 +25,10 @@ export default Scene.extend({
     yield diy._.text('engines.index.diyReadMore');
     diy.expression('neutral');
     yield ember._.text('engines.index.emberOpensource');
-    ember.expression('neutral')
+    ember.expression('neutral');
     yield diy._.text('engines.index.diyBrowser');
     yield ember._.text('engines.index.emberModular');
-    ember.expression('neutral')
+    ember.expression('neutral');
     yield diy._.text('engines.index.diyEasyScripts');
     diy.expression('neutral');
     yield ember._.text('engines.index.emberBye');
