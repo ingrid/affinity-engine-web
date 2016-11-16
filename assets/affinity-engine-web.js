@@ -802,10 +802,9 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
               },
               lxlTransition: {
                 effect: {
-                  translateX: [0, '5px'],
-                  translateY: [0, '-2px'],
-                  scaleX: [1, 1.25],
-                  scaleY: [1, 1.25]
+                  translateX: [0, '10px'],
+                  translateY: [0, '-3px'],
+                  translateZ: [0, '15px']
                 },
                 rate: 10
               }
@@ -6885,7 +6884,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+7dcdbb16"});
+  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+d5420efd"});
 }
 
 /* jshint ignore:end */
