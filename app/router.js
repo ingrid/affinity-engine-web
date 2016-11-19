@@ -28,7 +28,10 @@ Router.map(function() {
     this.route('components');
     this.route('plugins');
   });
-  this.route('stage');
+  this.route('stage', function() {
+    this.route('directions', function() {});
+    this.route('scenes');
+  });
   this.route('menu-bar');
   this.route('curtain');
   this.route('plugins');

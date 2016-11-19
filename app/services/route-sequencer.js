@@ -84,7 +84,16 @@ export default Service.extend({
             }
           }
         }, stage: {
-          name: t('stage')
+          name: t('stage'),
+          routes: {
+            index: {
+              name: t('overview')
+            }, scenes: {
+              name: t('scenes')
+            }, directions: {
+              name: t('directions')
+            }
+          }
         }, 'menu-bar': {
           name: t('menuBar')
         }, curtain: {
