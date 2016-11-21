@@ -39,6 +39,7 @@ Router.map(function() {
     this.route('how-to-use-this-documentation');
     this.route('acknowledgements');
   });
+  this.route('overview');
 });
 
 export default Router;

@@ -18,3 +18,10 @@
     }
   }
 }
+
+
+@include breakpoint(medium) {
+  .menu.medium-horizontal > li {
+    display: inline-block;
+  }
+}

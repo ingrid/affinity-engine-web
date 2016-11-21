@@ -29,6 +29,8 @@ export default Service.extend({
               name: t('acknowledgements')
             }
           }
+        }, overview: {
+          name: t('overview')
         }, engine: {
           name: t('engine'),
           routes: {
