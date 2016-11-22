@@ -30,9 +30,7 @@ export default Service.extend({
             }
           }
         }, overview: {
-          name: t('overview')
-        }, engine: {
-          name: t('engine'),
+          name: t('overview'),
           routes: {
             index: {
               name: t('overview')
@@ -45,23 +43,8 @@ export default Service.extend({
                   name: t('toolingSetup')
                 }, 'ember': {
                   name: t('emberSetup')
-                }, 'affinity-engine' : {
-                  name: t('affinityEngineInstallation')
                 }, 'quickstarts' : {
                   name: t('quickstarts')
-                }
-              }
-            }, usage: {
-              name: t('usage'),
-              routes: {
-                index: {
-                  name: t('overview')
-                }, 'basic-routing': {
-                  name: t('basicRouting')
-                }, arguments: {
-                  name: t('arguments')
-                }, 'block-params': {
-                  name: t('blockParams')
                 }
               }
             }, configuration: {
@@ -83,6 +66,21 @@ export default Service.extend({
               name: t('components')
             }, plugins: {
               name: t('plugins')
+            }
+          }
+        }, engine: {
+          name: t('engine'),
+          routes: {
+            index: {
+              name: t('overview')
+            }, installation: {
+              name: t('installation')
+            }, usage: {
+              name: t('usage')
+            }, arguments: {
+              name: t('arguments')
+            }, 'block-params': {
+              name: t('blockParams')
             }
           }
         }, stage: {

@@ -7,17 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('engine', function() {
+  this.route('overview', function() {
     this.route('installation', function() {
       this.route('tooling');
       this.route('ember');
-      this.route('affinity-engine');
       this.route('quickstarts');
-    });
-    this.route('usage', function() {
-      this.route('basic-routing');
-      this.route('block-params');
-      this.route('arguments');
     });
     this.route('configuration', function() {
       this.route('configuration-tiers');
@@ -27,6 +21,12 @@ Router.map(function() {
     this.route('fixtures', function() {});
     this.route('components');
     this.route('plugins');
+  });
+  this.route('engine', function() {
+    this.route('installation');
+    this.route('usage');
+    this.route('arguments');
+    this.route('block-params');
   });
   this.route('stage', function() {
     this.route('directions', function() {});
@@ -39,7 +39,6 @@ Router.map(function() {
     this.route('how-to-use-this-documentation');
     this.route('acknowledgements');
   });
-  this.route('overview');
 });
 
 export default Router;
