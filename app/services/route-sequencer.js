@@ -104,6 +104,20 @@ export default Service.extend({
                   }
                 }
               }
+            }, 'menu-bar': {
+              name: t('menuBar'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }
+              }
+            }, curtain: {
+              name: t('curtain'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }
+              }
             }
           }
         }, plugins: {

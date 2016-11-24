@@ -37,6 +37,8 @@ Router.map(function() {
       this.route('scenes');
       this.route('directions', function() {});
     });
+    this.route('menu-bar', function() {});
+    this.route('curtain', function() {});
   });
   this.route('plugins');
 });
