@@ -36,6 +36,7 @@ Router.map(function() {
     this.route('stage', function() {
       this.route('scenes');
       this.route('directions', function() {});
+      this.route('usage');
     });
     this.route('menu-bar', function() {});
     this.route('curtain', function() {});

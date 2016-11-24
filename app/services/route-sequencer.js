@@ -93,6 +93,8 @@ export default Service.extend({
               routes: {
                 index: {
                   name: t('overview')
+                }, usage: {
+                  name: t('usage')
                 }, scenes: {
                   name: t('scenes')
                 }, directions: {
