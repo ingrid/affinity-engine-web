@@ -83,21 +83,29 @@ export default Service.extend({
               name: t('blockParams')
             }
           }
-        }, stage: {
-          name: t('stage'),
+        }, components: {
+          name: t('components'),
           routes: {
             index: {
               name: t('overview')
-            }, scenes: {
-              name: t('scenes')
-            }, directions: {
-              name: t('directions')
+            }, stage: {
+              name: t('stage'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, scenes: {
+                  name: t('scenes')
+                }, directions: {
+                  name: t('directions'),
+                  routes: {
+                    index: {
+                      name: t('overview')
+                    }
+                  }
+                }
+              }
             }
           }
-        }, 'menu-bar': {
-          name: t('menuBar')
-        }, curtain: {
-          name: t('curtain')
         }, plugins: {
           name: t('plugins')
         }

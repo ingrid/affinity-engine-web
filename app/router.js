@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('welcome', function() {
+    this.route('how-to-use-this-documentation');
+    this.route('acknowledgements');
+  });
   this.route('overview', function() {
     this.route('installation', function() {
       this.route('tooling');
@@ -18,7 +22,7 @@ Router.map(function() {
       this.route('defaults');
       this.route('usage');
     });
-    this.route('fixtures', function() {});
+    this.route('fixtures');
     this.route('components');
     this.route('plugins');
   });
@@ -28,17 +32,13 @@ Router.map(function() {
     this.route('arguments');
     this.route('block-params');
   });
-  this.route('stage', function() {
-    this.route('directions', function() {});
-    this.route('scenes');
+  this.route('components', function() {
+    this.route('stage', function() {
+      this.route('scenes');
+      this.route('directions', function() {});
+    });
   });
-  this.route('menu-bar');
-  this.route('curtain');
   this.route('plugins');
-  this.route('welcome', function() {
-    this.route('how-to-use-this-documentation');
-    this.route('acknowledgements');
-  });
 });
 
 export default Router;

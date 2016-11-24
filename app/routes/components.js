@@ -8,5 +8,5 @@ const {
 } = Ember;
 
 export default Route.extend(ResetScrollMixin, RouteTitleMixin, SidebarRouteMixin, {
-  sidebarParentRoute: 'stage'
+  sidebarParentRoute: 'components'
 });
