@@ -1,6 +1,10 @@
+.sidebar {
+  overflow: auto;
+}
+
 @include breakpoint(medium) {
   .sidebar {
     border-right: 3px dashed $light-gray;
-    height: 100vh;
+    margin-top: 2px;
   }
 }

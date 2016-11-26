@@ -35,7 +35,17 @@ Router.map(function() {
   this.route('components', function() {
     this.route('stage', function() {
       this.route('scenes');
-      this.route('directions', function() {});
+      this.route('directions', function() {
+        this.route('text');
+        this.route('menu');
+        this.route('backdrop');
+        this.route('character');
+        this.route('data');
+        this.route('image');
+        this.route('pause');
+        this.route('random');
+        this.route('sound');
+      });
       this.route('usage');
     });
     this.route('menu-bar', function() {});

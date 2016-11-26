@@ -102,6 +102,24 @@ export default Service.extend({
                   routes: {
                     index: {
                       name: t('overview')
+                    }, backdrop: {
+                      name: t('backdrop')
+                    }, character: {
+                      name: t('character')
+                    }, data: {
+                      name: t('data')
+                    }, image: {
+                      name: t('image')
+                    }, menu: {
+                      name: t('menu')
+                    }, pause: {
+                      name: t('pause')
+                    }, random: {
+                      name: t('random')
+                    }, sound: {
+                      name: t('sound')
+                    }, text: {
+                      name: t('text')
                     }
                   }
                 }
