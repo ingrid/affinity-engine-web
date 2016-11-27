@@ -27,10 +27,7 @@ Router.map(function() {
     this.route('plugins');
   });
   this.route('engine', function() {
-    this.route('installation');
     this.route('usage');
-    this.route('arguments');
-    this.route('block-params');
     this.route('fixtures', function() {
       this.route('images');
       this.route('keyframes');

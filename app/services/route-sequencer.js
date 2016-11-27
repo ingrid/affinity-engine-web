@@ -73,14 +73,8 @@ export default Service.extend({
           routes: {
             index: {
               name: t('overview')
-            }, installation: {
-              name: t('installation')
             }, usage: {
               name: t('usage')
-            }, arguments: {
-              name: t('arguments')
-            }, 'block-params': {
-              name: t('blockParams')
             }, fixtures: {
               name: t('fixtures'),
               routes: {
