@@ -1,1 +1,1 @@
-###### `decrement(key, amount)`
+###### `decrement(amount)`

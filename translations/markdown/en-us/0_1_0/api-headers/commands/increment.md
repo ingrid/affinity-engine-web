@@ -1,1 +1,1 @@
-###### `increment(key, amount)`
+###### `increment(amount)`

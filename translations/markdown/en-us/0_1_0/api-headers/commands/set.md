@@ -1,1 +1,1 @@
-###### `set(key, value)`
+###### `set(value)`
