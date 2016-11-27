@@ -122,6 +122,19 @@ export default Service.extend({
                       name: t('text')
                     }
                   }
+                }, fixtures: {
+                  name: t('fixtures'),
+                  routes: {
+                    backdrops: {
+                      name: t('backdrops')
+                    }, characters: {
+                      name: t('characters')
+                    }, images: {
+                      name: t('images')
+                    }, keyframes: {
+                      name: t('keyframes')
+                    }
+                  }
                 }
               }
             }, 'menu-bar': {

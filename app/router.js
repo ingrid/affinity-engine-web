@@ -47,6 +47,12 @@ Router.map(function() {
         this.route('sound');
       });
       this.route('usage');
+      this.route('fixtures', function() {
+        this.route('images');
+        this.route('keyframes');
+        this.route('characters');
+        this.route('backdrops');
+      });
     });
     this.route('menu-bar', function() {});
     this.route('curtain', function() {});
