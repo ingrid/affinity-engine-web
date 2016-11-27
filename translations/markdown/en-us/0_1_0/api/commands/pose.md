@@ -1,4 +1,4 @@
-Queues a crossfade between the current pose and the pose provided.
+Queues a crossfade between the current pose and the pose provided. Creates a new animation queue and Promise if none are active.
 
 * `pose` (**String**): name of the new pose.
 * `durationOrTransition` (**Number**/**Object**|_optional_):

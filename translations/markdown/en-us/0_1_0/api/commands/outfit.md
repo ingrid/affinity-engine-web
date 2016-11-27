@@ -1,4 +1,4 @@
-Queues a crossfade between the current outfit and the outfit provided.
+Queues a crossfade between the current outfit and the outfit provided. Creates a new animation queue and Promise if none are active.
 
 * `outfit` (**String**): name of the new outfit.
 * `durationOrTransition` (**Number**/**Object**|_optional_):

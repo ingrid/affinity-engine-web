@@ -1,4 +1,4 @@
-Queues a crossfade between the current expression and the expression provided.
+Queues a crossfade between the current expression and the expression provided. Creates a new animation queue and Promise if none are active.
 
 * `expression` (**String**): name of the new expression.
 * `durationOrTransition` (**Number**/**Object**|_optional_):
