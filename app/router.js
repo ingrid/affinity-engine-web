@@ -31,6 +31,12 @@ Router.map(function() {
     this.route('usage');
     this.route('arguments');
     this.route('block-params');
+    this.route('fixtures', function() {
+      this.route('images');
+      this.route('keyframes');
+      this.route('characters');
+      this.route('backdrops');
+    });
   });
   this.route('components', function() {
     this.route('stage', function() {
@@ -47,12 +53,6 @@ Router.map(function() {
         this.route('sound');
       });
       this.route('usage');
-      this.route('fixtures', function() {
-        this.route('images');
-        this.route('keyframes');
-        this.route('characters');
-        this.route('backdrops');
-      });
     });
     this.route('menu-bar', function() {});
     this.route('curtain', function() {});

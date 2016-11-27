@@ -81,6 +81,21 @@ export default Service.extend({
               name: t('arguments')
             }, 'block-params': {
               name: t('blockParams')
+            }, fixtures: {
+              name: t('fixtures'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, backdrops: {
+                  name: t('backdrops')
+                }, characters: {
+                  name: t('characters')
+                }, images: {
+                  name: t('images')
+                }, keyframes: {
+                  name: t('keyframes')
+                }
+              }
             }
           }
         }, components: {
@@ -120,19 +135,6 @@ export default Service.extend({
                       name: t('sound')
                     }, text: {
                       name: t('text')
-                    }
-                  }
-                }, fixtures: {
-                  name: t('fixtures'),
-                  routes: {
-                    backdrops: {
-                      name: t('backdrops')
-                    }, characters: {
-                      name: t('characters')
-                    }, images: {
-                      name: t('images')
-                    }, keyframes: {
-                      name: t('keyframes')
                     }
                   }
                 }
