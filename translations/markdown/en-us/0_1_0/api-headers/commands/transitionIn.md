@@ -1,0 +1,1 @@
+###### `transitionIn(effect, duration, options)`
