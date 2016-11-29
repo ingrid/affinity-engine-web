@@ -48,6 +48,8 @@ Router.map(function() {
         this.route('pause');
         this.route('random');
         this.route('sound');
+        this.route('scene');
+        this.route('layer');
       });
       this.route('usage');
     });

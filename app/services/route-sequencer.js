@@ -119,12 +119,16 @@ export default Service.extend({
                       name: t('data')
                     }, image: {
                       name: t('image')
+                    }, layer: {
+                      name: t('layer')
                     }, menu: {
                       name: t('menu')
                     }, pause: {
                       name: t('pause')
                     }, random: {
                       name: t('random')
+                    }, scene: {
+                      name: t('scene')
                     }, sound: {
                       name: t('sound')
                     }, text: {
