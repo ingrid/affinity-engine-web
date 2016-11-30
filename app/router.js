@@ -17,17 +17,16 @@ Router.map(function() {
       this.route('ember');
       this.route('quickstarts');
     });
-    this.route('configuration', function() {
-      this.route('configuration-tiers');
-      this.route('defaults');
-      this.route('usage');
-    });
-    this.route('fixtures');
     this.route('components');
     this.route('plugins');
   });
   this.route('engine', function() {
     this.route('usage');
+    this.route('configuration', function() {
+      this.route('defaults');
+      this.route('usage');
+      this.route('configuration-tiers');
+    });
     this.route('fixtures', function() {
       this.route('images');
       this.route('keyframes');

@@ -47,21 +47,6 @@ export default Service.extend({
                   name: t('quickstarts')
                 }
               }
-            }, configuration: {
-              name: t('configuration'),
-              routes: {
-                index: {
-                  name: t('overview')
-                }, defaults: {
-                  name: t('defaults')
-                }, usage: {
-                  name: t('usage')
-                }, 'configuration-tiers': {
-                  name: t('configurationTiers')
-                }
-              }
-            }, fixtures: {
-              name: t('fixtures')
             }, components: {
               name: t('components')
             }, plugins: {
@@ -75,6 +60,19 @@ export default Service.extend({
               name: t('overview')
             }, usage: {
               name: t('usage')
+            }, configuration: {
+              name: t('configuration'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, defaults: {
+                  name: t('defaults')
+                }, usage: {
+                  name: t('usage')
+                }, 'configuration-tiers': {
+                  name: t('configurationTiers')
+                }
+              }
             }, fixtures: {
               name: t('fixtures'),
               routes: {
