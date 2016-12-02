@@ -155,7 +155,6 @@ export default Component.extend({
     keyframes: [{
       id: 'ember-pose-standing',
       src: 'affinity-engine/characters/ember/poses/standing.png'
-      // src: 'affinity-engine/characters/ember/brows/asymetrical.png'
     }, {
       id: 'ember-brows-asymetrical',
       src: 'affinity-engine/characters/ember/brows/asymetrical.png'
@@ -203,7 +202,7 @@ export default Component.extend({
       src: 'affinity-engine/characters/ember/nails/natural.png'
     }, {
       id: 'ember-nails-red',
-      src: 'affinity-engine/characters/ember/mouths/red.png'
+      src: 'affinity-engine/characters/ember/nails/red.png'
     }, {
       id: 'ember-nose-neutral',
       src: 'affinity-engine/characters/ember/noses/neutral.png'
