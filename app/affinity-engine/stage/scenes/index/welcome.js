@@ -4,7 +4,7 @@ import { task } from 'ember-concurrency';
 export default Scene.extend({
   start: task(function * (script) {
     script.backdrop('diy-bedroom').fadeIn();
-    const diy = script.character('diy').transition({ left: '17%', top: '-4%', translateX: '-50%' }).fadeIn(750);
+    const diy = script.character('diy').transition({ left: '25%', top: '-4%', translateX: '-50%' }).fadeIn(750);
     const ember = script.character('ember').transition({ left: '83%', top: '1%', translateX: '-50%' }).fadeIn(750);
 
     yield script.pause(1250);

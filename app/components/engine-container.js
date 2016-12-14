@@ -128,23 +128,111 @@ export default Component.extend({
       id: 'diy',
       name: 'Diy',
       height: 380,
-      defaultState: { expression: 'neutral' },
+      defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral' },
       layerOrder: [
-        'base'
+        'base',
+        'complexion',
+        'jewlery',
+        'socks',
+        'shoes',
+        'bottom',
+        'top',
+        'vest',
+        'jacket',
+        'scarf',
+        'nose',
+        'mouth',
+        'eyes',
+        'brows',
+        'hair'
       ],
       layers: {
         base: [{
-          state: { expression: 'neutral' },
-          keyframe: 'diy-default'
+          state: { pose: 'standing' },
+          keyframe: 'diy-pose-standing'
+        }],
+        jewlery: [{
+          state: { pose: 'standing', outfit: 'trendy' },
+          keyframe: 'diy-jewlery-friendship'
+        }],
+        socks: [{
+          state: { pose: 'standing', outfit: 'trendy' },
+          keyframe: 'diy-socks-red'
+        }],
+        shoes: [{
+          state: { pose: 'standing', outfit: 'trendy' },
+          keyframe: 'diy-shoes-brown-high-tops'
+        }],
+        bottom: [{
+          state: { pose: 'standing', outfit: 'trendy' },
+          keyframe: 'diy-bottom-grey-pants'
+        }],
+        top: [{
+          state: { pose: 'standing', outfit: 'trendy' },
+          keyframe: 'diy-top-aqua-shirt'
+        }],
+        vest: [{
+          state: { pose: 'standing', outfit: 'trendy' },
+          keyframe: 'diy-vest-brown'
+        }],
+        jacket: [{
+          state: { pose: 'standing', outfit: 'trendy' },
+          keyframe: 'diy-jacket-blue'
+        }],
+        scarf: [{
+          state: { pose: 'standing', outfit: 'trendy' },
+          keyframe: 'diy-scarf-red'
+        }],
+        complexion: [{
+          state: { pose: 'standing', expression: 'embarrassed' },
+          keyframe: 'diy-complexion-blush'
+        }],
+        nose: [{
+          state: { pose: 'standing' },
+          keyframe: 'diy-nose-neutral'
+        }],
+        mouth: [{
+          state: { pose: 'standing', expression: 'neutral' },
+          keyframe: 'diy-mouth-neutral'
         }, {
-          state: { expression: 'smiling' },
-          keyframe: 'diy-smiling'
+          state: { pose: 'standing', expression: 'embarrassed' },
+          keyframe: 'diy-mouth-pout'
         }, {
-          state: { expression: 'embarrassed' },
-          keyframe: 'diy-embarrassed'
+          state: { pose: 'standing', expression: 'smiling' },
+          keyframe: 'diy-mouth-smile-closed'
         }, {
-          state: { expression: 'excited' },
-          keyframe: 'diy-excited'
+          state: { pose: 'standing', expression: 'excited' },
+          keyframe: 'diy-mouth-smile-toothy'
+        }],
+        eyes: [{
+          state: { pose: 'standing', expression: 'neutral' },
+          keyframe: 'diy-eyes-right'
+        }, {
+          state: { pose: 'standing', expression: 'embarrassed' },
+          keyframe: 'diy-eyes-left'
+        }, {
+          state: { pose: 'standing', expression: 'smiling' },
+          keyframe: 'diy-eyes-neutral'
+        }, {
+          state: { pose: 'standing', expression: 'excited' },
+          keyframe: 'diy-eyes-neutral'
+        }],
+        brows: [{
+          state: { pose: 'standing', expression: 'neutral' },
+          keyframe: 'diy-brows-neutral'
+        }, {
+          state: { pose: 'standing', expression: 'embarrassed' },
+          keyframe: 'diy-brows-frown'
+        }, {
+          state: { pose: 'standing', expression: 'smiling' },
+          keyframe: 'diy-brows-up'
+        }, {
+          state: { pose: 'standing', expression: 'excited' },
+          keyframe: 'diy-brows-up'
+        }],
+        hair: [{
+          state: { pose: 'standing', outfit: 'trendy' },
+          keyframe: 'diy-hair-shaggy'
         }]
       }
     }],
@@ -216,24 +304,94 @@ export default Component.extend({
       id: 'ember-top-red-tank',
       src: 'affinity-engine/characters/ember/tops/red-tank.png'
     }, {
-      id: 'diy-default',
-      caption: 'Diy',
-      src: 'affinity-engine/characters/diy/default.png'
+      id: 'diy-bottom-grey-pants',
+      src: 'affinity-engine/characters/diy/bottoms/grey-pants.png'
     }, {
-      id: 'diy-smiling',
-      caption: 'Diy',
-      src: 'affinity-engine/characters/diy/smiling.png'
+      id: 'diy-brows-frown',
+      src: 'affinity-engine/characters/diy/brows/frown.png'
     }, {
-      id: 'diy-embarrassed',
-      caption: 'Diy',
-      src: 'affinity-engine/characters/diy/embarrassed.png'
+      id: 'diy-brows-neutral',
+      src: 'affinity-engine/characters/diy/brows/neutral.png'
     }, {
-      id: 'diy-excited',
-      caption: 'Diy',
-      src: 'affinity-engine/characters/diy/excited.png'
+      id: 'diy-brows-one-up',
+      src: 'affinity-engine/characters/diy/brows/one-up.png'
+    }, {
+      id: 'diy-brows-sad',
+      src: 'affinity-engine/characters/diy/brows/sad.png'
+    }, {
+      id: 'diy-brows-up',
+      src: 'affinity-engine/characters/diy/brows/up.png'
+    }, {
+      id: 'diy-complexion-blush',
+      src: 'affinity-engine/characters/diy/complexions/blush.png'
+    }, {
+      id: 'diy-eyes-closed',
+      src: 'affinity-engine/characters/diy/eyes/closed.png'
+    }, {
+      id: 'diy-eyes-left',
+      src: 'affinity-engine/characters/diy/eyes/left.png'
+    }, {
+      id: 'diy-eyes-neutral',
+      src: 'affinity-engine/characters/diy/eyes/neutral.png'
+    }, {
+      id: 'diy-eyes-right',
+      src: 'affinity-engine/characters/diy/eyes/right.png'
+    }, {
+      id: 'diy-eyes-roll',
+      src: 'affinity-engine/characters/diy/eyes/roll.png'
+    }, {
+      id: 'diy-eyes-closed',
+      src: 'affinity-engine/characters/diy/eyes/closed.png'
+    }, {
+      id: 'diy-hair-shaggy',
+      src: 'affinity-engine/characters/diy/hair/shaggy.png'
+    }, {
+      id: 'diy-jacket-blue',
+      src: 'affinity-engine/characters/diy/jackets/blue.png'
+    }, {
+      id: 'diy-jewlery-friendship',
+      src: 'affinity-engine/characters/diy/jewlery/friendship.png'
+    }, {
+      id: 'diy-mouth-neutral',
+      src: 'affinity-engine/characters/diy/mouths/neutral.png'
+    }, {
+      id: 'diy-mouth-pout',
+      src: 'affinity-engine/characters/diy/mouths/pout.png'
+    }, {
+      id: 'diy-mouth-smile-closed',
+      src: 'affinity-engine/characters/diy/mouths/smile-closed.png'
+    }, {
+      id: 'diy-mouth-smile-open',
+      src: 'affinity-engine/characters/diy/mouths/smile-open.png'
+    }, {
+      id: 'diy-mouth-smile-toothy',
+      src: 'affinity-engine/characters/diy/mouths/smile-toothy.png'
+    }, {
+      id: 'diy-nose-neutral',
+      src: 'affinity-engine/characters/diy/noses/neutral.png'
+    }, {
+      id: 'diy-pose-standing',
+      src: 'affinity-engine/characters/diy/poses/standing.png'
+    }, {
+      id: 'diy-scarf-red',
+      src: 'affinity-engine/characters/diy/scarves/red.png'
+    }, {
+      id: 'diy-shoes-brown-high-tops',
+      src: 'affinity-engine/characters/diy/shoes/brown-high-tops.png'
+    }, {
+      id: 'diy-socks-red',
+      src: 'affinity-engine/characters/diy/socks/red.png'
+    }, {
+      id: 'diy-mouth-neutral',
+      src: 'affinity-engine/characters/diy/mouths/neutral.png'
+    }, {
+      id: 'diy-top-aqua-shirt',
+      src: 'affinity-engine/characters/diy/tops/aqua-shirt.png'
+    }, {
+      id: 'diy-vest-brown',
+      src: 'affinity-engine/characters/diy/vests/brown.png'
     }, {
       id: 'diy-bedroom',
-      caption: 'Diy\'s bedroom',
       src: 'affinity-engine/backdrops/diy-bedroom.png'
     }]
   },
