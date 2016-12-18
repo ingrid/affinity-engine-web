@@ -4,7 +4,7 @@ define('affinity-engine-web/tests/affinity-engine/stage/scenes/index/welcome.jsh
   QUnit.module('JSHint | affinity-engine/stage/scenes/index/welcome.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'affinity-engine/stage/scenes/index/welcome.js should pass jshint.\naffinity-engine/stage/scenes/index/welcome.js: line 28, col 32, Missing semicolon.\naffinity-engine/stage/scenes/index/welcome.js: line 31, col 32, Missing semicolon.\n\n2 errors');
+    assert.ok(true, 'affinity-engine/stage/scenes/index/welcome.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/app.jshint', ['exports'], function (exports) {
@@ -16,13 +16,22 @@ define('affinity-engine-web/tests/app.jshint', ['exports'], function (exports) {
     assert.ok(true, 'app.js should pass jshint.');
   });
 });
+define('affinity-engine-web/tests/components/api-doc.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | components/api-doc.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'components/api-doc.js should pass jshint.');
+  });
+});
 define('affinity-engine-web/tests/components/doc-version-selector.jshint', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/doc-version-selector.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'components/doc-version-selector.js should pass jshint.\ncomponents/doc-version-selector.js: line 10, col 21, \'readOnly\' is defined but never used.\n\n1 error');
+    assert.ok(true, 'components/doc-version-selector.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/components/dynamic-tag.jshint', ['exports'], function (exports) {
@@ -76,7 +85,7 @@ define('affinity-engine-web/tests/components/m-intl.jshint', ['exports'], functi
   QUnit.module('JSHint | components/m-intl.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'components/m-intl.js should pass jshint.\ncomponents/m-intl.js: line 101, col 36, \'e\' is defined but never used.\ncomponents/m-intl.js: line 112, col 18, \'args\' is defined but never used.\ncomponents/m-intl.js: line 98, col 33, \'Clipboard\' is not defined.\ncomponents/m-intl.js: line 10, col 3, \'observer\' is defined but never used.\ncomponents/m-intl.js: line 15, col 23, \'SafeString\' is defined but never used.\ncomponents/m-intl.js: line 24, col 10, \'getMatchIndexes\' is defined but never used.\ncomponents/m-intl.js: line 35, col 10, \'stringInsertAt\' is defined but never used.\n\n7 errors');
+    assert.ok(true, 'components/m-intl.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/components/responsive-dropdown.jshint', ['exports'], function (exports) {
@@ -627,6 +636,146 @@ define('affinity-engine-web/tests/instance-initializers/inject-guides.jshint', [
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'instance-initializers/inject-guides.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/integration/components/api-doc-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleForComponent)('api-doc', 'Integration | Component | api doc', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+
+    this.render(Ember.HTMLBars.template((function () {
+      return {
+        meta: {
+          'revision': 'Ember@2.7.3',
+          'loc': {
+            'source': null,
+            'start': {
+              'line': 1,
+              'column': 0
+            },
+            'end': {
+              'line': 1,
+              'column': 11
+            }
+          }
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createComment('');
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var morphs = new Array(1);
+          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
+          dom.insertBoundary(fragment, 0);
+          dom.insertBoundary(fragment, null);
+          return morphs;
+        },
+        statements: [['content', 'api-doc', ['loc', [null, [1, 0], [1, 11]]], 0, 0, 0, 0]],
+        locals: [],
+        templates: []
+      };
+    })()));
+
+    assert.equal(this.$().text().trim(), '');
+
+    // Template block usage:
+    this.render(Ember.HTMLBars.template((function () {
+      var child0 = (function () {
+        return {
+          meta: {
+            'revision': 'Ember@2.7.3',
+            'loc': {
+              'source': null,
+              'start': {
+                'line': 2,
+                'column': 4
+              },
+              'end': {
+                'line': 4,
+                'column': 4
+              }
+            }
+          },
+          isEmpty: false,
+          arity: 0,
+          cachedFragment: null,
+          hasRendered: false,
+          buildFragment: function buildFragment(dom) {
+            var el0 = dom.createDocumentFragment();
+            var el1 = dom.createTextNode('      template block text\n');
+            dom.appendChild(el0, el1);
+            return el0;
+          },
+          buildRenderNodes: function buildRenderNodes() {
+            return [];
+          },
+          statements: [],
+          locals: [],
+          templates: []
+        };
+      })();
+
+      return {
+        meta: {
+          'revision': 'Ember@2.7.3',
+          'loc': {
+            'source': null,
+            'start': {
+              'line': 1,
+              'column': 0
+            },
+            'end': {
+              'line': 5,
+              'column': 2
+            }
+          }
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode('\n');
+          dom.appendChild(el0, el1);
+          var el1 = dom.createComment('');
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode('  ');
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var morphs = new Array(1);
+          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
+          return morphs;
+        },
+        statements: [['block', 'api-doc', [], [], 0, null, ['loc', [null, [2, 4], [4, 16]]]]],
+        locals: [],
+        templates: [child0]
+      };
+    })()));
+
+    assert.equal(this.$().text().trim(), 'template block text');
+  });
+});
+define('affinity-engine-web/tests/integration/components/api-doc-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | integration/components/api-doc-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/components/api-doc-test.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/integration/components/doc-version-selector-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
@@ -1688,13 +1837,202 @@ define('affinity-engine-web/tests/routes/application.jshint', ['exports'], funct
     assert.ok(true, 'routes/application.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/curtain.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint | routes/curtain.js');
+  QUnit.module('JSHint | routes/components.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/curtain.js should pass jshint.');
+    assert.ok(true, 'routes/components.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/curtain.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/curtain.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/curtain.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/curtain/index.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/curtain/index.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/curtain/index.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/menu-bar.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/menu-bar.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/menu-bar.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/menu-bar/index.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/menu-bar/index.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/menu-bar/index.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/backdrop.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/backdrop.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/backdrop.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/character.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/character.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/character.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/data.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/data.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/data.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/image.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/image.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/image.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/index.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/index.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/index.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/layer.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/layer.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/layer.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/menu.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/menu.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/menu.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/pause.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/pause.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/pause.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/random.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/random.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/random.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/scene.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/scene.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/scene.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/sound.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/sound.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/sound.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/directions/text.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/directions/text.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/directions/text.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/index.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/index.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/index.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/scenes.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/scenes.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/scenes.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/usage.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/usage.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/usage.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/routes/engine.jshint', ['exports'], function (exports) {
@@ -1704,15 +2042,6 @@ define('affinity-engine-web/tests/routes/engine.jshint', ['exports'], function (
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/engine.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/engine/components.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/components.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/components.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/routes/engine/configuration.jshint', ['exports'], function (exports) {
@@ -1769,6 +2098,33 @@ define('affinity-engine-web/tests/routes/engine/fixtures.jshint', ['exports'], f
     assert.ok(true, 'routes/engine/fixtures.js should pass jshint.');
   });
 });
+define('affinity-engine-web/tests/routes/engine/fixtures/backdrops.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/engine/fixtures/backdrops.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/engine/fixtures/backdrops.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/engine/fixtures/characters.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/engine/fixtures/characters.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/engine/fixtures/characters.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/engine/fixtures/images.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/engine/fixtures/images.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/engine/fixtures/images.js should pass jshint.');
+  });
+});
 define('affinity-engine-web/tests/routes/engine/fixtures/index.jshint', ['exports'], function (exports) {
   'use strict';
 
@@ -1778,67 +2134,13 @@ define('affinity-engine-web/tests/routes/engine/fixtures/index.jshint', ['export
     assert.ok(true, 'routes/engine/fixtures/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/installation.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/fixtures/keyframes.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint | routes/engine/installation.js');
+  QUnit.module('JSHint | routes/engine/fixtures/keyframes.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/engine/installation.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/engine/installation/affinity-engine.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/installation/affinity-engine.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/installation/affinity-engine.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/engine/installation/ember.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/installation/ember.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/installation/ember.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/engine/installation/index.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/installation/index.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/installation/index.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/engine/installation/quickstarts.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/installation/quickstarts.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/installation/quickstarts.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/engine/installation/tooling.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/installation/tooling.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/installation/tooling.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/engine/plugins.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/plugins.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/plugins.js should pass jshint.');
+    assert.ok(true, 'routes/engine/fixtures/keyframes.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/routes/engine/usage.jshint', ['exports'], function (exports) {
@@ -1850,42 +2152,6 @@ define('affinity-engine-web/tests/routes/engine/usage.jshint', ['exports'], func
     assert.ok(true, 'routes/engine/usage.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/usage/arguments.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/usage/arguments.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/usage/arguments.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/engine/usage/basic-routing.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/usage/basic-routing.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/usage/basic-routing.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/engine/usage/block-params.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/usage/block-params.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/usage/block-params.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/engine/usage/index.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/engine/usage/index.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/engine/usage/index.js should pass jshint.');
-  });
-});
 define('affinity-engine-web/tests/routes/index.jshint', ['exports'], function (exports) {
   'use strict';
 
@@ -1895,13 +2161,103 @@ define('affinity-engine-web/tests/routes/index.jshint', ['exports'], function (e
     assert.ok(true, 'routes/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/menu-bar.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint | routes/menu-bar.js');
+  QUnit.module('JSHint | routes/overview.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/menu-bar.js should pass jshint.');
+    assert.ok(true, 'routes/overview.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/overview/components.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/overview/components.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/overview/components.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/overview/fixtures.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/overview/fixtures.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/overview/fixtures.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/overview/fixtures/index.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/overview/fixtures/index.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/overview/fixtures/index.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/overview/installation.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/overview/installation.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/overview/installation.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/overview/installation/affinity-engine.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/overview/installation/affinity-engine.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/overview/installation/affinity-engine.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/overview/installation/ember.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/overview/installation/ember.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/overview/installation/ember.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/overview/installation/index.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/overview/installation/index.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/overview/installation/index.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/overview/installation/quickstarts.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/overview/installation/quickstarts.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/overview/installation/quickstarts.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/overview/installation/tooling.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/overview/installation/tooling.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/overview/installation/tooling.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/overview/plugins.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/overview/plugins.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/overview/plugins.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/routes/plugins.jshint', ['exports'], function (exports) {
@@ -1911,15 +2267,6 @@ define('affinity-engine-web/tests/routes/plugins.jshint', ['exports'], function 
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/plugins.js should pass jshint.');
-  });
-});
-define('affinity-engine-web/tests/routes/stage.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/stage.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/stage.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/routes/welcome.jshint', ['exports'], function (exports) {
@@ -2092,6 +2439,573 @@ define('affinity-engine-web/tests/unit/mixins/sidebar-route-test.jshint', ['expo
     assert.ok(true, 'unit/mixins/sidebar-route-test.js should pass jshint.');
   });
 });
+define('affinity-engine-web/tests/unit/routes/components-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components', 'Unit | Route | components', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/curtain-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/curtain', 'Unit | Route | components/curtain', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/curtain-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/curtain-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/curtain-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/curtain/index-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/curtain/index', 'Unit | Route | components/curtain/index', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/curtain/index-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/curtain/index-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/curtain/index-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/menu-bar-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/menu-bar', 'Unit | Route | components/menu bar', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/menu-bar-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/menu-bar-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/menu-bar-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/menu-bar/index-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/menu-bar/index', 'Unit | Route | components/menu bar/index', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/menu-bar/index-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/menu-bar/index-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/menu-bar/index-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage', 'Unit | Route | components/stage', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions', 'Unit | Route | components/stage/directions', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/backdrop-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/backdrop', 'Unit | Route | components/stage/directions/backdrop', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/backdrop-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/backdrop-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/backdrop-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/character-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/character', 'Unit | Route | components/stage/directions/character', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/character-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/character-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/character-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/data-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/data', 'Unit | Route | components/stage/directions/data', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/data-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/data-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/data-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/image-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/image', 'Unit | Route | components/stage/directions/image', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/image-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/image-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/image-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/index-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/index', 'Unit | Route | components/stage/directions/index', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/index-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/index-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/index-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/layer-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/layer', 'Unit | Route | components/stage/directions/layer', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/layer-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/layer-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/layer-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/menu-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/menu', 'Unit | Route | components/stage/directions/menu', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/menu-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/menu-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/menu-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/pause-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/pause', 'Unit | Route | components/stage/directions/pause', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/pause-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/pause-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/pause-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/random-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/random', 'Unit | Route | components/stage/directions/random', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/random-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/random-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/random-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/scene-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/scene', 'Unit | Route | components/stage/directions/scene', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/scene-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/scene-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/scene-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/sound-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/sound', 'Unit | Route | components/stage/directions/sound', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/sound-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/sound-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/sound-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/text-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/directions/text', 'Unit | Route | components/stage/directions/text', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/text-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/directions/text-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/directions/text-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/fixtures', 'Unit | Route | components/stage/fixtures', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/fixtures-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/fixtures-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/backdrops-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/fixtures/backdrops', 'Unit | Route | components/stage/fixtures/backdrops', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/backdrops-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/fixtures/backdrops-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/fixtures/backdrops-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/characters-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/fixtures/characters', 'Unit | Route | components/stage/fixtures/characters', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/characters-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/fixtures/characters-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/fixtures/characters-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/images-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/fixtures/images', 'Unit | Route | components/stage/fixtures/images', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/images-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/fixtures/images-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/fixtures/images-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/keyframes-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/fixtures/keyframes', 'Unit | Route | components/stage/fixtures/keyframes', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/keyframes-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/fixtures/keyframes-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/fixtures/keyframes-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/index-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/index', 'Unit | Route | components/stage/index', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/index-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/index-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/index-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/scenes-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/scenes', 'Unit | Route | components/stage/scenes', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/scenes-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/scenes-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/scenes-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/usage-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/usage', 'Unit | Route | components/stage/usage', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/usage-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/usage-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/usage-test.js should pass jshint.');
+  });
+});
 define('affinity-engine-web/tests/unit/routes/engine/fixtures/index-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
 
   (0, _emberQunit.moduleFor)('route:engine/fixtures/index', 'Unit | Route | engine/fixtures/index', {
@@ -2132,6 +3046,132 @@ define('affinity-engine-web/tests/unit/routes/engine/installation/quickstarts-te
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/engine/installation/quickstarts-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:overview', 'Unit | Route | overview', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/overview-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/overview-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview/configuration-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:overview/configuration', 'Unit | Route | overview/configuration', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview/configuration-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/overview/configuration-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/overview/configuration-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview/configuration/configuration-tiers-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:overview/configuration/configuration-tiers', 'Unit | Route | overview/configuration/configuration tiers', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview/configuration/configuration-tiers-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/overview/configuration/configuration-tiers-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/overview/configuration/configuration-tiers-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview/configuration/defaults-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:overview/configuration/defaults', 'Unit | Route | overview/configuration/defaults', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview/configuration/defaults-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/overview/configuration/defaults-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/overview/configuration/defaults-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview/configuration/index-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:overview/configuration/index', 'Unit | Route | overview/configuration/index', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview/configuration/index-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/overview/configuration/index-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/overview/configuration/index-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview/configuration/usage-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:overview/configuration/usage', 'Unit | Route | overview/configuration/usage', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/overview/configuration/usage-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/overview/configuration/usage-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/overview/configuration/usage-test.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/unit/routes/welcome-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
