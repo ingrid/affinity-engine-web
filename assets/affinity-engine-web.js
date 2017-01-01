@@ -678,9 +678,21 @@ define("affinity-engine-web/cldrs/markdown", ["exports"], function (exports) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
+define("affinity-engine-web/cldrs/max", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "max", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
 define("affinity-engine-web/cldrs/menu", ["exports"], function (exports) {
   /*jslint eqeq: true*/
   exports["default"] = [{ "locale": "menu", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/min", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "min", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
@@ -2204,6 +2216,8 @@ define("affinity-engine-web/ember-stringify", ["exports"], function (exports) {
             "keyboardPriority.md": "Set the directable's priority for keyboard events. Higher numbers have precedence over lower numbers. To find out more, consult the [`ember-keyboard`](http://null-null-null.github.io/ember-keyboard/#/priority) guides.\n\n* `priority` (**Number**)\n",
             "keyframe.md": "Queues a crossfade between the current keyframe and keyframe matching the provided key.\n\n* `keyframeId` (**String**): id of the keyframe fixture.\n* `durationOrTransition` (**Number**/**Object**|_optional_):\n  1. Number: the duration of the crossfade, in milliseconds.\n  2. Object: the transition.\n    * `in` (**Object**): transition of the incoming keyframe.\n    * `out` (**Object**): transition of the outgoing keyframe.\n",
             "keys.md": "Change the keys that the directable responds to.\n\n* `keys` (**Object**):\n  * `accept` (**Array**)\n  * `escape` (**Array**)\n  * `up` (**Array**)\n  * `right` (**Array**)\n  * `down` (**Array**)\n  * `left` (**Array**)\n",
+            "max.md": "Set a maximum value that the attribute will not exceed.\n\n* `value` (**Number**)\n",
+            "min.md": "Set a minimum value that the attribute will not fall beneath.\n\n* `value` (**Number**)\n",
             "name.md": "Changes the name that should be displayed for the character, such as on a text box.\n\n* `name` (**String**): The character's display name.\n",
             "namePosition.md": "Changes where the character's name is displayed.\n\n* `position` (**String**): the key for the desired position.\n",
             "outfit.md": "Queues a crossfade between the current outfit and the outfit provided. Creates a new animation queue and Promise if none are active.\n\n* `outfit` (**String**): name of the new outfit.\n* `durationOrTransition` (**Number**/**Object**|_optional_):\n  1. Number: the duration of the crossfade, in milliseconds.\n  2. Object: the transition.\n    * `in` (**Object**): transition of the incoming keyframe.\n    * `out` (**Object**): transition of the outgoing keyframe.\n",
@@ -2249,6 +2263,8 @@ define("affinity-engine-web/ember-stringify", ["exports"], function (exports) {
             "keyboardPriority.md": "###### `keyboardPriority(priority)`\n",
             "keyframe.md": "###### `keyframe(keyframeId, durationOrTransition)`\n",
             "keys.md": "###### `keys(keys)`\n",
+            "max.md": "###### `max(value)`\n",
+            "min.md": "###### `min(value)`\n",
             "name.md": "###### `name(name)`\n",
             "namePosition.md": "###### `namePosition(position)`\n",
             "outfit.md": "###### `outfit(pose, durationOrTransition)`\n",
@@ -6591,7 +6607,7 @@ define("affinity-engine-web/templates/components/stage/directions/data", ["expor
             "column": 0
           },
           "end": {
-            "line": 11,
+            "line": 13,
             "column": 0
           }
         },
@@ -6603,6 +6619,14 @@ define("affinity-engine-web/templates/components/stage/directions/data", ["expor
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
@@ -6638,18 +6662,20 @@ define("affinity-engine-web/templates/components/stage/directions/data", ["expor
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(7);
+        var morphs = new Array(9);
         morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
         morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
         morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
         morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
         morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
         morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createMorphAt(fragment, 14, 14, contextualElement);
+        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
+        morphs[7] = dom.createUnsafeMorphAt(fragment, 14, 14, contextualElement);
+        morphs[8] = dom.createMorphAt(fragment, 18, 18, contextualElement);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.data.1"], ["loc", [null, [1, 0], [1, 54]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.delete"], ["loc", [null, [2, 0], [2, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.decrement"], ["loc", [null, [3, 0], [3, 39]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.increment"], ["loc", [null, [4, 0], [4, 39]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.set"], ["loc", [null, [5, 0], [5, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.toggle"], ["loc", [null, [6, 0], [6, 36]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [10, 0], [10, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.data.1"], ["loc", [null, [1, 0], [1, 54]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.delete"], ["loc", [null, [2, 0], [2, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.decrement"], ["loc", [null, [3, 0], [3, 39]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.increment"], ["loc", [null, [4, 0], [4, 39]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.max"], ["loc", [null, [5, 0], [5, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.min"], ["loc", [null, [6, 0], [6, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.set"], ["loc", [null, [7, 0], [7, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.toggle"], ["loc", [null, [8, 0], [8, 36]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [12, 0], [12, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -9293,7 +9319,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+7794eeeb"});
+  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+d5fb1883"});
 }
 
 /* jshint ignore:end */
