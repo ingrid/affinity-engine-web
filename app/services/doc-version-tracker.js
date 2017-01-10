@@ -14,7 +14,6 @@ export default Service.extend({
   },
 
   versions: [
-    '0_2_0',
     '0_1_0'
   ]
 });
