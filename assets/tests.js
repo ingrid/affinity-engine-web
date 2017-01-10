@@ -1918,15 +1918,6 @@ define('affinity-engine-web/tests/routes/components/stage/directions/character.j
     assert.ok(true, 'routes/components/stage/directions/character.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/data.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | routes/components/stage/directions/data.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/components/stage/directions/data.js should pass jshint.');
-  });
-});
 define('affinity-engine-web/tests/routes/components/stage/directions/image.jshint', ['exports'], function (exports) {
   'use strict';
 
@@ -2024,6 +2015,24 @@ define('affinity-engine-web/tests/routes/components/stage/scenes.jshint', ['expo
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/components/stage/scenes.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/scenes/data.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/scenes/data.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/scenes/data.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/routes/components/stage/scenes/index.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/components/stage/scenes/index.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/components/stage/scenes/index.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/routes/components/stage/usage.jshint', ['exports'], function (exports) {
@@ -2983,6 +2992,48 @@ define('affinity-engine-web/tests/unit/routes/components/stage/scenes-test.jshin
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/components/stage/scenes-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/scenes/data-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/scenes/data', 'Unit | Route | components/stage/scenes/data', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/scenes/data-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/scenes/data-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/scenes/data-test.js should pass jshint.');
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/scenes/index-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:components/stage/scenes/index', 'Unit | Route | components/stage/scenes/index', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('affinity-engine-web/tests/unit/routes/components/stage/scenes/index-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/components/stage/scenes/index-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/components/stage/scenes/index-test.js should pass jshint.');
   });
 });
 define('affinity-engine-web/tests/unit/routes/components/stage/usage-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
