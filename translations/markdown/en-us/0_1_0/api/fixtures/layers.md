@@ -14,4 +14,4 @@ Then your layer should have these keys:
 }
 ```
 
-For each layer, you can provide either an array of [stateful `keyframes`](/engine/fixtures/image#state) or a single `keyframe` id.
+For each layer, you can provide either an array of [stateful `keyframes`](#/engine/fixtures/image?anchor=state) or a single `keyframe` id.

@@ -1,1 +1,1 @@
-An Object describing the default [state](/engine/fixtures/images#state) of the fixture.
+An Object describing the default [state](#/engine/fixtures/images?anchor=state) of the fixture.

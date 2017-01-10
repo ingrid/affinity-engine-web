@@ -19,9 +19,9 @@ const converter = markdownit({
   typographer: true
 }).use(markdownItHighlight);
 
-function scrollToAnchor() {
-  if (window.location.hash) {
-    const position = Ember.$(`a[name="${window.location.hash.substring(1)}"]`).position();
+function scrollToAnchor(anchor) {
+  if (anchor) {
+    const position = Ember.$(`a[name="${anchor}"]`).position();
 
     if (position) {
       const $main = Ember.$('.main');
@@ -60,6 +60,7 @@ export default Component.extend({
   didRender(...args) {
     this._super(...args);
 
+    const anchor = Ember.getOwner(this).lookup('controller:application').get('anchor');
     const clipboards = get(this, '_clipboards');
 
     ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].forEach((tag) => {
@@ -83,10 +84,10 @@ export default Component.extend({
           clipboards.push(clipboard);
           clipboard.on('success', () => {
             history.pushState(null, null, `#${text}`);
-            scrollToAnchor();
+            scrollToAnchor(anchor);
           });
 
-          scrollToAnchor();
+          scrollToAnchor(anchor);
         });
       });
     });

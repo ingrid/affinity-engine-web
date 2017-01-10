@@ -8,7 +8,7 @@ const { computed: { alias } } = Ember;
 const { inject: { service } } = Ember;
 
 export default Controller.extend({
-  queryParams: ['version'],
+  queryParams: ['anchor', 'version'],
 
   docVersionTracker: service(),
   routeSequencer: service(),
