@@ -14,7 +14,7 @@ application:
     configuration: "Configuration"
     configurationTiers: "Configuration Tiers"
     curtain: "Curtain"
-    data: "data"
+    data: "Data"
     defaults: "Defaults"
     defining: "Defining"
     directions: "Directions"

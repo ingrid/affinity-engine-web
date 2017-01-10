@@ -103,7 +103,14 @@ export default Service.extend({
                 }, usage: {
                   name: t('usage')
                 }, scenes: {
-                  name: t('scenes')
+                  name: t('scenes'),
+                  routes: {
+                    index: {
+                      name: t('overview')
+                    }, data: {
+                      name: t('data')
+                    }
+                  }
                 }, directions: {
                   name: t('directions'),
                   routes: {
@@ -113,8 +120,6 @@ export default Service.extend({
                       name: t('backdrop')
                     }, character: {
                       name: t('character')
-                    }, data: {
-                      name: t('data')
                     }, image: {
                       name: t('image')
                     }, layer: {
