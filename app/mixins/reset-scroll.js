@@ -6,6 +6,8 @@ export default Ember.Mixin.create({
       this._super(...args);
 
       Ember.$('.main').scrollTop(0);
+
+      Ember.getOwner(this).lookup('controller:application').set('anchor', undefined);
     }
   }
 });

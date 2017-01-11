@@ -13,6 +13,8 @@ const { computed: { readOnly } } = Ember;
 const { inject: { service } } = Ember;
 const { String: { underscore } } = Ember;
 
+const headers = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+
 const converter = markdownit({
   html: true,
   linkify: true,
@@ -39,8 +41,6 @@ export default Component.extend({
   _version: readOnly('docVersionTracker.version'),
   _versions: readOnly('docVersionTracker.versions'),
 
-  _clipboards: computed(() => []),
-
   text: computed('path', '_locale', '_version', {
     get() {
       const path = get(this, 'path');
@@ -60,42 +60,40 @@ export default Component.extend({
   didRender(...args) {
     this._super(...args);
 
-    const anchor = Ember.getOwner(this).lookup('controller:application').get('anchor');
-    const clipboards = get(this, '_clipboards');
+    const application = Ember.getOwner(this).lookup('controller:application');
+    const anchor = application.get('anchor');
 
-    ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].forEach((tag) => {
+    requestAnimationFrame(() => {
+      scrollToAnchor(anchor);
+    });
+
+    headers.forEach((tag) => {
       this.$(tag).each(function() {
         const $elem = Ember.$(this);
 
         if ($elem.parent().prop('tagName') === 'ASIDE') { return; }
 
         const text = underscore($elem.text());
-        const href = `${window.location.protocol}//${window.location.host}${window.location.pathname}#${text}${window.location.search}`;
 
-        requestAnimationFrame(() => {
-          $elem
-            .before(`<a class="section-anchor-scroll-point" name="${text}"></a>`)
-            .append('<i class="fa fa-link"></i>')
-            .attr('data-clipboard-text', href)
-            .addClass('section-anchor');
-
-          const clipboard = new Clipboard($elem.get(0));
-
-          clipboards.push(clipboard);
-          clipboard.on('success', () => {
-            history.pushState(null, null, `#${text}`);
-            scrollToAnchor(anchor);
+        $elem
+          .before(`<a class="section-anchor-scroll-point" name="${text}"></a>`)
+          .append('<i class="fa fa-link"></i>')
+          .addClass('section-anchor')
+          .on('click.m-anchor', () => {
+            application.set('anchor', text);
+            scrollToAnchor(text);
           });
-
-          scrollToAnchor(anchor);
-        });
       });
     });
   },
 
   willDestroy(...args) {
-    this._super(...args);
+    headers.forEach((tag) => {
+      Ember.$(this.element).find(tag).each(function() {
+        Ember.$(this).off('.m-anchor');
+      });
+    });
 
-    get(this, '_clipboards').forEach((clipboard) => clipboard.destroy());
+    this._super(...args);
   }
 });
