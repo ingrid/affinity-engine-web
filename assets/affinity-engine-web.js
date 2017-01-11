@@ -476,6 +476,12 @@ define("affinity-engine-web/cldrs/data", ["exports"], function (exports) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
+define("affinity-engine-web/cldrs/decrementproperty", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "decrementProperty", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
 define("affinity-engine-web/cldrs/defaults", ["exports"], function (exports) {
   /*jslint eqeq: true*/
   exports["default"] = [{ "locale": "defaults", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
@@ -558,6 +564,24 @@ define("affinity-engine-web/cldrs/float", ["exports"], function (exports) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
+define("affinity-engine-web/cldrs/get", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "get", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/getproperties", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "getProperties", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/getshareddata", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "getSharedData", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
 define("affinity-engine-web/cldrs/height", ["exports"], function (exports) {
   /*jslint eqeq: true*/
   exports["default"] = [{ "locale": "height", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
@@ -585,6 +609,12 @@ define("affinity-engine-web/cldrs/image", ["exports"], function (exports) {
 define("affinity-engine-web/cldrs/images", ["exports"], function (exports) {
   /*jslint eqeq: true*/
   exports["default"] = [{ "locale": "images", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/incrementproperty", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "incrementProperty", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
@@ -654,9 +684,21 @@ define("affinity-engine-web/cldrs/markdown", ["exports"], function (exports) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
+define("affinity-engine-web/cldrs/max", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "max", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
 define("affinity-engine-web/cldrs/menu", ["exports"], function (exports) {
   /*jslint eqeq: true*/
   exports["default"] = [{ "locale": "menu", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/min", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "min", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
@@ -738,6 +780,18 @@ define("affinity-engine-web/cldrs/scrollable", ["exports"], function (exports) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
+define("affinity-engine-web/cldrs/set", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "set", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/setproperties", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "setProperties", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
 define("affinity-engine-web/cldrs/src", ["exports"], function (exports) {
   /*jslint eqeq: true*/
   exports["default"] = [{ "locale": "src", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
@@ -765,6 +819,12 @@ define("affinity-engine-web/cldrs/static", ["exports"], function (exports) {
 define("affinity-engine-web/cldrs/text", ["exports"], function (exports) {
   /*jslint eqeq: true*/
   exports["default"] = [{ "locale": "text", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
+      if (ord) return "other";return "other";
+    }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
+});
+define("affinity-engine-web/cldrs/toggleproperty", ["exports"], function (exports) {
+  /*jslint eqeq: true*/
+  exports["default"] = [{ "locale": "toggleProperty", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
@@ -1728,6 +1788,8 @@ define('affinity-engine-web/components/m-intl', ['exports', 'ember', 'markdown-i
   var service = _ember['default'].inject.service;
   var underscore = _ember['default'].String.underscore;
 
+  var headers = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+
   var converter = (0, _markdownIt['default'])({
     html: true,
     linkify: true,
@@ -1754,10 +1816,6 @@ define('affinity-engine-web/components/m-intl', ['exports', 'ember', 'markdown-i
     _version: readOnly('docVersionTracker.version'),
     _versions: readOnly('docVersionTracker.versions'),
 
-    _clipboards: computed(function () {
-      return [];
-    }),
-
     text: computed('path', '_locale', '_version', {
       get: function get() {
         var path = _get(this, 'path');
@@ -1779,10 +1837,14 @@ define('affinity-engine-web/components/m-intl', ['exports', 'ember', 'markdown-i
 
       this._super.apply(this, arguments);
 
-      var anchor = _ember['default'].getOwner(this).lookup('controller:application').get('anchor');
-      var clipboards = _get(this, '_clipboards');
+      var application = _ember['default'].getOwner(this).lookup('controller:application');
+      var anchor = application.get('anchor');
 
-      ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].forEach(function (tag) {
+      requestAnimationFrame(function () {
+        scrollToAnchor(anchor);
+      });
+
+      headers.forEach(function (tag) {
         _this.$(tag).each(function () {
           var $elem = _ember['default'].$(this);
 
@@ -1791,31 +1853,25 @@ define('affinity-engine-web/components/m-intl', ['exports', 'ember', 'markdown-i
           }
 
           var text = underscore($elem.text());
-          var href = window.location.protocol + '//' + window.location.host + window.location.pathname + '#' + text + window.location.search;
 
-          requestAnimationFrame(function () {
-            $elem.before('<a class="section-anchor-scroll-point" name="' + text + '"></a>').append('<i class="fa fa-link"></i>').attr('data-clipboard-text', href).addClass('section-anchor');
-
-            var clipboard = new Clipboard($elem.get(0));
-
-            clipboards.push(clipboard);
-            clipboard.on('success', function () {
-              history.pushState(null, null, '#' + text);
-              scrollToAnchor(anchor);
-            });
-
-            scrollToAnchor(anchor);
+          $elem.before('<a class="section-anchor-scroll-point" name="' + text + '"></a>').append('<i class="fa fa-link"></i>').addClass('section-anchor').on('click.m-anchor', function () {
+            application.set('anchor', text);
+            scrollToAnchor(text);
           });
         });
       });
     },
 
     willDestroy: function willDestroy() {
-      this._super.apply(this, arguments);
+      var _this2 = this;
 
-      _get(this, '_clipboards').forEach(function (clipboard) {
-        return clipboard.destroy();
+      headers.forEach(function (tag) {
+        _ember['default'].$(_this2.element).find(tag).each(function () {
+          _ember['default'].$(this).off('.m-anchor');
+        });
       });
+
+      this._super.apply(this, arguments);
     }
   });
 });
@@ -2155,25 +2211,35 @@ define("affinity-engine-web/ember-stringify", ["exports"], function (exports) {
             "caption.md": "Change the caption for the image, principally for the sake of screen readers.\n\n* `caption` (**String**): the new caption.\n",
             "classNames.md": "Change the class names bound to the directable.\n\n* `classNames` (**String**/**Array**/**Object**): The new class names for the directable.\n  1. String: replaces the current class names.\n  2. Array: transforms the array into a string and replaces the current class names.\n  3. Object: assigns the values of the object to any previous class names object.\n",
             "close.md": "Manually close the text box.\n",
+            "decrementProperty.md": "Decrements the value at the provided key. If the key is currently undefined, it initializes the value to 0 and then decrements.\n",
             "delay.md": "Queue a delay before the next `transition`.\n\n* `duration` (**Number**): how long the delay lasts, in milliseconds.\n* `options` (**Object**|_optional_):\n  * `queue` (**String**|_optional_): name of the transition queue.\n",
             "expression.md": "Queues a crossfade between the current expression and the expression provided. Creates a new animation queue and Promise if none are active.\n\n* `expression` (**String**): name of the new expression.\n* `durationOrTransition` (**Number**/**Object**|_optional_):\n  1. Number: the duration of the crossfade, in milliseconds.\n  2. Object: the transition.\n    * `in` (**Object**): transition of the incoming keyframe.\n    * `out` (**Object**): transition of the outgoing keyframe.\n",
             "fadeIn.md": "Queues a fade in transition. Creates a new animation queue and Promise if none are active.\n\n* `duration` (**Number**|_optional_): how long the transition takes to complete, in milliseconds.\n* `options` (**Object**|_optional_):\n  * `queue` (**String**|_optional_): name of the transition queue.\n",
             "fadeOut.md": "Queues a fade out transition. Creates a new animation queue and Promise if none are active.\n\n* `duration` (**Number**|_optional_): how long the transition takes to complete, in milliseconds.\n* `options` (**Object**|_optional_):\n  * `queue` (**String**|_optional_): name of the transition queue.\n",
             "float.md": "Return a float value instead of an integer.\n\n* `float` (**Number**/**Boolean**|_optional_|Default: true): If a Number is provided, the float will be truncated that many decimal places out.\n",
+            "get.md": "Returns the value with the provided key.\n",
+            "getProperties.md": "Returns a hash containing the values for all provided keys. For instance:\n\n```js\ndata.getProperties('foo', 'bar', 'baz'); // { foo: 1, bar: 'some value', baz: ['an', 'array'] }\n```\n",
+            "getSharedData.md": "Returns an object containing shared data.\n",
             "height.md": "How tall the image should be, as a percentage of the stage's height.\n\n* `height` (**Number**): the desired height of the image, with 100 being 100% of the stage's height.\n",
+            "incrementProperty.md": "Increments the value at the provided key. If the key is currently undefined, it initializes the value to 0 and then increments.\n",
             "instant.md": "Display the text instantly if true. If false, transition the text in one letter at a time.\n\n* `instant` (**Boolean**|_optional_|Default: true)\n",
             "keyboardPriority.md": "Set the directable's priority for keyboard events. Higher numbers have precedence over lower numbers. To find out more, consult the [`ember-keyboard`](http://null-null-null.github.io/ember-keyboard/#/priority) guides.\n\n* `priority` (**Number**)\n",
             "keyframe.md": "Queues a crossfade between the current keyframe and keyframe matching the provided key.\n\n* `keyframeId` (**String**): id of the keyframe fixture.\n* `durationOrTransition` (**Number**/**Object**|_optional_):\n  1. Number: the duration of the crossfade, in milliseconds.\n  2. Object: the transition.\n    * `in` (**Object**): transition of the incoming keyframe.\n    * `out` (**Object**): transition of the outgoing keyframe.\n",
             "keys.md": "Change the keys that the directable responds to.\n\n* `keys` (**Object**):\n  * `accept` (**Array**)\n  * `escape` (**Array**)\n  * `up` (**Array**)\n  * `right` (**Array**)\n  * `down` (**Array**)\n  * `left` (**Array**)\n",
+            "max.md": "Sets a maximum value for the key which cannot be exceeded. For instance:\n\n```js\ndata.max('foo', 5);\ndata.set('foo', 10);\ndata.get('foo'); // 5\ndata.incrementProperty('foo', 20);\ndata.get('foo'); // 5\n```\n",
+            "min.md": "Sets a minimum value for the key which it cannot fall beneath. For instance:\n\n```js\ndata.min('foo', -5);\ndata.set('foo', -10);\ndata.get('foo'); // -5\ndata.decrementProperty('foo', 20);\ndata.get('foo'); // -5\n```\n",
             "name.md": "Changes the name that should be displayed for the character, such as on a text box.\n\n* `name` (**String**): The character's display name.\n",
             "namePosition.md": "Changes where the character's name is displayed.\n\n* `position` (**String**): the key for the desired position.\n",
             "outfit.md": "Queues a crossfade between the current outfit and the outfit provided. Creates a new animation queue and Promise if none are active.\n\n* `outfit` (**String**): name of the new outfit.\n* `durationOrTransition` (**Number**/**Object**|_optional_):\n  1. Number: the duration of the crossfade, in milliseconds.\n  2. Object: the transition.\n    * `in` (**Object**): transition of the incoming keyframe.\n    * `out` (**Object**): transition of the outgoing keyframe.\n",
             "pose.md": "Queues a crossfade between the current pose and the pose provided. Creates a new animation queue and Promise if none are active.\n\n* `pose` (**String**): name of the new pose.\n* `durationOrTransition` (**Number**/**Object**|_optional_):\n  1. Number: the duration of the crossfade, in milliseconds.\n  2. Object: the transition.\n    * `in` (**Object**): transition of the incoming keyframe.\n    * `out` (**Object**): transition of the outgoing keyframe.\n",
             "position.md": "Queues a position animation, moving the directable across the stage. Creates a new animation queue and Promise if none are active.\n\n* `position` (**String**): name of the position.\n* `duration` (**Number**|_optional_|Default: 0): how long the transition takes to complete, in milliseconds.\n* `options` (**Object**|_optional_):\n  * `queue` (**String**|_optional_): name of the transition queue.\n",
             "scrollable.md": "Allow the text to be scrollable, if true. If false, display the text in slides.\n\n* `scrollable` (**Boolean**|_optional_|Default: true)\n",
+            "set.md": "Sets the key to the provided value.\n",
+            "setProperties.md": "Sets all values as specified by the hash. For instance:\n\n```js\ndata.setProperties({ foo: 1, bar: 'some value', baz: ['an', 'array'] })\n```\n",
             "state.md": "Queues a crossfade between the current state and the state provided.\n\n* `state` (**Object**): object describing the new state.\n* `durationOrTransition` (**Number**/**Object**|_optional_):\n  1. Number: the duration of the crossfade, in milliseconds.\n  2. Object: the transition.\n    * `in` (**Object**): transition of the incoming keyframe.\n    * `out` (**Object**): transition of the outgoing keyframe.\n",
             "static.md": "Disable the text from closing on a click or keypress if true. If false, the text remains on screen despite user interaction. You will need to manually close the text with the `close` command.\n\n* `static` (**Boolean**|_optional_|Default: true)\n",
             "text.md": "Specify text to display in the menu's header.\n\n* `text` (**String**): The text to display.\n",
+            "toggleProperty.md": "Toggles the value between `true` and `false`. If the key is currently undefined, it toggles to `true`.\n",
             "transition.md": "Queues an animation. Creates a new animation queue and Promise if none are active.\n\n* `effect` (**variable**): depends on the animation engine you're using.\n* `duration` (**Number**|_optional_): how long the transition takes to complete, in milliseconds.\n* `options` (**Object**|_optional_):\n  * `queue` (**String**|_optional_): name of the transition queue.\n",
             "transitionIn.md": "Sets the animation to run when the directable is transitioning in. Creates a new animation queue and Promise if none are active.\n\n* `effect` (**variable**): depends on the animation engine you're using.\n* `duration` (**Number**|_optional_): how long the transition takes to complete, in milliseconds.\n* `options` (**Object**|_optional_):\n  * `queue` (**String**|_optional_): name of the transition queue.\n",
             "transitionOut.md": "Sets the animation to run when the directable is transitioning out. Creates a new animation queue and Promise if none are active.\n\n* `effect` (**variable**): depends on the animation engine you're using.\n* `duration` (**Number**|_optional_): how long the transition takes to complete, in milliseconds.\n* `options` (**Object**|_optional_):\n  * `queue` (**String**|_optional_): name of the transition queue.\n"
@@ -2195,25 +2261,35 @@ define("affinity-engine-web/ember-stringify", ["exports"], function (exports) {
             "caption.md": "###### `caption(caption)`\n",
             "classNames.md": "###### `classNames(classNames)`\n",
             "close.md": "###### `close()`\n",
+            "decrementProperty.md": "###### `decrementProperty(key, value = 1)`\n",
             "delay.md": "###### `delay(duration, options)`\n",
             "expression.md": "###### `expression(expression, durationOrTransition)`\n",
             "fadeIn.md": "###### `fadeIn(duration, options)`\n",
             "fadeOut.md": "###### `fadeOut(duration, options)`\n",
             "float.md": "###### `float(float)`\n",
+            "get.md": "###### `get(key)`\n",
+            "getProperties.md": "###### `getProperties(list)`\n",
+            "getSharedData.md": "###### `getSharedData()`\n",
             "height.md": "###### `height(height)`\n",
+            "incrementProperty.md": "###### `incrementProperty(key, value = 1)`\n",
             "instant.md": "###### `instant(instant)`\n",
             "keyboardPriority.md": "###### `keyboardPriority(priority)`\n",
             "keyframe.md": "###### `keyframe(keyframeId, durationOrTransition)`\n",
             "keys.md": "###### `keys(keys)`\n",
+            "max.md": "###### `max(key, value)`\n",
+            "min.md": "###### `min(key, value)`\n",
             "name.md": "###### `name(name)`\n",
             "namePosition.md": "###### `namePosition(position)`\n",
             "outfit.md": "###### `outfit(pose, durationOrTransition)`\n",
             "pose.md": "###### `pose(pose, durationOrTransition)`\n",
             "position.md": "###### `position(position, duration, options)`\n",
             "scrollable.md": "###### `scrollable(scrollable)`\n",
+            "set.md": "###### `set(key, value)`\n",
+            "setProperties.md": "###### `setProperties(hash)`\n",
             "state.md": "###### `state(state, durationOrTransition)`\n",
             "static.md": "###### `static(static)`\n",
             "text.md": "###### `text(text)`\n",
+            "toggleProperty.md": "###### `toggleProperty(key)`\n",
             "transition.md": "###### `transition(effect, duration, options)`\n",
             "transitionIn.md": "###### `transitionIn(effect, duration, options)`\n",
             "transitionOut.md": "###### `transitionOut(effect, duration, options)`\n"
@@ -2269,7 +2345,7 @@ define("affinity-engine-web/ember-stringify", ["exports"], function (exports) {
             },
             "scenes": {
               "data": {
-                "1.md": "##### Overview\n\nThe `data` object is the key to sharing information between scenes, sessions, and even save games. For instance, you might get the player's name like so:\n\n```js\nstart: task(function * (script) {\n  const name = yield script.menu([{ inputable: true }]).text('What is your name?');\n\n  yield script.text(`Hi, ${name.value}`);\n})\n```\n\nThe problem is, once you move to the next scene, you'll have lost that variable. This is where the `data` object comes in handy:\n\n```js\nstart: task(function * (script, data) {\n  const name = yield script.menu([{ inputable: true }]).text('What is your name?');\n\n  data.set('name', name.value);\n\n  yield script.text(`Hi, ${name.value}.`);\n})\n```\n\nIn a subsequent scene, you can then:\n\n```js\nstart: task(function * (script, data) {\n  yield script.text(`Hello again, ${data.get('name')}!`);\n})\n```\n\nThis data is also persisted into long-term storage, meaning that players can reload the page and their name will not be lost.\n\n##### API\n\nThe `data` object is an extended version of Ember's `ObjectProxy`, with an API comparable to [`Ember.Object`](http://emberjs.com/api/classes/Ember.Object.html). This section will present several of the most essential functions that an `Ember.Object` provides, as well as the unique functions of the `data` object, `min`, `max`, and `getSharedData`.\n\n###### `get(key)`\n\nReturns the value with the provided key.\n\n###### `getProperties(list)`\n\nReturns a hash containing the values for all provided keys. For instance:\n\n```js\ndata.getProperties('foo', 'bar', 'baz'); // { foo: 1, bar: 'some value', baz: ['an', 'array'] }\n```\n\n###### `set(key, value)`\n\nSets the key to the provided value.\n\n###### `setProperties(hash)`\n\nSets all values as specified by the hash. For instance:\n\n```js\ndata.setProperties({ foo: 1, bar: 'some value', baz: ['an', 'array'] })\n```\n\n###### `toggleProperty(key)`\n\nToggles the value between `true` and `false`. If the key is currently undefined, it toggles to `true`.\n\n###### `decrementProperty(key, value = 1)`\n\nDecrements the value at the provided key. If the key is currently undefined, it initializes the value to 0 and then decrements.\n\n###### `incrementProperty(key, value = 1)`\n\nIncrements the value at the provided key. If the key is currently undefined, it initializes the value to 0 and then increments.\n\n###### `max(key, value)`\n\nSets a maximum value for the key which cannot be exceeded. For instance:\n\n```js\ndata.max('foo', 5);\ndata.set('foo', 10);\ndata.get('foo'); // 5\ndata.incrementProperty('foo', 20);\ndata.get('foo'); // 5\n```\n\n###### `min(key, value)`\n\nSets a minimum value for the key which it cannot fall beneath. For instance:\n\n```js\ndata.min('foo', -5);\ndata.set('foo', -10);\ndata.get('foo'); // -5\ndata.decrementProperty('foo', 20);\ndata.get('foo'); // -5\n```\n\n###### `getSharedData()`\n\nReturns an object containing shared data. More details below.\n\n##### Shared Data\n\nWhen interacting with the `data` object, you're only changing data specific to the current save game. If the player starts a whole new game, a new `data` object will be created for that game. This is ideal in most situations, as it will keep the choices players make in one game from leaking over into another. However, you might want to share some data between games, such as which achievements have been unlocked, what controls the player has configured for themselves, and whether they've unlocked a New Game+. You can accomplish this by grabbing the shared data object:\n\n```js\nconst shared = data.getSharedData();\n```\n\nOnce you have it, you can interact with it just like the standard `data` object:\n\n```js\nconst shared = data.getSharedData();\n\nshared.set('gameCompletedAchievement', true);\nshared.incrementProperty('timesCompleted');\n\nshared.save();\n```\n\nUnlike the standard `data` object, which automatically persists its data between scenes, shared data must be manually persisted by calling `save`.\n"
+                "1.md": "##### Overview\n\nThe `data` object is the key to sharing information between scenes, sessions, and even save games. For instance, you might get the player's name like so:\n\n```js\nstart: task(function * (script) {\n  const name = yield script.menu([{ inputable: true }]).text('What is your name?');\n\n  yield script.text(`Hi, ${name.value}`);\n})\n```\n\nThe problem is, once you move to the next scene, you'll have lost that variable. This is where the `data` object comes in handy:\n\n```js\nstart: task(function * (script, data) {\n  const name = yield script.menu([{ inputable: true }]).text('What is your name?');\n\n  data.set('name', name.value);\n\n  yield script.text(`Hi, ${name.value}.`);\n})\n```\n\nIn a subsequent scene, you can then:\n\n```js\nstart: task(function * (script, data) {\n  yield script.text(`Hello again, ${data.get('name')}!`);\n})\n```\n\nThis data is also persisted into long-term storage, meaning that players can reload the page and their name will not be lost.\n\n##### Shared Data\n\nWhen interacting with the `data` object, you're only changing data specific to the current save game. If the player starts a whole new game, a new `data` object will be created for that game. This is ideal in most situations, as it will keep the choices players make in one game from leaking over into another. However, you might want to share some data between games, such as which achievements have been unlocked, what controls the player has configured for themselves, and whether they've unlocked a New Game+. You can accomplish this by grabbing the shared data object:\n\n```js\nconst shared = data.getSharedData();\n```\n\nOnce you have it, you can interact with it just like the standard `data` object:\n\n```js\nconst shared = data.getSharedData();\n\nshared.set('gameCompletedAchievement', true);\nshared.incrementProperty('timesCompleted');\n\nshared.save();\n```\n\nUnlike the standard `data` object, which automatically persists its data between scenes, shared data must be manually persisted by calling `save`.\n\n##### API\n\nThe `data` object is an extended version of Ember's `ObjectProxy`, with an API comparable to [`Ember.Object`](http://emberjs.com/api/classes/Ember.Object.html). This section will present several of the most essential functions that an `Ember.Object` provides, as well as the unique functions of the `data` object, `min`, `max`, and `getSharedData`.\n"
               },
               "index": {
                 "1.md": "##### Overview\n\nLike a scene in a play, an Affinity Engine `scene` takes a script as its input and outputs a moment of drama. These scenes might be purely textual, or they might have characters, backdrops, and sound effects. They might be linear, or they might branch based on user input or pure chance. Like a script, they aim to be human-readable and easy to write, and they're composed principally of `directions`, such as `text`, `sound`, or `character`.\n\n##### Generating\n\n```bash\nember g affinity-engine-stage-scene my-scene-name\n```\n\n##### Usage\n\nYou'll find your scenes located in your `app/affinity-engine/stage/scenes` folder. A new scene might look like this:\n\n```js\nimport { Scene } from 'affinity-engine-stage';\nimport { task } from 'ember-concurrency';\n\nexport default Scene.extend({\n  start: task(function * (script, data, window) {\n  })\n});\n```\n\n###### `start(script, data, window)`\n\n<div class=\"row\">\n\n<div class=\"with-aside small-order-2 medium-order-1\">\n\nMost of the action will happen inside that `start` function. For instance, here's a short scene:\n\n```js\nstart: task(function * (script) {\n  const ember = script.character('ember').position('right').fadeIn(); // does not pause script\n  const diy = yield script.character('diy').position('left').fadeIn(); // pauses script until diy fades in\n\n  yield diy._.text('Mic test, mic test.'); // pauses script until text is closed\n  ember._.text('Sounds good.'); // does not pause script\n\n  diy.position('farLeft', 1000);\n})\n```\n\nThis simple scene will first render the characters Ember and Diy, and then the two characters will speak. You'll notice that the scene pauses whenever the `yield` keyword is used, then resumes once the direction on that line resolves.\n\nThe `start` function receives three params:\n\n* `script`: This param is always passed in as the first argument to a scene, and you can use it to call upon any of the directions registered to your engine. You can also call upon directions by linking them off of other directions with the `_`. You'll find more detail about that in the [directions](#/components/stage/directions?anchor=links) section.\n\n* `data`: An [Ember Object](http://emberjs.com/api/classes/Ember.Object.html) containing long-term data for your engine. You can learn more about it [here](#/components/stage/scenes/data).\n\n* `window`: This param is passed in if the scene is happening in a window, rather than the main stage. (You can learn more about windows [here](#/components/stage/directions/scene?anchor=window).) The `window` param gives you control over the window, such as closing or repositioning it.\n\n</div>\n\n<aside class=\"aside ember small-order-1 medium-order-2\">\n\n# `ember-concurrency`\n\nEven if you're a veteran Ember dev, you might want to read up on [`ember-concurrency`](http://ember-concurrency.com/). It uses ES6 generator functions to manage concurrency, which in turn allows us to use the `yield` keyword to pause the script until a given direction resolves.\n\n</aside>\n\n</div>\n\n###### `name`\n\nYou can specify a name for you scene like so:\n\n```js\n. . . .\n\nexport default Scene.extend({\n  name: 'A Bloody Valentine',\n\n  start: task(function * (script) {\n    . . . .\n  })\n});\n```\n\nIf you do not specify a name, then the scene will instead name itself based on its file name. For instance, `app/affinity-engine/stage/scenes/lovely-gardens` would become 'Lovely Gardens'.\n\nThis name is available to other components, which will typically use it to help orient the player. For instance, the `affinity-engine-menu-bar-load-button` displays the scene name to help players choose which save state they want to load.\n"
@@ -3345,6 +3421,8 @@ define('affinity-engine-web/mixins/reset-scroll', ['exports', 'ember'], function
         this._super.apply(this, arguments);
 
         _ember['default'].$('.main').scrollTop(0);
+
+        _ember['default'].getOwner(this).lookup('controller:application').set('anchor', undefined);
       }
     }
   });
@@ -3855,7 +3933,7 @@ define('affinity-engine-web/services/doc-version-tracker', ['exports', 'ember'],
       set(this, 'version', get(this, 'versions')[0]);
     },
 
-    versions: ['0_2_0', '0_1_0']
+    versions: ['0_1_0']
   });
 });
 define('affinity-engine-web/services/intl', ['exports', 'ember-intl/services/intl'], function (exports, _emberIntlServicesIntl) {
@@ -7261,7 +7339,7 @@ define("affinity-engine-web/templates/components/stage/scenes/data", ["exports"]
             "column": 0
           },
           "end": {
-            "line": 6,
+            "line": 16,
             "column": 0
           }
         },
@@ -7273,6 +7351,46 @@ define("affinity-engine-web/templates/components/stage/scenes/data", ["exports"]
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -7288,13 +7406,23 @@ define("affinity-engine-web/templates/components/stage/scenes/data", ["exports"]
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
+        var morphs = new Array(12);
         morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
+        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
+        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
+        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
+        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
+        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
+        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
+        morphs[7] = dom.createUnsafeMorphAt(fragment, 14, 14, contextualElement);
+        morphs[8] = dom.createUnsafeMorphAt(fragment, 16, 16, contextualElement);
+        morphs[9] = dom.createUnsafeMorphAt(fragment, 18, 18, contextualElement);
+        morphs[10] = dom.createUnsafeMorphAt(fragment, 20, 20, contextualElement);
+        morphs[11] = dom.createMorphAt(fragment, 24, 24, contextualElement);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.scenes.data.1"], ["loc", [null, [1, 0], [1, 50]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
+      statements: [["inline", "m-intl", [], ["path", "components.stage.scenes.data.1"], ["loc", [null, [1, 0], [1, 50]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.get"], ["loc", [null, [2, 0], [2, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.getProperties"], ["loc", [null, [3, 0], [3, 43]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.set"], ["loc", [null, [4, 0], [4, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.setProperties"], ["loc", [null, [5, 0], [5, 43]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.toggleProperty"], ["loc", [null, [6, 0], [6, 44]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.incrementProperty"], ["loc", [null, [7, 0], [7, 47]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.decrementProperty"], ["loc", [null, [8, 0], [8, 47]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.max"], ["loc", [null, [9, 0], [9, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.min"], ["loc", [null, [10, 0], [10, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.getSharedData"], ["loc", [null, [11, 0], [11, 43]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [15, 0], [15, 29]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -9283,7 +9411,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+c0278869"});
+  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+00f5c7a4"});
 }
 
 /* jshint ignore:end */
