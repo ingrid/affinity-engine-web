@@ -206,7 +206,7 @@ export default Component.extend({
         }],
         eyes: [{
           state: { pose: 'standing', expression: 'neutral' },
-          keyframe: 'diy-eyes-right'
+          keyframe: 'diy-eyes-neutral'
         }, {
           state: { pose: 'standing', expression: 'embarrassed' },
           keyframe: 'diy-eyes-left'
