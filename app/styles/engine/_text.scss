@@ -5,6 +5,7 @@
   bottom: 0;
   height: 130px;
   line-height: $ae-text-block-line-height;
+  font-family: $body-font-family;
   font-size: $ae-text-block-font-size;
   padding: $ae-text-block-padding-ends $ae-text-block-padding-sides;
   padding-bottom: 0;
@@ -16,6 +17,7 @@
 
   .ae-text-caption {
     position: absolute;
+    font-family: $body-font-family;
     top: $ae-text-caption-block-top;
     padding: $ae-text-caption-block-padding-ends $ae-text-caption-block-padding-sides;
     font-size: $ae-text-caption-block-font-size;

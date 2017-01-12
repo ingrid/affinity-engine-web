@@ -36,8 +36,8 @@ export default Component.extend({
       id: 'ember',
       name: 'Ember',
       namePosition: 'right',
-      height: 360,
-      defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral' },
+      height: 400,
+      defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral', eyes: 'neutral' },
       layerOrder: [
         'base',
         'nails',
@@ -82,7 +82,7 @@ export default Component.extend({
         }],
         mouth: [{
           state: { pose: 'standing', expression: 'neutral' },
-          keyframe: 'ember-mouth-neutral'
+          keyframe: 'ember-mouth-neutral-closed'
         }, {
           state: { pose: 'standing', expression: 'proud' },
           keyframe: 'ember-mouth-smile-closed'
@@ -90,21 +90,21 @@ export default Component.extend({
           state: { pose: 'standing', expression: 'smiling' },
           keyframe: 'ember-mouth-smile-open'
         }, {
-          state: { pose: 'standing', expression: 'obviously' },
-          keyframe: 'ember-mouth-pout'
+          state: { pose: 'standing', expression: 'bemused' },
+          keyframe: 'ember-mouth-neutral-open'
         }],
         eyes: [{
-          state: { pose: 'standing', expression: 'neutral' },
+          state: { pose: 'standing', eyes: 'neutral' },
           keyframe: 'ember-eyes-neutral'
         }, {
-          state: { pose: 'standing', expression: 'proud' },
+          state: { pose: 'standing', eyes: 'left' },
           keyframe: 'ember-eyes-left'
         }, {
-          state: { pose: 'standing', expression: 'smiling' },
-          keyframe: 'ember-eyes-neutral'
+          state: { pose: 'standing', eyes: 'right' },
+          keyframe: 'ember-eyes-right'
         }, {
-          state: { pose: 'standing', expression: 'obviously' },
-          keyframe: 'ember-eyes-up-left'
+          state: { pose: 'standing', eyes: 'rolled' },
+          keyframe: 'ember-eyes-rolled'
         }],
         brows: [{
           state: { pose: 'standing', expression: 'neutral' },
@@ -116,8 +116,8 @@ export default Component.extend({
           state: { pose: 'standing', expression: 'smiling' },
           keyframe: 'ember-brows-up'
         }, {
-          state: { pose: 'standing', expression: 'obviously' },
-          keyframe: 'ember-brows-asymetrical'
+          state: { pose: 'standing', expression: 'bemused' },
+          keyframe: 'ember-brows-up'
         }],
         hair: [{
           state: { pose: 'standing', outfit: 'trendy' },
@@ -127,8 +127,8 @@ export default Component.extend({
     }, {
       id: 'diy',
       name: 'Diy',
-      height: 380,
-      defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral' },
+      height: 420,
+      defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral', eyes: 'neutral' },
       layerOrder: [
         'base',
         'complexion',
@@ -198,6 +198,9 @@ export default Component.extend({
           state: { pose: 'standing', expression: 'embarrassed' },
           keyframe: 'diy-mouth-pout'
         }, {
+          state: { pose: 'standing', expression: 'quizzical' },
+          keyframe: 'diy-mouth-neutral'
+        }, {
           state: { pose: 'standing', expression: 'smiling' },
           keyframe: 'diy-mouth-smile-closed'
         }, {
@@ -205,17 +208,17 @@ export default Component.extend({
           keyframe: 'diy-mouth-smile-toothy'
         }],
         eyes: [{
-          state: { pose: 'standing', expression: 'neutral' },
+          state: { pose: 'standing', eyes: 'neutral' },
           keyframe: 'diy-eyes-neutral'
         }, {
-          state: { pose: 'standing', expression: 'embarrassed' },
+          state: { pose: 'standing', eyes: 'left' },
           keyframe: 'diy-eyes-left'
         }, {
-          state: { pose: 'standing', expression: 'smiling' },
-          keyframe: 'diy-eyes-neutral'
+          state: { pose: 'standing', eyes: 'right' },
+          keyframe: 'diy-eyes-right'
         }, {
-          state: { pose: 'standing', expression: 'excited' },
-          keyframe: 'diy-eyes-neutral'
+          state: { pose: 'standing', eyes: 'rolled' },
+          keyframe: 'diy-eyes-rolled'
         }],
         brows: [{
           state: { pose: 'standing', expression: 'neutral' },
@@ -223,6 +226,9 @@ export default Component.extend({
         }, {
           state: { pose: 'standing', expression: 'embarrassed' },
           keyframe: 'diy-brows-frown'
+        }, {
+          state: { pose: 'standing', expression: 'quizzical' },
+          keyframe: 'diy-brows-one-up'
         }, {
           state: { pose: 'standing', expression: 'smiling' },
           keyframe: 'diy-brows-up'
@@ -265,7 +271,7 @@ export default Component.extend({
       id: 'ember-eyes-neutral',
       src: 'affinity-engine/characters/ember/eyes/neutral.png'
     }, {
-      id: 'ember-eyes-up-left',
+      id: 'ember-eyes-rolled',
       src: 'affinity-engine/characters/ember/eyes/up-left.png'
     }, {
       id: 'ember-hair-red-black-braids',
@@ -274,8 +280,11 @@ export default Component.extend({
       id: 'ember-jacket-red-letter-jacket',
       src: 'affinity-engine/characters/ember/jackets/red-letter-jacket.png'
     }, {
-      id: 'ember-mouth-neutral',
-      src: 'affinity-engine/characters/ember/mouths/neutral.png'
+      id: 'ember-mouth-neutral-closed',
+      src: 'affinity-engine/characters/ember/mouths/neutral-closed.png'
+    }, {
+      id: 'ember-mouth-neutral-open',
+      src: 'affinity-engine/characters/ember/mouths/neutral-open.png'
     }, {
       id: 'ember-mouth-pout',
       src: 'affinity-engine/characters/ember/mouths/pout.png'
@@ -337,7 +346,7 @@ export default Component.extend({
       id: 'diy-eyes-right',
       src: 'affinity-engine/characters/diy/eyes/right.png'
     }, {
-      id: 'diy-eyes-roll',
+      id: 'diy-eyes-rolled',
       src: 'affinity-engine/characters/diy/eyes/roll.png'
     }, {
       id: 'diy-eyes-closed',
