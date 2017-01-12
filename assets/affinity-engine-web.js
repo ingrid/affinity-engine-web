@@ -228,111 +228,134 @@ define('affinity-engine-web/affinity-engine/stage/directions/text', ['exports', 
 define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['exports', 'affinity-engine-stage', 'ember-concurrency'], function (exports, _affinityEngineStage, _emberConcurrency) {
   exports['default'] = _affinityEngineStage.Scene.extend({
     start: (0, _emberConcurrency.task)(regeneratorRuntime.mark(function callee$0$0(script) {
-      var diy, ember;
+      var bedroom, stage, ember, diy, bingoText;
       return regeneratorRuntime.wrap(function callee$0$0$(context$1$0) {
         while (1) switch (context$1$0.prev = context$1$0.next) {
           case 0:
-            script.backdrop('diy-bedroom').fadeIn();
-            diy = script.character('diy').transition({ left: '25%', top: '-4%', translateX: '-50%' }).fadeIn(750);
-            ember = script.character('ember').transition({ left: '83%', top: '1%', translateX: '-50%' }).fadeIn(750);
-            context$1$0.next = 5;
-            return script.pause(1250);
+            bedroom = script.backdrop('diy-bedroom').fadeIn();
+            stage = script.layer('engine.stage').transition({ translateY: '20%', translateX: '13%', opacity: 0 }, 0);
+            ember = script.character('ember').transition({ left: '83%', top: '1%', translateX: '-50%' }).fadeIn();
+            diy = script.character('diy').transition({ left: '32%', top: '-4%', translateZ: '-5px', translateX: '-50%', translateY: '-10%' }).fadeIn();
+            context$1$0.next = 6;
+            return diy._.text("Uh, this is embarrassing. [[pause 750]] I can't get the camera on.");
 
-          case 5:
-            context$1$0.next = 7;
-            return ember._.text('engines.index.emberIntro');
+          case 6:
+            context$1$0.next = 8;
+            return ember._.text("I think you have to click that button.");
 
-          case 7:
-            context$1$0.next = 9;
-            return diy._.text('engines.index.diyIntro');
+          case 8:
+            context$1$0.next = 10;
+            return diy._.text("This one? [[pause 500]] Oh, right.");
 
-          case 9:
-            diy.expression('neutral');
+          case 10:
             context$1$0.next = 12;
-            return ember._.text('engines.index.emberAffinityIntro');
+            return script.pause(100);
 
           case 12:
-            ember.expression('neutral');
+
+            stage.transition({ opacity: 1 });
+
             context$1$0.next = 15;
-            return diy._.text('engines.index.diyDocumentation');
+            return script.pause(750);
 
           case 15:
-            context$1$0.next = 17;
-            return ember._.text('engines.index.emberDocumentation');
 
-          case 17:
-            context$1$0.next = 19;
-            return diy._.text('engines.index.diyCheckIn');
+            diy.expression('excited');
 
-          case 19:
+            context$1$0.next = 18;
+            return script.pause(250);
+
+          case 18:
+            bingoText = diy._.text('Bingo! [[pause 500]] [[expression neutral]] Now just one more sec while I get it adjusted. [[pause 750]] And');
             context$1$0.next = 21;
-            return ember._.text('engines.index.emberMailingList');
+            return script.pause(1500);
 
           case 21:
-            ember.expression('neutral');
+            diy.transition({ translateZ: '50px', translateY: '10%', left: '50%' }, 1000).transition({ translateZ: '50px' }, 750, { queue: 'closer' });
             context$1$0.next = 24;
-            return diy._.text('engines.index.diyKickstarter');
+            return script.pause(500);
 
           case 24:
-            diy.expression('neutral');
+            stage.transition({ translateY: '-6%', translateX: '1%' }, 750).then(function () {
+              stage.transition({ translateY: '2%', translateX: '-1%' }, 750).then(function () {
+                stage.transition({ translateY: 0, translateX: 0 }, 400);
+              });
+            });
+
             context$1$0.next = 27;
-            return ember._.text('engines.index.emberKickstarter');
+            return script.pause(2000);
 
           case 27:
-            context$1$0.next = 29;
-            return diy._.text('engines.index.diyReadMore');
 
-          case 29:
-            diy.expression('neutral');
-            context$1$0.next = 32;
-            return ember._.text('engines.index.emberOpensource');
+            bingoText.close();
 
-          case 32:
-            ember.expression('neutral');
+            context$1$0.next = 30;
+            return diy._.text('Perfect.');
+
+          case 30:
+            diy.transition({ translateZ: 0, translateY: 0, left: '32%' }, 1250);
+            context$1$0.next = 33;
+            return script.pause(250);
+
+          case 33:
             context$1$0.next = 35;
-            return diy._.text('engines.index.diyBrowser');
+            return diy.expression('smiling')._.text("Hi everyone! [[pause 750]] My name's Diy.");
 
           case 35:
-            context$1$0.next = 37;
-            return ember._.text('engines.index.emberModular');
+            diy.state({ expression: 'neutral', eyes: 'right' });
+            context$1$0.next = 38;
+            return ember.expression('smiling')._.text("And I'm Ember.");
 
-          case 37:
+          case 38:
             ember.expression('neutral');
-            context$1$0.next = 40;
-            return diy._.text('engines.index.diyEasyScripts');
+            context$1$0.next = 41;
+            return diy.state({ eyes: 'rolled', expression: 'quizzical' })._.text("And the little box we're in is called the Affinity Engine.");
 
-          case 40:
-            diy.expression('neutral');
-            context$1$0.next = 43;
-            return ember._.text('engines.index.emberBye');
+          case 41:
+            diy.state({ eyes: 'neutral', expression: 'neutral' });
+            context$1$0.next = 44;
+            return ember.expression('smiling')._.text("It's a game engine, and Diy and I are going to show you how to use it to make games.");
 
-          case 43:
-            context$1$0.next = 45;
-            return diy._.text('engines.index.diyBye');
-
-          case 45:
+          case 44:
+            ember.expression('neutral');
             context$1$0.next = 47;
-            return script.pause(150);
+            return diy.state({ expression: 'excited', eyes: 'right' })._.text("Games you'll love.");
 
           case 47:
+            context$1$0.next = 49;
+            return ember.state({ eyes: 'left' }).delay(250).state({ eyes: 'rolled', expression: 'bemused' }).delay(250);
 
-            ember.expression('neutral');
+          case 49:
+            context$1$0.next = 51;
+            return ember.state({ eyes: 'left', expression: 'proud' })._.text("Yes, games you'll love.");
 
-            context$1$0.next = 50;
-            return script.pause(125);
-
-          case 50:
-
-            diy.expression('neutral');
-
+          case 51:
             context$1$0.next = 53;
             return script.pause(250);
 
           case 53:
+            diy.state({ eyes: 'neutral', expression: 'smiling' });
+            context$1$0.next = 56;
+            return ember.state({ eyes: 'neutral', expression: 'smiling' })._.text("Anyway, you'll find our little vingettes peppered throughout the documentation.");
+
+          case 56:
+            ember.state({ eyes: 'neutral', expression: 'neutral' });
+            context$1$0.next = 59;
+            return script.pause(250);
+
+          case 59:
+            context$1$0.next = 61;
+            return diy.state({ eyes: 'neutral', expression: 'excited' })._.text("I guess that's it. When you're ready, feel free to start reading through the API.");
+
+          case 61:
+            context$1$0.next = 63;
+            return ember.expression('smiling')._.text("Yeah, we'll see you there!");
+
+          case 63:
 
             script.layer('engine').transition({ opacity: 0 }, 750);
 
-          case 54:
+          case 64:
           case 'end':
             return context$1$0.stop();
         }
@@ -1178,8 +1201,8 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
         id: 'ember',
         name: 'Ember',
         namePosition: 'right',
-        height: 360,
-        defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral' },
+        height: 400,
+        defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral', eyes: 'neutral' },
         layerOrder: ['base', 'nails', 'shoes', 'top', 'pants', 'jacket', 'nose', 'mouth', 'eyes', 'brows', 'hair'],
         layers: {
           base: [{
@@ -1212,7 +1235,7 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
           }],
           mouth: [{
             state: { pose: 'standing', expression: 'neutral' },
-            keyframe: 'ember-mouth-neutral'
+            keyframe: 'ember-mouth-neutral-closed'
           }, {
             state: { pose: 'standing', expression: 'proud' },
             keyframe: 'ember-mouth-smile-closed'
@@ -1220,21 +1243,21 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
             state: { pose: 'standing', expression: 'smiling' },
             keyframe: 'ember-mouth-smile-open'
           }, {
-            state: { pose: 'standing', expression: 'obviously' },
-            keyframe: 'ember-mouth-pout'
+            state: { pose: 'standing', expression: 'bemused' },
+            keyframe: 'ember-mouth-neutral-open'
           }],
           eyes: [{
-            state: { pose: 'standing', expression: 'neutral' },
+            state: { pose: 'standing', eyes: 'neutral' },
             keyframe: 'ember-eyes-neutral'
           }, {
-            state: { pose: 'standing', expression: 'proud' },
+            state: { pose: 'standing', eyes: 'left' },
             keyframe: 'ember-eyes-left'
           }, {
-            state: { pose: 'standing', expression: 'smiling' },
-            keyframe: 'ember-eyes-neutral'
+            state: { pose: 'standing', eyes: 'right' },
+            keyframe: 'ember-eyes-right'
           }, {
-            state: { pose: 'standing', expression: 'obviously' },
-            keyframe: 'ember-eyes-up-left'
+            state: { pose: 'standing', eyes: 'rolled' },
+            keyframe: 'ember-eyes-rolled'
           }],
           brows: [{
             state: { pose: 'standing', expression: 'neutral' },
@@ -1246,8 +1269,8 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
             state: { pose: 'standing', expression: 'smiling' },
             keyframe: 'ember-brows-up'
           }, {
-            state: { pose: 'standing', expression: 'obviously' },
-            keyframe: 'ember-brows-asymetrical'
+            state: { pose: 'standing', expression: 'bemused' },
+            keyframe: 'ember-brows-up'
           }],
           hair: [{
             state: { pose: 'standing', outfit: 'trendy' },
@@ -1257,8 +1280,8 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
       }, {
         id: 'diy',
         name: 'Diy',
-        height: 380,
-        defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral' },
+        height: 420,
+        defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral', eyes: 'neutral' },
         layerOrder: ['base', 'complexion', 'jewlery', 'socks', 'shoes', 'bottom', 'top', 'vest', 'jacket', 'scarf', 'nose', 'mouth', 'eyes', 'brows', 'hair'],
         layers: {
           base: [{
@@ -1312,6 +1335,9 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
             state: { pose: 'standing', expression: 'embarrassed' },
             keyframe: 'diy-mouth-pout'
           }, {
+            state: { pose: 'standing', expression: 'quizzical' },
+            keyframe: 'diy-mouth-neutral'
+          }, {
             state: { pose: 'standing', expression: 'smiling' },
             keyframe: 'diy-mouth-smile-closed'
           }, {
@@ -1319,17 +1345,17 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
             keyframe: 'diy-mouth-smile-toothy'
           }],
           eyes: [{
-            state: { pose: 'standing', expression: 'neutral' },
-            keyframe: 'diy-eyes-right'
+            state: { pose: 'standing', eyes: 'neutral' },
+            keyframe: 'diy-eyes-neutral'
           }, {
-            state: { pose: 'standing', expression: 'embarrassed' },
+            state: { pose: 'standing', eyes: 'left' },
             keyframe: 'diy-eyes-left'
           }, {
-            state: { pose: 'standing', expression: 'smiling' },
-            keyframe: 'diy-eyes-neutral'
+            state: { pose: 'standing', eyes: 'right' },
+            keyframe: 'diy-eyes-right'
           }, {
-            state: { pose: 'standing', expression: 'excited' },
-            keyframe: 'diy-eyes-neutral'
+            state: { pose: 'standing', eyes: 'rolled' },
+            keyframe: 'diy-eyes-rolled'
           }],
           brows: [{
             state: { pose: 'standing', expression: 'neutral' },
@@ -1337,6 +1363,9 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
           }, {
             state: { pose: 'standing', expression: 'embarrassed' },
             keyframe: 'diy-brows-frown'
+          }, {
+            state: { pose: 'standing', expression: 'quizzical' },
+            keyframe: 'diy-brows-one-up'
           }, {
             state: { pose: 'standing', expression: 'smiling' },
             keyframe: 'diy-brows-up'
@@ -1379,7 +1408,7 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
         id: 'ember-eyes-neutral',
         src: 'affinity-engine/characters/ember/eyes/neutral.png'
       }, {
-        id: 'ember-eyes-up-left',
+        id: 'ember-eyes-rolled',
         src: 'affinity-engine/characters/ember/eyes/up-left.png'
       }, {
         id: 'ember-hair-red-black-braids',
@@ -1388,8 +1417,11 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
         id: 'ember-jacket-red-letter-jacket',
         src: 'affinity-engine/characters/ember/jackets/red-letter-jacket.png'
       }, {
-        id: 'ember-mouth-neutral',
-        src: 'affinity-engine/characters/ember/mouths/neutral.png'
+        id: 'ember-mouth-neutral-closed',
+        src: 'affinity-engine/characters/ember/mouths/neutral-closed.png'
+      }, {
+        id: 'ember-mouth-neutral-open',
+        src: 'affinity-engine/characters/ember/mouths/neutral-open.png'
       }, {
         id: 'ember-mouth-pout',
         src: 'affinity-engine/characters/ember/mouths/pout.png'
@@ -1451,7 +1483,7 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
         id: 'diy-eyes-right',
         src: 'affinity-engine/characters/diy/eyes/right.png'
       }, {
-        id: 'diy-eyes-roll',
+        id: 'diy-eyes-rolled',
         src: 'affinity-engine/characters/diy/eyes/roll.png'
       }, {
         id: 'diy-eyes-closed',
@@ -9411,7 +9443,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+00f5c7a4"});
+  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+33d66163"});
 }
 
 /* jshint ignore:end */

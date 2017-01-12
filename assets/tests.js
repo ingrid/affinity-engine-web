@@ -4,7 +4,7 @@ define('affinity-engine-web/tests/affinity-engine/stage/scenes/index/welcome.jsh
   QUnit.module('JSHint | affinity-engine/stage/scenes/index/welcome.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'affinity-engine/stage/scenes/index/welcome.js should pass jshint.');
+    assert.ok(false, 'affinity-engine/stage/scenes/index/welcome.js should pass jshint.\naffinity-engine/stage/scenes/index/welcome.js: line 6, col 11, \'bedroom\' is defined but never used.\n\n1 error');
   });
 });
 define('affinity-engine-web/tests/app.jshint', ['exports'], function (exports) {

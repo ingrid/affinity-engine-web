@@ -10184,8 +10184,10 @@ a code, .section-anchor code {
     padding: 0.7rem 1rem; } }
 
 .engine-container {
-  height: 75vh;
+  height: 68vh;
+  max-height: 680px;
   width: 100%;
+  max-width: 1000px;
   position: relative;
   margin: 30px auto; }
 
@@ -10280,6 +10282,18 @@ a code, .section-anchor code {
     -webkit-align-items: center;
     align-items: center; } }
 
+.ae-stage-direction-image-type {
+  perspective: 100px; }
+
+.ae-cover {
+  height: 150%;
+  width: 150%;
+  top: -25%;
+  left: -25%; }
+
+.ae-stage-layer > div {
+  height: 100%; }
+
 .et-curtain, .ae-curtain, .ember-progress-bar {
   height: 100%; }
 
@@ -10295,6 +10309,7 @@ a code, .section-anchor code {
   bottom: 0;
   height: 130px;
   line-height: 36px;
+  font-family: "Comfortaa", cursive;
   font-size: 24px;
   padding: 22.32px 22.32px;
   padding-bottom: 0;
@@ -10305,6 +10320,7 @@ a code, .section-anchor code {
   border-bottom-left-radius: 0; }
   .ae-text.ae-bottom-block .ae-text-caption {
     position: absolute;
+    font-family: "Comfortaa", cursive;
     top: -21.6px;
     padding: 0 22.32px;
     font-size: 14.4px;
@@ -10327,7 +10343,7 @@ a code, .section-anchor code {
     left: 2%;
     right: 2%;
     bottom: 3%;
-    height: 250px;
+    height: 210px;
     line-height: 46.8px;
     font-size: 31.2px;
     padding: 29.016px 29.016px; }
