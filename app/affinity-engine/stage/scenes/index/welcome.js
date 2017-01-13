@@ -27,9 +27,9 @@ export default Scene.extend({
     yield script.pause(1500);
     diy.transition({ translateZ: '50px', translateY: '10%', left: '50%' }, 1000).transition({ translateZ: '50px' }, 750, { queue: 'closer' });
     yield script.pause(500);
-    stage.transition({ translateY: '-6%', translateX: '1%' }, 750).then(() => {
-      stage.transition({ translateY: '2%', translateX: '-1%' }, 750).then(() => {
-        stage.transition({ translateY: 0, translateX: 0 }, 400);
+    stage.transition({ translateY: '-6%', translateX: '1%', rotateZ: '3deg' }, 750).then(() => {
+      stage.transition({ translateY: '2%', translateX: '-1%', rotateZ: '-1deg' }, 750).then(() => {
+        stage.transition({ translateY: 0, translateX: 0, rotateZ: 0 }, 400);
       });
     });
 
@@ -43,22 +43,24 @@ export default Scene.extend({
 
     yield diy.expression('smiling')._.text("Hi everyone! [[pause 750]] My name's Diy.");
     diy.state({ expression: 'neutral', eyes: 'right' });
-    yield ember.expression('smiling')._.text("And I'm Ember.");
+    yield ember.expression('smiling')._.text("Hey! [[pause 750]] [[expression proud]] I'm Ember.");
     ember.expression('neutral');
-    yield diy.state({ eyes: 'rolled', expression: 'quizzical' })._.text("And the little box we're in is called the Affinity Engine.");
+    yield diy.state({ eyes: 'neutral', expression: 'smiling' })._.text("And welcome to the Affinity Engine website. [[pause 500]] [[expression excited]] Ember and I will be your tour guides.");
     diy.state({ eyes: 'neutral', expression: 'neutral' });
-    yield ember.expression('smiling')._.text("It's a game engine, and Diy and I are going to show you how to use it to make games.");
+    yield ember.expression('smiling')._.text("In particular, we're going to show you how to use the Affinity Engine to make games.");
     ember.expression('neutral');
     yield diy.state({ expression: 'excited', eyes: 'right' })._.text("Games you'll love.");
-    yield ember.state({ eyes: 'left' }).delay(250).state({ eyes: 'rolled', expression: 'bemused' }).delay(250);
-    yield ember.state({ eyes: 'left', expression: 'proud' })._.text("Yes, games you'll love.");
+    yield ember.state({ eyes: 'left' }).delay(400).state({ eyes: 'rolled', expression: 'bemused' }).delay(150);
+    yield ember.state({ eyes: 'left', expression: 'proud' })._.text("Yes, [[pause 500]] games you'll love.");
     yield script.pause(250);
-    diy.state({ eyes: 'neutral', expression: 'smiling' });
-    yield ember.state({ eyes: 'neutral', expression: 'smiling' })._.text("Anyway, you'll find our little vingettes peppered throughout the documentation.");
-    ember.state({ eyes: 'neutral', expression: 'neutral' });
-    yield script.pause(250);
-    yield diy.state({ eyes: 'neutral', expression: 'excited' })._.text("I guess that's it. When you're ready, feel free to start reading through the API.");
-    yield ember.expression('smiling')._.text("Yeah, we'll see you there!");
+    yield diy.state({ eyes: 'neutral', expression: 'smiling' })._.text("In all seriousness, I hope you try. [[pause 500]] [[expression neutral]] It's what Ember and I are here for. [[pause 500]] [[expression excited]] We want to help you bring something beautiful into this world. &#x02764; &#x02764; &#x02764;");
+    diy.state({ eyes: 'right', expression: 'neutral' });
+    yield ember.expression('smiling')._.text("And on that cherry note, [[pause 250]] [[expression neutral]] let's let them get to it.");
+    ember.delay(100).state({ eyes: 'neutral', expression: 'neutral' });
+    yield diy.state({ eyes: 'neutral', expression: 'smiling' })._.text("Oh, right! [[pause 500]] Hope we get to talk again soon!");
+    yield ember.expression('smiling')._.text("You'll find our little vingettes peppered throughout the documentation. [[pause 500]] Be seeing you around!");
+
+    ember.delay(50).state({ eyes: 'left', expression: 'proud' });
 
     script.layer('engine').transition({ opacity: 0 }, 750);
   })

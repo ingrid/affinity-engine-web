@@ -206,6 +206,9 @@ export default Component.extend({
         }, {
           state: { pose: 'standing', expression: 'excited' },
           keyframe: 'diy-mouth-smile-toothy'
+        }, {
+          state: { pose: 'standing', expression: 'flirty' },
+          keyframe: 'diy-mouth-smile-toothy'
         }],
         eyes: [{
           state: { pose: 'standing', eyes: 'neutral' },
@@ -235,6 +238,9 @@ export default Component.extend({
         }, {
           state: { pose: 'standing', expression: 'excited' },
           keyframe: 'diy-brows-up'
+        }, {
+          state: { pose: 'standing', expression: 'flirty' },
+          keyframe: 'diy-brows-one-up'
         }],
         hair: [{
           state: { pose: 'standing', outfit: 'trendy' },
