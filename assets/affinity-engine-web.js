@@ -276,9 +276,9 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
             return script.pause(500);
 
           case 24:
-            stage.transition({ translateY: '-6%', translateX: '1%' }, 750).then(function () {
-              stage.transition({ translateY: '2%', translateX: '-1%' }, 750).then(function () {
-                stage.transition({ translateY: 0, translateX: 0 }, 400);
+            stage.transition({ translateY: '-6%', translateX: '1%', rotateZ: '3deg' }, 750).then(function () {
+              stage.transition({ translateY: '2%', translateX: '-1%', rotateZ: '-1deg' }, 750).then(function () {
+                stage.transition({ translateY: 0, translateX: 0, rotateZ: 0 }, 400);
               });
             });
 
@@ -304,17 +304,17 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
           case 35:
             diy.state({ expression: 'neutral', eyes: 'right' });
             context$1$0.next = 38;
-            return ember.expression('smiling')._.text("And I'm Ember.");
+            return ember.expression('smiling')._.text("Hey! [[pause 750]] [[expression proud]] I'm Ember.");
 
           case 38:
             ember.expression('neutral');
             context$1$0.next = 41;
-            return diy.state({ eyes: 'rolled', expression: 'quizzical' })._.text("And the little box we're in is called the Affinity Engine.");
+            return diy.state({ eyes: 'neutral', expression: 'smiling' })._.text("And welcome to the Affinity Engine website. [[pause 500]] [[expression excited]] Ember and I will be your tour guides.");
 
           case 41:
             diy.state({ eyes: 'neutral', expression: 'neutral' });
             context$1$0.next = 44;
-            return ember.expression('smiling')._.text("It's a game engine, and Diy and I are going to show you how to use it to make games.");
+            return ember.expression('smiling')._.text("In particular, we're going to show you how to use the Affinity Engine to make games.");
 
           case 44:
             ember.expression('neutral');
@@ -323,39 +323,41 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
 
           case 47:
             context$1$0.next = 49;
-            return ember.state({ eyes: 'left' }).delay(250).state({ eyes: 'rolled', expression: 'bemused' }).delay(250);
+            return ember.state({ eyes: 'left' }).delay(400).state({ eyes: 'rolled', expression: 'bemused' }).delay(150);
 
           case 49:
             context$1$0.next = 51;
-            return ember.state({ eyes: 'left', expression: 'proud' })._.text("Yes, games you'll love.");
+            return ember.state({ eyes: 'left', expression: 'proud' })._.text("Yes, [[pause 500]] games you'll love.");
 
           case 51:
             context$1$0.next = 53;
             return script.pause(250);
 
           case 53:
-            diy.state({ eyes: 'neutral', expression: 'smiling' });
-            context$1$0.next = 56;
-            return ember.state({ eyes: 'neutral', expression: 'smiling' })._.text("Anyway, you'll find our little vingettes peppered throughout the documentation.");
+            context$1$0.next = 55;
+            return diy.state({ eyes: 'neutral', expression: 'smiling' })._.text("In all seriousness, I hope you try. [[pause 500]] [[expression neutral]] It's what Ember and I are here for. [[pause 500]] [[expression excited]] We want to help you bring something beautiful into this world. &#x02764; &#x02764; &#x02764;");
 
-          case 56:
-            ember.state({ eyes: 'neutral', expression: 'neutral' });
-            context$1$0.next = 59;
-            return script.pause(250);
+          case 55:
+            diy.state({ eyes: 'right', expression: 'neutral' });
+            context$1$0.next = 58;
+            return ember.expression('smiling')._.text("And on that cherry note, [[pause 250]] [[expression neutral]] let's let them get to it.");
 
-          case 59:
+          case 58:
+            ember.delay(100).state({ eyes: 'neutral', expression: 'neutral' });
             context$1$0.next = 61;
-            return diy.state({ eyes: 'neutral', expression: 'excited' })._.text("I guess that's it. When you're ready, feel free to start reading through the API.");
+            return diy.state({ eyes: 'neutral', expression: 'smiling' })._.text("Oh, right! [[pause 500]] Hope we get to talk again soon!");
 
           case 61:
             context$1$0.next = 63;
-            return ember.expression('smiling')._.text("Yeah, we'll see you there!");
+            return ember.expression('smiling')._.text("You'll find our little vingettes peppered throughout the documentation. [[pause 500]] Be seeing you around!");
 
           case 63:
 
+            ember.delay(50).state({ eyes: 'left', expression: 'proud' });
+
             script.layer('engine').transition({ opacity: 0 }, 750);
 
-          case 64:
+          case 65:
           case 'end':
             return context$1$0.stop();
         }
@@ -1343,6 +1345,9 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
           }, {
             state: { pose: 'standing', expression: 'excited' },
             keyframe: 'diy-mouth-smile-toothy'
+          }, {
+            state: { pose: 'standing', expression: 'flirty' },
+            keyframe: 'diy-mouth-smile-toothy'
           }],
           eyes: [{
             state: { pose: 'standing', eyes: 'neutral' },
@@ -1372,6 +1377,9 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
           }, {
             state: { pose: 'standing', expression: 'excited' },
             keyframe: 'diy-brows-up'
+          }, {
+            state: { pose: 'standing', expression: 'flirty' },
+            keyframe: 'diy-brows-one-up'
           }],
           hair: [{
             state: { pose: 'standing', outfit: 'trendy' },
@@ -9443,7 +9451,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+33d66163"});
+  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+60f6a906"});
 }
 
 /* jshint ignore:end */
