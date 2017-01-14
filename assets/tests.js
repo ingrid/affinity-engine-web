@@ -1,4 +1,6 @@
-define('affinity-engine-web/tests/affinity-engine/stage/scenes/index/welcome.jshint', ['exports'], function (exports) {
+'use strict';
+
+define('affinity-engine-web/tests/affinity-engine/stage/scenes/index/welcome.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | affinity-engine/stage/scenes/index/welcome.js');
@@ -7,7 +9,7 @@ define('affinity-engine-web/tests/affinity-engine/stage/scenes/index/welcome.jsh
     assert.ok(false, 'affinity-engine/stage/scenes/index/welcome.js should pass jshint.\naffinity-engine/stage/scenes/index/welcome.js: line 6, col 11, \'bedroom\' is defined but never used.\n\n1 error');
   });
 });
-define('affinity-engine-web/tests/app.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/app.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | app.js');
@@ -16,7 +18,7 @@ define('affinity-engine-web/tests/app.jshint', ['exports'], function (exports) {
     assert.ok(true, 'app.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/api-doc.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/api-doc.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/api-doc.js');
@@ -25,7 +27,7 @@ define('affinity-engine-web/tests/components/api-doc.jshint', ['exports'], funct
     assert.ok(true, 'components/api-doc.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/doc-version-selector.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/doc-version-selector.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/doc-version-selector.js');
@@ -34,7 +36,7 @@ define('affinity-engine-web/tests/components/doc-version-selector.jshint', ['exp
     assert.ok(true, 'components/doc-version-selector.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/dynamic-tag.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/dynamic-tag.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/dynamic-tag.js');
@@ -43,7 +45,7 @@ define('affinity-engine-web/tests/components/dynamic-tag.jshint', ['exports'], f
     assert.ok(true, 'components/dynamic-tag.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/engine-container.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/engine-container.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/engine-container.js');
@@ -52,7 +54,7 @@ define('affinity-engine-web/tests/components/engine-container.jshint', ['exports
     assert.ok(true, 'components/engine-container.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/expanding-sidebar-section.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/expanding-sidebar-section.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/expanding-sidebar-section.js');
@@ -61,7 +63,7 @@ define('affinity-engine-web/tests/components/expanding-sidebar-section.jshint', 
     assert.ok(true, 'components/expanding-sidebar-section.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/expanding-sidebar.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/expanding-sidebar.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/expanding-sidebar.js');
@@ -70,7 +72,7 @@ define('affinity-engine-web/tests/components/expanding-sidebar.jshint', ['export
     assert.ok(true, 'components/expanding-sidebar.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/header-links.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/header-links.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/header-links.js');
@@ -79,7 +81,7 @@ define('affinity-engine-web/tests/components/header-links.jshint', ['exports'], 
     assert.ok(true, 'components/header-links.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/m-intl.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/m-intl.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/m-intl.js');
@@ -88,7 +90,7 @@ define('affinity-engine-web/tests/components/m-intl.jshint', ['exports'], functi
     assert.ok(true, 'components/m-intl.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/responsive-dropdown.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/responsive-dropdown.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/responsive-dropdown.js');
@@ -97,7 +99,7 @@ define('affinity-engine-web/tests/components/responsive-dropdown.jshint', ['expo
     assert.ok(true, 'components/responsive-dropdown.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/responsive-navigation-dropdown.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/responsive-navigation-dropdown.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/responsive-navigation-dropdown.js');
@@ -106,7 +108,7 @@ define('affinity-engine-web/tests/components/responsive-navigation-dropdown.jshi
     assert.ok(true, 'components/responsive-navigation-dropdown.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/components/section-navigator.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/components/section-navigator.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | components/section-navigator.js');
@@ -115,7 +117,7 @@ define('affinity-engine-web/tests/components/section-navigator.jshint', ['export
     assert.ok(true, 'components/section-navigator.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/controllers/application.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/controllers/application.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | controllers/application.js');
@@ -124,7 +126,7 @@ define('affinity-engine-web/tests/controllers/application.jshint', ['exports'], 
     assert.ok(true, 'controllers/application.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/formats.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/formats.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | formats.js');
@@ -173,7 +175,7 @@ define('affinity-engine-web/tests/helpers/destroy-app', ['exports', 'ember'], fu
     _ember['default'].run(application, 'destroy');
   }
 });
-define('affinity-engine-web/tests/helpers/destroy-app.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/helpers/destroy-app.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | helpers/destroy-app.js');
@@ -302,11 +304,12 @@ define('affinity-engine-web/tests/helpers/ember-basic-dropdown', ['exports', 'em
     });
   };
 });
-define('affinity-engine-web/tests/helpers/ember-keyboard/register-test-helpers', ['exports', 'ember', 'ember-keyboard'], function (exports, _ember, _emberKeyboard) {
+define('affinity-engine-web/tests/helpers/ember-keyboard/register-test-helpers', ['exports', 'ember', 'ember-keyboard', 'ember-keyboard/fixtures/modifiers-array', 'ember-keyboard/utils/get-cmd-key'], function (exports, _ember, _emberKeyboard, _emberKeyboardFixturesModifiersArray, _emberKeyboardUtilsGetCmdKey) {
 
   var keyEvent = function keyEvent(app, attributes, type, element) {
     var event = attributes.split('+').reduce(function (event, attribute) {
-      if (['ctrl', 'meta', 'alt', 'shift'].indexOf(attribute) > -1) {
+      if (_emberKeyboardFixturesModifiersArray['default'].indexOf(attribute) > -1) {
+        attribute = attribute === 'cmd' ? (0, _emberKeyboardUtilsGetCmdKey['default'])() : attribute;
         event[attribute + 'Key'] = true;
       } else {
         event.keyCode = (0, _emberKeyboard.getKeyCode)(attribute);
@@ -573,7 +576,7 @@ define('affinity-engine-web/tests/helpers/module-for-acceptance', ['exports', 'q
     });
   };
 });
-define('affinity-engine-web/tests/helpers/module-for-acceptance.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/helpers/module-for-acceptance.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | helpers/module-for-acceptance.js');
@@ -593,7 +596,7 @@ define('affinity-engine-web/tests/helpers/resolver', ['exports', 'affinity-engin
 
   exports['default'] = resolver;
 });
-define('affinity-engine-web/tests/helpers/resolver.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/helpers/resolver.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | helpers/resolver.js');
@@ -608,8 +611,8 @@ define('affinity-engine-web/tests/helpers/start-app', ['exports', 'ember', 'affi
   function startApp(attrs) {
     var application = undefined;
 
-    var attributes = _ember['default'].merge({}, _affinityEngineWebConfigEnvironment['default'].APP);
-    attributes = _ember['default'].merge(attributes, attrs); // use defaults, but you can override;
+    // use defaults, but you can override
+    var attributes = _ember['default'].assign({}, _affinityEngineWebConfigEnvironment['default'].APP, attrs);
 
     _ember['default'].run(function () {
       application = _affinityEngineWebApp['default'].create(attributes);
@@ -620,7 +623,7 @@ define('affinity-engine-web/tests/helpers/start-app', ['exports', 'ember', 'affi
     return application;
   }
 });
-define('affinity-engine-web/tests/helpers/start-app.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/helpers/start-app.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | helpers/start-app.js');
@@ -629,7 +632,7 @@ define('affinity-engine-web/tests/helpers/start-app.jshint', ['exports'], functi
     assert.ok(true, 'helpers/start-app.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/instance-initializers/inject-guides.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/instance-initializers/inject-guides.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | instance-initializers/inject-guides.js');
@@ -648,128 +651,25 @@ define('affinity-engine-web/tests/integration/components/api-doc-test', ['export
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 11
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'api-doc', ['loc', [null, [1, 0], [1, 11]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': '9dJIn6xL',
+      'block': '{"statements":[["append",["unknown",["api-doc"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), '');
 
     // Template block usage:
-    this.render(Ember.HTMLBars.template((function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            'revision': 'Ember@2.7.3',
-            'loc': {
-              'source': null,
-              'start': {
-                'line': 2,
-                'column': 4
-              },
-              'end': {
-                'line': 4,
-                'column': 4
-              }
-            }
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createTextNode('      template block text\n');
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes() {
-            return [];
-          },
-          statements: [],
-          locals: [],
-          templates: []
-        };
-      })();
-
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 5,
-              'column': 2
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode('\n');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode('  ');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [['block', 'api-doc', [], [], 0, null, ['loc', [null, [2, 4], [4, 16]]]]],
-        locals: [],
-        templates: [child0]
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'ws+jX/M9',
+      'block': '{"statements":[["text","\\n"],["block",["api-doc"],null,null,0],["text","  "]],"locals":[],"named":[],"yields":[],"blocks":[{"statements":[["text","      template block text\\n"]],"locals":[]}],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), 'template block text');
   });
 });
-define('affinity-engine-web/tests/integration/components/api-doc-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/api-doc-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/api-doc-test.js');
@@ -788,128 +688,25 @@ define('affinity-engine-web/tests/integration/components/doc-version-selector-te
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 24
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'doc-version-selector', ['loc', [null, [1, 0], [1, 24]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'zr5GqiNO',
+      'block': '{"statements":[["append",["unknown",["doc-version-selector"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), '');
 
     // Template block usage:
-    this.render(Ember.HTMLBars.template((function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            'revision': 'Ember@2.7.3',
-            'loc': {
-              'source': null,
-              'start': {
-                'line': 2,
-                'column': 4
-              },
-              'end': {
-                'line': 4,
-                'column': 4
-              }
-            }
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createTextNode('      template block text\n');
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes() {
-            return [];
-          },
-          statements: [],
-          locals: [],
-          templates: []
-        };
-      })();
-
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 5,
-              'column': 2
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode('\n');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode('  ');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [['block', 'doc-version-selector', [], [], 0, null, ['loc', [null, [2, 4], [4, 29]]]]],
-        locals: [],
-        templates: [child0]
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'UDWbZG7z',
+      'block': '{"statements":[["text","\\n"],["block",["doc-version-selector"],null,null,0],["text","  "]],"locals":[],"named":[],"yields":[],"blocks":[{"statements":[["text","      template block text\\n"]],"locals":[]}],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), 'template block text');
   });
 });
-define('affinity-engine-web/tests/integration/components/doc-version-selector-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/doc-version-selector-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/doc-version-selector-test.js');
@@ -928,128 +725,25 @@ define('affinity-engine-web/tests/integration/components/dynamic-tag-test', ['ex
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 15
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'dynamic-tag', ['loc', [null, [1, 0], [1, 15]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'MrHVUpPD',
+      'block': '{"statements":[["append",["unknown",["dynamic-tag"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), '');
 
     // Template block usage:
-    this.render(Ember.HTMLBars.template((function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            'revision': 'Ember@2.7.3',
-            'loc': {
-              'source': null,
-              'start': {
-                'line': 2,
-                'column': 4
-              },
-              'end': {
-                'line': 4,
-                'column': 4
-              }
-            }
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createTextNode('      template block text\n');
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes() {
-            return [];
-          },
-          statements: [],
-          locals: [],
-          templates: []
-        };
-      })();
-
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 5,
-              'column': 2
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode('\n');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode('  ');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [['block', 'dynamic-tag', [], [], 0, null, ['loc', [null, [2, 4], [4, 20]]]]],
-        locals: [],
-        templates: [child0]
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'se6AKzmo',
+      'block': '{"statements":[["text","\\n"],["block",["dynamic-tag"],null,null,0],["text","  "]],"locals":[],"named":[],"yields":[],"blocks":[{"statements":[["text","      template block text\\n"]],"locals":[]}],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), 'template block text');
   });
 });
-define('affinity-engine-web/tests/integration/components/dynamic-tag-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/dynamic-tag-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/dynamic-tag-test.js');
@@ -1068,128 +762,25 @@ define('affinity-engine-web/tests/integration/components/engine-container-test',
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 20
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'engine-container', ['loc', [null, [1, 0], [1, 20]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'BjZgugs+',
+      'block': '{"statements":[["append",["unknown",["engine-container"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), '');
 
     // Template block usage:
-    this.render(Ember.HTMLBars.template((function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            'revision': 'Ember@2.7.3',
-            'loc': {
-              'source': null,
-              'start': {
-                'line': 2,
-                'column': 4
-              },
-              'end': {
-                'line': 4,
-                'column': 4
-              }
-            }
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createTextNode('      template block text\n');
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes() {
-            return [];
-          },
-          statements: [],
-          locals: [],
-          templates: []
-        };
-      })();
-
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 5,
-              'column': 2
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode('\n');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode('  ');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [['block', 'engine-container', [], [], 0, null, ['loc', [null, [2, 4], [4, 25]]]]],
-        locals: [],
-        templates: [child0]
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'qEY4PsLP',
+      'block': '{"statements":[["text","\\n"],["block",["engine-container"],null,null,0],["text","  "]],"locals":[],"named":[],"yields":[],"blocks":[{"statements":[["text","      template block text\\n"]],"locals":[]}],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), 'template block text');
   });
 });
-define('affinity-engine-web/tests/integration/components/engine-container-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/engine-container-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/engine-container-test.js');
@@ -1208,49 +799,16 @@ define('affinity-engine-web/tests/integration/components/expanding-sidebar-secti
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 29
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'expanding-sidebar-section', ['loc', [null, [1, 0], [1, 29]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'dCoqKa0a',
+      'block': '{"statements":[["append",["unknown",["expanding-sidebar-section"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), '');
   });
 });
-define('affinity-engine-web/tests/integration/components/expanding-sidebar-section-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/expanding-sidebar-section-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/expanding-sidebar-section-test.js');
@@ -1269,49 +827,16 @@ define('affinity-engine-web/tests/integration/components/expanding-sidebar-test'
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 21
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'expanding-sidebar', ['loc', [null, [1, 0], [1, 21]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'rGVNgxJP',
+      'block': '{"statements":[["append",["unknown",["expanding-sidebar"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.ok(true);
   });
 });
-define('affinity-engine-web/tests/integration/components/expanding-sidebar-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/expanding-sidebar-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/expanding-sidebar-test.js');
@@ -1330,49 +855,16 @@ define('affinity-engine-web/tests/integration/components/header-links-test', ['e
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 16
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'header-links', ['loc', [null, [1, 0], [1, 16]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'pDU/bdu4',
+      'block': '{"statements":[["append",["unknown",["header-links"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), '');
   });
 });
-define('affinity-engine-web/tests/integration/components/header-links-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/header-links-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/header-links-test.js');
@@ -1391,128 +883,25 @@ define('affinity-engine-web/tests/integration/components/m-intl-test', ['exports
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 10
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'm-intl', ['loc', [null, [1, 0], [1, 10]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'am6hAE5l',
+      'block': '{"statements":[["append",["unknown",["m-intl"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), '');
 
     // Template block usage:
-    this.render(Ember.HTMLBars.template((function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            'revision': 'Ember@2.7.3',
-            'loc': {
-              'source': null,
-              'start': {
-                'line': 2,
-                'column': 4
-              },
-              'end': {
-                'line': 4,
-                'column': 4
-              }
-            }
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createTextNode('      template block text\n');
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes() {
-            return [];
-          },
-          statements: [],
-          locals: [],
-          templates: []
-        };
-      })();
-
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 5,
-              'column': 2
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode('\n');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode('  ');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [['block', 'm-intl', [], [], 0, null, ['loc', [null, [2, 4], [4, 15]]]]],
-        locals: [],
-        templates: [child0]
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'f+TaM9r/',
+      'block': '{"statements":[["text","\\n"],["block",["m-intl"],null,null,0],["text","  "]],"locals":[],"named":[],"yields":[],"blocks":[{"statements":[["text","      template block text\\n"]],"locals":[]}],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), 'template block text');
   });
 });
-define('affinity-engine-web/tests/integration/components/m-intl-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/m-intl-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/m-intl-test.js');
@@ -1531,128 +920,25 @@ define('affinity-engine-web/tests/integration/components/responsive-dropdown-tes
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 23
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'responsive-dropdown', ['loc', [null, [1, 0], [1, 23]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'veS+UfpD',
+      'block': '{"statements":[["append",["unknown",["responsive-dropdown"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), '');
 
     // Template block usage:
-    this.render(Ember.HTMLBars.template((function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            'revision': 'Ember@2.7.3',
-            'loc': {
-              'source': null,
-              'start': {
-                'line': 2,
-                'column': 4
-              },
-              'end': {
-                'line': 4,
-                'column': 4
-              }
-            }
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createTextNode('      template block text\n');
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes() {
-            return [];
-          },
-          statements: [],
-          locals: [],
-          templates: []
-        };
-      })();
-
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 5,
-              'column': 2
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode('\n');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode('  ');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [['block', 'responsive-dropdown', [], [], 0, null, ['loc', [null, [2, 4], [4, 28]]]]],
-        locals: [],
-        templates: [child0]
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'lfmdsRM0',
+      'block': '{"statements":[["text","\\n"],["block",["responsive-dropdown"],null,null,0],["text","  "]],"locals":[],"named":[],"yields":[],"blocks":[{"statements":[["text","      template block text\\n"]],"locals":[]}],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.equal(this.$().text().trim(), 'template block text');
   });
 });
-define('affinity-engine-web/tests/integration/components/responsive-dropdown-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/responsive-dropdown-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/responsive-dropdown-test.js');
@@ -1671,49 +957,16 @@ define('affinity-engine-web/tests/integration/components/responsive-navigation-d
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 34
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'responsive-navigation-dropdown', ['loc', [null, [1, 0], [1, 34]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'Lxvvl/qE',
+      'block': '{"statements":[["append",["unknown",["responsive-navigation-dropdown"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.ok(true);
   });
 });
-define('affinity-engine-web/tests/integration/components/responsive-navigation-dropdown-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/responsive-navigation-dropdown-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/responsive-navigation-dropdown-test.js');
@@ -1732,49 +985,16 @@ define('affinity-engine-web/tests/integration/components/section-navigator-test'
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template((function () {
-      return {
-        meta: {
-          'revision': 'Ember@2.7.3',
-          'loc': {
-            'source': null,
-            'start': {
-              'line': 1,
-              'column': 0
-            },
-            'end': {
-              'line': 1,
-              'column': 21
-            }
-          }
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment('');
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [['content', 'section-navigator', ['loc', [null, [1, 0], [1, 21]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })()));
+    this.render(Ember.HTMLBars.template({
+      'id': 'NQAfuk5T',
+      'block': '{"statements":[["append",["unknown",["section-navigator"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
 
     assert.ok(true);
   });
 });
-define('affinity-engine-web/tests/integration/components/section-navigator-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/integration/components/section-navigator-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | integration/components/section-navigator-test.js');
@@ -1783,7 +1003,7 @@ define('affinity-engine-web/tests/integration/components/section-navigator-test.
     assert.ok(true, 'integration/components/section-navigator-test.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/mixins/reset-scroll.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/mixins/reset-scroll.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | mixins/reset-scroll.js');
@@ -1792,7 +1012,7 @@ define('affinity-engine-web/tests/mixins/reset-scroll.jshint', ['exports'], func
     assert.ok(true, 'mixins/reset-scroll.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/mixins/route-title.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/mixins/route-title.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | mixins/route-title.js');
@@ -1801,7 +1021,7 @@ define('affinity-engine-web/tests/mixins/route-title.jshint', ['exports'], funct
     assert.ok(true, 'mixins/route-title.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/mixins/sidebar-route.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/mixins/sidebar-route.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | mixins/sidebar-route.js');
@@ -1810,7 +1030,7 @@ define('affinity-engine-web/tests/mixins/sidebar-route.jshint', ['exports'], fun
     assert.ok(true, 'mixins/sidebar-route.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/resolver.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/resolver.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | resolver.js');
@@ -1819,7 +1039,7 @@ define('affinity-engine-web/tests/resolver.jshint', ['exports'], function (expor
     assert.ok(true, 'resolver.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/router.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/router.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | router.js');
@@ -1828,7 +1048,7 @@ define('affinity-engine-web/tests/router.jshint', ['exports'], function (exports
     assert.ok(true, 'router.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/application.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/application.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/application.js');
@@ -1837,7 +1057,7 @@ define('affinity-engine-web/tests/routes/application.jshint', ['exports'], funct
     assert.ok(true, 'routes/application.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components.js');
@@ -1846,7 +1066,7 @@ define('affinity-engine-web/tests/routes/components.jshint', ['exports'], functi
     assert.ok(true, 'routes/components.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/curtain.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/curtain.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/curtain.js');
@@ -1855,7 +1075,7 @@ define('affinity-engine-web/tests/routes/components/curtain.jshint', ['exports']
     assert.ok(true, 'routes/components/curtain.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/curtain/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/curtain/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/curtain/index.js');
@@ -1864,7 +1084,7 @@ define('affinity-engine-web/tests/routes/components/curtain/index.jshint', ['exp
     assert.ok(true, 'routes/components/curtain/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/menu-bar.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/menu-bar.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/menu-bar.js');
@@ -1873,7 +1093,7 @@ define('affinity-engine-web/tests/routes/components/menu-bar.jshint', ['exports'
     assert.ok(true, 'routes/components/menu-bar.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/menu-bar/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/menu-bar/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/menu-bar/index.js');
@@ -1882,7 +1102,7 @@ define('affinity-engine-web/tests/routes/components/menu-bar/index.jshint', ['ex
     assert.ok(true, 'routes/components/menu-bar/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage.js');
@@ -1891,7 +1111,7 @@ define('affinity-engine-web/tests/routes/components/stage.jshint', ['exports'], 
     assert.ok(true, 'routes/components/stage.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions.js');
@@ -1900,7 +1120,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions.jshint', ['
     assert.ok(true, 'routes/components/stage/directions.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/backdrop.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/backdrop.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/backdrop.js');
@@ -1909,7 +1129,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/backdrop.js
     assert.ok(true, 'routes/components/stage/directions/backdrop.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/character.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/character.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/character.js');
@@ -1918,7 +1138,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/character.j
     assert.ok(true, 'routes/components/stage/directions/character.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/image.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/image.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/image.js');
@@ -1927,7 +1147,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/image.jshin
     assert.ok(true, 'routes/components/stage/directions/image.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/index.js');
@@ -1936,7 +1156,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/index.jshin
     assert.ok(true, 'routes/components/stage/directions/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/layer.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/layer.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/layer.js');
@@ -1945,7 +1165,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/layer.jshin
     assert.ok(true, 'routes/components/stage/directions/layer.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/menu.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/menu.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/menu.js');
@@ -1954,7 +1174,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/menu.jshint
     assert.ok(true, 'routes/components/stage/directions/menu.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/pause.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/pause.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/pause.js');
@@ -1963,7 +1183,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/pause.jshin
     assert.ok(true, 'routes/components/stage/directions/pause.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/random.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/random.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/random.js');
@@ -1972,7 +1192,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/random.jshi
     assert.ok(true, 'routes/components/stage/directions/random.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/scene.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/scene.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/scene.js');
@@ -1981,7 +1201,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/scene.jshin
     assert.ok(true, 'routes/components/stage/directions/scene.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/sound.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/sound.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/sound.js');
@@ -1990,7 +1210,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/sound.jshin
     assert.ok(true, 'routes/components/stage/directions/sound.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/directions/text.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/directions/text.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/directions/text.js');
@@ -1999,7 +1219,7 @@ define('affinity-engine-web/tests/routes/components/stage/directions/text.jshint
     assert.ok(true, 'routes/components/stage/directions/text.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/index.js');
@@ -2008,7 +1228,7 @@ define('affinity-engine-web/tests/routes/components/stage/index.jshint', ['expor
     assert.ok(true, 'routes/components/stage/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/scenes.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/scenes.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/scenes.js');
@@ -2017,7 +1237,7 @@ define('affinity-engine-web/tests/routes/components/stage/scenes.jshint', ['expo
     assert.ok(true, 'routes/components/stage/scenes.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/scenes/data.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/scenes/data.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/scenes/data.js');
@@ -2026,7 +1246,7 @@ define('affinity-engine-web/tests/routes/components/stage/scenes/data.jshint', [
     assert.ok(true, 'routes/components/stage/scenes/data.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/scenes/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/scenes/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/scenes/index.js');
@@ -2035,7 +1255,7 @@ define('affinity-engine-web/tests/routes/components/stage/scenes/index.jshint', 
     assert.ok(true, 'routes/components/stage/scenes/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/components/stage/usage.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/components/stage/usage.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/components/stage/usage.js');
@@ -2044,7 +1264,7 @@ define('affinity-engine-web/tests/routes/components/stage/usage.jshint', ['expor
     assert.ok(true, 'routes/components/stage/usage.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine.js');
@@ -2053,7 +1273,7 @@ define('affinity-engine-web/tests/routes/engine.jshint', ['exports'], function (
     assert.ok(true, 'routes/engine.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/configuration.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/configuration.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/configuration.js');
@@ -2062,7 +1282,7 @@ define('affinity-engine-web/tests/routes/engine/configuration.jshint', ['exports
     assert.ok(true, 'routes/engine/configuration.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/configuration/configuration-tiers.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/configuration/configuration-tiers.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/configuration/configuration-tiers.js');
@@ -2071,7 +1291,7 @@ define('affinity-engine-web/tests/routes/engine/configuration/configuration-tier
     assert.ok(true, 'routes/engine/configuration/configuration-tiers.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/configuration/defaults.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/configuration/defaults.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/configuration/defaults.js');
@@ -2080,7 +1300,7 @@ define('affinity-engine-web/tests/routes/engine/configuration/defaults.jshint', 
     assert.ok(true, 'routes/engine/configuration/defaults.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/configuration/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/configuration/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/configuration/index.js');
@@ -2089,7 +1309,7 @@ define('affinity-engine-web/tests/routes/engine/configuration/index.jshint', ['e
     assert.ok(true, 'routes/engine/configuration/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/configuration/usage.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/configuration/usage.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/configuration/usage.js');
@@ -2098,7 +1318,7 @@ define('affinity-engine-web/tests/routes/engine/configuration/usage.jshint', ['e
     assert.ok(true, 'routes/engine/configuration/usage.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/fixtures.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/fixtures.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/fixtures.js');
@@ -2107,7 +1327,7 @@ define('affinity-engine-web/tests/routes/engine/fixtures.jshint', ['exports'], f
     assert.ok(true, 'routes/engine/fixtures.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/fixtures/backdrops.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/fixtures/backdrops.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/fixtures/backdrops.js');
@@ -2116,7 +1336,7 @@ define('affinity-engine-web/tests/routes/engine/fixtures/backdrops.jshint', ['ex
     assert.ok(true, 'routes/engine/fixtures/backdrops.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/fixtures/characters.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/fixtures/characters.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/fixtures/characters.js');
@@ -2125,7 +1345,7 @@ define('affinity-engine-web/tests/routes/engine/fixtures/characters.jshint', ['e
     assert.ok(true, 'routes/engine/fixtures/characters.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/fixtures/images.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/fixtures/images.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/fixtures/images.js');
@@ -2134,7 +1354,7 @@ define('affinity-engine-web/tests/routes/engine/fixtures/images.jshint', ['expor
     assert.ok(true, 'routes/engine/fixtures/images.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/fixtures/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/fixtures/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/fixtures/index.js');
@@ -2143,7 +1363,7 @@ define('affinity-engine-web/tests/routes/engine/fixtures/index.jshint', ['export
     assert.ok(true, 'routes/engine/fixtures/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/fixtures/keyframes.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/fixtures/keyframes.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/fixtures/keyframes.js');
@@ -2152,7 +1372,7 @@ define('affinity-engine-web/tests/routes/engine/fixtures/keyframes.jshint', ['ex
     assert.ok(true, 'routes/engine/fixtures/keyframes.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/engine/usage.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/engine/usage.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/engine/usage.js');
@@ -2161,7 +1381,7 @@ define('affinity-engine-web/tests/routes/engine/usage.jshint', ['exports'], func
     assert.ok(true, 'routes/engine/usage.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/index.js');
@@ -2170,7 +1390,7 @@ define('affinity-engine-web/tests/routes/index.jshint', ['exports'], function (e
     assert.ok(true, 'routes/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview.js');
@@ -2179,7 +1399,7 @@ define('affinity-engine-web/tests/routes/overview.jshint', ['exports'], function
     assert.ok(true, 'routes/overview.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview/components.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview/components.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview/components.js');
@@ -2188,7 +1408,7 @@ define('affinity-engine-web/tests/routes/overview/components.jshint', ['exports'
     assert.ok(true, 'routes/overview/components.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview/fixtures.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview/fixtures.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview/fixtures.js');
@@ -2197,7 +1417,7 @@ define('affinity-engine-web/tests/routes/overview/fixtures.jshint', ['exports'],
     assert.ok(true, 'routes/overview/fixtures.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview/fixtures/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview/fixtures/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview/fixtures/index.js');
@@ -2206,7 +1426,7 @@ define('affinity-engine-web/tests/routes/overview/fixtures/index.jshint', ['expo
     assert.ok(true, 'routes/overview/fixtures/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview/installation.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview/installation.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview/installation.js');
@@ -2215,7 +1435,7 @@ define('affinity-engine-web/tests/routes/overview/installation.jshint', ['export
     assert.ok(true, 'routes/overview/installation.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview/installation/affinity-engine.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview/installation/affinity-engine.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview/installation/affinity-engine.js');
@@ -2224,7 +1444,7 @@ define('affinity-engine-web/tests/routes/overview/installation/affinity-engine.j
     assert.ok(true, 'routes/overview/installation/affinity-engine.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview/installation/ember.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview/installation/ember.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview/installation/ember.js');
@@ -2233,7 +1453,7 @@ define('affinity-engine-web/tests/routes/overview/installation/ember.jshint', ['
     assert.ok(true, 'routes/overview/installation/ember.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview/installation/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview/installation/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview/installation/index.js');
@@ -2242,7 +1462,7 @@ define('affinity-engine-web/tests/routes/overview/installation/index.jshint', ['
     assert.ok(true, 'routes/overview/installation/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview/installation/quickstarts.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview/installation/quickstarts.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview/installation/quickstarts.js');
@@ -2251,7 +1471,7 @@ define('affinity-engine-web/tests/routes/overview/installation/quickstarts.jshin
     assert.ok(true, 'routes/overview/installation/quickstarts.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview/installation/tooling.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview/installation/tooling.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview/installation/tooling.js');
@@ -2260,7 +1480,7 @@ define('affinity-engine-web/tests/routes/overview/installation/tooling.jshint', 
     assert.ok(true, 'routes/overview/installation/tooling.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/overview/plugins.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/overview/plugins.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/overview/plugins.js');
@@ -2269,7 +1489,7 @@ define('affinity-engine-web/tests/routes/overview/plugins.jshint', ['exports'], 
     assert.ok(true, 'routes/overview/plugins.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/plugins.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/plugins.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/plugins.js');
@@ -2278,7 +1498,7 @@ define('affinity-engine-web/tests/routes/plugins.jshint', ['exports'], function 
     assert.ok(true, 'routes/plugins.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/welcome.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/welcome.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/welcome.js');
@@ -2287,7 +1507,7 @@ define('affinity-engine-web/tests/routes/welcome.jshint', ['exports'], function 
     assert.ok(true, 'routes/welcome.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/welcome/acknowledgements.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/welcome/acknowledgements.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/welcome/acknowledgements.js');
@@ -2296,7 +1516,7 @@ define('affinity-engine-web/tests/routes/welcome/acknowledgements.jshint', ['exp
     assert.ok(true, 'routes/welcome/acknowledgements.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/welcome/how-to-use-this-documentation.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/welcome/how-to-use-this-documentation.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/welcome/how-to-use-this-documentation.js');
@@ -2305,7 +1525,7 @@ define('affinity-engine-web/tests/routes/welcome/how-to-use-this-documentation.j
     assert.ok(true, 'routes/welcome/how-to-use-this-documentation.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/routes/welcome/index.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/routes/welcome/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | routes/welcome/index.js');
@@ -2314,7 +1534,7 @@ define('affinity-engine-web/tests/routes/welcome/index.jshint', ['exports'], fun
     assert.ok(true, 'routes/welcome/index.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/services/doc-version-tracker.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/services/doc-version-tracker.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | services/doc-version-tracker.js');
@@ -2323,7 +1543,7 @@ define('affinity-engine-web/tests/services/doc-version-tracker.jshint', ['export
     assert.ok(true, 'services/doc-version-tracker.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/services/route-sequencer.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/services/route-sequencer.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | services/route-sequencer.js');
@@ -2336,7 +1556,7 @@ define('affinity-engine-web/tests/test-helper', ['exports', 'affinity-engine-web
 
   (0, _emberQunit.setResolver)(_affinityEngineWebTestsHelpersResolver['default']);
 });
-define('affinity-engine-web/tests/test-helper.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/test-helper.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | test-helper.js');
@@ -2345,7 +1565,7 @@ define('affinity-engine-web/tests/test-helper.jshint', ['exports'], function (ex
     assert.ok(true, 'test-helper.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/transitions.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/transitions.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | transitions.js');
@@ -2379,7 +1599,7 @@ define('affinity-engine-web/tests/unit/instance-initializers/inject-guides-test'
     assert.ok(true);
   });
 });
-define('affinity-engine-web/tests/unit/instance-initializers/inject-guides-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/instance-initializers/inject-guides-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/instance-initializers/inject-guides-test.js');
@@ -2399,7 +1619,7 @@ define('affinity-engine-web/tests/unit/mixins/reset-scroll-test', ['exports', 'e
     assert.ok(subject);
   });
 });
-define('affinity-engine-web/tests/unit/mixins/reset-scroll-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/mixins/reset-scroll-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/mixins/reset-scroll-test.js');
@@ -2419,7 +1639,7 @@ define('affinity-engine-web/tests/unit/mixins/route-title-test', ['exports', 'em
     assert.ok(subject);
   });
 });
-define('affinity-engine-web/tests/unit/mixins/route-title-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/mixins/route-title-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/mixins/route-title-test.js');
@@ -2439,7 +1659,7 @@ define('affinity-engine-web/tests/unit/mixins/sidebar-route-test', ['exports', '
     assert.ok(subject);
   });
 });
-define('affinity-engine-web/tests/unit/mixins/sidebar-route-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/mixins/sidebar-route-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/mixins/sidebar-route-test.js');
@@ -2460,7 +1680,7 @@ define('affinity-engine-web/tests/unit/routes/components-test', ['exports', 'emb
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components-test.js');
@@ -2481,7 +1701,7 @@ define('affinity-engine-web/tests/unit/routes/components/curtain-test', ['export
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/curtain-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/curtain-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/curtain-test.js');
@@ -2502,7 +1722,7 @@ define('affinity-engine-web/tests/unit/routes/components/curtain/index-test', ['
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/curtain/index-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/curtain/index-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/curtain/index-test.js');
@@ -2523,7 +1743,7 @@ define('affinity-engine-web/tests/unit/routes/components/menu-bar-test', ['expor
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/menu-bar-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/menu-bar-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/menu-bar-test.js');
@@ -2544,7 +1764,7 @@ define('affinity-engine-web/tests/unit/routes/components/menu-bar/index-test', [
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/menu-bar/index-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/menu-bar/index-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/menu-bar/index-test.js');
@@ -2565,7 +1785,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage-test', ['exports'
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage-test.js');
@@ -2586,7 +1806,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions-test',
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions-test.js');
@@ -2607,7 +1827,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/backdr
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/backdrop-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/backdrop-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/backdrop-test.js');
@@ -2628,7 +1848,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/charac
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/character-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/character-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/character-test.js');
@@ -2649,7 +1869,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/data-t
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/data-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/data-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/data-test.js');
@@ -2670,7 +1890,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/image-
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/image-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/image-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/image-test.js');
@@ -2691,7 +1911,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/index-
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/index-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/index-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/index-test.js');
@@ -2712,7 +1932,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/layer-
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/layer-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/layer-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/layer-test.js');
@@ -2733,7 +1953,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/menu-t
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/menu-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/menu-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/menu-test.js');
@@ -2754,7 +1974,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/pause-
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/pause-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/pause-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/pause-test.js');
@@ -2775,7 +1995,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/random
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/random-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/random-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/random-test.js');
@@ -2796,7 +2016,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/scene-
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/scene-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/scene-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/scene-test.js');
@@ -2817,7 +2037,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/sound-
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/sound-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/sound-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/sound-test.js');
@@ -2838,7 +2058,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/directions/text-t
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/directions/text-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/directions/text-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/directions/text-test.js');
@@ -2859,7 +2079,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/fixtures-test', [
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/fixtures-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/fixtures-test.js');
@@ -2880,7 +2100,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/backdrop
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/backdrops-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/backdrops-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/fixtures/backdrops-test.js');
@@ -2901,7 +2121,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/characte
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/characters-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/characters-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/fixtures/characters-test.js');
@@ -2922,7 +2142,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/images-t
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/images-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/images-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/fixtures/images-test.js');
@@ -2943,7 +2163,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/keyframe
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/keyframes-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/fixtures/keyframes-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/fixtures/keyframes-test.js');
@@ -2964,7 +2184,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/index-test', ['ex
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/index-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/index-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/index-test.js');
@@ -2985,7 +2205,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/scenes-test', ['e
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/scenes-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/scenes-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/scenes-test.js');
@@ -3006,7 +2226,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/scenes/data-test'
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/scenes/data-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/scenes/data-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/scenes/data-test.js');
@@ -3027,7 +2247,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/scenes/index-test
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/scenes/index-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/scenes/index-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/scenes/index-test.js');
@@ -3048,7 +2268,7 @@ define('affinity-engine-web/tests/unit/routes/components/stage/usage-test', ['ex
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/components/stage/usage-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/components/stage/usage-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/components/stage/usage-test.js');
@@ -3069,7 +2289,7 @@ define('affinity-engine-web/tests/unit/routes/engine/fixtures/index-test', ['exp
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/engine/fixtures/index-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/engine/fixtures/index-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/engine/fixtures/index-test.js');
@@ -3090,7 +2310,7 @@ define('affinity-engine-web/tests/unit/routes/engine/installation/quickstarts-te
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/engine/installation/quickstarts-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/engine/installation/quickstarts-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/engine/installation/quickstarts-test.js');
@@ -3111,7 +2331,7 @@ define('affinity-engine-web/tests/unit/routes/overview-test', ['exports', 'ember
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/overview-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/overview-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/overview-test.js');
@@ -3132,7 +2352,7 @@ define('affinity-engine-web/tests/unit/routes/overview/configuration-test', ['ex
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/overview/configuration-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/overview/configuration-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/overview/configuration-test.js');
@@ -3153,7 +2373,7 @@ define('affinity-engine-web/tests/unit/routes/overview/configuration/configurati
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/overview/configuration/configuration-tiers-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/overview/configuration/configuration-tiers-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/overview/configuration/configuration-tiers-test.js');
@@ -3174,7 +2394,7 @@ define('affinity-engine-web/tests/unit/routes/overview/configuration/defaults-te
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/overview/configuration/defaults-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/overview/configuration/defaults-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/overview/configuration/defaults-test.js');
@@ -3195,7 +2415,7 @@ define('affinity-engine-web/tests/unit/routes/overview/configuration/index-test'
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/overview/configuration/index-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/overview/configuration/index-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/overview/configuration/index-test.js');
@@ -3216,7 +2436,7 @@ define('affinity-engine-web/tests/unit/routes/overview/configuration/usage-test'
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/overview/configuration/usage-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/overview/configuration/usage-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/overview/configuration/usage-test.js');
@@ -3237,7 +2457,7 @@ define('affinity-engine-web/tests/unit/routes/welcome-test', ['exports', 'ember-
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/welcome-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/welcome-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/welcome-test.js');
@@ -3258,7 +2478,7 @@ define('affinity-engine-web/tests/unit/routes/welcome/acknowledgements-test', ['
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/welcome/acknowledgements-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/welcome/acknowledgements-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/welcome/acknowledgements-test.js');
@@ -3279,7 +2499,7 @@ define('affinity-engine-web/tests/unit/routes/welcome/how-to-use-this-documentat
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/welcome/how-to-use-this-documentation-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/welcome/how-to-use-this-documentation-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/welcome/how-to-use-this-documentation-test.js');
@@ -3300,7 +2520,7 @@ define('affinity-engine-web/tests/unit/routes/welcome/index-test', ['exports', '
     assert.ok(route);
   });
 });
-define('affinity-engine-web/tests/unit/routes/welcome/index-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/routes/welcome/index-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/routes/welcome/index-test.js');
@@ -3322,7 +2542,7 @@ define('affinity-engine-web/tests/unit/services/doc-version-tracker-test', ['exp
     assert.ok(service);
   });
 });
-define('affinity-engine-web/tests/unit/services/doc-version-tracker-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/services/doc-version-tracker-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/services/doc-version-tracker-test.js');
@@ -3344,7 +2564,7 @@ define('affinity-engine-web/tests/unit/services/route-sequencer-test', ['exports
     assert.ok(service);
   });
 });
-define('affinity-engine-web/tests/unit/services/route-sequencer-test.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/unit/services/route-sequencer-test.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | unit/services/route-sequencer-test.js');
@@ -3353,7 +2573,7 @@ define('affinity-engine-web/tests/unit/services/route-sequencer-test.jshint', ['
     assert.ok(true, 'unit/services/route-sequencer-test.js should pass jshint.');
   });
 });
-define('affinity-engine-web/tests/utils/markdown-it-highlight.jshint', ['exports'], function (exports) {
+define('affinity-engine-web/tests/utils/markdown-it-highlight.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | utils/markdown-it-highlight.js');

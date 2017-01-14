@@ -6,16 +6,29 @@
 
 /* jshint ignore:end */
 
-define('affinity-engine-web/adapters/affinity-engine/local-save', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/adapters/affinity-engine/local-save'], function (exports, _affinityEngineDataManagerRewindableLokijsAdaptersAffinityEngineLocalSave) {
+define('affinity-engine-web/adapters/affinity-engine/data-manager-rewindable-lokijs/save', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/adapters/affinity-engine/data-manager-rewindable-lokijs/save'], function (exports, _affinityEngineDataManagerRewindableLokijsAdaptersAffinityEngineDataManagerRewindableLokijsSave) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _affinityEngineDataManagerRewindableLokijsAdaptersAffinityEngineLocalSave['default'];
+      return _affinityEngineDataManagerRewindableLokijsAdaptersAffinityEngineDataManagerRewindableLokijsSave['default'];
     }
   });
 });
-define("affinity-engine-web/affinity-engine/config", ["exports"], function (exports) {
-  exports["default"] = {};
+define('affinity-engine-web/adapters/affinity-engine/data-manager-rewindable-lokijs/shared-data', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/adapters/affinity-engine/data-manager-rewindable-lokijs/shared-data'], function (exports, _affinityEngineDataManagerRewindableLokijsAdaptersAffinityEngineDataManagerRewindableLokijsSharedData) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineDataManagerRewindableLokijsAdaptersAffinityEngineDataManagerRewindableLokijsSharedData['default'];
+    }
+  });
+});
+define('affinity-engine-web/adapters/affinity-engine/local-save', ['exports', 'affinity-engine/adapters/affinity-engine/local-save'], function (exports, _affinityEngineAdaptersAffinityEngineLocalSave) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineAdaptersAffinityEngineLocalSave['default'];
+    }
+  });
 });
 define('affinity-engine-web/affinity-engine/configs/affinity-engine-curtain', ['exports', 'affinity-engine-curtain/affinity-engine/configs/affinity-engine-curtain'], function (exports, _affinityEngineCurtainAffinityEngineConfigsAffinityEngineCurtain) {
   Object.defineProperty(exports, 'default', {
@@ -30,6 +43,14 @@ define('affinity-engine-web/affinity-engine/configs/affinity-engine-preloader-cr
     enumerable: true,
     get: function get() {
       return _affinityEnginePreloaderCreatejsAffinityEngineConfigsAffinityEnginePreloaderCreatejs['default'];
+    }
+  });
+});
+define('affinity-engine-web/affinity-engine/configs/affinity-engine-sound-manager-createjs', ['exports', 'affinity-engine-sound-manager-createjs/affinity-engine/configs/affinity-engine-sound-manager-createjs'], function (exports, _affinityEngineSoundManagerCreatejsAffinityEngineConfigsAffinityEngineSoundManagerCreatejs) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineSoundManagerCreatejsAffinityEngineConfigsAffinityEngineSoundManagerCreatejs['default'];
     }
   });
 });
@@ -78,6 +99,54 @@ define('affinity-engine-web/affinity-engine/configs/director/image', ['exports',
     enumerable: true,
     get: function get() {
       return _affinityEngineStageDirectionImageAffinityEngineConfigsStageImage['default'];
+    }
+  });
+});
+define('affinity-engine-web/affinity-engine/configs/menu-bar', ['exports', 'affinity-engine-menu-bar/affinity-engine/configs/menu-bar'], function (exports, _affinityEngineMenuBarAffinityEngineConfigsMenuBar) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarAffinityEngineConfigsMenuBar['default'];
+    }
+  });
+});
+define('affinity-engine-web/affinity-engine/configs/menu-bar/button/load', ['exports', 'affinity-engine-menu-bar-button-load/affinity-engine/configs/menu-bar/button/load'], function (exports, _affinityEngineMenuBarButtonLoadAffinityEngineConfigsMenuBarButtonLoad) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonLoadAffinityEngineConfigsMenuBarButtonLoad['default'];
+    }
+  });
+});
+define('affinity-engine-web/affinity-engine/configs/menu-bar/button/reset', ['exports', 'affinity-engine-menu-bar-button-reset/affinity-engine/configs/menu-bar/button/reset'], function (exports, _affinityEngineMenuBarButtonResetAffinityEngineConfigsMenuBarButtonReset) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonResetAffinityEngineConfigsMenuBarButtonReset['default'];
+    }
+  });
+});
+define('affinity-engine-web/affinity-engine/configs/menu-bar/button/resize', ['exports', 'affinity-engine-menu-bar-button-resize/affinity-engine/configs/menu-bar/button/resize'], function (exports, _affinityEngineMenuBarButtonResizeAffinityEngineConfigsMenuBarButtonResize) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonResizeAffinityEngineConfigsMenuBarButtonResize['default'];
+    }
+  });
+});
+define('affinity-engine-web/affinity-engine/configs/menu-bar/button/rewind', ['exports', 'affinity-engine-menu-bar-button-rewind/affinity-engine/configs/menu-bar/button/rewind'], function (exports, _affinityEngineMenuBarButtonRewindAffinityEngineConfigsMenuBarButtonRewind) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonRewindAffinityEngineConfigsMenuBarButtonRewind['default'];
+    }
+  });
+});
+define('affinity-engine-web/affinity-engine/configs/menu-bar/button/save', ['exports', 'affinity-engine-menu-bar-button-save/affinity-engine/configs/menu-bar/button/save'], function (exports, _affinityEngineMenuBarButtonSaveAffinityEngineConfigsMenuBarButtonSave) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonSaveAffinityEngineConfigsMenuBarButtonSave['default'];
     }
   });
 });
@@ -161,14 +230,6 @@ define('affinity-engine-web/affinity-engine/stage/directions/character', ['expor
     }
   });
 });
-define('affinity-engine-web/affinity-engine/stage/directions/data', ['exports', 'affinity-engine-stage-direction-data/affinity-engine/stage/directions/data'], function (exports, _affinityEngineStageDirectionDataAffinityEngineStageDirectionsData) {
-  Object.defineProperty(exports, 'default', {
-    enumerable: true,
-    get: function get() {
-      return _affinityEngineStageDirectionDataAffinityEngineStageDirectionsData['default'];
-    }
-  });
-});
 define('affinity-engine-web/affinity-engine/stage/directions/image', ['exports', 'affinity-engine-stage-direction-image/affinity-engine/stage/directions/image'], function (exports, _affinityEngineStageDirectionImageAffinityEngineStageDirectionsImage) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -214,6 +275,14 @@ define('affinity-engine-web/affinity-engine/stage/directions/scene', ['exports',
     enumerable: true,
     get: function get() {
       return _affinityEngineStageAffinityEngineStageDirectionsScene['default'];
+    }
+  });
+});
+define('affinity-engine-web/affinity-engine/stage/directions/sound', ['exports', 'affinity-engine-stage-direction-sound/affinity-engine/stage/directions/sound'], function (exports, _affinityEngineStageDirectionSoundAffinityEngineStageDirectionsSound) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineStageDirectionSoundAffinityEngineStageDirectionsSound['default'];
     }
   });
 });
@@ -340,7 +409,7 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
           case 55:
             diy.state({ eyes: 'right', expression: 'neutral' });
             context$1$0.next = 58;
-            return ember.expression('smiling')._.text("And on that cherry note, [[pause 250]] [[expression neutral]] let's let them get to it.");
+            return ember.expression('smiling')._.text("And on that cheery note, [[pause 250]] [[expression neutral]] let's let them get to it.");
 
           case 58:
             ember.delay(100).state({ eyes: 'neutral', expression: 'neutral' });
@@ -349,7 +418,7 @@ define('affinity-engine-web/affinity-engine/stage/scenes/index/welcome', ['expor
 
           case 61:
             context$1$0.next = 63;
-            return ember.expression('smiling')._.text("You'll find our little vingettes peppered throughout the documentation. [[pause 500]] Be seeing you around!");
+            return ember.expression('smiling')._.text("Be seeing you around!");
 
           case 63:
 
@@ -889,6 +958,14 @@ define("affinity-engine-web/cldrs/welcome", ["exports"], function (exports) {
       if (ord) return "other";return "other";
     }, "fields": { "year": { "displayName": "Year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "other": "+{0} y" }, "past": { "other": "-{0} y" } } }, "month": { "displayName": "Month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "other": "+{0} m" }, "past": { "other": "-{0} m" } } }, "day": { "displayName": "Day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "other": "+{0} d" }, "past": { "other": "-{0} d" } } }, "hour": { "displayName": "Hour", "relativeTime": { "future": { "other": "+{0} h" }, "past": { "other": "-{0} h" } } }, "minute": { "displayName": "Minute", "relativeTime": { "future": { "other": "+{0} min" }, "past": { "other": "-{0} min" } } }, "second": { "displayName": "Second", "relative": { "0": "now" }, "relativeTime": { "future": { "other": "+{0} s" }, "past": { "other": "-{0} s" } } } } }];
 });
+define("affinity-engine-web/components/-lf-get-outlet-state", ["exports", "liquid-fire/components/-lf-get-outlet-state"], function (exports, _liquidFireComponentsLfGetOutletState) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLfGetOutletState["default"];
+    }
+  });
+});
 define('affinity-engine-web/components/active-link', ['exports', 'ember-cli-active-link-wrapper/components/active-link'], function (exports, _emberCliActiveLinkWrapperComponentsActiveLink) {
   exports['default'] = _emberCliActiveLinkWrapperComponentsActiveLink['default'];
 });
@@ -905,6 +982,94 @@ define('affinity-engine-web/components/affinity-engine-curtain', ['exports', 'af
     enumerable: true,
     get: function get() {
       return _affinityEngineCurtainComponentsAffinityEngineCurtain['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar-button-load-menu', ['exports', 'affinity-engine-menu-bar-button-load/components/affinity-engine-menu-bar-button-load-menu'], function (exports, _affinityEngineMenuBarButtonLoadComponentsAffinityEngineMenuBarButtonLoadMenu) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonLoadComponentsAffinityEngineMenuBarButtonLoadMenu['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar-button-load', ['exports', 'affinity-engine-menu-bar-button-load/components/affinity-engine-menu-bar-button-load'], function (exports, _affinityEngineMenuBarButtonLoadComponentsAffinityEngineMenuBarButtonLoad) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonLoadComponentsAffinityEngineMenuBarButtonLoad['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar-button-reset-menu', ['exports', 'affinity-engine-menu-bar-button-reset/components/affinity-engine-menu-bar-button-reset-menu'], function (exports, _affinityEngineMenuBarButtonResetComponentsAffinityEngineMenuBarButtonResetMenu) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonResetComponentsAffinityEngineMenuBarButtonResetMenu['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar-button-reset', ['exports', 'affinity-engine-menu-bar-button-reset/components/affinity-engine-menu-bar-button-reset'], function (exports, _affinityEngineMenuBarButtonResetComponentsAffinityEngineMenuBarButtonReset) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonResetComponentsAffinityEngineMenuBarButtonReset['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar-button-resize', ['exports', 'affinity-engine-menu-bar-button-resize/components/affinity-engine-menu-bar-button-resize'], function (exports, _affinityEngineMenuBarButtonResizeComponentsAffinityEngineMenuBarButtonResize) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonResizeComponentsAffinityEngineMenuBarButtonResize['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar-button-rewind-menu', ['exports', 'affinity-engine-menu-bar-button-rewind/components/affinity-engine-menu-bar-button-rewind-menu'], function (exports, _affinityEngineMenuBarButtonRewindComponentsAffinityEngineMenuBarButtonRewindMenu) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonRewindComponentsAffinityEngineMenuBarButtonRewindMenu['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar-button-rewind', ['exports', 'affinity-engine-menu-bar-button-rewind/components/affinity-engine-menu-bar-button-rewind'], function (exports, _affinityEngineMenuBarButtonRewindComponentsAffinityEngineMenuBarButtonRewind) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonRewindComponentsAffinityEngineMenuBarButtonRewind['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar-button-save-menu', ['exports', 'affinity-engine-menu-bar-button-save/components/affinity-engine-menu-bar-button-save-menu'], function (exports, _affinityEngineMenuBarButtonSaveComponentsAffinityEngineMenuBarButtonSaveMenu) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonSaveComponentsAffinityEngineMenuBarButtonSaveMenu['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar-button-save', ['exports', 'affinity-engine-menu-bar-button-save/components/affinity-engine-menu-bar-button-save'], function (exports, _affinityEngineMenuBarButtonSaveComponentsAffinityEngineMenuBarButtonSave) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarButtonSaveComponentsAffinityEngineMenuBarButtonSave['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar-menu', ['exports', 'affinity-engine-menu-bar/components/affinity-engine-menu-bar-menu'], function (exports, _affinityEngineMenuBarComponentsAffinityEngineMenuBarMenu) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarComponentsAffinityEngineMenuBarMenu['default'];
+    }
+  });
+});
+define('affinity-engine-web/components/affinity-engine-menu-bar', ['exports', 'affinity-engine-menu-bar/components/affinity-engine-menu-bar'], function (exports, _affinityEngineMenuBarComponentsAffinityEngineMenuBar) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarComponentsAffinityEngineMenuBar['default'];
     }
   });
 });
@@ -1020,16 +1185,6 @@ define('affinity-engine-web/components/api-doc', ['exports', 'ember'], function 
         return 'api.' + _get(this, 'path');
       }
     })
-  });
-});
-define('affinity-engine-web/components/app-version', ['exports', 'ember-cli-app-version/components/app-version', 'affinity-engine-web/config/environment'], function (exports, _emberCliAppVersionComponentsAppVersion, _affinityEngineWebConfigEnvironment) {
-
-  var name = _affinityEngineWebConfigEnvironment['default'].APP.name;
-  var version = _affinityEngineWebConfigEnvironment['default'].APP.version;
-
-  exports['default'] = _emberCliAppVersionComponentsAppVersion['default'].extend({
-    version: version,
-    name: name
   });
 });
 define('affinity-engine-web/components/basic-dropdown', ['exports', 'ember-basic-dropdown/components/basic-dropdown'], function (exports, _emberBasicDropdownComponentsBasicDropdown) {
@@ -1188,7 +1343,8 @@ define('affinity-engine-web/components/engine-container', ['exports', 'ember'], 
                 effect: {
                   translateX: [0, '10px'],
                   translateY: [0, '-3px'],
-                  translateZ: [0, '15px']
+                  translateZ: [0, '15px'],
+                  opacity: [1, 1]
                 },
                 rate: 10
               }
@@ -1623,35 +1779,27 @@ define('affinity-engine-web/components/expanding-sidebar', ['exports', 'ember'],
     })
   });
 });
-define('affinity-engine-web/components/fa-icon', ['exports', 'ember-cli-font-awesome/components/fa-icon'], function (exports, _emberCliFontAwesomeComponentsFaIcon) {
+define('affinity-engine-web/components/fa-icon', ['exports', 'ember-font-awesome/components/fa-icon'], function (exports, _emberFontAwesomeComponentsFaIcon) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _emberCliFontAwesomeComponentsFaIcon['default'];
+      return _emberFontAwesomeComponentsFaIcon['default'];
     }
   });
 });
-define('affinity-engine-web/components/fa-list-icon', ['exports', 'ember-cli-font-awesome/components/fa-list-icon'], function (exports, _emberCliFontAwesomeComponentsFaListIcon) {
+define('affinity-engine-web/components/fa-list', ['exports', 'ember-font-awesome/components/fa-list'], function (exports, _emberFontAwesomeComponentsFaList) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _emberCliFontAwesomeComponentsFaListIcon['default'];
+      return _emberFontAwesomeComponentsFaList['default'];
     }
   });
 });
-define('affinity-engine-web/components/fa-list', ['exports', 'ember-cli-font-awesome/components/fa-list'], function (exports, _emberCliFontAwesomeComponentsFaList) {
+define('affinity-engine-web/components/fa-stack', ['exports', 'ember-font-awesome/components/fa-stack'], function (exports, _emberFontAwesomeComponentsFaStack) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _emberCliFontAwesomeComponentsFaList['default'];
-    }
-  });
-});
-define('affinity-engine-web/components/fa-stack', ['exports', 'ember-cli-font-awesome/components/fa-stack'], function (exports, _emberCliFontAwesomeComponentsFaStack) {
-  Object.defineProperty(exports, 'default', {
-    enumerable: true,
-    get: function get() {
-      return _emberCliFontAwesomeComponentsFaStack['default'];
+      return _emberFontAwesomeComponentsFaStack['default'];
     }
   });
 });
@@ -1701,22 +1849,6 @@ define("affinity-engine-web/components/illiquid-model", ["exports", "liquid-fire
     }
   });
 });
-define("affinity-engine-web/components/lf-outlet", ["exports", "liquid-fire/ember-internals"], function (exports, _liquidFireEmberInternals) {
-  Object.defineProperty(exports, "default", {
-    enumerable: true,
-    get: function get() {
-      return _liquidFireEmberInternals.StaticOutlet;
-    }
-  });
-});
-define("affinity-engine-web/components/lf-overlay", ["exports", "liquid-fire/components/lf-overlay"], function (exports, _liquidFireComponentsLfOverlay) {
-  Object.defineProperty(exports, "default", {
-    enumerable: true,
-    get: function get() {
-      return _liquidFireComponentsLfOverlay["default"];
-    }
-  });
-});
 define("affinity-engine-web/components/liquid-bind", ["exports", "liquid-fire/components/liquid-bind"], function (exports, _liquidFireComponentsLiquidBind) {
   Object.defineProperty(exports, "default", {
     enumerable: true,
@@ -1763,14 +1895,6 @@ define("affinity-engine-web/components/liquid-measured", ["exports", "liquid-fir
     }
   });
 });
-define("affinity-engine-web/components/liquid-modal", ["exports", "liquid-fire/components/liquid-modal"], function (exports, _liquidFireComponentsLiquidModal) {
-  Object.defineProperty(exports, "default", {
-    enumerable: true,
-    get: function get() {
-      return _liquidFireComponentsLiquidModal["default"];
-    }
-  });
-});
 define("affinity-engine-web/components/liquid-outlet", ["exports", "liquid-fire/components/liquid-outlet"], function (exports, _liquidFireComponentsLiquidOutlet) {
   Object.defineProperty(exports, "default", {
     enumerable: true,
@@ -1808,14 +1932,6 @@ define("affinity-engine-web/components/liquid-versions", ["exports", "liquid-fir
     enumerable: true,
     get: function get() {
       return _liquidFireComponentsLiquidVersions["default"];
-    }
-  });
-});
-define("affinity-engine-web/components/lm-container", ["exports", "liquid-fire/components/lm-container"], function (exports, _liquidFireComponentsLmContainer) {
-  Object.defineProperty(exports, "default", {
-    enumerable: true,
-    get: function get() {
-      return _liquidFireComponentsLmContainer["default"];
     }
   });
 });
@@ -2074,7 +2190,7 @@ define('affinity-engine-web/components/section-navigator', ['exports', 'ember'],
       get: function get() {
         var parentRoute = _get(this, 'parentRoute');
 
-        return _get(_get(this, 'routeSequencer.routes'), isPresent(parentRoute) ? parentRoute.split('.').join('.routes.') + '.routes' : '');
+        return isPresent(parentRoute) ? _get(_get(this, 'routeSequencer.routes'), parentRoute.split('.').join('.routes.') + '.routes') : '';
       }
     }),
 
@@ -2362,7 +2478,7 @@ define("affinity-engine-web/ember-stringify", ["exports"], function (exports) {
                 "1.md": "The `image` direction will render a composite image onto the screen. The image will start with an opacity of 0, so you'll have to fade it in if you want the user to see it. Once rendered, the image can be moved about the screen using `position` or `transition`.\n\nAn `image` is composed of either a single `keyframe` or a layered composite of several `keyframes`. You can learn about keyframes and composites in the [`images` fixture section](#/components/stage/fixtures/images).\n\nIf a height is specified for the image, its dimensions will be altered to fit that height while maintaining its aspect ratio. If not height is specified, it will maintain its default size.\n\n##### Layer\n\n`engine.stage.foreground.image`\n\n##### Configuration Tiers\n\n* attrs\n* attrs.keyframe\n* attrs.keyframeParent\n* links.attrs\n* links.fixtures.image\n* config.attrs.component.stage.direction.image\n* config.attrs.component.stage\n* config.attrs.global\n\n##### Installation\n\n```bash\nember install affinity-engine-stage-direction-data\n```\n\n##### Usage\n\n```js\nexport default Scene.extend({\n  start: task(function * (script) {\n    script.image('fixtureId');\n  }\n});\n```\n\n###### Arguments\n\n* `fixtureId` (**String**): a [image fixture](#/engine/fixtures/images) id.\n\n###### Return\n\nReturns a [PromisedDirection](#/components/stage/directions#promised_direction) that resolves when the animation queue completes.\n\n##### API\n"
               },
               "index": {
-                "1.md": "#### Overview\n\nDirections are your main way of communicating with the stage. For instance, if you want to put a character on the stage, you might use the `character` direction:\n\n```js\nstart: task(function * (script) {\n  script.character('diy');\n})\n```\n\n#### Commands\n\nYou can chain commands onto most directions, changing the way they behave. For instance, if you want your character to fade into the middle of the screen, you might:\n\n```js\nstart: task(function * (script) {\n  script.character('diy').position('center').fadeIn();\n})\n```\n\nEvery direction has its own set of commands, so be sure to consult the API for the specific direction you're using.\n\n#### Links\n\nYou can also link directions together using an underscore, `_`. For instance, if you link a `text` direction off of a `character`, then the `text` direction will configure its behavior based on the `character`:\n\n```js\nstart: task(function * (script) {\n  const diy = script.character('diy').position('center').fadeIn(); // the 'diy' fixture has the `name` 'Diy'\n\n  yield diy._.text('I have a name'); // the text's name box displays 'Diy'\n  yield script.text('I have no name.'); // the text's name box is not rendered\n  yield script.text('I have a name, but only because I manually specified it.').name('Ember');  // the text's name box displays 'Ember'\n})\n```\n\nIn this case, the `text` that is linked off of Diy will display the name associated with the `diy` fixture. The `text` that comes directly from the `script` will have no name, unless one is manually specified.\n\n#### `PromisedDirection`\n\nMost directions return a `PromisedDirection` instance. These instances will resolve like Promises, but also have all the commands of a Direction. This allows you to both await their resolution:\n\n```js\nyield script.text('Hello world');\n```\n\nAs well as to chain commands off them:\n\n```js\nconst text = script.text('Hello world');\n\n. . . .\n\ntext.close();\n```\n"
+                "1.md": "#### Overview\n\nDirections are your main way of communicating with the stage. For instance, if you want to put a character on the stage, you might use the `character` direction:\n\n```js\nstart: task(function * (script) {\n  script.character('diy');\n})\n```\n\n#### Commands\n\nYou can chain commands onto most directions, changing the way they behave. For instance, if you want your character to fade into the middle of the screen, you might:\n\n```js\nstart: task(function * (script) {\n  script.character('diy').position('center').fadeIn();\n})\n```\n\nEvery direction has its own set of commands, so be sure to consult the API for the specific direction you're using.\n\n#### Links\n\nYou can also link directions together using an underscore, `_`. For instance, if you link a `text` direction off of a `character`, then the `text` direction will configure its behavior based on the `character`:\n\n```js\nstart: task(function * (script) {\n  const diy = script.character('diy').position('center').fadeIn(); // the 'diy' fixture has the `name` 'Diy'\n\n  yield diy._.text('I have a name'); // the text's name box displays 'Diy'\n  yield script.text('I have no name.'); // the text's name box is not rendered\n  yield script.text('I have a name, but only because I manually specified it.').name('Ember');  // the text's name box displays 'Ember'\n})\n```\n\nIn this case, the `text` that is linked off of Diy will display the name associated with the `diy` fixture. The `text` that comes directly from the `script` will have no name, unless one is manually specified.\n\n#### `PromisedDirection`\n\nMost directions return a `PromisedDirection` instance. These are instances of the direction with the functionality of a `Promise` bolted on. This allows you to both await their resolution:\n\n```js\nyield script.text('Hello world');\n```\n\nAs well as to chain commands off them:\n\n```js\nconst text = script.text('Hello world');\n\n. . . .\n\ntext.close();\n```\n"
               },
               "layer": {
                 "1.md": "The `layer` direction allows you to animate specific layers of the stage.\n\n##### Configuration Tiers\n\n* attrs\n* config.attrs.component.stage.direction.layer\n* config.attrs.component.stage\n* config.attrs.global\n\n##### Installation\n\nComes with `affinity-engine-stage`.\n\n##### Usage\n\n```js\nexport default Scene.extend({\n  start: task(function * (script) {\n    // fade out all foreground images\n    script.layer('engine.stage.foreground').transtition({ opacity: 0 });\n    // fade out all text boxes\n    script.layer('engine.prompt.text').transtition({ opacity: 0 });\n  }\n});\n```\n\n###### Arguments\n\n* `layer` (**String**): a dot-delineated reference to the layer.\n\n###### Return\n\nReturns a [PromisedDirection](#/components/stage/directions?anchor=promised_direction) that resolves when the animation queue completes.\n\n##### API\n"
@@ -2529,6 +2645,16 @@ define('affinity-engine-web/helpers/and', ['exports', 'ember', 'ember-truth-help
   }
 
   exports['default'] = forExport;
+});
+define('affinity-engine-web/helpers/app-version', ['exports', 'ember', 'affinity-engine-web/config/environment'], function (exports, _ember, _affinityEngineWebConfigEnvironment) {
+  exports.appVersion = appVersion;
+  var version = _affinityEngineWebConfigEnvironment['default'].APP.version;
+
+  function appVersion() {
+    return version;
+  }
+
+  exports['default'] = _ember['default'].Helper.helper(appVersion);
 });
 define('affinity-engine-web/helpers/array', ['exports', 'ember-array-helper/helpers/array'], function (exports, _emberArrayHelperHelpersArray) {
   Object.defineProperty(exports, 'default', {
@@ -2754,6 +2880,20 @@ define('affinity-engine-web/helpers/is-between', ['exports', 'ember', 'affinity-
     globalAllowEmpty: !!_ember['default'].get(_affinityEngineWebConfigEnvironment['default'], 'moment.allowEmpty')
   });
 });
+define('affinity-engine-web/helpers/is-equal', ['exports', 'ember-truth-helpers/helpers/is-equal'], function (exports, _emberTruthHelpersHelpersIsEqual) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberTruthHelpersHelpersIsEqual['default'];
+    }
+  });
+  Object.defineProperty(exports, 'isEqual', {
+    enumerable: true,
+    get: function get() {
+      return _emberTruthHelpersHelpersIsEqual.isEqual;
+    }
+  });
+});
 define('affinity-engine-web/helpers/is-same-or-after', ['exports', 'ember', 'affinity-engine-web/config/environment', 'ember-moment/helpers/is-same-or-after'], function (exports, _ember, _affinityEngineWebConfigEnvironment, _emberMomentHelpersIsSameOrAfter) {
   exports['default'] = _emberMomentHelpersIsSameOrAfter['default'].extend({
     globalAllowEmpty: !!_ember['default'].get(_affinityEngineWebConfigEnvironment['default'], 'moment.allowEmpty')
@@ -2779,6 +2919,34 @@ define('affinity-engine-web/helpers/l', ['exports', 'ember-intl/helpers/l'], fun
     enumerable: true,
     get: function get() {
       return _emberIntlHelpersL['default'];
+    }
+  });
+});
+define('affinity-engine-web/helpers/lf-lock-model', ['exports', 'liquid-fire/helpers/lf-lock-model'], function (exports, _liquidFireHelpersLfLockModel) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireHelpersLfLockModel['default'];
+    }
+  });
+  Object.defineProperty(exports, 'lfLockModel', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireHelpersLfLockModel.lfLockModel;
+    }
+  });
+});
+define('affinity-engine-web/helpers/lf-or', ['exports', 'liquid-fire/helpers/lf-or'], function (exports, _liquidFireHelpersLfOr) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireHelpersLfOr['default'];
+    }
+  });
+  Object.defineProperty(exports, 'lfOr', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireHelpersLfOr.lfOr;
     }
   });
 });
@@ -2892,15 +3060,10 @@ define('affinity-engine-web/helpers/or', ['exports', 'ember', 'ember-truth-helpe
 
   exports['default'] = forExport;
 });
-define('affinity-engine-web/helpers/perform', ['exports', 'ember', 'ember-concurrency/-task-property', 'ember-concurrency/-helpers'], function (exports, _ember, _emberConcurrencyTaskProperty, _emberConcurrencyHelpers) {
+define('affinity-engine-web/helpers/perform', ['exports', 'ember', 'ember-concurrency/-helpers'], function (exports, _ember, _emberConcurrencyHelpers) {
   exports.performHelper = performHelper;
 
   function performHelper(args, hash) {
-    var task = args[0];
-    if (!(task instanceof _emberConcurrencyTaskProperty.Task)) {
-      _ember['default'].assert('The first argument passed to the `perform` helper should be a Task object (without quotes); you passed ' + task, false);
-    }
-
     return (0, _emberConcurrencyHelpers.taskHelperClosure)('perform', args, hash);
   }
 
@@ -2955,9 +3118,12 @@ define('affinity-engine-web/helpers/xor', ['exports', 'ember', 'ember-truth-help
   exports['default'] = forExport;
 });
 define('affinity-engine-web/initializers/app-version', ['exports', 'ember-cli-app-version/initializer-factory', 'affinity-engine-web/config/environment'], function (exports, _emberCliAppVersionInitializerFactory, _affinityEngineWebConfigEnvironment) {
+  var _config$APP = _affinityEngineWebConfigEnvironment['default'].APP;
+  var name = _config$APP.name;
+  var version = _config$APP.version;
   exports['default'] = {
     name: 'App Version',
-    initialize: (0, _emberCliAppVersionInitializerFactory['default'])(_affinityEngineWebConfigEnvironment['default'].APP.name, _affinityEngineWebConfigEnvironment['default'].APP.version)
+    initialize: (0, _emberCliAppVersionInitializerFactory['default'])(name, version)
   };
 });
 define('affinity-engine-web/initializers/container-debug-adapter', ['exports', 'ember-resolver/container-debug-adapter'], function (exports, _emberResolverContainerDebugAdapter) {
@@ -2984,7 +3150,7 @@ define('affinity-engine-web/initializers/data-adapter', ['exports', 'ember'], fu
   exports['default'] = {
     name: 'data-adapter',
     before: 'store',
-    initialize: _ember['default'].K
+    initialize: function initialize() {}
   };
 });
 define('affinity-engine-web/initializers/ember-concurrency', ['exports', 'ember-concurrency'], function (exports, _emberConcurrency) {
@@ -3120,19 +3286,18 @@ define('affinity-engine-web/initializers/injectStore', ['exports', 'ember'], fun
   exports['default'] = {
     name: 'injectStore',
     before: 'store',
-    initialize: _ember['default'].K
+    initialize: function initialize() {}
   };
 });
-define("affinity-engine-web/initializers/liquid-fire", ["exports", "liquid-fire/router-dsl-ext", "liquid-fire/ember-internals"], function (exports, _liquidFireRouterDslExt, _liquidFireEmberInternals) {
-  (0, _liquidFireEmberInternals.registerKeywords)();
+define("affinity-engine-web/initializers/liquid-fire", ["exports", "liquid-fire/ember-internals"], function (exports, _liquidFireEmberInternals) {
+
+  (0, _liquidFireEmberInternals.initialize)();
 
   exports["default"] = {
     name: 'liquid-fire',
     initialize: function initialize() {}
   };
 });
-// This initializer exists only to make sure that the following
-// imports happen before the app boots.
 define('affinity-engine-web/initializers/store', ['exports', 'ember'], function (exports, _ember) {
 
   /*
@@ -3145,7 +3310,7 @@ define('affinity-engine-web/initializers/store', ['exports', 'ember'], function 
   exports['default'] = {
     name: 'store',
     after: 'ember-data',
-    initialize: _ember['default'].K
+    initialize: function initialize() {}
   };
 });
 define('affinity-engine-web/initializers/transforms', ['exports', 'ember'], function (exports, _ember) {
@@ -3160,7 +3325,7 @@ define('affinity-engine-web/initializers/transforms', ['exports', 'ember'], func
   exports['default'] = {
     name: 'transforms',
     before: 'store',
-    initialize: _ember['default'].K
+    initialize: function initialize() {}
   };
 });
 define('affinity-engine-web/initializers/truth-helpers', ['exports', 'ember', 'ember-truth-helpers/utils/register-helper', 'ember-truth-helpers/helpers/and', 'ember-truth-helpers/helpers/or', 'ember-truth-helpers/helpers/equal', 'ember-truth-helpers/helpers/not', 'ember-truth-helpers/helpers/is-array', 'ember-truth-helpers/helpers/not-equal', 'ember-truth-helpers/helpers/gt', 'ember-truth-helpers/helpers/gte', 'ember-truth-helpers/helpers/lt', 'ember-truth-helpers/helpers/lte'], function (exports, _ember, _emberTruthHelpersUtilsRegisterHelper, _emberTruthHelpersHelpersAnd, _emberTruthHelpersHelpersOr, _emberTruthHelpersHelpersEqual, _emberTruthHelpersHelpersNot, _emberTruthHelpersHelpersIsArray, _emberTruthHelpersHelpersNotEqual, _emberTruthHelpersHelpersGt, _emberTruthHelpersHelpersGte, _emberTruthHelpersHelpersLt, _emberTruthHelpersHelpersLte) {
@@ -3500,11 +3665,27 @@ define('affinity-engine-web/mixins/sidebar-route', ['exports', 'ember'], functio
     }
   });
 });
-define('affinity-engine-web/models/affinity-engine/local-save', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/models/affinity-engine/local-save'], function (exports, _affinityEngineDataManagerRewindableLokijsModelsAffinityEngineLocalSave) {
+define('affinity-engine-web/models/affinity-engine/data-manager-rewindable-lokijs/save', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/models/affinity-engine/data-manager-rewindable-lokijs/save'], function (exports, _affinityEngineDataManagerRewindableLokijsModelsAffinityEngineDataManagerRewindableLokijsSave) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _affinityEngineDataManagerRewindableLokijsModelsAffinityEngineLocalSave['default'];
+      return _affinityEngineDataManagerRewindableLokijsModelsAffinityEngineDataManagerRewindableLokijsSave['default'];
+    }
+  });
+});
+define('affinity-engine-web/models/affinity-engine/data-manager-rewindable-lokijs/shared-data', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/models/affinity-engine/data-manager-rewindable-lokijs/shared-data'], function (exports, _affinityEngineDataManagerRewindableLokijsModelsAffinityEngineDataManagerRewindableLokijsSharedData) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineDataManagerRewindableLokijsModelsAffinityEngineDataManagerRewindableLokijsSharedData['default'];
+    }
+  });
+});
+define('affinity-engine-web/models/affinity-engine/local-save', ['exports', 'affinity-engine/models/affinity-engine/local-save'], function (exports, _affinityEngineModelsAffinityEngineLocalSave) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineModelsAffinityEngineLocalSave['default'];
     }
   });
 });
@@ -3826,11 +4007,27 @@ define('affinity-engine-web/routes/welcome/index', ['exports', 'ember', 'affinit
   var Route = _ember['default'].Route;
   exports['default'] = Route.extend(_affinityEngineWebMixinsResetScroll['default'], _affinityEngineWebMixinsRouteTitle['default']);
 });
-define('affinity-engine-web/serializers/affinity-engine/local-save', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/serializers/affinity-engine/local-save'], function (exports, _affinityEngineDataManagerRewindableLokijsSerializersAffinityEngineLocalSave) {
+define('affinity-engine-web/serializers/affinity-engine/data-manager-rewindable-lokijs/save', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/serializers/affinity-engine/data-manager-rewindable-lokijs/save'], function (exports, _affinityEngineDataManagerRewindableLokijsSerializersAffinityEngineDataManagerRewindableLokijsSave) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _affinityEngineDataManagerRewindableLokijsSerializersAffinityEngineLocalSave['default'];
+      return _affinityEngineDataManagerRewindableLokijsSerializersAffinityEngineDataManagerRewindableLokijsSave['default'];
+    }
+  });
+});
+define('affinity-engine-web/serializers/affinity-engine/data-manager-rewindable-lokijs/shared-data', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/serializers/affinity-engine/data-manager-rewindable-lokijs/shared-data'], function (exports, _affinityEngineDataManagerRewindableLokijsSerializersAffinityEngineDataManagerRewindableLokijsSharedData) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineDataManagerRewindableLokijsSerializersAffinityEngineDataManagerRewindableLokijsSharedData['default'];
+    }
+  });
+});
+define('affinity-engine-web/serializers/affinity-engine/local-save', ['exports', 'affinity-engine/serializers/affinity-engine/local-save'], function (exports, _affinityEngineSerializersAffinityEngineLocalSave) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineSerializersAffinityEngineLocalSave['default'];
     }
   });
 });
@@ -3866,19 +4063,19 @@ define('affinity-engine-web/services/affinity-engine/data-manager-rewindable-lok
     }
   });
 });
-define('affinity-engine-web/services/affinity-engine/data-manager-rewindable-lokijs/active-state-manager', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/services/affinity-engine/data-manager-rewindable-lokijs/active-state-manager'], function (exports, _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsActiveStateManager) {
-  Object.defineProperty(exports, 'default', {
-    enumerable: true,
-    get: function get() {
-      return _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsActiveStateManager['default'];
-    }
-  });
-});
 define('affinity-engine-web/services/affinity-engine/data-manager-rewindable-lokijs/autosave-manager', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/services/affinity-engine/data-manager-rewindable-lokijs/autosave-manager'], function (exports, _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsAutosaveManager) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
       return _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsAutosaveManager['default'];
+    }
+  });
+});
+define('affinity-engine-web/services/affinity-engine/data-manager-rewindable-lokijs/shared-data-manager', ['exports', 'affinity-engine-data-manager-rewindable-lokijs/services/affinity-engine/data-manager-rewindable-lokijs/shared-data-manager'], function (exports, _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsSharedDataManager) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineDataManagerRewindableLokijsServicesAffinityEngineDataManagerRewindableLokijsSharedDataManager['default'];
     }
   });
 });
@@ -3914,6 +4111,14 @@ define('affinity-engine-web/services/affinity-engine/focus-manager', ['exports',
     }
   });
 });
+define('affinity-engine-web/services/affinity-engine/menu-bar/modal-manager', ['exports', 'affinity-engine-menu-bar/services/affinity-engine/menu-bar/modal-manager'], function (exports, _affinityEngineMenuBarServicesAffinityEngineMenuBarModalManager) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineMenuBarServicesAffinityEngineMenuBarModalManager['default'];
+    }
+  });
+});
 define('affinity-engine-web/services/affinity-engine/preloader-createjs', ['exports', 'affinity-engine-preloader-createjs/services/affinity-engine/preloader-createjs'], function (exports, _affinityEnginePreloaderCreatejsServicesAffinityEnginePreloaderCreatejs) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -3935,6 +4140,14 @@ define('affinity-engine-web/services/affinity-engine/registrar', ['exports', 'af
     enumerable: true,
     get: function get() {
       return _affinityEngineServicesAffinityEngineRegistrar['default'];
+    }
+  });
+});
+define('affinity-engine-web/services/affinity-engine/sound-manager-createjs', ['exports', 'affinity-engine-sound-manager-createjs/services/affinity-engine/sound-manager-createjs'], function (exports, _affinityEngineSoundManagerCreatejsServicesAffinityEngineSoundManagerCreatejs) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _affinityEngineSoundManagerCreatejsServicesAffinityEngineSoundManagerCreatejs['default'];
     }
   });
 });
@@ -3996,9 +4209,6 @@ define('affinity-engine-web/services/keyboard', ['exports', 'ember-keyboard/serv
       return _emberKeyboardServicesKeyboard['default'];
     }
   });
-});
-define("affinity-engine-web/services/liquid-fire-modals", ["exports", "liquid-fire/modals"], function (exports, _liquidFireModals) {
-  exports["default"] = _liquidFireModals["default"];
 });
 define("affinity-engine-web/services/liquid-fire-transitions", ["exports", "liquid-fire/transition-map"], function (exports, _liquidFireTransitionMap) {
   exports["default"] = _liquidFireTransitionMap["default"];
@@ -4204,4993 +4414,208 @@ define('affinity-engine-web/services/text-measurer', ['exports', 'ember-text-mea
   });
 });
 define("affinity-engine-web/templates/-sidebar", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 1,
-              "column": 0
-            },
-            "end": {
-              "line": 6,
-              "column": 0
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/-sidebar.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("  ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [["inline", "expanding-sidebar", [], ["parentRoute", ["subexpr", "@mut", [["get", "parentRoute", ["loc", [null, [3, 16], [3, 27]]], 0, 0, 0, 0]], [], [], 0, 0], "classNames", "small-padding-1"], ["loc", [null, [2, 2], [5, 4]]], 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })();
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 7,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/-sidebar.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(1);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        dom.insertBoundary(fragment, null);
-        return morphs;
-      },
-      statements: [["block", "responsive-navigation-dropdown", [], ["startIndex", 2], 0, null, ["loc", [null, [1, 0], [6, 35]]]]],
-      locals: [],
-      templates: [child0]
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "UH15YE8l", "block": "{\"statements\":[[\"block\",[\"responsive-navigation-dropdown\"],null,[[\"startIndex\"],[2]],0]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[{\"statements\":[[\"text\",\"  \"],[\"append\",[\"helper\",[\"expanding-sidebar\"],null,[[\"parentRoute\",\"classNames\"],[[\"get\",[\"parentRoute\"]],\"small-padding-1\"]]],false],[\"text\",\"\\n\"]],\"locals\":[]}],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/-sidebar.hbs" } });
 });
 define("affinity-engine-web/templates/application", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            "revision": "Ember@2.7.3",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 4,
-                "column": 6
-              },
-              "end": {
-                "line": 10,
-                "column": 6
-              }
-            },
-            "moduleName": "affinity-engine-web/templates/application.hbs"
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createTextNode("        ");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createElement("img");
-            dom.setAttribute(el1, "src", "/tiny-logo.png");
-            dom.setAttribute(el1, "class", "vertical-align-top large-margin-right-1");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createTextNode("\n        ");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createElement("span");
-            dom.setAttribute(el1, "class", "stack vertical-align-middle opacity-60");
-            var el2 = dom.createTextNode("\n          ");
-            dom.appendChild(el1, el2);
-            var el2 = dom.createElement("strong");
-            dom.setAttribute(el2, "class", "font-size-140");
-            var el3 = dom.createComment("");
-            dom.appendChild(el2, el3);
-            dom.appendChild(el1, el2);
-            var el2 = dom.createTextNode("\n          ");
-            dom.appendChild(el1, el2);
-            var el2 = dom.createElement("span");
-            dom.setAttribute(el2, "class", "font-size-80");
-            var el3 = dom.createComment("");
-            dom.appendChild(el2, el3);
-            dom.appendChild(el1, el2);
-            var el2 = dom.createTextNode("\n        ");
-            dom.appendChild(el1, el2);
-            dom.appendChild(el0, el1);
-            var el1 = dom.createTextNode("\n");
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-            var element0 = dom.childAt(fragment, [3]);
-            var morphs = new Array(2);
-            morphs[0] = dom.createMorphAt(dom.childAt(element0, [1]), 0, 0);
-            morphs[1] = dom.createMorphAt(dom.childAt(element0, [3]), 0, 0);
-            return morphs;
-          },
-          statements: [["inline", "t", ["application.common.affinityEngine"], [], ["loc", [null, [7, 40], [7, 81]]], 0, 0], ["inline", "t", ["application.common.slogan"], [], ["loc", [null, [8, 37], [8, 70]]], 0, 0]],
-          locals: [],
-          templates: []
-        };
-      })();
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 2,
-              "column": 2
-            },
-            "end": {
-              "line": 19,
-              "column": 2
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/application.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("    ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createElement("div");
-          dom.setAttribute(el1, "class", "topbar");
-          var el2 = dom.createTextNode("\n");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createComment("");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode("      ");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createComment("");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode("\n      ");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createElement("div");
-          dom.setAttribute(el2, "class", "columns large-1 medium-2 small-12 small-padding-0");
-          var el3 = dom.createTextNode("\n        ");
-          dom.appendChild(el2, el3);
-          var el3 = dom.createComment("");
-          dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n      ");
-          dom.appendChild(el2, el3);
-          dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode("\n    ");
-          dom.appendChild(el1, el2);
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var element1 = dom.childAt(fragment, [1]);
-          var morphs = new Array(3);
-          morphs[0] = dom.createMorphAt(element1, 1, 1);
-          morphs[1] = dom.createMorphAt(element1, 3, 3);
-          morphs[2] = dom.createMorphAt(dom.childAt(element1, [5]), 1, 1);
-          return morphs;
-        },
-        statements: [["block", "link-to", ["index"], ["classNames", "show-for-large columns large-3 nowrap"], 0, null, ["loc", [null, [4, 6], [10, 18]]]], ["inline", "expanding-sidebar", [], ["shouldNest", false, "classNames", "columns large-8 medium-10 small-12 vertical medium-horizontal medium-padding-left-0"], ["loc", [null, [11, 6], [14, 8]]], 0, 0], ["inline", "doc-version-selector", [], ["classNames", "float-right"], ["loc", [null, [16, 8], [16, 57]]], 0, 0]],
-        locals: [],
-        templates: [child0]
-      };
-    })();
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 33,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/application.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "page-layout");
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("div");
-        dom.setAttribute(el2, "class", "main-layout");
-        var el3 = dom.createTextNode("\n    ");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createElement("div");
-        dom.setAttribute(el3, "class", "sidebar medium-3 small-padding-0 medium-padding-0 medium-padding-right-1");
-        var el4 = dom.createTextNode("\n      ");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createComment("");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n    ");
-        dom.appendChild(el3, el4);
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n\n    ");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createElement("div");
-        dom.setAttribute(el3, "class", "main medium-9 small-padding-ends-1 medium-padding-right-2 medium-padding-left-2");
-        var el4 = dom.createTextNode("\n      ");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createComment("");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n\n      ");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createComment("");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n    ");
-        dom.appendChild(el3, el4);
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n  ");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element2 = dom.childAt(fragment, [0]);
-        var element3 = dom.childAt(element2, [3]);
-        var element4 = dom.childAt(element3, [3]);
-        var morphs = new Array(4);
-        morphs[0] = dom.createMorphAt(element2, 1, 1);
-        morphs[1] = dom.createMorphAt(dom.childAt(element3, [1]), 1, 1);
-        morphs[2] = dom.createMorphAt(element4, 1, 1);
-        morphs[3] = dom.createMorphAt(element4, 3, 3);
-        return morphs;
-      },
-      statements: [["block", "responsive-navigation-dropdown", [], ["depth", 2], 0, null, ["loc", [null, [2, 2], [19, 37]]]], ["inline", "liquid-outlet", ["sidebar"], [], ["loc", [null, [23, 6], [23, 33]]], 0, 0], ["content", "header-links", ["loc", [null, [27, 6], [27, 22]]], 0, 0, 0, 0], ["content", "liquid-outlet", ["loc", [null, [29, 6], [29, 23]]], 0, 0, 0, 0]],
-      locals: [],
-      templates: [child0]
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "8dmtMoPH", "block": "{\"statements\":[[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"page-layout\"],[\"flush-element\"],[\"text\",\"\\n\"],[\"block\",[\"responsive-navigation-dropdown\"],null,[[\"depth\"],[2]],1],[\"text\",\"\\n  \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"main-layout\"],[\"flush-element\"],[\"text\",\"\\n    \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"sidebar medium-3 small-padding-0 medium-padding-0 medium-padding-right-1\"],[\"flush-element\"],[\"text\",\"\\n      \"],[\"append\",[\"helper\",[\"liquid-outlet\"],[\"sidebar\"],null],false],[\"text\",\"\\n    \"],[\"close-element\"],[\"text\",\"\\n\\n    \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"main medium-9 small-padding-ends-1 medium-padding-right-2 medium-padding-left-2\"],[\"flush-element\"],[\"text\",\"\\n      \"],[\"append\",[\"unknown\",[\"header-links\"]],false],[\"text\",\"\\n\\n      \"],[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n    \"],[\"close-element\"],[\"text\",\"\\n  \"],[\"close-element\"],[\"text\",\"\\n\"],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[{\"statements\":[[\"text\",\"        \"],[\"open-element\",\"img\",[]],[\"static-attr\",\"src\",\"/tiny-logo.png\"],[\"static-attr\",\"class\",\"vertical-align-top large-margin-right-1\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n        \"],[\"open-element\",\"span\",[]],[\"static-attr\",\"class\",\"stack vertical-align-middle opacity-60\"],[\"flush-element\"],[\"text\",\"\\n          \"],[\"open-element\",\"strong\",[]],[\"static-attr\",\"class\",\"font-size-140\"],[\"flush-element\"],[\"append\",[\"helper\",[\"t\"],[\"application.common.affinityEngine\"],null],false],[\"close-element\"],[\"text\",\"\\n          \"],[\"open-element\",\"span\",[]],[\"static-attr\",\"class\",\"font-size-80\"],[\"flush-element\"],[\"append\",[\"helper\",[\"t\"],[\"application.common.slogan\"],null],false],[\"close-element\"],[\"text\",\"\\n        \"],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"text\",\"    \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"topbar\"],[\"flush-element\"],[\"text\",\"\\n\"],[\"block\",[\"link-to\"],[\"index\"],[[\"classNames\"],[\"show-for-large columns large-3 nowrap\"]],0],[\"text\",\"      \"],[\"append\",[\"helper\",[\"expanding-sidebar\"],null,[[\"shouldNest\",\"classNames\"],[false,\"columns large-8 medium-10 small-12 vertical medium-horizontal medium-padding-left-0\"]]],false],[\"text\",\"\\n      \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"columns large-1 medium-2 small-12 small-padding-0\"],[\"flush-element\"],[\"text\",\"\\n        \"],[\"append\",[\"helper\",[\"doc-version-selector\"],null,[[\"classNames\"],[\"float-right\"]]],false],[\"text\",\"\\n      \"],[\"close-element\"],[\"text\",\"\\n    \"],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[]}],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/application.hbs" } });
 });
 define("affinity-engine-web/templates/components", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "48n207Y8", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[0]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components.hbs" } });
 });
 define("affinity-engine-web/templates/components/api-doc", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/api-doc.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", ["subexpr", "@mut", [["get", "header", ["loc", [null, [3, 15], [3, 21]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [3, 0], [3, 24]]], 0, 0], ["inline", "m-intl", [], ["path", ["subexpr", "@mut", [["get", "body", ["loc", [null, [5, 15], [5, 19]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [5, 0], [5, 22]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "L02kAeBi", "block": "{\"statements\":[[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[[\"get\",[\"header\"]]]]],true],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[[\"get\",[\"body\"]]]]],true],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/api-doc.hbs" } });
 });
 define("affinity-engine-web/templates/components/curtain", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/curtain.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "EvBs/OHe", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/curtain.hbs" } });
 });
 define("affinity-engine-web/templates/components/curtain/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/curtain/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.curtain.index.1"], ["loc", [null, [1, 0], [1, 46]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "r09YF248", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.curtain.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/curtain/index.hbs" } });
 });
 define("affinity-engine-web/templates/components/doc-version-selector", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 1,
-              "column": 0
-            },
-            "end": {
-              "line": 8,
-              "column": 0
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/doc-version-selector.hbs"
-        },
-        isEmpty: false,
-        arity: 1,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("  ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [["content", "version", ["loc", [null, [7, 2], [7, 13]]], 0, 0, 0, 0]],
-        locals: ["version"],
-        templates: []
-      };
-    })();
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 9,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/doc-version-selector.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(1);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        dom.insertBoundary(fragment, null);
-        return morphs;
-      },
-      statements: [["block", "power-select", [], ["options", ["subexpr", "@mut", [["get", "formattedVersions", ["loc", [null, [2, 10], [2, 27]]], 0, 0, 0, 0]], [], [], 0, 0], "selected", ["subexpr", "@mut", [["get", "formattedSelectedVersion", ["loc", [null, [3, 11], [3, 35]]], 0, 0, 0, 0]], [], [], 0, 0], "onchange", ["subexpr", "action", ["changeVersion"], [], ["loc", [null, [4, 11], [4, 35]]], 0, 0]], 0, null, ["loc", [null, [1, 0], [8, 17]]]]],
-      locals: [],
-      templates: [child0]
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "2p3c3itQ", "block": "{\"statements\":[[\"block\",[\"power-select\"],null,[[\"options\",\"selected\",\"onchange\"],[[\"get\",[\"formattedVersions\"]],[\"get\",[\"formattedSelectedVersion\"]],[\"helper\",[\"action\"],[[\"get\",[null]],\"changeVersion\"],null]]],0]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[{\"statements\":[[\"text\",\"  \"],[\"append\",[\"get\",[\"version\"]],false],[\"text\",\"\\n\"]],\"locals\":[\"version\"]}],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/doc-version-selector.hbs" } });
 });
 define("affinity-engine-web/templates/components/dynamic-tag", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 2,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/dynamic-tag.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(1);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "yield", ["loc", [null, [1, 0], [1, 9]]], 0, 0, 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "zFhZWuQ3", "block": "{\"statements\":[[\"yield\",\"default\"],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[\"default\"],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/dynamic-tag.hbs" } });
 });
 define("affinity-engine-web/templates/components/ember-chimp", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 11,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/ember-chimp.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("label");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("div");
-        dom.setAttribute(el2, "class", "label-text");
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "chimp-says");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("button");
-        dom.setAttribute(el1, "type", "submit");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [0]);
-        var morphs = new Array(4);
-        morphs[0] = dom.createMorphAt(dom.childAt(element0, [1]), 0, 0);
-        morphs[1] = dom.createMorphAt(element0, 3, 3);
-        morphs[2] = dom.createMorphAt(dom.childAt(fragment, [2]), 0, 0);
-        morphs[3] = dom.createMorphAt(dom.childAt(fragment, [4]), 0, 0);
-        return morphs;
-      },
-      statements: [["content", "label", ["loc", [null, [2, 26], [2, 35]]], 0, 0, 0, 0], ["inline", "input", [], ["key-press", "valueDidChange", "placeholder", ["subexpr", "@mut", [["get", "placeholder", ["loc", [null, [4, 22], [4, 33]]], 0, 0, 0, 0]], [], [], 0, 0], "value", ["subexpr", "@mut", [["get", "value", ["loc", [null, [5, 16], [5, 21]]], 0, 0, 0, 0]], [], [], 0, 0], "type", "email", "name", "EMAIL"], ["loc", [null, [3, 2], [7, 24]]], 0, 0], ["content", "chimpSays", ["loc", [null, [9, 24], [9, 37]]], 0, 0, 0, 0], ["inline", "if", [["get", "isLoading", ["loc", [null, [10, 27], [10, 36]]], 0, 0, 0, 0], ["get", "loadingText", ["loc", [null, [10, 37], [10, 48]]], 0, 0, 0, 0], ["get", "buttonText", ["loc", [null, [10, 49], [10, 59]]], 0, 0, 0, 0]], [], ["loc", [null, [10, 22], [10, 61]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "skBEw+m5", "block": "{\"statements\":[[\"open-element\",\"label\",[]],[\"flush-element\"],[\"text\",\"\\n  \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"label-text\"],[\"flush-element\"],[\"append\",[\"unknown\",[\"label\"]],false],[\"close-element\"],[\"text\",\"\\n  \"],[\"append\",[\"helper\",[\"input\"],null,[[\"key-press\",\"placeholder\",\"value\",\"type\",\"name\"],[\"valueDidChange\",[\"get\",[\"placeholder\"]],[\"get\",[\"value\"]],\"email\",\"EMAIL\"]]],false],[\"text\",\"\\n\"],[\"close-element\"],[\"text\",\"\\n\"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"chimp-says\"],[\"flush-element\"],[\"append\",[\"unknown\",[\"chimpSays\"]],false],[\"close-element\"],[\"text\",\"\\n\"],[\"open-element\",\"button\",[]],[\"static-attr\",\"type\",\"submit\"],[\"flush-element\"],[\"append\",[\"helper\",[\"if\"],[[\"get\",[\"isLoading\"]],[\"get\",[\"loadingText\"]],[\"get\",[\"buttonText\"]]],null],false],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/ember-chimp.hbs" } });
 });
 define("affinity-engine-web/templates/components/engine-container", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            "revision": "Ember@2.7.3",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 2,
-                "column": 2
-              },
-              "end": {
-                "line": 5,
-                "column": 2
-              }
-            },
-            "moduleName": "affinity-engine-web/templates/components/engine-container.hbs"
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createTextNode("    ");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createComment("");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createTextNode("\n    ");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createComment("");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createTextNode("\n");
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-            var morphs = new Array(2);
-            morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-            morphs[1] = dom.createMorphAt(fragment, 3, 3, contextualElement);
-            return morphs;
-          },
-          statements: [["inline", "affinity-engine-stage", [], ["engineId", ["subexpr", "@mut", [["get", "engine.engineId", ["loc", [null, [3, 37], [3, 52]]], 0, 0, 0, 0]], [], [], 0, 0], "initialScene", ["subexpr", "@mut", [["get", "scene", ["loc", [null, [3, 66], [3, 71]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [3, 4], [3, 73]]], 0, 0], ["inline", "yield", [], ["engine", ["subexpr", "@mut", [["get", "engine", ["loc", [null, [4, 19], [4, 25]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [4, 4], [4, 27]]], 0, 0]],
-          locals: [],
-          templates: []
-        };
-      })();
-      var child1 = (function () {
-        var child0 = (function () {
-          return {
-            meta: {
-              "revision": "Ember@2.7.3",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 6,
-                  "column": 4
-                },
-                "end": {
-                  "line": 13,
-                  "column": 4
-                }
-              },
-              "moduleName": "affinity-engine-web/templates/components/engine-container.hbs"
-            },
-            isEmpty: false,
-            arity: 1,
-            cachedFragment: null,
-            hasRendered: false,
-            buildFragment: function buildFragment(dom) {
-              var el0 = dom.createDocumentFragment();
-              var el1 = dom.createTextNode("      ");
-              dom.appendChild(el0, el1);
-              var el1 = dom.createComment("");
-              dom.appendChild(el0, el1);
-              var el1 = dom.createTextNode("\n");
-              dom.appendChild(el0, el1);
-              return el0;
-            },
-            buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-              var morphs = new Array(1);
-              morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-              return morphs;
-            },
-            statements: [["inline", "ember-progress-bar", [], ["shape", "Circle", "progress", ["subexpr", "@mut", [["get", "curtain.progress", ["loc", [null, [9, 17], [9, 33]]], 0, 0, 0, 0]], [], [], 0, 0], "useDefaultStep", true, "options", ["subexpr", "@mut", [["get", "progressBarOptions", ["loc", [null, [11, 16], [11, 34]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [7, 6], [12, 8]]], 0, 0]],
-            locals: ["curtain"],
-            templates: []
-          };
-        })();
-        return {
-          meta: {
-            "revision": "Ember@2.7.3",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 5,
-                "column": 2
-              },
-              "end": {
-                "line": 14,
-                "column": 2
-              }
-            },
-            "moduleName": "affinity-engine-web/templates/components/engine-container.hbs"
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createComment("");
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-            var morphs = new Array(1);
-            morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-            dom.insertBoundary(fragment, 0);
-            dom.insertBoundary(fragment, null);
-            return morphs;
-          },
-          statements: [["block", "affinity-engine-curtain", [], ["engineId", ["subexpr", "@mut", [["get", "engine.engineId", ["loc", [null, [6, 40], [6, 55]]], 0, 0, 0, 0]], [], [], 0, 0], "filesToPreload", ["subexpr", "hash", [], ["keyframes", "src"], ["loc", [null, [6, 71], [6, 93]]], 0, 0], "completePreload", ["subexpr", "@mut", [["get", "engine.completePreload", ["loc", [null, [6, 110], [6, 132]]], 0, 0, 0, 0]], [], [], 0, 0]], 0, null, ["loc", [null, [6, 4], [13, 32]]]]],
-          locals: [],
-          templates: [child0]
-        };
-      })();
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 1,
-              "column": 0
-            },
-            "end": {
-              "line": 15,
-              "column": 0
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/engine-container.hbs"
-        },
-        isEmpty: false,
-        arity: 1,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [["block", "if", [["get", "engine.isLoaded", ["loc", [null, [2, 8], [2, 23]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [2, 2], [14, 9]]]]],
-        locals: ["engine"],
-        templates: [child0, child1]
-      };
-    })();
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 16,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/engine-container.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(1);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        dom.insertBoundary(fragment, null);
-        return morphs;
-      },
-      statements: [["block", "affinity-engine", [], ["engineId", ["subexpr", "@mut", [["get", "scene", ["loc", [null, [1, 28], [1, 33]]], 0, 0, 0, 0]], [], [], 0, 0], "config", ["subexpr", "@mut", [["get", "config", ["loc", [null, [1, 41], [1, 47]]], 0, 0, 0, 0]], [], [], 0, 0], "fixtures", ["subexpr", "@mut", [["get", "fixtures", ["loc", [null, [1, 57], [1, 65]]], 0, 0, 0, 0]], [], [], 0, 0], "isFocused", ["subexpr", "@mut", [["get", "isFocused", ["loc", [null, [1, 76], [1, 85]]], 0, 0, 0, 0]], [], [], 0, 0]], 0, null, ["loc", [null, [1, 0], [15, 20]]]]],
-      locals: [],
-      templates: [child0]
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "QcrekqVT", "block": "{\"statements\":[[\"block\",[\"affinity-engine\"],null,[[\"engineId\",\"config\",\"fixtures\",\"isFocused\"],[[\"get\",[\"scene\"]],[\"get\",[\"config\"]],[\"get\",[\"fixtures\"]],[\"get\",[\"isFocused\"]]]],3]],\"locals\":[],\"named\":[],\"yields\":[\"default\"],\"blocks\":[{\"statements\":[[\"text\",\"      \"],[\"append\",[\"helper\",[\"ember-progress-bar\"],null,[[\"shape\",\"progress\",\"useDefaultStep\",\"options\"],[\"Circle\",[\"get\",[\"curtain\",\"progress\"]],true,[\"get\",[\"progressBarOptions\"]]]]],false],[\"text\",\"\\n\"]],\"locals\":[\"curtain\"]},{\"statements\":[[\"block\",[\"affinity-engine-curtain\"],null,[[\"engineId\",\"filesToPreload\",\"completePreload\"],[[\"get\",[\"engine\",\"engineId\"]],[\"helper\",[\"hash\"],null,[[\"keyframes\"],[\"src\"]]],[\"get\",[\"engine\",\"completePreload\"]]]],0]],\"locals\":[]},{\"statements\":[[\"text\",\"    \"],[\"append\",[\"helper\",[\"affinity-engine-stage\"],null,[[\"engineId\",\"initialScene\"],[[\"get\",[\"engine\",\"engineId\"]],[\"get\",[\"scene\"]]]]],false],[\"text\",\"\\n    \"],[\"yield\",\"default\"],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"block\",[\"if\"],[[\"get\",[\"engine\",\"isLoaded\"]]],null,2,1]],\"locals\":[\"engine\"]}],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/engine-container.hbs" } });
 });
 define("affinity-engine-web/templates/components/expanding-sidebar-section", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            "revision": "Ember@2.7.3",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 1,
-                "column": 16
-              },
-              "end": {
-                "line": 1,
-                "column": 54
-              }
-            },
-            "moduleName": "affinity-engine-web/templates/components/expanding-sidebar-section.hbs"
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createComment("");
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-            var morphs = new Array(1);
-            morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-            dom.insertBoundary(fragment, 0);
-            dom.insertBoundary(fragment, null);
-            return morphs;
-          },
-          statements: [["content", "options.name", ["loc", [null, [1, 38], [1, 54]]], 0, 0, 0, 0]],
-          locals: [],
-          templates: []
-        };
-      })();
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 1,
-              "column": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 66
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/expanding-sidebar-section.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [["block", "link-to", [["get", "fullRoute", ["loc", [null, [1, 27], [1, 36]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [1, 16], [1, 66]]]]],
-        locals: [],
-        templates: [child0]
-      };
-    })();
-    var child1 = (function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            "revision": "Ember@2.7.3",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 4,
-                "column": 2
-              },
-              "end": {
-                "line": 9,
-                "column": 2
-              }
-            },
-            "moduleName": "affinity-engine-web/templates/components/expanding-sidebar-section.hbs"
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createTextNode("    ");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createComment("");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createTextNode("\n");
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-            var morphs = new Array(1);
-            morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-            return morphs;
-          },
-          statements: [["inline", "expanding-sidebar", [], ["parentRoute", ["subexpr", "@mut", [["get", "fullRoute", ["loc", [null, [6, 18], [6, 27]]], 0, 0, 0, 0]], [], [], 0, 0], "classNames", "nested vertical"], ["loc", [null, [5, 4], [8, 6]]], 0, 0]],
-          locals: [],
-          templates: []
-        };
-      })();
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 3,
-              "column": 0
-            },
-            "end": {
-              "line": 10,
-              "column": 0
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/expanding-sidebar-section.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-          dom.insertBoundary(fragment, 0);
-          dom.insertBoundary(fragment, null);
-          return morphs;
-        },
-        statements: [["block", "liquid-if", [["get", "isActive", ["loc", [null, [4, 15], [4, 23]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [4, 2], [9, 16]]]]],
-        locals: [],
-        templates: [child0]
-      };
-    })();
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 11,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/expanding-sidebar-section.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        dom.insertBoundary(fragment, null);
-        return morphs;
-      },
-      statements: [["block", "active-link", [], [], 0, null, ["loc", [null, [1, 0], [1, 82]]]], ["block", "if", [["get", "shouldNest", ["loc", [null, [3, 6], [3, 16]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [3, 0], [10, 7]]]]],
-      locals: [],
-      templates: [child0, child1]
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "c+ujEOjJ", "block": "{\"statements\":[[\"block\",[\"active-link\"],null,null,3],[\"text\",\"\\n\\n\"],[\"block\",[\"if\"],[[\"get\",[\"shouldNest\"]]],null,1]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[{\"statements\":[[\"text\",\"    \"],[\"append\",[\"helper\",[\"expanding-sidebar\"],null,[[\"parentRoute\",\"classNames\"],[[\"get\",[\"fullRoute\"]],\"nested vertical\"]]],false],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"block\",[\"liquid-if\"],[[\"get\",[\"isActive\"]]],null,0]],\"locals\":[]},{\"statements\":[[\"append\",[\"unknown\",[\"options\",\"name\"]],false]],\"locals\":[]},{\"statements\":[[\"block\",[\"link-to\"],[[\"get\",[\"fullRoute\"]]],null,2]],\"locals\":[]}],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/expanding-sidebar-section.hbs" } });
 });
 define("affinity-engine-web/templates/components/expanding-sidebar", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 1,
-              "column": 0
-            },
-            "end": {
-              "line": 8,
-              "column": 0
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/expanding-sidebar.hbs"
-        },
-        isEmpty: false,
-        arity: 2,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("  ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [["inline", "expanding-sidebar-section", [], ["parentRoute", ["subexpr", "@mut", [["get", "parentRoute", ["loc", [null, [3, 16], [3, 27]]], 0, 0, 0, 0]], [], [], 0, 0], "route", ["subexpr", "@mut", [["get", "route", ["loc", [null, [4, 10], [4, 15]]], 0, 0, 0, 0]], [], [], 0, 0], "shouldNest", ["subexpr", "@mut", [["get", "shouldNest", ["loc", [null, [5, 15], [5, 25]]], 0, 0, 0, 0]], [], [], 0, 0], "options", ["subexpr", "@mut", [["get", "options", ["loc", [null, [6, 12], [6, 19]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [2, 2], [7, 4]]], 0, 0]],
-        locals: ["route", "options"],
-        templates: []
-      };
-    })();
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 9,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/expanding-sidebar.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(1);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        dom.insertBoundary(fragment, null);
-        return morphs;
-      },
-      statements: [["block", "each-in", [["get", "routes", ["loc", [null, [1, 11], [1, 17]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [1, 0], [8, 12]]]]],
-      locals: [],
-      templates: [child0]
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "RXC9WYK9", "block": "{\"statements\":[[\"block\",[\"each\"],[[\"helper\",[\"-each-in\"],[[\"get\",[\"routes\"]]],null]],null,0]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[{\"statements\":[[\"text\",\"  \"],[\"append\",[\"helper\",[\"expanding-sidebar-section\"],null,[[\"parentRoute\",\"route\",\"shouldNest\",\"options\"],[[\"get\",[\"parentRoute\"]],[\"get\",[\"route\"]],[\"get\",[\"shouldNest\"]],[\"get\",[\"options\"]]]]],false],[\"text\",\"\\n\"]],\"locals\":[\"route\",\"options\"]}],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/expanding-sidebar.hbs" } });
 });
 define("affinity-engine-web/templates/components/header-links", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      var child0 = (function () {
-        var child0 = (function () {
-          return {
-            meta: {
-              "revision": "Ember@2.7.3",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 5,
-                  "column": 8
-                },
-                "end": {
-                  "line": 7,
-                  "column": 8
-                }
-              },
-              "moduleName": "affinity-engine-web/templates/components/header-links.hbs"
-            },
-            isEmpty: false,
-            arity: 0,
-            cachedFragment: null,
-            hasRendered: false,
-            buildFragment: function buildFragment(dom) {
-              var el0 = dom.createDocumentFragment();
-              var el1 = dom.createTextNode("          ");
-              dom.appendChild(el0, el1);
-              var el1 = dom.createComment("");
-              dom.appendChild(el0, el1);
-              var el1 = dom.createTextNode("\n");
-              dom.appendChild(el0, el1);
-              return el0;
-            },
-            buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-              var morphs = new Array(1);
-              morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-              return morphs;
-            },
-            statements: [["content", "header.name", ["loc", [null, [6, 10], [6, 25]]], 0, 0, 0, 0]],
-            locals: [],
-            templates: []
-          };
-        })();
-        return {
-          meta: {
-            "revision": "Ember@2.7.3",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 4,
-                "column": 6
-              },
-              "end": {
-                "line": 8,
-                "column": 6
-              }
-            },
-            "moduleName": "affinity-engine-web/templates/components/header-links.hbs"
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createComment("");
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-            var morphs = new Array(1);
-            morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-            dom.insertBoundary(fragment, 0);
-            dom.insertBoundary(fragment, null);
-            return morphs;
-          },
-          statements: [["block", "dynamic-tag", [], ["tagName", ["subexpr", "@mut", [["get", "header.tagName", ["loc", [null, [5, 31], [5, 45]]], 0, 0, 0, 0]], [], [], 0, 0], "classNames", "medium-display-inline-block arrow-holder"], 0, null, ["loc", [null, [5, 8], [7, 24]]]]],
-          locals: [],
-          templates: [child0]
-        };
-      })();
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 2,
-              "column": 2
-            },
-            "end": {
-              "line": 10,
-              "column": 2
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/header-links.hbs"
-        },
-        isEmpty: false,
-        arity: 1,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("    ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createElement("li");
-          dom.setAttribute(el1, "class", "arrow-seperated vertical-align-baseline-important");
-          var el2 = dom.createTextNode("\n");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createComment("");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode("    ");
-          dom.appendChild(el1, el2);
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(dom.childAt(fragment, [1]), 1, 1);
-          return morphs;
-        },
-        statements: [["block", "link-to", [["get", "header.route", ["loc", [null, [4, 17], [4, 29]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [4, 6], [8, 18]]]]],
-        locals: ["header"],
-        templates: [child0]
-      };
-    })();
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 12,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/header-links.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("ul");
-        dom.setAttribute(el1, "class", "menu simple");
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(1);
-        morphs[0] = dom.createMorphAt(dom.childAt(fragment, [0]), 1, 1);
-        return morphs;
-      },
-      statements: [["block", "each", [["get", "headers", ["loc", [null, [2, 10], [2, 17]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [2, 2], [10, 11]]]]],
-      locals: [],
-      templates: [child0]
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "Z208DzgE", "block": "{\"statements\":[[\"open-element\",\"ul\",[]],[\"static-attr\",\"class\",\"menu simple\"],[\"flush-element\"],[\"text\",\"\\n\"],[\"block\",[\"each\"],[[\"get\",[\"headers\"]]],null,2],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[{\"statements\":[[\"text\",\"          \"],[\"append\",[\"unknown\",[\"header\",\"name\"]],false],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"block\",[\"dynamic-tag\"],null,[[\"tagName\",\"classNames\"],[[\"get\",[\"header\",\"tagName\"]],\"medium-display-inline-block arrow-holder\"]],0]],\"locals\":[]},{\"statements\":[[\"text\",\"    \"],[\"open-element\",\"li\",[]],[\"static-attr\",\"class\",\"arrow-seperated vertical-align-baseline-important\"],[\"flush-element\"],[\"text\",\"\\n\"],[\"block\",[\"link-to\"],[[\"get\",[\"header\",\"route\"]]],null,1],[\"text\",\"    \"],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[\"header\"]}],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/header-links.hbs" } });
 });
 define("affinity-engine-web/templates/components/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.index.1"], ["loc", [null, [1, 0], [1, 38]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "1VepGQ8f", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/index.hbs" } });
 });
 define("affinity-engine-web/templates/components/m-intl", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 2,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/m-intl.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(1);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "text", ["loc", [null, [1, 0], [1, 10]]], 0, 0, 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "M4XryCSH", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"text\"]],true],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/m-intl.hbs" } });
 });
 define("affinity-engine-web/templates/components/menu-bar", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/menu-bar.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "rZIbgAD6", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/menu-bar.hbs" } });
 });
 define("affinity-engine-web/templates/components/menu-bar/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/menu-bar/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.menu-bar.index.1"], ["loc", [null, [1, 0], [1, 47]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "idbFC9pl", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.menu-bar.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/menu-bar/index.hbs" } });
 });
 define("affinity-engine-web/templates/components/responsive-dropdown", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 2,
-              "column": 2
-            },
-            "end": {
-              "line": 4,
-              "column": 2
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/responsive-dropdown.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("    ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [["content", "yield", ["loc", [null, [3, 4], [3, 13]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })();
-    var child1 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 6,
-              "column": 4
-            },
-            "end": {
-              "line": 8,
-              "column": 4
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/responsive-dropdown.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("      ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [["inline", "fa-icon", ["caret-up"], [], ["loc", [null, [7, 6], [7, 28]]], 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })();
-    var child2 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 8,
-              "column": 4
-            },
-            "end": {
-              "line": 10,
-              "column": 4
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/responsive-dropdown.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("      ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [["inline", "fa-icon", ["caret-down"], [], ["loc", [null, [9, 6], [9, 30]]], 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })();
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 17,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/responsive-dropdown.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "hide-for-medium");
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("a");
-        dom.setAttribute(el2, "class", "button expanded small-margin-bottom-0");
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("  ");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "show-for-medium");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [0]);
-        var element1 = dom.childAt(element0, [3]);
-        var morphs = new Array(5);
-        morphs[0] = dom.createMorphAt(element0, 1, 1);
-        morphs[1] = dom.createElementMorph(element1);
-        morphs[2] = dom.createMorphAt(element1, 0, 0);
-        morphs[3] = dom.createMorphAt(element1, 2, 2);
-        morphs[4] = dom.createMorphAt(dom.childAt(fragment, [2]), 1, 1);
-        return morphs;
-      },
-      statements: [["block", "liquid-if", [["get", "isExpanded", ["loc", [null, [2, 15], [2, 25]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [2, 2], [4, 16]]]], ["element", "action", ["toggleIsExpanded"], [], ["loc", [null, [5, 51], [5, 80]]], 0, 0], ["content", "title", ["loc", [null, [5, 81], [5, 90]]], 0, 0, 0, 0], ["block", "if", [["get", "isExpanded", ["loc", [null, [6, 10], [6, 20]]], 0, 0, 0, 0]], [], 1, 2, ["loc", [null, [6, 4], [10, 11]]]], ["content", "yield", ["loc", [null, [15, 2], [15, 11]]], 0, 0, 0, 0]],
-      locals: [],
-      templates: [child0, child1, child2]
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "92My0/c3", "block": "{\"statements\":[[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"hide-for-medium\"],[\"flush-element\"],[\"text\",\"\\n\"],[\"block\",[\"liquid-if\"],[[\"get\",[\"isExpanded\"]]],null,2],[\"text\",\"  \"],[\"open-element\",\"a\",[]],[\"static-attr\",\"class\",\"button expanded small-margin-bottom-0\"],[\"modifier\",[\"action\"],[[\"get\",[null]],\"toggleIsExpanded\"]],[\"flush-element\"],[\"append\",[\"unknown\",[\"title\"]],false],[\"text\",\"\\n\"],[\"block\",[\"if\"],[[\"get\",[\"isExpanded\"]]],null,1,0],[\"text\",\"  \"],[\"close-element\"],[\"text\",\"\\n\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"show-for-medium\"],[\"flush-element\"],[\"text\",\"\\n  \"],[\"yield\",\"default\"],[\"text\",\"\\n\"],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[\"default\"],\"blocks\":[{\"statements\":[[\"text\",\"      \"],[\"append\",[\"helper\",[\"fa-icon\"],[\"caret-down\"],null],false],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"text\",\"      \"],[\"append\",[\"helper\",[\"fa-icon\"],[\"caret-up\"],null],false],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"text\",\"    \"],[\"yield\",\"default\"],[\"text\",\"\\n\"]],\"locals\":[]}],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/responsive-dropdown.hbs" } });
 });
 define("affinity-engine-web/templates/components/responsive-navigation-dropdown", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 1,
-              "column": 0
-            },
-            "end": {
-              "line": 3,
-              "column": 0
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/responsive-navigation-dropdown.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("  ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [["content", "yield", ["loc", [null, [2, 2], [2, 11]]], 0, 0, 0, 0]],
-        locals: [],
-        templates: []
-      };
-    })();
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/responsive-navigation-dropdown.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(1);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        dom.insertBoundary(fragment, null);
-        return morphs;
-      },
-      statements: [["block", "responsive-dropdown", [], ["title", ["subexpr", "@mut", [["get", "title", ["loc", [null, [1, 29], [1, 34]]], 0, 0, 0, 0]], [], [], 0, 0]], 0, null, ["loc", [null, [1, 0], [3, 24]]]]],
-      locals: [],
-      templates: [child0]
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "rwFtAqH9", "block": "{\"statements\":[[\"block\",[\"responsive-dropdown\"],null,[[\"title\"],[[\"get\",[\"title\"]]]],0]],\"locals\":[],\"named\":[],\"yields\":[\"default\"],\"blocks\":[{\"statements\":[[\"text\",\"  \"],[\"yield\",\"default\"],[\"text\",\"\\n\"]],\"locals\":[]}],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/responsive-navigation-dropdown.hbs" } });
 });
 define("affinity-engine-web/templates/components/section-navigator", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            "revision": "Ember@2.7.3",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 3,
-                "column": 4
-              },
-              "end": {
-                "line": 3,
-                "column": 67
-              }
-            },
-            "moduleName": "affinity-engine-web/templates/components/section-navigator.hbs"
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createComment("");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createTextNode(" ");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createComment("");
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-            var morphs = new Array(2);
-            morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-            morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-            dom.insertBoundary(fragment, 0);
-            dom.insertBoundary(fragment, null);
-            return morphs;
-          },
-          statements: [["content", "previous.arrow", ["loc", [null, [3, 31], [3, 49]]], 0, 0, 0, 0], ["content", "previous.name", ["loc", [null, [3, 50], [3, 67]]], 0, 0, 0, 0]],
-          locals: [],
-          templates: []
-        };
-      })();
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 2,
-              "column": 2
-            },
-            "end": {
-              "line": 4,
-              "column": 2
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/section-navigator.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("    ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [["block", "link-to", [["get", "previous.route", ["loc", [null, [3, 15], [3, 29]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [3, 4], [3, 79]]]]],
-        locals: [],
-        templates: [child0]
-      };
-    })();
-    var child1 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 4,
-              "column": 2
-            },
-            "end": {
-              "line": 6,
-              "column": 2
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/section-navigator.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("    ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createElement("a");
-          dom.setAttribute(el1, "class", "section-navigator-blank left");
-          var el2 = dom.createTextNode("—");
-          dom.appendChild(el1, el2);
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes() {
-          return [];
-        },
-        statements: [],
-        locals: [],
-        templates: []
-      };
-    })();
-    var child2 = (function () {
-      var child0 = (function () {
-        return {
-          meta: {
-            "revision": "Ember@2.7.3",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 11,
-                "column": 4
-              },
-              "end": {
-                "line": 11,
-                "column": 55
-              }
-            },
-            "moduleName": "affinity-engine-web/templates/components/section-navigator.hbs"
-          },
-          isEmpty: false,
-          arity: 0,
-          cachedFragment: null,
-          hasRendered: false,
-          buildFragment: function buildFragment(dom) {
-            var el0 = dom.createDocumentFragment();
-            var el1 = dom.createComment("");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createTextNode(" ");
-            dom.appendChild(el0, el1);
-            var el1 = dom.createComment("");
-            dom.appendChild(el0, el1);
-            return el0;
-          },
-          buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-            var morphs = new Array(2);
-            morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-            morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-            dom.insertBoundary(fragment, 0);
-            dom.insertBoundary(fragment, null);
-            return morphs;
-          },
-          statements: [["content", "next.name", ["loc", [null, [11, 27], [11, 40]]], 0, 0, 0, 0], ["content", "next.arrow", ["loc", [null, [11, 41], [11, 55]]], 0, 0, 0, 0]],
-          locals: [],
-          templates: []
-        };
-      })();
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 10,
-              "column": 2
-            },
-            "end": {
-              "line": 12,
-              "column": 2
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/section-navigator.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("    ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-          return morphs;
-        },
-        statements: [["block", "link-to", [["get", "next.route", ["loc", [null, [11, 15], [11, 25]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [11, 4], [11, 67]]]]],
-        locals: [],
-        templates: [child0]
-      };
-    })();
-    var child3 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.7.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 12,
-              "column": 2
-            },
-            "end": {
-              "line": 14,
-              "column": 2
-            }
-          },
-          "moduleName": "affinity-engine-web/templates/components/section-navigator.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("    ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createElement("a");
-          dom.setAttribute(el1, "class", "section-navigator-blank right");
-          var el2 = dom.createTextNode("—");
-          dom.appendChild(el1, el2);
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes() {
-          return [];
-        },
-        statements: [],
-        locals: [],
-        templates: []
-      };
-    })();
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 16,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/section-navigator.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("li");
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("li");
-        dom.setAttribute(el1, "class", "text-align-right");
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(dom.childAt(fragment, [0]), 1, 1);
-        morphs[1] = dom.createMorphAt(dom.childAt(fragment, [2]), 1, 1);
-        return morphs;
-      },
-      statements: [["block", "if", [["get", "previous.route", ["loc", [null, [2, 8], [2, 22]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [2, 2], [6, 9]]]], ["block", "if", [["get", "next.route", ["loc", [null, [10, 8], [10, 18]]], 0, 0, 0, 0]], [], 2, 3, ["loc", [null, [10, 2], [14, 9]]]]],
-      locals: [],
-      templates: [child0, child1, child2, child3]
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "aMJP4qqP", "block": "{\"statements\":[[\"open-element\",\"li\",[]],[\"flush-element\"],[\"text\",\"\\n\"],[\"block\",[\"if\"],[[\"get\",[\"previous\",\"route\"]]],null,5,3],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"open-element\",\"li\",[]],[\"static-attr\",\"class\",\"text-align-right\"],[\"flush-element\"],[\"text\",\"\\n\"],[\"block\",[\"if\"],[[\"get\",[\"next\",\"route\"]]],null,2,0],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[{\"statements\":[[\"text\",\"    \"],[\"open-element\",\"a\",[]],[\"static-attr\",\"class\",\"section-navigator-blank right\"],[\"flush-element\"],[\"text\",\"—\"],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"append\",[\"unknown\",[\"next\",\"name\"]],false],[\"text\",\" \"],[\"append\",[\"unknown\",[\"next\",\"arrow\"]],false]],\"locals\":[]},{\"statements\":[[\"text\",\"    \"],[\"block\",[\"link-to\"],[[\"get\",[\"next\",\"route\"]]],null,1],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"text\",\"    \"],[\"open-element\",\"a\",[]],[\"static-attr\",\"class\",\"section-navigator-blank left\"],[\"flush-element\"],[\"text\",\"—\"],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"append\",[\"unknown\",[\"previous\",\"arrow\"]],false],[\"text\",\" \"],[\"append\",[\"unknown\",[\"previous\",\"name\"]],false]],\"locals\":[]},{\"statements\":[[\"text\",\"    \"],[\"block\",[\"link-to\"],[[\"get\",[\"previous\",\"route\"]]],null,4],[\"text\",\"\\n\"]],\"locals\":[]}],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/section-navigator.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "zxYbxeiY", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "WO83ZrTG", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/backdrop", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 16,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/backdrop.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(12);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createUnsafeMorphAt(fragment, 14, 14, contextualElement);
-        morphs[8] = dom.createUnsafeMorphAt(fragment, 16, 16, contextualElement);
-        morphs[9] = dom.createUnsafeMorphAt(fragment, 18, 18, contextualElement);
-        morphs[10] = dom.createUnsafeMorphAt(fragment, 20, 20, contextualElement);
-        morphs[11] = dom.createMorphAt(fragment, 24, 24, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.backdrop.1"], ["loc", [null, [1, 0], [1, 58]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.caption"], ["loc", [null, [2, 0], [2, 37]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.classNames"], ["loc", [null, [3, 0], [3, 40]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.delay"], ["loc", [null, [4, 0], [4, 35]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.fadeIn"], ["loc", [null, [5, 0], [5, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.fadeOut"], ["loc", [null, [6, 0], [6, 37]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.height"], ["loc", [null, [7, 0], [7, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.keyframe"], ["loc", [null, [8, 0], [8, 38]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.position"], ["loc", [null, [9, 0], [9, 38]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.state"], ["loc", [null, [10, 0], [10, 35]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.transition"], ["loc", [null, [11, 0], [11, 40]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [15, 0], [15, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "aJPtg6Oh", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.backdrop.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.caption\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.classNames\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.delay\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.fadeIn\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.fadeOut\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.height\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.keyframe\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.position\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.state\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.transition\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/backdrop.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/character", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 21,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/character.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(17);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createUnsafeMorphAt(fragment, 14, 14, contextualElement);
-        morphs[8] = dom.createUnsafeMorphAt(fragment, 16, 16, contextualElement);
-        morphs[9] = dom.createUnsafeMorphAt(fragment, 18, 18, contextualElement);
-        morphs[10] = dom.createUnsafeMorphAt(fragment, 20, 20, contextualElement);
-        morphs[11] = dom.createUnsafeMorphAt(fragment, 22, 22, contextualElement);
-        morphs[12] = dom.createUnsafeMorphAt(fragment, 24, 24, contextualElement);
-        morphs[13] = dom.createUnsafeMorphAt(fragment, 26, 26, contextualElement);
-        morphs[14] = dom.createUnsafeMorphAt(fragment, 28, 28, contextualElement);
-        morphs[15] = dom.createUnsafeMorphAt(fragment, 30, 30, contextualElement);
-        morphs[16] = dom.createMorphAt(fragment, 34, 34, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.character.1"], ["loc", [null, [1, 0], [1, 59]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.caption"], ["loc", [null, [2, 0], [2, 37]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.classNames"], ["loc", [null, [3, 0], [3, 40]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.delay"], ["loc", [null, [4, 0], [4, 35]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.expression"], ["loc", [null, [5, 0], [5, 40]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.fadeIn"], ["loc", [null, [6, 0], [6, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.fadeOut"], ["loc", [null, [7, 0], [7, 37]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.height"], ["loc", [null, [8, 0], [8, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.keyframe"], ["loc", [null, [9, 0], [9, 38]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.name"], ["loc", [null, [10, 0], [10, 34]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.namePosition"], ["loc", [null, [11, 0], [11, 42]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.outfit"], ["loc", [null, [12, 0], [12, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.pose"], ["loc", [null, [13, 0], [13, 34]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.position"], ["loc", [null, [14, 0], [14, 38]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.state"], ["loc", [null, [15, 0], [15, 35]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.transition"], ["loc", [null, [16, 0], [16, 40]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [20, 0], [20, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "BLPMXus5", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.character.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.caption\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.classNames\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.delay\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.expression\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.fadeIn\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.fadeOut\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.height\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.keyframe\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.name\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.namePosition\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.outfit\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.pose\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.position\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.state\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.transition\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/character.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/image", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 16,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/image.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(12);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createUnsafeMorphAt(fragment, 14, 14, contextualElement);
-        morphs[8] = dom.createUnsafeMorphAt(fragment, 16, 16, contextualElement);
-        morphs[9] = dom.createUnsafeMorphAt(fragment, 18, 18, contextualElement);
-        morphs[10] = dom.createUnsafeMorphAt(fragment, 20, 20, contextualElement);
-        morphs[11] = dom.createMorphAt(fragment, 24, 24, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.image.1"], ["loc", [null, [1, 0], [1, 55]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.caption"], ["loc", [null, [2, 0], [2, 37]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.classNames"], ["loc", [null, [3, 0], [3, 40]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.delay"], ["loc", [null, [4, 0], [4, 35]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.fadeIn"], ["loc", [null, [5, 0], [5, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.fadeOut"], ["loc", [null, [6, 0], [6, 37]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.height"], ["loc", [null, [7, 0], [7, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.keyframe"], ["loc", [null, [8, 0], [8, 38]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.position"], ["loc", [null, [9, 0], [9, 38]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.state"], ["loc", [null, [10, 0], [10, 35]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.transition"], ["loc", [null, [11, 0], [11, 40]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [15, 0], [15, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "1kqf3a3k", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.image.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.caption\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.classNames\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.delay\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.fadeIn\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.fadeOut\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.height\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.keyframe\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.position\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.state\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.transition\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/image.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.index.1"], ["loc", [null, [1, 0], [1, 55]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "1IAJky3t", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/index.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/layer", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 7,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/layer.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(3);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createMorphAt(fragment, 6, 6, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.layer.1"], ["loc", [null, [1, 0], [1, 55]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.transition"], ["loc", [null, [2, 0], [2, 40]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [6, 0], [6, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "1Xl368Sk", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.layer.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.transition\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/layer.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/menu", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 12,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/menu.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(8);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createMorphAt(fragment, 16, 16, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.menu.1"], ["loc", [null, [1, 0], [1, 54]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.classNames"], ["loc", [null, [2, 0], [2, 40]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.keyboardPriority"], ["loc", [null, [3, 0], [3, 46]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.keys"], ["loc", [null, [4, 0], [4, 34]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.text"], ["loc", [null, [5, 0], [5, 34]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.transitionIn"], ["loc", [null, [6, 0], [6, 42]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.transitionOut"], ["loc", [null, [7, 0], [7, 43]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [11, 0], [11, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "N9XLT3Wp", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.menu.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.classNames\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.keyboardPriority\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.keys\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.text\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.transitionIn\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.transitionOut\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/menu.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/pause", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/pause.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.pause.1"], ["loc", [null, [1, 0], [1, 55]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "HlBpSqvP", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.pause.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/pause.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/random", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 7,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/random.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(3);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createMorphAt(fragment, 6, 6, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.random.1"], ["loc", [null, [1, 0], [1, 56]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.float"], ["loc", [null, [2, 0], [2, 35]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [6, 0], [6, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "I+PSDj2K", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.random.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.float\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/random.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/scene", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/scene.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.scene.1"], ["loc", [null, [1, 0], [1, 55]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "IZtwrwiQ", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.scene.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/scene.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/sound", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/sound.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.sound.1"], ["loc", [null, [1, 0], [1, 55]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "j3q9wt1p", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.sound.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/sound.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/directions/text", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 17,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/directions/text.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(13);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createUnsafeMorphAt(fragment, 14, 14, contextualElement);
-        morphs[8] = dom.createUnsafeMorphAt(fragment, 16, 16, contextualElement);
-        morphs[9] = dom.createUnsafeMorphAt(fragment, 18, 18, contextualElement);
-        morphs[10] = dom.createUnsafeMorphAt(fragment, 20, 20, contextualElement);
-        morphs[11] = dom.createUnsafeMorphAt(fragment, 22, 22, contextualElement);
-        morphs[12] = dom.createMorphAt(fragment, 26, 26, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.directions.text.1"], ["loc", [null, [1, 0], [1, 54]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.classNames"], ["loc", [null, [2, 0], [2, 40]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.close"], ["loc", [null, [3, 0], [3, 35]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.instant"], ["loc", [null, [4, 0], [4, 37]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.keyboardPriority"], ["loc", [null, [5, 0], [5, 46]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.keys"], ["loc", [null, [6, 0], [6, 34]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.name"], ["loc", [null, [7, 0], [7, 34]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.namePosition"], ["loc", [null, [8, 0], [8, 42]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.scrollable"], ["loc", [null, [9, 0], [9, 40]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.static"], ["loc", [null, [10, 0], [10, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.transitionIn"], ["loc", [null, [11, 0], [11, 42]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.transitionOut"], ["loc", [null, [12, 0], [12, 43]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [16, 0], [16, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "2LRpmbCy", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.directions.text.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.classNames\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.close\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.instant\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.keyboardPriority\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.keys\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.name\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.namePosition\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.scrollable\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.static\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.transitionIn\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.transitionOut\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/directions/text.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.index.1"], ["loc", [null, [1, 0], [1, 44]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "k0jegT+z", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/index.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/scenes", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/scenes.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "xwOsGy+B", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/scenes.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/scenes/data", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 16,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/scenes/data.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(12);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createUnsafeMorphAt(fragment, 14, 14, contextualElement);
-        morphs[8] = dom.createUnsafeMorphAt(fragment, 16, 16, contextualElement);
-        morphs[9] = dom.createUnsafeMorphAt(fragment, 18, 18, contextualElement);
-        morphs[10] = dom.createUnsafeMorphAt(fragment, 20, 20, contextualElement);
-        morphs[11] = dom.createMorphAt(fragment, 24, 24, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.scenes.data.1"], ["loc", [null, [1, 0], [1, 50]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.get"], ["loc", [null, [2, 0], [2, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.getProperties"], ["loc", [null, [3, 0], [3, 43]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.set"], ["loc", [null, [4, 0], [4, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.setProperties"], ["loc", [null, [5, 0], [5, 43]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.toggleProperty"], ["loc", [null, [6, 0], [6, 44]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.incrementProperty"], ["loc", [null, [7, 0], [7, 47]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.decrementProperty"], ["loc", [null, [8, 0], [8, 47]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.max"], ["loc", [null, [9, 0], [9, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.min"], ["loc", [null, [10, 0], [10, 33]]], 0, 0], ["inline", "api-doc", [], ["path", "commands.getSharedData"], ["loc", [null, [11, 0], [11, 43]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [15, 0], [15, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "vskdTPRq", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.scenes.data.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.get\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.getProperties\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.set\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.setProperties\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.toggleProperty\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.incrementProperty\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.decrementProperty\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.max\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.min\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"commands.getSharedData\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/scenes/data.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/scenes/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/scenes/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.scenes.index.1"], ["loc", [null, [1, 0], [1, 51]]], 0, 0], ["inline", "section-navigator", [], ["level", 3], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "YZda6XoF", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.scenes.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[3]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/scenes/index.hbs" } });
 });
 define("affinity-engine-web/templates/components/stage/usage", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/components/stage/usage.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "components.stage.usage.1"], ["loc", [null, [1, 0], [1, 44]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "VCjOIl3Z", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"components.stage.usage.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/components/stage/usage.hbs" } });
 });
 define("affinity-engine-web/templates/engine", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "n8KP5Zmh", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[0]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine.hbs" } });
 });
 define("affinity-engine-web/templates/engine/configuration", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/configuration.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "Yk0jhTyL", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/configuration.hbs" } });
 });
 define("affinity-engine-web/templates/engine/configuration/configuration-tiers", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/configuration/configuration-tiers.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.configuration.configuration-tiers.1"], ["loc", [null, [1, 0], [1, 62]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "lVCkEIDq", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.configuration.configuration-tiers.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/configuration/configuration-tiers.hbs" } });
 });
 define("affinity-engine-web/templates/engine/configuration/defaults", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/configuration/defaults.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.configuration.defaults.1"], ["loc", [null, [1, 0], [1, 51]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "Qi/AvGuT", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.configuration.defaults.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/configuration/defaults.hbs" } });
 });
 define("affinity-engine-web/templates/engine/configuration/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/configuration/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.configuration.index.1"], ["loc", [null, [1, 0], [1, 48]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "nWrvlhqo", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.configuration.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/configuration/index.hbs" } });
 });
 define("affinity-engine-web/templates/engine/configuration/usage", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/configuration/usage.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.configuration.usage.1"], ["loc", [null, [1, 0], [1, 48]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "sCNw6q1d", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.configuration.usage.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/configuration/usage.hbs" } });
 });
 define("affinity-engine-web/templates/engine/fixtures", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/fixtures.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "HDWZcT3Z", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/fixtures.hbs" } });
 });
 define("affinity-engine-web/templates/engine/fixtures/backdrops", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 12,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/fixtures/backdrops.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(8);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createMorphAt(fragment, 16, 16, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.fixtures.backdrops.1"], ["loc", [null, [1, 0], [1, 47]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.id"], ["loc", [null, [2, 0], [2, 32]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.height"], ["loc", [null, [3, 0], [3, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.keyframe"], ["loc", [null, [4, 0], [4, 38]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.defaultState"], ["loc", [null, [5, 0], [5, 42]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.layerOrder"], ["loc", [null, [6, 0], [6, 40]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.layers"], ["loc", [null, [7, 0], [7, 36]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [11, 0], [11, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "GmSfIzQc", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.fixtures.backdrops.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.id\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.height\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.keyframe\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.defaultState\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.layerOrder\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.layers\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/fixtures/backdrops.hbs" } });
 });
 define("affinity-engine-web/templates/engine/fixtures/characters", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 14,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/fixtures/characters.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(10);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createUnsafeMorphAt(fragment, 14, 14, contextualElement);
-        morphs[8] = dom.createUnsafeMorphAt(fragment, 16, 16, contextualElement);
-        morphs[9] = dom.createMorphAt(fragment, 20, 20, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.fixtures.characters.1"], ["loc", [null, [1, 0], [1, 48]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.id"], ["loc", [null, [2, 0], [2, 32]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.name"], ["loc", [null, [3, 0], [3, 34]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.namePosition"], ["loc", [null, [4, 0], [4, 42]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.height"], ["loc", [null, [5, 0], [5, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.keyframe"], ["loc", [null, [6, 0], [6, 38]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.defaultState"], ["loc", [null, [7, 0], [7, 42]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.layerOrder"], ["loc", [null, [8, 0], [8, 40]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.layers"], ["loc", [null, [9, 0], [9, 36]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [13, 0], [13, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "ddu5H9Ow", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.fixtures.characters.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.id\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.name\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.namePosition\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.height\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.keyframe\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.defaultState\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.layerOrder\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.layers\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/fixtures/characters.hbs" } });
 });
 define("affinity-engine-web/templates/engine/fixtures/images", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 12,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/fixtures/images.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(8);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createUnsafeMorphAt(fragment, 6, 6, contextualElement);
-        morphs[4] = dom.createUnsafeMorphAt(fragment, 8, 8, contextualElement);
-        morphs[5] = dom.createUnsafeMorphAt(fragment, 10, 10, contextualElement);
-        morphs[6] = dom.createUnsafeMorphAt(fragment, 12, 12, contextualElement);
-        morphs[7] = dom.createMorphAt(fragment, 16, 16, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.fixtures.images.1"], ["loc", [null, [1, 0], [1, 44]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.id"], ["loc", [null, [2, 0], [2, 32]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.height"], ["loc", [null, [3, 0], [3, 36]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.keyframe"], ["loc", [null, [4, 0], [4, 38]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.defaultState"], ["loc", [null, [5, 0], [5, 42]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.layerOrder"], ["loc", [null, [6, 0], [6, 40]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.layers"], ["loc", [null, [7, 0], [7, 36]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [11, 0], [11, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "9YYIJdg2", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.fixtures.images.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.id\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.height\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.keyframe\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.defaultState\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.layerOrder\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.layers\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/fixtures/images.hbs" } });
 });
 define("affinity-engine-web/templates/engine/fixtures/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/fixtures/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.fixtures.index.1"], ["loc", [null, [1, 0], [1, 43]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "Nkf+8QcG", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.fixtures.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/fixtures/index.hbs" } });
 });
 define("affinity-engine-web/templates/engine/fixtures/keyframes", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 8,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/fixtures/keyframes.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(4);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createUnsafeMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createUnsafeMorphAt(fragment, 4, 4, contextualElement);
-        morphs[3] = dom.createMorphAt(fragment, 8, 8, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.fixtures.keyframes.1"], ["loc", [null, [1, 0], [1, 47]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.id"], ["loc", [null, [2, 0], [2, 32]]], 0, 0], ["inline", "api-doc", [], ["path", "fixtures.src"], ["loc", [null, [3, 0], [3, 33]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [7, 0], [7, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "wYpRjCkt", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.fixtures.keyframes.1\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.id\"]]],true],[\"text\",\"\\n\"],[\"append\",[\"helper\",[\"api-doc\"],null,[[\"path\"],[\"fixtures.src\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/fixtures/keyframes.hbs" } });
 });
 define("affinity-engine-web/templates/engine/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.index.1"], ["loc", [null, [1, 0], [1, 34]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "pDV4Jc95", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/index.hbs" } });
 });
 define("affinity-engine-web/templates/engine/usage", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/engine/usage.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "engine.usage.1"], ["loc", [null, [1, 0], [1, 34]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "T3RLe2rj", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"engine.usage.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/engine/usage.hbs" } });
 });
 define("affinity-engine-web/templates/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 12,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(3);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createMorphAt(fragment, 6, 6, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "engine-container", [], ["scene", "index/welcome"], ["loc", [null, [1, 0], [1, 42]]], 0, 0], ["inline", "ember-chimp", [], ["formAction", "//zaffinityengine.us14.list-manage.com/subscribe/post?u=e829149c8295cbea476288bdc&amp;id=e51b574373", "label", "Join our mailing list:", "placeholder", "Email Address"], ["loc", [null, [3, 0], [7, 2]]], 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [11, 0], [11, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "zYo/MPl3", "block": "{\"statements\":[[\"append\",[\"helper\",[\"engine-container\"],null,[[\"scene\"],[\"index/welcome\"]]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"ember-chimp\"],null,[[\"formAction\",\"label\",\"placeholder\"],[\"//zaffinityengine.us14.list-manage.com/subscribe/post?u=e829149c8295cbea476288bdc&amp;id=e51b574373\",\"Join our mailing list:\",\"Email Address\"]]],false],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[0]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/index.hbs" } });
 });
 define("affinity-engine-web/templates/overview", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/overview.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "aEca6pWS", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[0]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/overview.hbs" } });
 });
 define("affinity-engine-web/templates/overview/components", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/overview/components.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "overview.components.1"], ["loc", [null, [1, 0], [1, 41]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "xK8kKBHv", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"overview.components.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/overview/components.hbs" } });
 });
 define("affinity-engine-web/templates/overview/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/overview/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "overview.index.1"], ["loc", [null, [1, 0], [1, 36]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "SWrul1uU", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"overview.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/overview/index.hbs" } });
 });
 define("affinity-engine-web/templates/overview/installation", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/overview/installation.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "Xwe1REG0", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/overview/installation.hbs" } });
 });
 define("affinity-engine-web/templates/overview/installation/affinity-engine", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/overview/installation/affinity-engine.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "overview.installation.affinity-engine.1"], ["loc", [null, [1, 0], [1, 59]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "DP9krYv3", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"overview.installation.affinity-engine.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/overview/installation/affinity-engine.hbs" } });
 });
 define("affinity-engine-web/templates/overview/installation/ember", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/overview/installation/ember.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "overview.installation.ember.1"], ["loc", [null, [1, 0], [1, 49]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "SyPCqfcd", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"overview.installation.ember.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/overview/installation/ember.hbs" } });
 });
 define("affinity-engine-web/templates/overview/installation/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/overview/installation/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "overview.installation.index.1"], ["loc", [null, [1, 0], [1, 49]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "45wI3HzS", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"overview.installation.index.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/overview/installation/index.hbs" } });
 });
 define("affinity-engine-web/templates/overview/installation/quickstarts", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/overview/installation/quickstarts.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "overview.installation.quickstarts.1"], ["loc", [null, [1, 0], [1, 55]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "SE2AfEqj", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"overview.installation.quickstarts.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/overview/installation/quickstarts.hbs" } });
 });
 define("affinity-engine-web/templates/overview/installation/tooling", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/overview/installation/tooling.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "overview.installation.tooling.1"], ["loc", [null, [1, 0], [1, 51]]], 0, 0], ["inline", "section-navigator", [], ["level", 2], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "f1VyPK26", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"overview.installation.tooling.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[2]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/overview/installation/tooling.hbs" } });
 });
 define("affinity-engine-web/templates/overview/plugins", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/overview/plugins.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "overview.plugins.1"], ["loc", [null, [1, 0], [1, 38]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "o3Ld9HkL", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"overview.plugins.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/overview/plugins.hbs" } });
 });
 define("affinity-engine-web/templates/plugins", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/plugins.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "NbmSI5Tl", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[0]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/plugins.hbs" } });
 });
 define("affinity-engine-web/templates/welcome", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/welcome.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["content", "liquid-outlet", ["loc", [null, [1, 0], [1, 17]]], 0, 0, 0, 0], ["inline", "section-navigator", [], ["level", 0], ["loc", [null, [3, 0], [3, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "JeS4yNb9", "block": "{\"statements\":[[\"append\",[\"unknown\",[\"liquid-outlet\"]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[0]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/welcome.hbs" } });
 });
 define("affinity-engine-web/templates/welcome/acknowledgements", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/welcome/acknowledgements.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "welcome.acknowledgements.1"], ["loc", [null, [1, 0], [1, 46]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "yO43PcQ/", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"welcome.acknowledgements.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/welcome/acknowledgements.hbs" } });
 });
 define("affinity-engine-web/templates/welcome/how-to-use-this-documentation", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/welcome/how-to-use-this-documentation.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(2);
-        morphs[0] = dom.createUnsafeMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "m-intl", [], ["path", "welcome.how-to-use-this-documentation.1"], ["loc", [null, [1, 0], [1, 59]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [5, 0], [5, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "xa+fQaRx", "block": "{\"statements\":[[\"append\",[\"helper\",[\"m-intl\"],null,[[\"path\"],[\"welcome.how-to-use-this-documentation.1\"]]],true],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/welcome/how-to-use-this-documentation.hbs" } });
 });
 define("affinity-engine-web/templates/welcome/index", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    return {
-      meta: {
-        "revision": "Ember@2.7.3",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 12,
-            "column": 0
-          }
-        },
-        "moduleName": "affinity-engine-web/templates/welcome/index.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("hr");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(3);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
-        morphs[2] = dom.createMorphAt(fragment, 6, 6, contextualElement);
-        dom.insertBoundary(fragment, 0);
-        return morphs;
-      },
-      statements: [["inline", "engine-container", [], ["scene", "index/welcome"], ["loc", [null, [1, 0], [1, 42]]], 0, 0], ["inline", "ember-chimp", [], ["formAction", "//zaffinityengine.us14.list-manage.com/subscribe/post?u=e829149c8295cbea476288bdc&amp;id=e51b574373", "label", "Join our mailing list:", "placeholder", "Email Address"], ["loc", [null, [3, 0], [7, 2]]], 0, 0], ["inline", "section-navigator", [], ["level", 1], ["loc", [null, [11, 0], [11, 29]]], 0, 0]],
-      locals: [],
-      templates: []
-    };
-  })());
+  exports["default"] = Ember.HTMLBars.template({ "id": "DN1tE31I", "block": "{\"statements\":[[\"append\",[\"helper\",[\"engine-container\"],null,[[\"scene\"],[\"index/welcome\"]]],false],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"ember-chimp\"],null,[[\"formAction\",\"label\",\"placeholder\"],[\"//zaffinityengine.us14.list-manage.com/subscribe/post?u=e829149c8295cbea476288bdc&amp;id=e51b574373\",\"Join our mailing list:\",\"Email Address\"]]],false],[\"text\",\"\\n\\n\"],[\"open-element\",\"hr\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"helper\",[\"section-navigator\"],null,[[\"level\"],[1]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "affinity-engine-web/templates/welcome/index.hbs" } });
 });
 define('affinity-engine-web/transitions', ['exports'], function (exports) {
   exports['default'] = function () {
@@ -9316,7 +4741,7 @@ define('affinity-engine-web/transitions/wait', ['exports', 'liquid-fire/transiti
   });
 });
 define("affinity-engine-web/translations/en-us", ["exports"], function (exports) {
-  exports["default"] = { "affinity-engine": { "plugins": { "data-manager": { "autosave": "autosave" } }, "translator-ember-intl": { "dummy": { "html": "I <em>am</em> html", "interpolated": "{name} is interpolated", "string": "I am a string" } } }, "application": { "common": { "affinityEngine": "Affinity Engine", "slogan": "Make games you'll love" }, "routes": { "acknowledgements": "Acknowledgements", "affinityEngine": "Affinity Engine", "affinityEngineInstallation": "Affinity Engine", "arguments": "Arguments", "backdrop": "backdrop", "backdrops": "backdrops", "basicRouting": "Basic Routing", "blockParams": "Block Params", "character": "character", "characters": "characters", "components": "Components", "configuration": "Configuration", "configurationTiers": "Configuration Tiers", "curtain": "Curtain", "data": "Data", "defaults": "Defaults", "defining": "Defining", "directions": "Directions", "emberSetup": "Ember Setup", "engine": "Engine", "fixtures": "Fixtures", "howToUseThisDocumentation": "How to Use This Documentation", "image": "image", "images": "images", "installation": "Installation", "keyframes": "keyframes", "layer": "layer", "menu": "menu", "menuBar": "Menu Bar", "overview": "Overview", "pause": "pause", "plugins": "Plugins", "quickstarts": "Bundles and Quickstarts", "random": "random", "scene": "scene", "scenes": "Scenes", "sound": "sound", "stage": "Stage", "text": "text", "toolingSetup": "Tooling Setup", "usage": "Usage", "welcome": "Welcome" } }, "engines": { "index": { "diyBrowser": "And it's good at what it does. [[pause 500]] [[expression 'smiling']] Its games are highly <strong>portable,</strong> [[pause 250]] meaning that people will be able to play them directly in a browser, [[pause 250]] even on phones and tablets. [[expression 'neutral']]", "diyBye": "[[expression 'smiling']] And be sure to sign up for the mailing list! We'll let you know as soon as things are ready.", "diyCheckIn": "[[expression 'neutral']] Feel free to keep checking in on us, though!", "diyDocumentation": "The engine itself is nearly ready for <strong>beta,</strong> [[pause 250]] but there's [[pause 250]] [[expression 'embarrassed']] [[pause 750]] still a lot of documentation to write.", "diyEasyScripts": "[[expression 'smiling']] We also pride ourselves on making an engine that's enjoyable to work with. [[pause 500]] Once you have it installed, [[pause 250]] writing games is a lot like writing screenplays.", "diyIntro": "[[expression 'smiling']] And I'm Diy.", "diyKickstarter": "If you sign up, [[pause 500]] [[expression 'smiling']] we'll also let you know when we launch our Kickstarter. It'll fund a whole cast of characters and background images, [[pause 500]] [[expression 'excited']] all by <a href='http://daaakota.deviantart.com/' target='_blank'>Dakota Bardy</a> (whose art you should definitely checkout). [[pause 750]] [[expression 'smiling']] All the art will be published under a <strong>Creative</strong> <strong>Commons</strong> <strong>licence</strong> so that you can use it to make your <strong>own</strong> <strong>games!</strong>", "diyReadMore": "[[expression 'smiling']] Until then, [[pause 500]] feel free to read more about the engine.", "emberAffinityIntro": "[[expression 'proud']] And this is the Affinity Engine. [[pause 1000]] [[expression 'obviously']] A game engine, [[pause 500]] in case that isn't obvious.", "emberBye": "[[expression 'smiling']] So come back! [[pause 500]] Open source projects like this need community to thrive.", "emberDocumentation": "We <em>are</em> working hard on it, [[pause 250]] but we need a little more time to document its [[expression 'proud']] [[pause 250]] (pretty big) [[pause 250]] [[expression 'neutral']] feature-set.", "emberIntro": "[[expression 'smiling']] Hi! [[pause 750]] [[expression 'neutral']] My name's Ember.", "emberKickstarter": "[[expression 'smiling']] And the Kickstarter will also fund [[expression 'neutral']] [[cps *0.7]] <strong>important</strong> <strong>accessibility</strong> <strong>research.</strong>", "emberMailingList": "[[expression 'obviously']] Or [[pause 500]] just sign up for our <strong>mailing</strong> <strong>list.</strong> [[pause 750]] [[expression 'smiling']] [[pause 250]] We'll let you know when the engine is ready.", "emberModular": "[[expression 'smiling']] And the engine is <strong>modular.</strong> [[pause 750]] We may look like we're in a visual novel right now, [[pause 250]] but you can pick-and-choose modules to make many kinds of [[expression 'proud']] games—games you'll <strong>love.</strong>", "emberOpensource": "[[expression 'proud']] It's something really special: [[pause 250]] [[expression 'smiling']] lovingly crafted code, made [[cps *0.7]] entirely <strong>free</strong> and <strong>open-source.</strong>" } } };
+  exports["default"] = { "affinity-engine": { "menu-bar": { "buttons": { "load": { "header": "Load Menu" }, "reset": { "header": "Restart your game? All unsaved progress will be lost.", "ok": "Okay" }, "rewind": { "header": "Scene Menu" }, "save": { "header": "Save Menu", "new": "New Save" } } }, "plugins": { "data-manager": { "autosave": "autosave" } }, "translator-ember-intl": { "dummy": { "html": "I <em>am</em> html", "interpolated": "{name} is interpolated", "string": "I am a string" } } }, "application": { "common": { "affinityEngine": "Affinity Engine", "slogan": "Make games you'll love" }, "routes": { "acknowledgements": "Acknowledgements", "affinityEngine": "Affinity Engine", "affinityEngineInstallation": "Affinity Engine", "arguments": "Arguments", "backdrop": "backdrop", "backdrops": "backdrops", "basicRouting": "Basic Routing", "blockParams": "Block Params", "character": "character", "characters": "characters", "components": "Components", "configuration": "Configuration", "configurationTiers": "Configuration Tiers", "curtain": "Curtain", "data": "Data", "defaults": "Defaults", "defining": "Defining", "directions": "Directions", "emberSetup": "Ember Setup", "engine": "Engine", "fixtures": "Fixtures", "howToUseThisDocumentation": "How to Use This Documentation", "image": "image", "images": "images", "installation": "Installation", "keyframes": "keyframes", "layer": "layer", "menu": "menu", "menuBar": "Menu Bar", "overview": "Overview", "pause": "pause", "plugins": "Plugins", "quickstarts": "Bundles and Quickstarts", "random": "random", "scene": "scene", "scenes": "Scenes", "sound": "sound", "stage": "Stage", "text": "text", "toolingSetup": "Tooling Setup", "usage": "Usage", "welcome": "Welcome" } }, "engines": { "index": { "diyBrowser": "And it's good at what it does. [[pause 500]] [[expression 'smiling']] Its games are highly <strong>portable,</strong> [[pause 250]] meaning that people will be able to play them directly in a browser, [[pause 250]] even on phones and tablets. [[expression 'neutral']]", "diyBye": "[[expression 'smiling']] And be sure to sign up for the mailing list! We'll let you know as soon as things are ready.", "diyCheckIn": "[[expression 'neutral']] Feel free to keep checking in on us, though!", "diyDocumentation": "The engine itself is nearly ready for <strong>beta,</strong> [[pause 250]] but there's [[pause 250]] [[expression 'embarrassed']] [[pause 750]] still a lot of documentation to write.", "diyEasyScripts": "[[expression 'smiling']] We also pride ourselves on making an engine that's enjoyable to work with. [[pause 500]] Once you have it installed, [[pause 250]] writing games is a lot like writing screenplays.", "diyIntro": "[[expression 'smiling']] And I'm Diy.", "diyKickstarter": "If you sign up, [[pause 500]] [[expression 'smiling']] we'll also let you know when we launch our Kickstarter. It'll fund a whole cast of characters and background images, [[pause 500]] [[expression 'excited']] all by <a href='http://daaakota.deviantart.com/' target='_blank'>Dakota Bardy</a> (whose art you should definitely checkout). [[pause 750]] [[expression 'smiling']] All the art will be published under a <strong>Creative</strong> <strong>Commons</strong> <strong>licence</strong> so that you can use it to make your <strong>own</strong> <strong>games!</strong>", "diyReadMore": "[[expression 'smiling']] Until then, [[pause 500]] feel free to read more about the engine.", "emberAffinityIntro": "[[expression 'proud']] And this is the Affinity Engine. [[pause 1000]] [[expression 'obviously']] A game engine, [[pause 500]] in case that isn't obvious.", "emberBye": "[[expression 'smiling']] So come back! [[pause 500]] Open source projects like this need community to thrive.", "emberDocumentation": "We <em>are</em> working hard on it, [[pause 250]] but we need a little more time to document its [[expression 'proud']] [[pause 250]] (pretty big) [[pause 250]] [[expression 'neutral']] feature-set.", "emberIntro": "[[expression 'smiling']] Hi! [[pause 750]] [[expression 'neutral']] My name's Ember.", "emberKickstarter": "[[expression 'smiling']] And the Kickstarter will also fund [[expression 'neutral']] [[cps *0.7]] <strong>important</strong> <strong>accessibility</strong> <strong>research.</strong>", "emberMailingList": "[[expression 'obviously']] Or [[pause 500]] just sign up for our <strong>mailing</strong> <strong>list.</strong> [[pause 750]] [[expression 'smiling']] [[pause 250]] We'll let you know when the engine is ready.", "emberModular": "[[expression 'smiling']] And the engine is <strong>modular.</strong> [[pause 750]] We may look like we're in a visual novel right now, [[pause 250]] but you can pick-and-choose modules to make many kinds of [[expression 'proud']] games—games you'll <strong>love.</strong>", "emberOpensource": "[[expression 'proud']] It's something really special: [[pause 250]] [[expression 'smiling']] lovingly crafted code, made [[cps *0.7]] entirely <strong>free</strong> and <strong>open-source.</strong>" } } };
 });
 define('affinity-engine-web/utils/get-cmd-key', ['exports', 'ember-keyboard/utils/get-cmd-key'], function (exports, _emberKeyboardUtilsGetCmdKey) {
   Object.defineProperty(exports, 'default', {
@@ -9433,10 +4858,14 @@ define('affinity-engine-web/config/environment', ['ember'], function(Ember) {
 
 try {
   var metaName = prefix + '/config/environment';
-  var rawConfig = Ember['default'].$('meta[name="' + metaName + '"]').attr('content');
+  var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
   var config = JSON.parse(unescape(rawConfig));
 
-  return { 'default': config };
+  var exports = { 'default': config };
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+  return exports;
 }
 catch(err) {
   throw new Error('Could not read config from meta tag with name "' + metaName + '".');
@@ -9451,7 +4880,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+60f6a906"});
+  require("affinity-engine-web/app")["default"].create({"name":"affinity-engine-web","version":"0.0.0+78111cc9"});
 }
 
 /* jshint ignore:end */
