@@ -37,14 +37,6 @@
       transform: translateX(-50%);
     }
   }
-
-  .lxl-word {
-    perspective: 100px;
-  }
-
-  .lxl-letter {
-    transform: perspective(500px);
-  }
 }
 
 @include breakpoint(medium) {

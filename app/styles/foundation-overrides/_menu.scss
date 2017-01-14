@@ -2,13 +2,25 @@
 
   a {
     border-radius: 25px;
+
+    &.active {
+      margin-top: 2px;
+      color: $white;
+      background: map-get($foundation-palette, primary);
+
+      &:hover {
+        background-color: $anchor-color-hover;
+      }
+    }
   }
 
-  .active > a {
-    margin-top: 2px;
-
-    &:hover {
-      background-color: $anchor-color-hover;
+  .arrow-seperated {
+    a {
+      color: map-get($foundation-palette, primary);
+    }
+    a, a:hover {
+      background: transparent;
+      border: 0;
     }
   }
 

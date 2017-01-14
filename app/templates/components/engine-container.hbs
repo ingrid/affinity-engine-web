@@ -1,7 +1,7 @@
 {{#affinity-engine engineId=scene config=config fixtures=fixtures isFocused=isFocused as |engine|}}
   {{#if engine.isLoaded}}
     {{affinity-engine-stage engineId=engine.engineId initialScene=scene}}
-    {{yield engine=engine}}
+    {{yield}}
   {{else}}
     {{#affinity-engine-curtain engineId=engine.engineId filesToPreload=(hash keyframes="src") completePreload=engine.completePreload as |curtain|}}
       {{ember-progress-bar

@@ -44,7 +44,7 @@ export default Component.extend({
     get() {
       const parentRoute = get(this, 'parentRoute');
 
-      return get(get(this, 'routeSequencer.routes'), isPresent(parentRoute) ? `${parentRoute.split('.').join('.routes.')}.routes` : '');
+      return isPresent(parentRoute) ? get(get(this, 'routeSequencer.routes'), `${parentRoute.split('.').join('.routes.')}.routes`) : '';
     }
   }),
 

@@ -55,10 +55,10 @@ export default Scene.extend({
     yield script.pause(250);
     yield diy.state({ eyes: 'neutral', expression: 'smiling' })._.text("In all seriousness, I hope you try. [[pause 500]] [[expression neutral]] It's what Ember and I are here for. [[pause 500]] [[expression excited]] We want to help you bring something beautiful into this world. &#x02764; &#x02764; &#x02764;");
     diy.state({ eyes: 'right', expression: 'neutral' });
-    yield ember.expression('smiling')._.text("And on that cherry note, [[pause 250]] [[expression neutral]] let's let them get to it.");
+    yield ember.expression('smiling')._.text("And on that cheery note, [[pause 250]] [[expression neutral]] let's let them get to it.");
     ember.delay(100).state({ eyes: 'neutral', expression: 'neutral' });
     yield diy.state({ eyes: 'neutral', expression: 'smiling' })._.text("Oh, right! [[pause 500]] Hope we get to talk again soon!");
-    yield ember.expression('smiling')._.text("You'll find our little vingettes peppered throughout the documentation. [[pause 500]] Be seeing you around!");
+    yield ember.expression('smiling')._.text("Be seeing you around!");
 
     ember.delay(50).state({ eyes: 'left', expression: 'proud' });
 

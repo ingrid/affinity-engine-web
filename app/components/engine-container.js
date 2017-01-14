@@ -21,7 +21,8 @@ export default Component.extend({
               effect: {
                 translateX: [0, '10px'],
                 translateY: [0, '-3px'],
-                translateZ: [0, '15px']
+                translateZ: [0, '15px'],
+                opacity: [1, 1]
               },
               rate: 10
             }
