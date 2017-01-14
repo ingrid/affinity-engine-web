@@ -22,7 +22,7 @@ export default Component.extend({
                 translateX: [0, '10px'],
                 translateY: [0, '-3px'],
                 translateZ: [0, '15px'],
-                opacity: [1, 1]
+                opacity: [1, 0.9]
               },
               rate: 10
             }
