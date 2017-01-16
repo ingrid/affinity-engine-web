@@ -38,6 +38,14 @@ export default Component.extend({
       name: 'Ember',
       namePosition: 'right',
       height: 400,
+      defaultPosition: 'ember-spot',
+      positions: {
+        'ember-spot': {
+          left: '83%',
+          top: '1%',
+          translateX: '-50%'
+        }
+      },
       defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral', eyes: 'neutral' },
       layerOrder: [
         'base',
@@ -52,84 +60,80 @@ export default Component.extend({
         'brows',
         'hair'
       ],
-      layers: {
-        base: [{
-          state: { pose: 'standing' },
-          keyframe: 'ember-pose-standing'
-        }],
-        nails: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'ember-nails-red'
-        }],
-        shoes: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'ember-shoes-red-pumps'
-        }],
-        top: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'ember-top-red-tank'
-        }],
-        pants: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'ember-pants-shredded-jeans'
-        }],
-        jacket: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'ember-jacket-red-letter-jacket'
-        }],
-        nose: [{
-          state: { pose: 'standing' },
-          keyframe: 'ember-nose-neutral'
-        }],
-        mouth: [{
-          state: { pose: 'standing', expression: 'neutral' },
-          keyframe: 'ember-mouth-neutral-closed'
-        }, {
-          state: { pose: 'standing', expression: 'proud' },
-          keyframe: 'ember-mouth-smile-closed'
-        }, {
-          state: { pose: 'standing', expression: 'smiling' },
-          keyframe: 'ember-mouth-smile-open'
-        }, {
-          state: { pose: 'standing', expression: 'bemused' },
-          keyframe: 'ember-mouth-neutral-open'
-        }],
-        eyes: [{
-          state: { pose: 'standing', eyes: 'neutral' },
-          keyframe: 'ember-eyes-neutral'
-        }, {
-          state: { pose: 'standing', eyes: 'left' },
-          keyframe: 'ember-eyes-left'
-        }, {
-          state: { pose: 'standing', eyes: 'right' },
-          keyframe: 'ember-eyes-right'
-        }, {
-          state: { pose: 'standing', eyes: 'rolled' },
-          keyframe: 'ember-eyes-rolled'
-        }],
-        brows: [{
-          state: { pose: 'standing', expression: 'neutral' },
-          keyframe: 'ember-brows-neutral'
-        }, {
-          state: { pose: 'standing', expression: 'proud' },
-          keyframe: 'ember-brows-up'
-        }, {
-          state: { pose: 'standing', expression: 'smiling' },
-          keyframe: 'ember-brows-up'
-        }, {
-          state: { pose: 'standing', expression: 'bemused' },
-          keyframe: 'ember-brows-up'
-        }],
-        hair: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'ember-hair-red-black-braids'
-        }]
-      }
+      states: [{
+        key: { pose: 'standing' },
+        layers: {
+          base: 'ember-pose-standing',
+          nose: 'ember-nose-neutral'
+        }
+      }, {
+        key: { pose: 'standing', outfit: 'trendy' },
+        layers: {
+          nails: 'ember-nails-red',
+          shoes: 'ember-shoes-red-pumps',
+          top: 'ember-top-red-tank',
+          pants: 'ember-pants-shredded-jeans',
+          jacket: 'ember-jacket-red-letter-jacket',
+          hair: 'ember-hair-red-black-braids'
+        }
+      }, {
+        key: { pose: 'standing', expression: 'neutral' },
+        layers: {
+          mouth: 'ember-mouth-neutral-closed',
+          brows: 'ember-brows-neutral'
+        }
+      }, {
+        key: { pose: 'standing', expression: 'proud' },
+        layers: {
+          mouth: 'ember-mouth-smile-closed',
+          brows: 'ember-brows-up'
+        }
+      }, {
+        key: { pose: 'standing', expression: 'smiling' },
+        layers: {
+          mouth: 'ember-mouth-smile-open',
+          brows: 'ember-brows-up'
+        }
+      }, {
+        key: { pose: 'standing', expression: 'bemused' },
+        layers: {
+          mouth: 'ember-mouth-neutral-open',
+          brows: 'ember-brows-up'
+        }
+      }, {
+        key: { pose: 'standing', eyes: 'neutral' },
+        layers: {
+          eyes: 'ember-eyes-neutral'
+        }
+      }, {
+        key: { pose: 'standing', eyes: 'left' },
+        layers: {
+          eyes: 'ember-eyes-left'
+        }
+      }, {
+        key: { pose: 'standing', eyes: 'right' },
+        layers: {
+          eyes: 'ember-eyes-right'
+        }
+      }, {
+        key: { pose: 'standing', eyes: 'rolled' },
+        layers: {
+          eyes: 'ember-eyes-rolled'
+        }
+      }]
     }, {
       id: 'diy',
       name: 'Diy',
       height: 420,
-      defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral', eyes: 'neutral' },
+      defaultPosition: 'diy-spot',
+      positions: {
+        'diy-spot': {
+          left: '32%',
+          top: '-4%',
+          translateX: '-50%'
+        }
+      },
+      defaultState: { pose: 'standing', outfit: 'trendy', expression: 'neutral', eyes: 'neutral', brows: 'neutral' },
       layerOrder: [
         'base',
         'complexion',
@@ -147,111 +151,85 @@ export default Component.extend({
         'brows',
         'hair'
       ],
-      layers: {
-        base: [{
-          state: { pose: 'standing' },
-          keyframe: 'diy-pose-standing'
-        }],
-        jewlery: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'diy-jewlery-friendship'
-        }],
-        socks: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'diy-socks-red'
-        }],
-        shoes: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'diy-shoes-brown-high-tops'
-        }],
-        bottom: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'diy-bottom-grey-pants'
-        }],
-        top: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'diy-top-aqua-shirt'
-        }],
-        vest: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'diy-vest-brown'
-        }],
-        jacket: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'diy-jacket-blue'
-        }],
-        scarf: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'diy-scarf-red'
-        }],
-        complexion: [{
-          state: { pose: 'standing', expression: 'embarrassed' },
-          keyframe: 'diy-complexion-blush'
-        }],
-        nose: [{
-          state: { pose: 'standing' },
-          keyframe: 'diy-nose-neutral'
-        }],
-        mouth: [{
-          state: { pose: 'standing', expression: 'neutral' },
-          keyframe: 'diy-mouth-neutral'
-        }, {
-          state: { pose: 'standing', expression: 'embarrassed' },
-          keyframe: 'diy-mouth-pout'
-        }, {
-          state: { pose: 'standing', expression: 'quizzical' },
-          keyframe: 'diy-mouth-neutral'
-        }, {
-          state: { pose: 'standing', expression: 'smiling' },
-          keyframe: 'diy-mouth-smile-closed'
-        }, {
-          state: { pose: 'standing', expression: 'excited' },
-          keyframe: 'diy-mouth-smile-toothy'
-        }, {
-          state: { pose: 'standing', expression: 'flirty' },
-          keyframe: 'diy-mouth-smile-toothy'
-        }],
-        eyes: [{
-          state: { pose: 'standing', eyes: 'neutral' },
-          keyframe: 'diy-eyes-neutral'
-        }, {
-          state: { pose: 'standing', eyes: 'left' },
-          keyframe: 'diy-eyes-left'
-        }, {
-          state: { pose: 'standing', eyes: 'right' },
-          keyframe: 'diy-eyes-right'
-        }, {
-          state: { pose: 'standing', eyes: 'rolled' },
-          keyframe: 'diy-eyes-rolled'
-        }],
-        brows: [{
-          state: { pose: 'standing', expression: 'neutral' },
-          keyframe: 'diy-brows-neutral'
-        }, {
-          state: { pose: 'standing', expression: 'embarrassed' },
-          keyframe: 'diy-brows-frown'
-        }, {
-          state: { pose: 'standing', expression: 'quizzical' },
-          keyframe: 'diy-brows-one-up'
-        }, {
-          state: { pose: 'standing', expression: 'smiling' },
-          keyframe: 'diy-brows-up'
-        }, {
-          state: { pose: 'standing', expression: 'excited' },
-          keyframe: 'diy-brows-up'
-        }, {
-          state: { pose: 'standing', expression: 'flirty' },
-          keyframe: 'diy-brows-one-up'
-        }],
-        hair: [{
-          state: { pose: 'standing', outfit: 'trendy' },
-          keyframe: 'diy-hair-shaggy'
-        }]
-      }
+      states: [{
+        key: { pose: 'standing' },
+        layers: {
+          base: 'diy-pose-standing',
+          nose: 'diy-nose-neutral'
+        }
+      }, {
+        key: { pose: 'standing', outfit: 'trendy' },
+        layers: {
+          jewlery: 'diy-jewlery-friendship',
+          socks: 'diy-socks-red',
+          shoes: 'diy-shoes-brown-high-tops',
+          bottom: 'diy-bottom-grey-pants',
+          top: 'diy-top-aqua-shirt',
+          vest: 'diy-vest-brown',
+          jacket: 'diy-jacket-blue',
+          scarf: 'diy-scarf-red',
+          hair: 'diy-hair-shaggy'
+        }
+      }, {
+        key: { pose: 'standing', expression: 'neutral' },
+        layers: {
+          mouth: 'diy-mouth-neutral',
+          brows: 'diy-brows-neutral'
+        }
+      }, {
+        key: { pose: 'standing', expression: 'quizzical' },
+        layers: {
+          mouth: 'diy-mouth-neutral',
+          brows: 'diy-brows-one-up'
+        }
+      }, {
+        key: { pose: 'standing', expression: 'smiling' },
+        layers: {
+          mouth: 'diy-mouth-smile-closed',
+          brows: 'diy-brows-up'
+        }
+      }, {
+        key: { pose: 'standing', expression: 'excited' },
+        layers: {
+          mouth: 'diy-mouth-smile-toothy',
+          brows: 'diy-brows-up'
+        }
+      }, {
+        key: { pose: 'standing', eyes: 'neutral' },
+        layers: {
+          eyes: 'diy-eyes-neutral'
+        }
+      }, {
+        key: { pose: 'standing', eyes: 'right' },
+        layers: {
+          eyes: 'diy-eyes-right'
+        }
+      }, {
+        key: { pose: 'standing', eyes: 'left' },
+        layers: {
+          eyes: 'diy-eyes-left'
+        }
+      }, {
+        key: { pose: 'standing', eyes: 'rolled' },
+        layers: {
+          eyes: 'diy-eyes-rolled'
+        }
+      }, {
+        key: { pose: 'standing', brows: 'up' },
+        layers: {
+          brows: 'diy-brows-up'
+        }
+      }, {
+        key: { pose: 'standing', brows: 'down' },
+        layers: {
+          brows: 'diy-brows-neutral'
+        }
+      }]
     }],
     backdrops: [{
       id: 'diy-bedroom',
-      keyframe: 'diy-bedroom'
+      keyframe: 'diy-bedroom',
+      height: 150
     }],
     keyframes: [{
       id: 'ember-pose-standing',
