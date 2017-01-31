@@ -120,6 +120,16 @@ export default Component.extend({
         layers: {
           eyes: 'ember-eyes-rolled'
         }
+      }, {
+        key: { pose: 'standing', brows: 'up' },
+        layers: {
+          brows: 'ember-brows-up'
+        }
+      }, {
+        key: { pose: 'standing', brows: 'down' },
+        layers: {
+          brows: 'ember-brows-neutral'
+        }
       }]
     }, {
       id: 'diy',
