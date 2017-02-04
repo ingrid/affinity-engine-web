@@ -4,8 +4,8 @@
     {{yield}}
   {{else}}
     {{#affinity-engine-curtain engineId=engine.engineId filesToPreload=(hash keyframes="src") completePreload=engine.completePreload as |curtain|}}
+      <div class="engine-title">{{curtain.title}}</div>
       {{ember-progress-bar
-        shape="Circle"
         progress=curtain.progress
         useDefaultStep=true
         options=progressBarOptions

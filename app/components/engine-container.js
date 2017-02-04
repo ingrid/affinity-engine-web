@@ -1,36 +1,48 @@
 import Ember from 'ember';
 
 const {
-  Component
+  Component,
+  computed,
+  assign,
+  get
 } = Ember;
+
+const { inject: { service } } = Ember;
 
 export default Component.extend({
   classNames: ['engine-container'],
 
   isFocused: true,
+  intl: service(),
 
-  config: {
-    component: {
-      stage: {
-        direction: {
-          text: {
-            classNames: {
-              structural: 'ae-bottom-block'
-            },
-            lxlTransition: {
-              effect: {
-                translateX: [0, '10px'],
-                translateY: [0, '-3px'],
-                translateZ: [0, '15px'],
-                opacity: [1, 0.9]
-              },
-              rate: 10
+  config: computed('scene', {
+    get() {
+      const intl = get(this, 'intl');
+      const title = `engines.${get(this, 'scene').replace('/', '.')}.title`;
+      return assign({ global: { title } }, {
+        component: {
+          stage: {
+            direction: {
+              text: {
+                classNames: {
+                  structural: 'ae-bottom-block'
+                },
+                lxlTransition: {
+                  effect: {
+                    translateX: [, 10],
+                    translateY: [0, -3],
+                    translateZ: [0, 15],
+                    opacity: [0.999, 1]
+                  },
+                  rate: 10
+                }
+              }
             }
           }
         }
-      }
+      })
     }
-  },
+  }),
 
   fixtures: {
     characters: [{
@@ -403,7 +415,19 @@ export default Component.extend({
   progressBarOptions: {
     color: 'rgb(250, 250, 250)',
     trailColor: 'rgba(250, 250, 250, 0.62)',
-    strokeWidth: 4,
-    trailWidth: 4 * 0.62
+    strokeWidth: 1,
+    trailWidth: 0.62,
+    text: {
+      style: {
+        position: 'absolute',
+        left: '50%',
+        bottom: '15px',
+        transform: {
+          prefix: true,
+          value: 'translateX(-50%)'
+        }
+      },
+      autoStyleContainer: false
+    }
   }
 });

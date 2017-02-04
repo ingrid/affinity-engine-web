@@ -1,5 +1,7 @@
 engines:
-  index:
+  welcome:
+    index:
+      title: "Welcome"
     emberIntro: "[[expression 'smiling']] Hi! [[pause 750]] [[expression 'neutral']] My name's Ember."
     diyIntro: "[[expression 'smiling']] And I'm Diy."
     emberAffinityIntro: "[[expression 'proud']] And this is the Affinity Engine. [[pause 1000]] [[expression 'obviously']] A game engine, [[pause 500]] in case that isn't obvious."
