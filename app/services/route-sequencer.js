@@ -27,6 +27,8 @@ export default Service.extend({
               name: t('howToUseThisDocumentation')
             }, acknowledgements: {
               name: t('acknowledgements')
+            }, 'road-to-release': {
+              name: t('roadToRelease')
             }
           }
         }, overview: {

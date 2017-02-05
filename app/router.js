@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('welcome', function() {
     this.route('how-to-use-this-documentation');
     this.route('acknowledgements');
+    this.route('road-to-release');
   });
   this.route('overview', function() {
     this.route('installation', function() {

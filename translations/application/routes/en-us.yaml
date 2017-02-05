@@ -39,6 +39,7 @@ application:
     reset: "Reset"
     resize: "Resize"
     rewind: "Rewind"
+    roadToRelease: "Road to 1.0"
     save: "Save"
     scene: "scene"
     scenes: "Scenes"
