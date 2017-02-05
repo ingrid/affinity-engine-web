@@ -145,6 +145,23 @@ export default Service.extend({
               routes: {
                 index: {
                   name: t('overview')
+                }, buttons: {
+                  name: t('buttons'),
+                  routes: {
+                    index: {
+                      name: t('overview')
+                    }, load: {
+                      name: t('load')
+                    }, reset: {
+                      name: t('reset')
+                    }, resize: {
+                      name: t('resize')
+                    }, rewind: {
+                      name: t('rewind')
+                    }, save: {
+                      name: t('save')
+                    }
+                  }
                 }
               }
             }, curtain: {

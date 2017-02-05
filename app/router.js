@@ -54,7 +54,15 @@ Router.map(function() {
       });
       this.route('usage');
     });
-    this.route('menu-bar', function() {});
+    this.route('menu-bar', function() {
+      this.route('buttons', function() {
+        this.route('load');
+        this.route('reset');
+        this.route('resize');
+        this.route('rewind');
+        this.route('save');
+      });
+    });
     this.route('curtain', function() {});
   });
   this.route('plugins');
