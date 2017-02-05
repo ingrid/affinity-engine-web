@@ -1,1 +1,1 @@
-Manually close the text box.
+Manually close the directable.
