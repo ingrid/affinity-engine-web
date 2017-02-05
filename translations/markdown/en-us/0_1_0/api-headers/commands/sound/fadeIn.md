@@ -1,0 +1,1 @@
+###### `fadeIn(volume, duration)`

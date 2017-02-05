@@ -1,0 +1,1 @@
+###### `fadeTo(volume, duration, callback)`
