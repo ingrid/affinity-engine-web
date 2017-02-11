@@ -67,7 +67,13 @@ Router.map(function() {
     });
     this.route('curtain', function() {});
   });
-  this.route('plugins');
+  this.route('plugins', function() {
+    this.route('animator-velocity');
+    this.route('data-manager-rewindable-lokijs');
+    this.route('preloader-createjs');
+    this.route('sound-manager-createjs');
+    this.route('translator-ember-intl');
+  });
 });
 
 export default Router;

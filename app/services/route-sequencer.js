@@ -173,7 +173,22 @@ export default Service.extend({
             }
           }
         }, plugins: {
-          name: t('plugins')
+          name: t('plugins'),
+          routes: {
+            index: {
+              name: t('overview')
+            }, 'animator-velocity': {
+              name: t('animatorVelocity')
+            }, 'data-manager-rewindable-lokijs': {
+              name: t('dataManagerRewindableLokijs')
+            }, 'preloader-createjs': {
+              name: t('preloaderCreatejs')
+            }, 'sound-manager-createjs': {
+              name: t('soundManagerCreatejs')
+            }, 'translator-ember-intl': {
+              name: t('translatorEmberIntl')
+            }
+          }
         }
       };
     }
