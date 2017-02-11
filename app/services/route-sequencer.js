@@ -167,12 +167,7 @@ export default Service.extend({
                 }
               }
             }, curtain: {
-              name: t('curtain'),
-              routes: {
-                index: {
-                  name: t('overview')
-                }
-              }
+              name: t('curtain')
             }
           }
         }, plugins: {
