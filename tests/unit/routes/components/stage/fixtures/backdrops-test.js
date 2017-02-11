@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:components/stage/fixtures/backdrops', 'Unit | Route | components/stage/fixtures/backdrops', {
+moduleFor('route:stage/fixtures/backdrops', 'Unit | Route | stage/fixtures/backdrops', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

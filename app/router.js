@@ -35,26 +35,26 @@ Router.map(function() {
       this.route('backdrops');
     });
   });
-  this.route('components', function() {
-    this.route('stage', function() {
-      this.route('scenes', function() {
-        this.route('data');
-      });
-      this.route('directions', function() {
-        this.route('text');
-        this.route('menu');
-        this.route('backdrop');
-        this.route('character');
-        this.route('data');
-        this.route('image');
-        this.route('pause');
-        this.route('random');
-        this.route('sound');
-        this.route('scene');
-        this.route('layer');
-      });
-      this.route('usage');
+  this.route('stage', function() {
+    this.route('scenes', function() {
+      this.route('data');
     });
+    this.route('directions', function() {
+      this.route('text');
+      this.route('menu');
+      this.route('backdrop');
+      this.route('character');
+      this.route('data');
+      this.route('image');
+      this.route('pause');
+      this.route('random');
+      this.route('sound');
+      this.route('scene');
+      this.route('layer');
+    });
+    this.route('usage');
+  });
+  this.route('components', function() {
     this.route('menu-bar', function() {
       this.route('buttons', function() {
         this.route('load');

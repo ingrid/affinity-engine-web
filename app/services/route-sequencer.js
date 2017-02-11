@@ -92,56 +92,56 @@ export default Service.extend({
               }
             }
           }
+        }, stage: {
+          name: t('stage'),
+          routes: {
+            index: {
+              name: t('overview')
+            }, usage: {
+              name: t('usage')
+            }, scenes: {
+              name: t('scenes'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, data: {
+                  name: t('data')
+                }
+              }
+            }, directions: {
+              name: t('directions'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, backdrop: {
+                  name: t('backdrop')
+                }, character: {
+                  name: t('character')
+                }, image: {
+                  name: t('image')
+                }, layer: {
+                  name: t('layer')
+                }, menu: {
+                  name: t('menu')
+                }, pause: {
+                  name: t('pause')
+                }, random: {
+                  name: t('random')
+                }, scene: {
+                  name: t('scene')
+                }, sound: {
+                  name: t('sound')
+                }, text: {
+                  name: t('text')
+                }
+              }
+            }
+          }
         }, components: {
           name: t('components'),
           routes: {
             index: {
               name: t('overview')
-            }, stage: {
-              name: t('stage'),
-              routes: {
-                index: {
-                  name: t('overview')
-                }, usage: {
-                  name: t('usage')
-                }, scenes: {
-                  name: t('scenes'),
-                  routes: {
-                    index: {
-                      name: t('overview')
-                    }, data: {
-                      name: t('data')
-                    }
-                  }
-                }, directions: {
-                  name: t('directions'),
-                  routes: {
-                    index: {
-                      name: t('overview')
-                    }, backdrop: {
-                      name: t('backdrop')
-                    }, character: {
-                      name: t('character')
-                    }, image: {
-                      name: t('image')
-                    }, layer: {
-                      name: t('layer')
-                    }, menu: {
-                      name: t('menu')
-                    }, pause: {
-                      name: t('pause')
-                    }, random: {
-                      name: t('random')
-                    }, scene: {
-                      name: t('scene')
-                    }, sound: {
-                      name: t('sound')
-                    }, text: {
-                      name: t('text')
-                    }
-                  }
-                }
-              }
             }, 'menu-bar': {
               name: t('menuBar'),
               routes: {
