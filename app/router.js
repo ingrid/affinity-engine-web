@@ -17,6 +17,7 @@ Router.map(function() {
       this.route('tooling');
       this.route('ember');
       this.route('quickstarts');
+      this.route('es6-support');
     });
     this.route('components');
     this.route('plugins');

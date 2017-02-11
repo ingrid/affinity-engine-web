@@ -47,6 +47,8 @@ export default Service.extend({
                   name: t('emberSetup')
                 }, 'quickstarts' : {
                   name: t('quickstarts')
+                }, 'es6-support' : {
+                  name: t('es6Support')
                 }
               }
             }, components: {

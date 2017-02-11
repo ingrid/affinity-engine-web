@@ -21,6 +21,7 @@ application:
     directions: "Directions"
     emberSetup: "Ember Setup"
     engine: "Engine"
+    es6Support: "ES6 Support"
     fixtures: "Fixtures"
     howToUseThisDocumentation: "How to Use This Documentation"
     image: "image"
