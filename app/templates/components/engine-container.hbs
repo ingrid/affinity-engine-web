@@ -10,7 +10,7 @@
       {{affinity-engine-stage engineId=engine.engineId initialScene=scene}}
       {{yield}}
     {{else}}
-      {{#affinity-engine-curtain engineId=engine.engineId filesToPreload=(hash keyframes="src") completePreload=engine.completePreload as |curtain|}}
+      {{#affinity-engine-curtain engineId=engine.engineId filesToPreload=(hash keyframes="src") as |curtain|}}
         <div class="engine-title">{{curtain.title}}</div>
         {{ember-progress-bar
           progress=curtain.progress
