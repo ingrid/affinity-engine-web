@@ -5,3 +5,9 @@
 .font-size-80 {
   font-size: 80%;
 }
+
+@include breakpoint(large only) {
+  .font-size-80-for-large-only {
+    font-size: 80%;
+  }
+}

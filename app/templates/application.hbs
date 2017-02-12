@@ -10,10 +10,13 @@
       {{/link-to}}
       {{expanding-sidebar
         shouldNest=false
-        classNames="columns large-8 medium-10 small-12 vertical medium-horizontal medium-padding-left-0"
+        classNames="columns xlarge-8 large-7 medium-10 small-12 font-size-80-for-large-only vertical medium-horizontal medium-padding-left-0"
       }}
-      <div class="columns large-1 medium-2 small-12 small-padding-0">
-        {{doc-version-selector classNames="float-right"}}
+      <div class="columns xlarge-1 medium-2 small-12 small-padding-0 topbar-right">
+        {{doc-version-selector}}
+        <a href="https://github.com/affinity-engine" target="_blank">
+          <img src="/github-logo.png">
+        </a>
       </div>
     </div>
   {{/responsive-navigation-dropdown}}
