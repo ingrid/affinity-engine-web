@@ -59,8 +59,8 @@ export default Component.extend({
       defaultPosition: 'ember-spot',
       positions: {
         'ember-spot': {
-          left: '83%',
-          top: '1%',
+          left: ['83%', '84%'],
+          top: ['1%', '2%'],
           translateX: '-50%'
         }
       },
@@ -156,8 +156,8 @@ export default Component.extend({
       defaultPosition: 'diy-spot',
       positions: {
         'diy-spot': {
-          left: '32%',
-          top: '-4%',
+          left: ['32%', '31%'],
+          top: ['-4%', '-3%'],
           translateX: '-50%'
         }
       },
