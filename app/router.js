@@ -12,15 +12,16 @@ Router.map(function() {
     this.route('acknowledgements');
     this.route('road-to-release');
   });
-  this.route('overview', function() {
+  this.route('tutorial', function() {
     this.route('installation', function() {
       this.route('tooling');
       this.route('ember');
       this.route('quickstarts');
       this.route('es6-support');
     });
-    this.route('components');
-    this.route('plugins');
+    this.route('scripts', function() {
+      this.route('your-first-direction');
+    });
   });
   this.route('engine', function() {
     this.route('usage');
@@ -74,6 +75,7 @@ Router.map(function() {
     this.route('sound-manager-createjs');
     this.route('translator-ember-intl');
   });
+  this.route('tutorial');
 });
 
 export default Router;

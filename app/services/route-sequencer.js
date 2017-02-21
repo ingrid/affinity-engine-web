@@ -31,8 +31,8 @@ export default Service.extend({
               name: t('roadToRelease')
             }
           }
-        }, overview: {
-          name: t('overview'),
+        }, tutorial: {
+          name: t('tutorial'),
           routes: {
             index: {
               name: t('overview')
@@ -51,10 +51,15 @@ export default Service.extend({
                   name: t('es6Support')
                 }
               }
-            }, components: {
-              name: t('components')
-            }, plugins: {
-              name: t('plugins')
+            }, scripts: {
+              name: t('scripts'),
+              routes: {
+                index: {
+                  name: t('quickstart')
+                }, 'your-first-direction': {
+                  name: t('yourFirstDirection')
+                }
+              }
             }
           }
         }, engine: {
