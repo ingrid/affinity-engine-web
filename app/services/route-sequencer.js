@@ -58,6 +58,8 @@ export default Service.extend({
                   name: t('quickstart')
                 }, 'your-first-direction': {
                   name: t('yourFirstDirection')
+                }, concurrency: {
+                  name: t('concurrency')
                 }
               }
             }

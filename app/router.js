@@ -21,6 +21,7 @@ Router.map(function() {
     });
     this.route('scripts', function() {
       this.route('your-first-direction');
+      this.route('concurrency');
     });
   });
   this.route('engine', function() {
@@ -75,7 +76,6 @@ Router.map(function() {
     this.route('sound-manager-createjs');
     this.route('translator-ember-intl');
   });
-  this.route('tutorial');
 });
 
 export default Router;
