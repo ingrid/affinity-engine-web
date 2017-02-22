@@ -22,6 +22,7 @@ Router.map(function() {
     this.route('scripts', function() {
       this.route('your-first-direction');
       this.route('concurrency');
+      this.route('commands');
     });
   });
   this.route('engine', function() {

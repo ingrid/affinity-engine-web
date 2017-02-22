@@ -12,6 +12,7 @@ application:
     buttons: "Buttons"
     character: "character"
     characters: "characters"
+    commands: "Commands"
     components: "Components"
     concepts: "Concepts"
     concurrency: "Concurrency"

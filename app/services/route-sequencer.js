@@ -60,6 +60,8 @@ export default Service.extend({
                   name: t('yourFirstDirection')
                 }, concurrency: {
                   name: t('concurrency')
+                }, commands: {
+                  name: t('commands')
                 }
               }
             }
