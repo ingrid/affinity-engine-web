@@ -3,7 +3,7 @@ import { task } from 'ember-concurrency';
 
 export default Scene.extend({
   start: task(function * (script) {
-    script.text('This is my first direction!');
-    script.text('And now that that is out of the way, let us proceed with our second direction.');
+    script.text('How would you like some quinoa salad?');
+    script.text('I would love some!');
   })
 });
