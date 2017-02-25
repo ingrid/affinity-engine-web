@@ -1,0 +1,1 @@
+###### `cb(name, callback)`
