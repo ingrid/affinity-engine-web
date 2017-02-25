@@ -8,5 +8,13 @@ script.text('<a data-cb="myClickCb">Click here</a> or wait 3, 2, 1 [[cb someOthe
 });
 ```
 
+If you need to use `this`, be sure to `bind` it:
+
+```js
+script.text('<a data-cb="myClickCb">Click here</a>!').cb('myClickCb', () => {
+  this.get('someOtherTask').perform(script);
+}.bind(this));
+```
+
 * `name` (**String**): the name of the callback.
 * `callback` (**Function**): the callback to execute.
