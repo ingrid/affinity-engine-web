@@ -64,6 +64,8 @@ export default Service.extend({
                   name: t('commands')
                 }
               }
+            }, fixtures: {
+              name: t('fixtures')
             }
           }
         }, engine: {

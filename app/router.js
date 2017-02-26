@@ -24,6 +24,8 @@ Router.map(function() {
       this.route('concurrency');
       this.route('commands');
     });
+    this.route('fixtures', function() {});
+    this.route('scenes', function() {});
   });
   this.route('engine', function() {
     this.route('usage');

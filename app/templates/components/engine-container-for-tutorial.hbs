@@ -1,4 +1,4 @@
-{{#affinity-engine engineId=scene config=(hash) fixtures=(hash keyframes=(array (hash src="affinity-engine/characters/ember/hair/red-black-braids.png")) sounds=(array)) isFocused=isFocused as |engine|}}
+{{#affinity-engine engineId=scene config=config fixtures=fixtures isFocused=isFocused as |engine|}}
   {{#liquid-if (and engine.isLoaded sequencerComplete) class="liquid-engine"}}
     {{affinity-engine-stage engineId=engine.engineId initialScene=scene}}
 

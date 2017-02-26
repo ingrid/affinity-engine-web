@@ -3,7 +3,7 @@ import { task } from 'ember-concurrency';
 
 export default Scene.extend({
   start: task(function * (script) {
-    script.text('How would you like some quinoa salad?');
-    script.text('I would love some!');
+    script.text("I'd like to use your eyeliner.");
+    script.text("Feel free!");
   })
 });
