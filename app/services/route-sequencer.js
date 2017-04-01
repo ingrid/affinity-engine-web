@@ -29,6 +29,8 @@ export default Service.extend({
               name: t('acknowledgements')
             }, 'road-to-release': {
               name: t('roadToRelease')
+            }, 'beta-grant': {
+              name: t('betaGrant')
             }
           }
         }, tutorial: {

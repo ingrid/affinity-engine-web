@@ -8,6 +8,7 @@
     "highlightjs": "^9.6.0",
     "PreloadJS": "0.6.2",
     "SoundJS": "0.6.2",
-    "markdown-it": "^8.1.0"
+    "markdown-it": "^8.1.0",
+    "gsap": "~1.19.0"
   }
 }

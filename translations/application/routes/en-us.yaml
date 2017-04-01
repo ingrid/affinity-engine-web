@@ -8,6 +8,7 @@ application:
     backdrop: "backdrop"
     backdrops: "backdrops"
     basicRouting: "Basic Routing"
+    betaGrant: "Beta Grant"
     blockParams: "Block Params"
     buttons: "Buttons"
     character: "character"

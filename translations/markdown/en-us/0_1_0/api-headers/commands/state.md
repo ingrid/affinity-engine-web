@@ -1,1 +1,1 @@
-###### `state(state, durationOrTransition)`
+###### `state(state, durationOrTransition, twoWayFade)`
