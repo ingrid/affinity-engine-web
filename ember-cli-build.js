@@ -9,7 +9,7 @@ module.exports = function(defaults) {
       'ember-font-awesome': {
         useScss: true
       },
-      babel: {
+      'ember-cli-babel': {
         includePolyfill: true,
         stage: 1
       }
