@@ -1,0 +1,42 @@
+{{{m-intl path="api.stage.directions.text.1"}}}
+
+{{#liquid-if (version '=' '0.1')}}
+  {{{api-doc path="commands.cb"}}}
+  {{{api-doc path="commands.classNames"}}}
+  {{{api-doc path="commands.close"}}}
+  {{{api-doc path="commands.instant"}}}
+  {{{api-doc path="commands.keyboardPriority"}}}
+  {{{api-doc path="commands.keys"}}}
+  {{{api-doc path="commands.name"}}}
+  {{{api-doc path="commands.namePosition"}}}
+  {{{api-doc path="commands.scrollable"}}}
+  {{{api-doc path="commands.static"}}}
+  {{{api-doc path="commands.transitionIn"}}}
+  {{{api-doc path="commands.transitionOut"}}}
+{{else}}
+  <hr>
+  {{{m-intl path="api.common.h5-attributes"}}}
+  {{{api-doc path="attributes.animator"}}}
+  {{{api-doc path="attributes.caption"}}}
+  {{{api-doc path="attributes.captionPosition"}}}
+  {{{api-doc path="attributes.classNames"}}}
+  {{{api-doc path="attributes.instant"}}}
+  {{{api-doc path="attributes.keyboardPriority"}}}
+  {{{api-doc path="attributes.keys"}}}
+  {{{api-doc path="attributes.layer"}}}
+  {{{api-doc path="attributes.scrollable"}}}
+  {{{api-doc path="attributes.static"}}}
+  {{{api-doc path="attributes.transitionIn"}}}
+  {{{api-doc path="attributes.transitionOut"}}}
+
+  <hr>
+  {{{m-intl path="api.common.h5-commands"}}}
+  {{{api-doc path="commands.cb"}}}
+  {{{api-doc path="commands.close"}}}
+  {{{api-doc path="commands.transition"}}}
+{{/liquid-if}}
+
+
+<hr>
+
+{{section-navigator level=3}}

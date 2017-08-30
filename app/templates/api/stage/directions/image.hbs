@@ -1,0 +1,38 @@
+{{{m-intl path="api.stage.directions.image.1"}}}
+
+{{#liquid-if (version '=' '0.1')}}
+  {{{api-doc path="commands.caption"}}}
+  {{{api-doc path="commands.classNames"}}}
+  {{{api-doc path="commands.delay"}}}
+  {{{api-doc path="commands.fadeIn"}}}
+  {{{api-doc path="commands.fadeOut"}}}
+  {{{api-doc path="commands.height"}}}
+  {{{api-doc path="commands.keyframe"}}}
+  {{{api-doc path="commands.onClick"}}}
+  {{{api-doc path="commands.position"}}}
+  {{{api-doc path="commands.state"}}}
+  {{{api-doc path="commands.transition"}}}
+{{else}}
+  <hr>
+  {{{m-intl path="api.common.h5-attributes"}}}
+  {{{api-doc path="attributes.alt"}}}
+  {{{api-doc path="attributes.animator"}}}
+  {{{api-doc path="attributes.classNames"}}}
+  {{{api-doc path="attributes.height"}}}
+  {{{api-doc path="attributes.layer"}}}
+  {{{api-doc path="attributes.onClick"}}}
+
+  <hr>
+  {{{m-intl path="api.common.h5-commands"}}}
+  {{{api-doc path="commands.delay"}}}
+  {{{api-doc path="commands.fadeIn"}}}
+  {{{api-doc path="commands.fadeOut"}}}
+  {{{api-doc path="commands.keyframe"}}}
+  {{{api-doc path="commands.position"}}}
+  {{{api-doc path="commands.state"}}}
+  {{{api-doc path="commands.transition"}}}
+{{/liquid-if}}
+
+<hr>
+
+{{section-navigator level=3}}

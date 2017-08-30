@@ -9,13 +9,13 @@ const {
 export default Component.extend({
   header: computed('path', {
     get() {
-      return `api-headers.${get(this, 'path')}`;
+      return `api-doc-headers.${get(this, 'path')}`;
     }
   }),
 
   body: computed('path', {
     get() {
-      return `api.${get(this, 'path')}`;
+      return `api-doc.${get(this, 'path')}`;
     }
   })
 });

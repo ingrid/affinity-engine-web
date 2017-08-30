@@ -4,6 +4,7 @@ application:
     affinityEngine: "Affinity Engine"
     affinityEngineInstallation: "Affinity Engine"
     animatorVelocity: "animator-velocity"
+    api: "API"
     arguments: "Arguments"
     backdrop: "backdrop"
     backdrops: "backdrops"

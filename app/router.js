@@ -29,58 +29,60 @@ Router.map(function() {
     this.route('fixtures', function() {});
     this.route('scenes', function() {});
   });
-  this.route('engine', function() {
-    this.route('usage');
-    this.route('configuration', function() {
-      this.route('defaults');
+  this.route('api', function() {
+    this.route('engine', function() {
       this.route('usage');
-      this.route('configuration-tiers');
-    });
-    this.route('fixtures', function() {
-      this.route('images');
-      this.route('keyframes');
-      this.route('characters');
-      this.route('backdrops');
-    });
-  });
-  this.route('stage', function() {
-    this.route('scenes', function() {
-      this.route('data');
-    });
-    this.route('directions', function() {
-      this.route('text');
-      this.route('menu');
-      this.route('backdrop');
-      this.route('character');
-      this.route('data');
-      this.route('image');
-      this.route('pause');
-      this.route('random');
-      this.route('sound');
-      this.route('scene');
-      this.route('layer');
-    });
-    this.route('usage');
-    this.route('links');
-  });
-  this.route('components', function() {
-    this.route('menu-bar', function() {
-      this.route('buttons', function() {
-        this.route('load');
-        this.route('reset');
-        this.route('resize');
-        this.route('rewind');
-        this.route('save');
+      this.route('configuration', function() {
+        this.route('defaults');
+        this.route('usage');
+        this.route('configuration-tiers');
+      });
+      this.route('fixtures', function() {
+        this.route('images');
+        this.route('keyframes');
+        this.route('characters');
+        this.route('backdrops');
       });
     });
-    this.route('curtain', function() {});
-  });
-  this.route('plugins', function() {
-    this.route('animator-velocity');
-    this.route('data-manager-rewindable-lokijs');
-    this.route('preloader-createjs');
-    this.route('sound-manager-createjs');
-    this.route('translator-ember-intl');
+    this.route('stage', function() {
+      this.route('scenes', function() {
+        this.route('data');
+      });
+      this.route('directions', function() {
+        this.route('text');
+        this.route('menu');
+        this.route('backdrop');
+        this.route('character');
+        this.route('data');
+        this.route('image');
+        this.route('pause');
+        this.route('random');
+        this.route('sound');
+        this.route('scene');
+        this.route('layer');
+      });
+      this.route('usage');
+      this.route('links');
+    });
+    this.route('components', function() {
+      this.route('menu-bar', function() {
+        this.route('buttons', function() {
+          this.route('load');
+          this.route('reset');
+          this.route('resize');
+          this.route('rewind');
+          this.route('save');
+        });
+      });
+      this.route('curtain', function() {});
+    });
+    this.route('plugins', function() {
+      this.route('animator-velocity');
+      this.route('data-manager-rewindable-lokijs');
+      this.route('preloader-createjs');
+      this.route('sound-manager-createjs');
+      this.route('translator-ember-intl');
+    });
   });
 });
 
