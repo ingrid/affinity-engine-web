@@ -1,10 +1,28 @@
 {{{m-intl path="stage.directions.menu.1"}}}
-{{{api-doc path="commands.classNames"}}}
-{{{api-doc path="commands.keyboardPriority"}}}
-{{{api-doc path="commands.keys"}}}
-{{{api-doc path="commands.text"}}}
-{{{api-doc path="commands.transitionIn"}}}
-{{{api-doc path="commands.transitionOut"}}}
+
+{{#liquid-if (version '=' '0.1')}}
+  {{{api-doc path="commands.classNames"}}}
+  {{{api-doc path="commands.keyboardPriority"}}}
+  {{{api-doc path="commands.keys"}}}
+  {{{api-doc path="commands.text"}}}
+  {{{api-doc path="commands.transitionIn"}}}
+  {{{api-doc path="commands.transitionOut"}}}
+{{else}}
+  <hr>
+  {{{m-intl path="common.h5-attributes"}}}
+  {{{api-doc path="attributes.animator"}}}
+  {{{api-doc path="attributes.classNames"}}}
+  {{{api-doc path="attributes.keyboardPriority"}}}
+  {{{api-doc path="attributes.keys"}}}
+  {{{api-doc path="attributes.layer"}}}
+  {{{api-doc path="attributes.text"}}}
+  {{{api-doc path="attributes.transitionIn"}}}
+  {{{api-doc path="attributes.transitionOut"}}}
+
+  <hr>
+  {{{m-intl path="common.h5-commands"}}}
+  {{{api-doc path="commands.transition"}}}
+{{/liquid-if}}
 
 <hr>
 

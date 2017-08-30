@@ -1,0 +1,1 @@
+##### `link(hashOrType, hashOrKey, value)`

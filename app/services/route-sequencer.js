@@ -62,6 +62,12 @@ export default Service.extend({
                   name: t('yourFirstDirection')
                 }, concurrency: {
                   name: t('concurrency')
+                }, attributes: {
+                  name: t('attributes'),
+                  version: {
+                    operator: '>=',
+                    threshold: '0.2'
+                  }
                 }, commands: {
                   name: t('commands')
                 }
@@ -149,6 +155,13 @@ export default Service.extend({
                 }, text: {
                   name: t('text')
                 }
+              }
+            },
+            links: {
+              name: t('links'),
+              version: {
+                operator: '>=',
+                threshold: '0.2'
               }
             }
           }

@@ -1,12 +1,15 @@
 {{{m-intl path="engine.fixtures.characters.1"}}}
-{{{api-doc path="fixtures.id"}}}
-{{{api-doc path="fixtures.name"}}}
-{{{api-doc path="fixtures.namePosition"}}}
-{{{api-doc path="fixtures.height"}}}
-{{{api-doc path="fixtures.keyframe"}}}
-{{{api-doc path="fixtures.defaultState"}}}
-{{{api-doc path="fixtures.layerOrder"}}}
-{{{api-doc path="fixtures.states"}}}
+{{{api-doc path="attributes.id"}}}
+{{#liquid-if (version '=' '0.1.0')}}
+  {{{api-doc path="fixtures.name"}}}
+  {{{api-doc path="fixtures.namePosition"}}}
+{{/liquid-if}}
+{{{api-doc path="attributes.alt"}}}
+{{{api-doc path="attributes.height"}}}
+{{{api-doc path="attributes.keyframe"}}}
+{{{api-doc path="attributes.defaultState"}}}
+{{{api-doc path="attributes.layerOrder"}}}
+{{{api-doc path="attributes.states"}}}
 
 <hr>
 

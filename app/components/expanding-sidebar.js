@@ -7,6 +7,7 @@ const {
   isPresent
 } = Ember;
 
+const { reads } = computed;
 const { inject: { service } } = Ember;
 
 export default Component.extend({
@@ -16,6 +17,9 @@ export default Component.extend({
   shouldNest: true,
 
   routeSequencer: service(),
+  versionTracker: service('doc-version-tracker'),
+
+  version: reads('versionTracker.version'),
 
   routes: computed({
     get() {

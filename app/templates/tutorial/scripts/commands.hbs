@@ -2,6 +2,12 @@
 
 {{engine-container-for-tutorial scene="tutorial/scripts/commands"}}
 
+{{#liquid-if (version '>' '0.1')}}
+  {{{m-intl path="tutorial.scripts.commands.2"}}}
+
+  {{engine-container-for-tutorial scene="tutorial/scripts/commands"}}
+{{/liquid-if}}
+
 <hr>
 
 {{section-navigator level=2}}

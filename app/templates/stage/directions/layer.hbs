@@ -1,5 +1,16 @@
 {{{m-intl path="stage.directions.layer.1"}}}
-{{{api-doc path="commands.transition"}}}
+
+{{#liquid-if (version '=' '0.1')}}
+  {{{api-doc path="commands.transition"}}}
+{{else}}
+  <hr>
+  {{{m-intl path="common.h5-attributes"}}}
+  {{{api-doc path="attributes.animator"}}}
+
+  <hr>
+  {{{m-intl path="common.h5-commands"}}}
+  {{{api-doc path="commands.transition"}}}
+{{/liquid-if}}
 
 <hr>
 

@@ -1,5 +1,12 @@
 {{{m-intl path="stage.directions.random.1"}}}
-{{{api-doc path="commands.float"}}}
+
+{{#liquid-if (version '=' '0.1')}}
+  {{{api-doc path="commands.float"}}}
+{{else}}
+  <hr>
+  {{{m-intl path="common.h5-attributes"}}}
+  {{{api-doc path="attributes.float"}}}
+{{/liquid-if}}
 
 <hr>
 

@@ -1,8 +1,10 @@
 {{#each-in routes as |route options|}}
-  {{expanding-sidebar-section
-    parentRoute=parentRoute
-    route=route
-    shouldNest=shouldNest
-    options=options
-  }}
+  {{#liquid-if (version options.version.operator options.version.threshold)}}
+    {{expanding-sidebar-section
+      parentRoute=parentRoute
+      route=route
+      shouldNest=shouldNest
+      options=options
+    }}
+  {{/liquid-if}}
 {{/each-in}}

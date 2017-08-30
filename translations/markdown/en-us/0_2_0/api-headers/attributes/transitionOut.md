@@ -1,0 +1,1 @@
+###### `transitionOut` (**Object**)

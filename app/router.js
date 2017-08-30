@@ -24,6 +24,7 @@ Router.map(function() {
       this.route('your-first-direction');
       this.route('concurrency');
       this.route('commands');
+      this.route('attributes');
     });
     this.route('fixtures', function() {});
     this.route('scenes', function() {});
@@ -60,6 +61,7 @@ Router.map(function() {
       this.route('layer');
     });
     this.route('usage');
+    this.route('links');
   });
   this.route('components', function() {
     this.route('menu-bar', function() {
