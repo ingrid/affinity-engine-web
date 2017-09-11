@@ -5,14 +5,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
-      stringifyPath: 'translations/markdown',
-      'ember-font-awesome': {
-        useScss: true
-      },
-      'ember-cli-babel': {
-        includePolyfill: true,
-        stage: 1
-      }
+      stringifyPath: 'translations/markdown'
   });
 
   // Use `app.import` to add additional libraries to the generated

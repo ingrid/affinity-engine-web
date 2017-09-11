@@ -4,9 +4,9 @@ import { task } from 'ember-concurrency';
 export default Scene.extend({
   start: task(function * (script) {
     const bedroom = script.backdrop('diy-bedroom').fadeIn();
-    const stage = script.layer('engine.stage').transition({ translateY: '20%', translateX: '13%', opacity: 0 }, 0);
+    const stage = script.layer('stage.image').transition({ effect: { translateY: '20%', translateX: '13%', opacity: 0 }, duration: 0 });
     const ember = script.character('ember').state({ eyes: 'left', expression: 'proud' }).fadeIn();
-    const diy = script.character('diy').transition({ translateZ: '-5px', translateY: '-5%' }).fadeIn();
+    const diy = script.character('diy').transition({ effect: { translateZ: '-5px', translateY: '-5%' } }).fadeIn();
 
     yield diy._.text("Uh, this is embarrassing. [[pause 750]] I can't get the camera on.");
     yield ember._.text("I think you have to click that button.");
@@ -14,7 +14,7 @@ export default Scene.extend({
 
     yield script.pause(100);
 
-    stage.transition({ opacity: 1 });
+    stage.transition({ effect: { opacity: 1 } });
 
     yield script.pause(750);
 
@@ -25,12 +25,12 @@ export default Scene.extend({
     const bingoText = diy._.text('Bingo! [[pause 500]] [[expression neutral]] Now just one more sec while I get it adjusted. [[pause 750]] And');
 
     yield script.pause(1500);
-    diy.transition({ translateZ: '50px', translateY: '5%', left: '50%' }, 1000);
+    diy.transition({ effect: { translateZ: '50px', translateY: '5%', left: '50%' }, duration: 1000 });
     ember.delay(250).state({ eyes: 'neutral' });
     yield script.pause(500);
-    stage.transition({ translateY: '-6%', translateX: '1%', rotateZ: '3deg' }, 750).then(() => {
-      stage.transition({ translateY: '2%', translateX: '-1%', rotateZ: '-1deg' }, 750).then(() => {
-        stage.transition({ translateY: 0, translateX: 0, rotateZ: 0 }, 400);
+    stage.transition({ effect: { translateY: '-6%', translateX: '1%', rotateZ: '3deg' }, duration: 750 }).then(() => {
+      stage.transition({ effect: { translateY: '2%', translateX: '-1%', rotateZ: '-1deg' }, duration: 750 }).then(() => {
+        stage.transition({ effect: { translateY: 0, translateX: 0, rotateZ: 0 }, duration: 400 });
       });
     });
 
@@ -39,7 +39,7 @@ export default Scene.extend({
     bingoText.close();
 
     yield diy._.text('Perfect.');
-    diy.transition({ translateZ: 0, translateY: 0, left: '32%' }, 1250);
+    diy.transition({ effect: { translateZ: 0, translateY: 0, left: '32%' }, duration: 1250 });
     yield script.pause(250);
 
     ember.state({ eyes: 'left' });
@@ -53,18 +53,18 @@ export default Scene.extend({
     ember.delay(500).state({ expression: 'neutral', eyes: 'left' });
     yield diy.state({ expression: 'excited', eyes: 'right' }).state({ brows: 'down' }, 325).state({ brows: 'up' }, 325)._.text("Games you'll love.");
     diy.state({ brows: 'neutral' });
-    yield ember._.text("Yes, [[pause 500]] [[expression smiling]] games you'll love, [[pause 500]] [[expression proud]] [[pause 250]] [[cps *0.95]] even the schmaltzy ones.");
+    yield ember._.text("Yes, [[pause 500]] [[expression smiling]] games you'll love, [[pause 500]] [[expression proud]] [[pause 250]] [[rate *0.95]] even the schmaltzy ones.");
     yield script.pause(250);
     yield diy.state({ eyes: 'neutral', expression: 'smiling' })._.text("Seriously, we hope you try. [[pause 500]] [[expression neutral]] It's what Ember and I are here for. [[pause 500]] [[expression excited]] We want to help you bring something beautiful into this world. &#x02764; &#x02764; &#x02764;");
     diy.state({ eyes: 'right', expression: 'neutral' });
-    yield ember.state({ expression: 'smiling', eyes: 'neutral' })._.text("And there's no better way than to get started. [[pause 500]] [[state (hash eyes=left expression=proud)]] Right?");
-    ember.delay(250).expression('neutral');
+    yield ember.state({ expression: 'smiling', eyes: 'neutral' })._.text("And there's no better way than to get started. [[pause 500]] [[state (hash expression=proud)]] Right?");
+    ember.delay(250).state({ eyes: 'left', expression: 'neutral' });
     yield diy.state({ eyes: 'neutral', expression: 'smiling' })._.text("Right! [[pause 500]] You'll find everthing you need here in the docs. [[pause 500]] Hope we get to talk again soon, though!");
     yield ember.expression('proud')._.text("I'm sure we will. [[pause 400]] [[state (hash eyes=neutral expression=smiling)]] [[pause 350]] Be seeing you all around!");
 
     diy.delay(50).state({ eyes: 'right' });
     ember.delay(150).state({ eyes: 'left', expression: 'proud' });
 
-    script.layer('engine').transition({ opacity: 0 }, 750);
+    stage.transition({ effect: { opacity: 0 }, duration: 750 });
   })
 });

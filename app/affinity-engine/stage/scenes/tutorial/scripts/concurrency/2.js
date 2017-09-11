@@ -3,7 +3,7 @@ import { task } from 'ember-concurrency';
 
 export default Scene.extend({
   start: task(function * (script) {
-    yield script.text("Whoa! This is really cool!");
-    script.text("Yeah? Let me see.");
+    yield script.text("Mic test, mic test!");
+    script.text("Sounds good.");
   })
 });

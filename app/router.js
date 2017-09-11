@@ -11,7 +11,6 @@ Router.map(function() {
     this.route('how-to-use-this-documentation');
     this.route('acknowledgements');
     this.route('road-to-release');
-    this.route('beta-grant');
   });
   this.route('tutorial', function() {
     this.route('installation', function() {
