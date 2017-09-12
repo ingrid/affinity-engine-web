@@ -7,6 +7,6 @@ export default Scene.extend({
     yield script.character('ember').position('right').fadeIn();
 
     yield script.text("Mic test, mic test.", { caption: 'Diy' });
-    script.text("Sounds good.", { caption: 'Ember', captionPosition: 'right' });
+    script.text("Hearing you loud and clear!", { caption: 'Ember', captionPosition: 'right' });
   })
 });
