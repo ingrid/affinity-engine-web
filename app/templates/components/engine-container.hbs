@@ -1,23 +1,15 @@
-{{#if isMobile}}
-  <div class="unsupported-agent">
-    <p>Sorry!</p>
-    <p>The Affinity Engine does not yet support mobile devices.</p>
-    <p>But feel free to use your phone to navigate these docs!</p>
-  </div>
-{{else}}
-  {{#affinity-engine engineId=scene config=config fixtures=fixtures isFocused=isFocused as |engine|}}
-    {{#if engine.isLoaded}}
-      {{affinity-engine-stage engineId=engine.engineId initialScene=scene}}
-      {{yield}}
-    {{else}}
-      {{#affinity-engine-curtain engineId=engine.engineId filesToPreload=(hash keyframes="src") as |curtain|}}
-        <div class="engine-title">{{curtain.title}}</div>
-        {{ember-progress-bar
-          progress=curtain.progress
-          useDefaultStep=true
-          options=progressBarOptions
-        }}
-      {{/affinity-engine-curtain}}
-    {{/if}}
-  {{/affinity-engine}}
-{{/if}}
+{{#affinity-engine engineId=scene config=config fixtures=fixtures isFocused=isFocused as |engine|}}
+  {{#if engine.isLoaded}}
+    {{affinity-engine-stage engineId=engine.engineId initialScene=scene}}
+    {{yield}}
+  {{else}}
+    {{#affinity-engine-curtain engineId=engine.engineId filesToPreload=(hash keyframes="src") as |curtain|}}
+      <div class="engine-title">{{curtain.title}}</div>
+      {{ember-progress-bar
+        progress=curtain.progress
+        useDefaultStep=true
+        options=progressBarOptions
+      }}
+    {{/affinity-engine-curtain}}
+  {{/if}}
+{{/affinity-engine}}

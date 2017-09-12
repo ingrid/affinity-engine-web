@@ -24,6 +24,7 @@
 @include breakpoint(small down) {
   .main {
     flex: 1 0 0;
+    padding: 15px;
   }
 }
 

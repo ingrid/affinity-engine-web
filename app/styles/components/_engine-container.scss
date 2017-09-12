@@ -1,7 +1,6 @@
 .engine-container {
-  height: 680px;
+  height: 85vh;
   width: 100%;
-  max-width: 1000px;
   position: relative;
   margin: $vertical-rhythm * 2 auto;
 
@@ -65,24 +64,8 @@
   }
 }
 
-.unsupported-agent {
-  display: -webkit-flex;
-  display: flex;
-  height: 100%;
-  padding: 12%;
-  background-color: $black;
-  color: $white;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: center;
-  justify-content: center;
-
-  p:nth-child(1) {
-    font-size: 200%;
-  }
-
-  p:nth-child(2) {
-    font-size: 132%;
-    margin-bottom: 10px;
+@include breakpoint(small down) {
+  .engine-container {
+    height: 75vh;
   }
 }
