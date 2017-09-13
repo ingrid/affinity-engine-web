@@ -24,7 +24,7 @@ export default Component.extend({
       const intl = get(this, 'intl');
       const title = `engines.${get(this, 'scene').replace('/', '.')}.title`;
       return assign({
-        children: {
+        all: {
           attrs: {
             title
           }
@@ -87,11 +87,7 @@ export default Component.extend({
         },
         layerOrder: [
           'base',
-          'nails',
-          'shoes',
-          'top',
-          'pants',
-          'jacket',
+          'outfit',
           'nose',
           'mouth',
           'eyes',
@@ -112,11 +108,7 @@ export default Component.extend({
             outfit: 'trendy'
           },
           layers: {
-            nails: 'ember-nails-red',
-            shoes: 'ember-shoes-red-pumps',
-            top: 'ember-top-red-tank',
-            pants: 'ember-pants-shredded-jeans',
-            jacket: 'ember-jacket-red-letter-jacket',
+            outfit: 'ember-outfit-trendy',
             hair: 'ember-hair-red-black-braids'
           }
         }, {
@@ -250,15 +242,7 @@ export default Component.extend({
         },
         layerOrder: [
           'base',
-          'complexion',
-          'jewlery',
-          'socks',
-          'shoes',
-          'bottom',
-          'top',
-          'vest',
-          'jacket',
-          'scarf',
+          'outfit',
           'nose',
           'mouth',
           'eyes',
@@ -279,14 +263,7 @@ export default Component.extend({
             outfit: 'trendy'
           },
           layers: {
-            jewlery: 'diy-jewlery-friendship',
-            socks: 'diy-socks-red',
-            shoes: 'diy-shoes-brown-high-tops',
-            bottom: 'diy-bottom-grey-pants',
-            top: 'diy-top-aqua-shirt',
-            vest: 'diy-vest-brown',
-            jacket: 'diy-jacket-blue',
-            scarf: 'diy-scarf-red',
+            outfit: 'diy-outfit-trendy',
             hair: 'diy-hair-shaggy'
           }
         }, {
@@ -418,11 +395,6 @@ export default Component.extend({
         src: 'affinity-engine/characters/ember/brows/up.png'
       }
     }, {
-      id: 'ember-earing-gold-left',
-      attrs: {
-        src: 'affinity-engine/characters/ember/earings/gold-left.png'
-      }
-    }, {
       id: 'ember-eyes-left',
       attrs: {
         src: 'affinity-engine/characters/ember/eyes/left.png'
@@ -446,11 +418,6 @@ export default Component.extend({
       id: 'ember-hair-red-black-braids',
       attrs: {
         src: 'affinity-engine/characters/ember/hair/red-black-braids.png'
-      }
-    }, {
-      id: 'ember-jacket-red-letter-jacket',
-      attrs: {
-        src: 'affinity-engine/characters/ember/jackets/red-letter-jacket.png'
       }
     }, {
       id: 'ember-mouth-neutral-closed',
@@ -478,39 +445,14 @@ export default Component.extend({
         src: 'affinity-engine/characters/ember/mouths/smile-open.png'
       }
     }, {
-      id: 'ember-nails-natural',
-      attrs: {
-        src: 'affinity-engine/characters/ember/nails/natural.png'
-      }
-    }, {
-      id: 'ember-nails-red',
-      attrs: {
-        src: 'affinity-engine/characters/ember/nails/red.png'
-      }
-    }, {
       id: 'ember-nose-neutral',
       attrs: {
         src: 'affinity-engine/characters/ember/noses/neutral.png'
       }
     }, {
-      id: 'ember-pants-shredded-jeans',
+      id: 'ember-outfit-trendy',
       attrs: {
-        src: 'affinity-engine/characters/ember/pants/shredded-jeans.png'
-      }
-    }, {
-      id: 'ember-shoes-red-pumps',
-      attrs: {
-        src: 'affinity-engine/characters/ember/shoes/red-pumps.png'
-      }
-    }, {
-      id: 'ember-top-red-tank',
-      attrs: {
-        src: 'affinity-engine/characters/ember/tops/red-tank.png'
-      }
-    }, {
-      id: 'diy-bottom-grey-pants',
-      attrs: {
-        src: 'affinity-engine/characters/diy/bottoms/grey-pants.png'
+        src: 'affinity-engine/characters/ember/outfits/trendy.png'
       }
     }, {
       id: 'diy-brows-frown',
@@ -536,11 +478,6 @@ export default Component.extend({
       id: 'diy-brows-up',
       attrs: {
         src: 'affinity-engine/characters/diy/brows/up.png'
-      }
-    }, {
-      id: 'diy-complexion-blush',
-      attrs: {
-        src: 'affinity-engine/characters/diy/complexions/blush.png'
       }
     }, {
       id: 'diy-eyes-closed',
@@ -578,16 +515,6 @@ export default Component.extend({
         src: 'affinity-engine/characters/diy/hair/shaggy.png'
       }
     }, {
-      id: 'diy-jacket-blue',
-      attrs: {
-        src: 'affinity-engine/characters/diy/jackets/blue.png'
-      }
-    }, {
-      id: 'diy-jewlery-friendship',
-      attrs: {
-        src: 'affinity-engine/characters/diy/jewlery/friendship.png'
-      }
-    }, {
       id: 'diy-mouth-neutral',
       attrs: {
         src: 'affinity-engine/characters/diy/mouths/neutral.png'
@@ -618,39 +545,14 @@ export default Component.extend({
         src: 'affinity-engine/characters/diy/noses/neutral.png'
       }
     }, {
+      id: 'diy-outfit-trendy',
+      attrs: {
+        src: 'affinity-engine/characters/diy/outfits/trendy.png'
+      }
+    }, {
       id: 'diy-pose-standing',
       attrs: {
         src: 'affinity-engine/characters/diy/poses/standing.png'
-      }
-    }, {
-      id: 'diy-scarf-red',
-      attrs: {
-        src: 'affinity-engine/characters/diy/scarves/red.png'
-      }
-    }, {
-      id: 'diy-shoes-brown-high-tops',
-      attrs: {
-        src: 'affinity-engine/characters/diy/shoes/brown-high-tops.png'
-      }
-    }, {
-      id: 'diy-socks-red',
-      attrs: {
-        src: 'affinity-engine/characters/diy/socks/red.png'
-      }
-    }, {
-      id: 'diy-mouth-neutral',
-      attrs: {
-        src: 'affinity-engine/characters/diy/mouths/neutral.png'
-      }
-    }, {
-      id: 'diy-top-aqua-shirt',
-      attrs: {
-        src: 'affinity-engine/characters/diy/tops/aqua-shirt.png'
-      }
-    }, {
-      id: 'diy-vest-brown',
-      attrs: {
-        src: 'affinity-engine/characters/diy/vests/brown.png'
       }
     }, {
       id: 'diy-bedroom',
