@@ -19,14 +19,15 @@ Router.map(function() {
       this.route('quickstarts');
       this.route('es6-support');
     });
-    this.route('scripts', function() {
-      this.route('your-first-direction');
-      this.route('concurrency');
-      this.route('commands');
-      this.route('attributes');
+    this.route('basics', function() {
+      this.route('scripts', function() {
+        this.route('concurrency');
+        this.route('commands');
+        this.route('attributes');
+      });
+      this.route('fixtures', function() {});
+      this.route('scenes', function() {});
     });
-    this.route('fixtures', function() {});
-    this.route('scenes', function() {});
   });
   this.route('api', function() {
     this.route('engine', function() {

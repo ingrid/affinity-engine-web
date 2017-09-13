@@ -51,27 +51,32 @@ export default Service.extend({
                   name: t('es6Support')
                 }
               }
-            }, scripts: {
-              name: t('scripts'),
+            }, basics: {
+              name: t('basics'),
               routes: {
                 index: {
                   name: t('quickstart')
-                }, 'your-first-direction': {
-                  name: t('yourFirstDirection')
-                }, concurrency: {
-                  name: t('concurrency')
-                }, attributes: {
-                  name: t('attributes'),
-                  version: {
-                    operator: '>=',
-                    threshold: '0.2'
+                }, scripts: {
+                  name: t('scripts'),
+                  routes: {
+                    index: {
+                      name: t('yourFirstDirection')
+                    }, concurrency: {
+                      name: t('concurrency')
+                    }, attributes: {
+                      name: t('attributes'),
+                      version: {
+                        operator: '>=',
+                        threshold: '0.2'
+                      }
+                    }, commands: {
+                      name: t('commands')
+                    }
                   }
-                }, commands: {
-                  name: t('commands')
+                }, fixtures: {
+                  name: t('fixtures')
                 }
               }
-            }, fixtures: {
-              name: t('fixtures')
             }
           }
         }, api: {

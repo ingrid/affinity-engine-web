@@ -1,0 +1,5 @@
+engines:
+  tutorial:
+    basics:
+      micTest: "Mic test, mic test."
+      hearingYou: "Hearing you load and clear!"
