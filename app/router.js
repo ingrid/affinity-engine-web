@@ -20,13 +20,17 @@ Router.map(function() {
       this.route('es6-support');
     });
     this.route('basics', function() {
-      this.route('scripts', function() {
+      this.route('directions', function() {
         this.route('concurrency');
         this.route('commands');
         this.route('attributes');
       });
       this.route('fixtures', function() {});
       this.route('scenes', function() {});
+      this.route('links');
+      this.route('configuration', function() {
+        this.route('tiers');
+      });
     });
   });
   this.route('api', function() {

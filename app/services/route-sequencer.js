@@ -56,8 +56,8 @@ export default Service.extend({
               routes: {
                 index: {
                   name: t('quickstart')
-                }, scripts: {
-                  name: t('scripts'),
+                }, directions: {
+                  name: t('directions'),
                   routes: {
                     index: {
                       name: t('yourFirstDirection')
@@ -73,6 +73,19 @@ export default Service.extend({
                       name: t('commands')
                     }
                   }
+                }, configuration: {
+                  name: t('configuration'),
+                  routes: {
+                    index: {
+                      name: t('all')
+                    }, tiers: {
+                      name: t('tiers')
+                    }
+                  }
+                }, links: {
+                  name: t('links')
+                }, scenes: {
+                  name: t('scenes'),
                 }, fixtures: {
                   name: t('fixtures')
                 }

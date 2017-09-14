@@ -1,8 +1,11 @@
 import { Scene } from 'affinity-engine-stage';
 import { task } from 'ember-concurrency';
+import ReplayableScriptMixin from 'affinity-engine-web/mixins/replayable-script';
 
-export default Scene.extend({
+export default Scene.extend(ReplayableScriptMixin, {
   start: task(function * (script) {
-    script.text('engines.tutorial.basics.micTest');
+    yield script.text('engines.tutorial.basics.micTest');
+
+    this.get('replay').perform(script);
   })
 });

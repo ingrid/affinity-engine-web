@@ -3,3 +3,8 @@ engines:
     basics:
       micTest: "Mic test, mic test."
       hearingYou: "Hearing you load and clear!"
+      notHearingYouStatic: "There's some bad static!"
+      notHearingYouVolume: "The volume is too low!"
+      micTest2: "How about now?"
+      hearingYouBetter: "That's better!"
+      hearingYouWorse: "That's worse!"
