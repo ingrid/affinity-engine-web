@@ -18,30 +18,36 @@ export default Component.extend({
   fixtures: {
     characters: [{
       id: 'diy',
-      attrs: {
-        name: 'Diy',
-        keyframe: 'diy-default',
-        height: 90
+      links: {
+        all: {
+          attrs: {
+            caption: 'Diy'
+          }
+        }
       }
     }, {
       id: 'ember',
-      attrs: {
-        name: 'Ember',
-        keyframe: 'ember-default',
-        height: 87
+      links: {
+        all: {
+          attrs: {
+            caption: 'Ember',
+            captionPosition: 'right'
+          }
+        },
+        component: {
+          stage: {
+            direction: {
+              text: {
+                attrs: {
+                  classNames: 'ae-paper ae-block'
+                }
+              }
+            }
+          }
+        }
       }
     }],
-    keyframes: [{
-      id: 'diy-default',
-      attrs: {
-        src: 'tutorial/diy.png'
-      }
-    }, {
-      id: 'ember-default',
-      attrs: {
-        src: 'tutorial/ember.png'
-      }
-    }],
+    keyframes: [],
     sounds: []
   },
 

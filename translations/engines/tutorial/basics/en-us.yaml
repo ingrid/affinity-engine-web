@@ -8,3 +8,8 @@ engines:
       micTest2: "How about now?"
       hearingYouBetter: "That's better!"
       hearingYouWorse: "That's worse!"
+      anHourLater: "An hour later. . . ."
+      curtains: "I'm just wrapping up over here. You ready, Diy? We've got curtains in 10."
+      ready: "Yeah, just finished. Want any help?"
+      tenMinutesLater: "10 minutes later. . . ."
+      thanksForComing: "Hello everyone! Thanks for coming out!"
