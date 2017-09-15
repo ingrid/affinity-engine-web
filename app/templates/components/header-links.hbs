@@ -1,6 +1,6 @@
-<ul class="menu simple">
+<ul class="menu flex-items-baseline header-links">
   {{#each headers as |header|}}
-    <li class="arrow-seperated vertical-align-baseline-important">
+    <li class="arrow-seperated">
       {{#link-to header.route}}
         {{#dynamic-tag tagName=header.tagName classNames="medium-display-inline-block arrow-holder"}}
           {{header.name}}
