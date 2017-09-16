@@ -8,8 +8,8 @@ export default Ember.Mixin.create({
     yield script.pause(350);
     yield script.menu([{ text: 'engines.replay', icon: { type: 'refresh' } }]);
 
-    script.layer('stage.image').transition({ effect: { opacity: 0 }, duration: 250 });
-    yield script.pause(250);
+    script.layer('stage.image').transition({ effect: { opacity: 0.00001 }, duration: 250 });
+    yield script.pause(350);
 
     script.scene(id || get(this, '_id'));
   })
