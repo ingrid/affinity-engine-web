@@ -4,7 +4,7 @@ import ReplayableScriptMixin from 'affinity-engine-web/mixins/replayable-script'
 
 export default Scene.extend(ReplayableScriptMixin, {
   start: task(function * (script) {
-    const stage = script.layer('stage.image').transition({ effect: { translateY: '20%', translateX: '13%', opacity: 0 }, duration: 0 });
+    const stage = script.layer('stage.image').transition({ effect: { translateY: '20%', translateX: '-19%', opacity: 0 }, duration: 0 });
     const bedroom = script.backdrop('diy-bedroom').fadeIn();
     const ember = script.character('ember').state({ eyes: 'left', expression: 'proud' }).fadeIn();
     const diy = script.character('diy').transition({ effect: { translateZ: '-5px', translateY: '-5%' } }).fadeIn();
@@ -19,7 +19,7 @@ export default Scene.extend(ReplayableScriptMixin, {
 
     yield script.pause(750);
 
-    diy.expression('excited');
+    diy.state({ expression: 'excited' });
 
     yield script.pause(250);
     ember.delay(250).state({ eyes: 'neutral' }).delay(250);
@@ -43,21 +43,22 @@ export default Scene.extend(ReplayableScriptMixin, {
     yield script.pause(250);
 
     ember.state({ eyes: 'left' });
-    yield diy.expression('smiling')._.text('engines.welcome.index.diyName');
-    diy.state({ expression: 'neutral', eyes: 'right' });
-    yield ember.state({ eyes: 'neutral', expression: 'smiling' })._.text('engines.welcome.index.emberName');
+    yield diy.state({ expression: 'smiling', eyes: 'right', brows: 'up' })
+    yield diy._.text('engines.welcome.index.diyName');
+    diy.state({ expression: 'neutral', brows: 'down' });
+    yield ember.state({ eyes: 'left', expression: 'proud' })._.text('engines.welcome.index.emberName');
     ember.expression('neutral');
     yield diy.state({ eyes: 'neutral', expression: 'smiling' })._.text('engines.welcome.index.diyTourGuides');
     diy.state({ eyes: 'neutral', expression: 'neutral' });
     yield ember.expression('smiling')._.text('engines.welcome.index.emberMakeGames');
     ember.delay(500).state({ expression: 'neutral', eyes: 'left' });
-    yield diy.state({ expression: 'excited', eyes: 'right' }).state({ brows: 'down' }, 325).state({ brows: 'up' }, 325)._.text('engines.welcome.index.diyLoveGames');
-    diy.state({ brows: 'neutral' });
+    yield diy.state({ expression: 'smiling' })._.text('engines.welcome.index.diyLoveGames');
+    diy.state({ brows: 'down', eyes: 'right', expression: 'smiling' });
     yield ember._.text('engines.welcome.index.emberLoveGames');
     yield script.pause(250);
     yield diy.state({ eyes: 'neutral', expression: 'smiling' })._.text('engines.welcome.index.diyTry');
     diy.state({ eyes: 'right', expression: 'neutral' });
-    yield ember.state({ expression: 'proud', eyes: 'neutral' })._.text('engines.welcome.index.emberGetStarted');
+    yield ember.state({ expression: 'neutral', eyes: 'neutral' })._.text('engines.welcome.index.emberGetStarted');
     ember.delay(250).state({ eyes: 'left', expression: 'neutral' });
     yield diy.state({ eyes: 'neutral', expression: 'smiling' })._.text('engines.welcome.index.diyDocumentation');
     yield ember.expression('proud')._.text('engines.welcome.index.emberWeWill');
