@@ -1,0 +1,1 @@
+###### `lxlAnimation.duration` (**Number**)

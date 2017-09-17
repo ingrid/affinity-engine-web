@@ -1,0 +1,1 @@
+###### `menu.columns` (**Number**)

@@ -1,0 +1,1 @@
+###### `lxlAnimation.rate` (**Number**)
