@@ -4,6 +4,6 @@ engines:
       attribute:
         caption:
           title: "caption"
-          withCaption: "Check out my awesome caption!"
+          withoutCaption: "I sure wish I had a caption. . . ."
+          withCaption: "Oh wow, my caption is so awesome!"
           caption: "!!awesome!!"
-          withoutCaption: "Aw, I don't have an awesome caption. . . ."
