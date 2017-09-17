@@ -22,7 +22,7 @@ export default Component.extend({
   config: computed('scene', {
     get() {
       const intl = get(this, 'intl');
-      const title = `engines.${get(this, 'scene').replace('/', '.')}.title`;
+      const title = `engines.${get(this, 'scene').replace(/\//g, '.')}.title`;
       return assign({
         all: {
           attrs: {

@@ -1,0 +1,9 @@
+engines:
+  direction:
+    text:
+      attribute:
+        caption:
+          title: "caption"
+          withCaption: "Check out my awesome caption!"
+          caption: "!!awesome!!"
+          withoutCaption: "Aw, I don't have an awesome caption. . . ."

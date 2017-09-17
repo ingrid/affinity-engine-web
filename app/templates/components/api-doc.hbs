@@ -1,5 +1,15 @@
 <hr>
 
-{{{m-intl path=header}}}
+{{{m-intl path=header tagName="span" classNames="display-inline-block"}}}
+
+{{#if scene}}
+  <button type="button" class="button tiny vertical-align-top" {{action "toggleDemo"}}>{{t "application.common.toggleDemo"}}</button>
+{{/if}}
 
 {{{m-intl path=body}}}
+
+{{#if scene}}
+  {{#liquid-if demoIsExpanded}}
+    {{engine-container scene=scene}}
+  {{/liquid-if}}
+{{/if}}

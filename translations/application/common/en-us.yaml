@@ -2,3 +2,4 @@ application:
   common:
     affinityEngine: "Affinity Engine"
     slogan: "Make games you'll love"
+    toggleDemo: "Toggle Demo"
