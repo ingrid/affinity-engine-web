@@ -1,0 +1,11 @@
+engines:
+  direction:
+    text:
+      attribute:
+        caption-position:
+          title: "captionPosition"
+          caption: "Hi! I'm a caption!"
+          default: "I'm using the default position, `left`."
+          center: "I'm using the `center` position."
+          right: "I'm using the `right` position."
+          left: "I'm explicitly using the `left` position."
