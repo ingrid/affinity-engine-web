@@ -1,1 +1,1 @@
-###### `keys.acceot` (**Array**)
+###### `keys.accept` (**Array**)
