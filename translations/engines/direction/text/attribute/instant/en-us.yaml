@@ -1,0 +1,11 @@
+engines:
+  direction:
+    text:
+      attribute:
+        instant:
+          title: "instant"
+          diy: "Diy"
+          ember: "Ember"
+          line1: "Hey Diy, what's my favorite kind of coffee?"
+          line2: "I don't know, what?"
+          line3: "Instant coffee!"
