@@ -1,0 +1,13 @@
+engines:
+  direction:
+    text:
+      attribute:
+        class-names:
+          title: "class names"
+          ember: "Ember"
+          line1: "*Huff* Diy, look what I found!"
+          line2: "*THUD*"
+          line3: "It's a box of class names!"
+          line4: "It's got \"spin\"!"
+          line5: "...and even \"sparkle\"!"
+          line6: "...and this is \"spin\" and \"sparkle\" combined!"
