@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
+/* global hljs */
+
 const { assign } = Ember;
 
 const flow = (fn1, fn2) => {

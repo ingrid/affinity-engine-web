@@ -21,7 +21,6 @@ export default Component.extend({
 
   config: computed('scene', {
     get() {
-      const intl = get(this, 'intl');
       const title = `engines.${get(this, 'scene').replace(/\//g, '.')}.title`;
       return assign({
         all: {
@@ -40,7 +39,7 @@ export default Component.extend({
                   },
                   lxlTransition: {
                     effect: {
-                      translateX: [, 10],
+                      translateX: [0, 10],
                       translateY: [0, -3],
                       translateZ: [0, 15],
                       opacity: [0.999, 1]

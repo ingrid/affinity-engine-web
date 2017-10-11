@@ -29,7 +29,7 @@ export default Component.extend({
   }),
 
   _formatVersion(version) {
-    return `v${version.replace(/\_/g, '.')}`;
+    return `v${version.replace(/_/g, '.')}`;
   },
 
   actions: {
