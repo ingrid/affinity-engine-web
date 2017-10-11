@@ -2,6 +2,8 @@ import { Scene } from 'affinity-engine-stage';
 import { task } from 'ember-concurrency';
 import ReplayableScriptMixin from 'affinity-engine-web/mixins/replayable-script';
 
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "bedroom" }]*/
+
 export default Scene.extend(ReplayableScriptMixin, {
   start: task(function * (script) {
     const stage = script.layer('stage.image').transition({ effect: { translateY: '20%', translateX: '-12%', opacity: 0 }, duration: 0 });
