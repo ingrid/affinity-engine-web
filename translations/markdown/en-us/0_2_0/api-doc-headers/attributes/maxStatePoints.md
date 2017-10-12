@@ -1,0 +1,1 @@
+#### `maxStatePoints` (**Number**|**Boolean**)
