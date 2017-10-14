@@ -39,6 +39,13 @@ Router.map(function() {
       this.route('lxl-tags');
       this.route('html-tags');
     });
+    this.route('menu', function() {
+      this.route('text');
+      this.route('return-value');
+      this.route('keys');
+      this.route('slider');
+      this.route('inputable');
+    });
   });
   this.route('api', function() {
     this.route('engine', function() {
