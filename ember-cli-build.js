@@ -6,13 +6,6 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
       stringifyPath: 'translations/markdown',
-      'ember-cli-uglify': {
-        uglify: {
-          mangle: {
-            safari10: true
-          }
-        }
-      },
       'ember-cli-babel': {
         includePolyfill: true
       }
