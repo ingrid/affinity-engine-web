@@ -13,10 +13,3 @@ engines:
       ready: "Yeah, just finished. Want any help?"
       tenMinutesLater: "10 minutes later. . . ."
       thanksForComing: "Hello everyone! Thanks for coming out!"
-      micTestPause: "Mic test, [[pause 1000]] mic test."
-      micTest2Slow: "How [[rate 5]] about now?"
-      micTest2PartSlow: "How [[#rate 5]] about [[/rate]] now?"
-      caption:
-        scene1: "Mic Test"
-        scene2: "Backstage"
-        scene3: "On-stage"

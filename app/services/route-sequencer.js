@@ -95,6 +95,8 @@ export default Service.extend({
               routes: {
                 index: {
                   name: t('overview')
+                }, 'html-tags': {
+                  name: t('htmlTags'),
                 }, 'lxl-tags': {
                   name: t('lxlTags'),
                 }, static: {

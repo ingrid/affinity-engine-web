@@ -34,6 +34,7 @@ application:
     es6Support: "ES6 Support"
     fixtures: "Fixtures"
     howToUseThisDocumentation: "How to Use This Documentation"
+    htmlTags: "HTML tags"
     image: "image"
     images: "images"
     installation: "Installation"

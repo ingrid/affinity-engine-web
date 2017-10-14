@@ -20,27 +20,14 @@ export default Scene.extend(ReplayableScriptMixin, {
             caption: 'Ember',
             captionPosition: 'right'
           }
-        },
-        component: {
-          stage: {
-            direction: {
-              text: {
-                attrs: {
-                  classNames: 'ae-paper ae-block'
-                }
-              }
-            }
-          }
         }
       }
     });
 
-    script.text('engines.tutorial.basics.caption.scene2', { classNames: 'ae-paper ae-caption ae-caption-center', fixed: true });
+    yield diy._.text("engines.tutorial.text.textTutorial.entity");
+    yield ember._.text("engines.tutorial.text.bestTutorial.pause");
+    yield diy._.text("engines.tutorial.text.favorite.rateClosing");
 
-    yield script.text('engines.tutorial.basics.anHourLater');
-    yield ember._.text('engines.tutorial.basics.curtains');
-    yield diy._.text('engines.tutorial.basics.ready');
-
-    script.scene('tutorial.text.static.c', { autosave: false });
+    this.get('replay').perform(script);
   })
 });

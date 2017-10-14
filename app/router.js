@@ -37,6 +37,7 @@ Router.map(function() {
       this.route('translations');
       this.route('callbacks');
       this.route('lxl-tags');
+      this.route('html-tags');
     });
   });
   this.route('api', function() {

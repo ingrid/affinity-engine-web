@@ -4,6 +4,15 @@ import ReplayableScriptMixin from 'affinity-engine-web/mixins/replayable-script'
 
 export default Scene.extend(ReplayableScriptMixin, {
   start: task(function * (script) {
+    const diy = script.character({
+      links: {
+        all: {
+          attrs: {
+            caption: 'Diy'
+          }
+        }
+      }
+    });
     const ember = script.character({
       links: {
         all: {
@@ -11,25 +20,14 @@ export default Scene.extend(ReplayableScriptMixin, {
             caption: 'Ember',
             captionPosition: 'right'
           }
-        },
-        component: {
-          stage: {
-            direction: {
-              text: {
-                attrs: {
-                  classNames: 'ae-paper ae-block'
-                }
-              }
-            }
-          }
         }
       }
     });
 
-    yield script.text('engines.tutorial.basics.tenMinutesLater');
+    yield diy._.text("engines.tutorial.text.textTutorial.entity");
+    yield ember._.text("engines.tutorial.text.bestTutorial.pause");
+    yield diy._.text("engines.tutorial.text.favorite.rate");
 
-    yield ember._.text('engines.tutorial.basics.thanksForComing');
-
-    this.get('replay').perform(script, 'tutorial.text.lxl-tags.3.a');
+    this.get('replay').perform(script);
   })
 });
