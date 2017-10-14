@@ -32,6 +32,12 @@ Router.map(function() {
         this.route('tiers');
       });
     });
+    this.route('text', function() {
+      this.route('static');
+      this.route('translations');
+      this.route('callbacks');
+      this.route('lxl-tags');
+    });
   });
   this.route('api', function() {
     this.route('engine', function() {
