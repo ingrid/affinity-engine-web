@@ -12,6 +12,9 @@ module.exports = function(defaults) {
             safari10: true
           }
         }
+      },
+      'ember-cli-babel': {
+        includePolyfill: true
       }
   });
 
