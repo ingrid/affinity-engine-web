@@ -1,0 +1,1 @@
+#### `maxAutosaves` (**Number**)

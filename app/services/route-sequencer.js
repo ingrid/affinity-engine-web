@@ -90,6 +90,21 @@ export default Service.extend({
                   name: t('fixtures')
                 }
               }
+            }, text: {
+              name: t('Text'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, 'lxl-tags': {
+                  name: t('lxlTags'),
+                }, static: {
+                  name: t('static')
+                }, callbacks: {
+                  name: t('callbacks')
+                }, translations: {
+                  name: t('translations')
+                }
+              }
             }
           }
         }, api: {

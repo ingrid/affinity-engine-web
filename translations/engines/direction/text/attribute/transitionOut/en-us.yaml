@@ -1,0 +1,8 @@
+engines:
+  direction:
+    text:
+      attribute:
+        transition-out:
+          title: "transitionOut"
+          ember1: "*sigh* No signs of life on this planet. I think we're done here."
+          ember2: "Beam me up, Diy."

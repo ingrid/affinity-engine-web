@@ -1,9 +1,7 @@
 import Ember from 'ember';
 
 const {
-  Component,
-  assign,
-  computed
+  Component
 } = Ember;
 
 const { inject: { service } } = Ember;

@@ -7,7 +7,7 @@ const {
 
 const { inject: { service } } = Ember;
 
-export default Ember.Helper.extend({
+export default Helper.extend({
   versionTracker: service('doc-version-tracker'),
 
   _compareVersion(operator, version, threshold) {

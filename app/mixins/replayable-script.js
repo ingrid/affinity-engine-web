@@ -11,6 +11,6 @@ export default Ember.Mixin.create({
     script.layer('stage.image').transition({ effect: { opacity: 0.00001 }, duration: 250 });
     yield script.pause(350);
 
-    script.scene(id || get(this, '_id'));
+    script.scene(id || Ember.get(this, '_id'));
   })
 });
