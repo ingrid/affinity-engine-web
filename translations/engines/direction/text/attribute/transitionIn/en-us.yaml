@@ -4,11 +4,11 @@ engines:
       attribute:
         transition-in:
           title: "transitionIn"
-          announcer: "announcer"
+          announcer: "Announcer"
           diy: "Diy"
-          announcer1: "Next up to bat is Diy, of the Portland Tomsters."
-          announcer2: "Diy swings and....Oh my she really whacked it!"
-          announcer3: "She's passing first...now second...I think she's going for a hame run!"
+          announcer1: "Next up to bat for the Portland Tomsters is Diy."
+          announcer2: "Diy swings and....Oh my she really whacked it! She's rounding first, now second..."
           diy1: "*Huff, huff huff-!*"
-          diy2: "AAAAAAAAAHHH!"
-          announcer4: "AND SHE SLIDES INTO HOME!"
+          announcer3: "She rounds third, and she's still going! She's going to try and slide into home!"
+          diy2: "AAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHH!"
+          announcer4: "AND SHE SLIDES INTO HOME! The Tomsters have won the championship!"
