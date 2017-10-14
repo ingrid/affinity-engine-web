@@ -1,0 +1,13 @@
+engines:
+  direction:
+    text:
+      attribute:
+        transition-in:
+          title: "transitionIn"
+          announcer: "Announcer"
+          announcer1: "Next up to bat for the Portland Tomsters is Diy."
+          announcer2: "Diy swings and....Oh my she really whacked it! She's rounding first, now second..."
+          diy1: "*Huff, huff huff-!*"
+          announcer3: "She rounds third, and she's still going! She's going to try and slide into home!"
+          diy2: "AAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHH!"
+          announcer4: "AND SHE SLIDES INTO HOME! The Tomsters have won the championship!"
