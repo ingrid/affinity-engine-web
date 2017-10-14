@@ -5,7 +5,6 @@ engines:
         transition-in:
           title: "transitionIn"
           announcer: "Announcer"
-          diy: "Diy"
           announcer1: "Next up to bat for the Portland Tomsters is Diy."
           announcer2: "Diy swings and....Oh my she really whacked it! She's rounding first, now second..."
           diy1: "*Huff, huff huff-!*"
