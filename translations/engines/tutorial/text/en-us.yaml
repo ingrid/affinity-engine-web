@@ -6,12 +6,12 @@ engines:
         tagless: "Oh, how exciting! We're starting the text tutorial."
         em: "Oh, <em>how exciting!</em> We're starting the text tutorial."
         link: "Oh, <em>how exciting!</em> We're starting the <a href='https://en.wikipedia.org/wiki/Text_(literary_theory)' target='_blank'>text</a> tutorial."
-        style: "Oh, <em style='color: pink; ont-size: 200%;'>how exciting!</em> We're starting the <a href='https://en.wikipedia.org/wiki/Text_(literary_theory)' target='_blank'>text</a> tutorial."
-        entity: "Oh, &sung; <em style='color: pink; ont-size: 200%;'>how exciting!</em> &sung; We're starting the <a href='https://en.wikipedia.org/wiki/Text_(literary_theory)' target='_blank'>text</a> tutorial."
+        style: "Oh, <em style='color: pink; font-size: 150%;'>how exciting!</em> We're starting the <a href='https://en.wikipedia.org/wiki/Text_(literary_theory)' target='_blank'>text</a> tutorial."
+        entity: "Oh, &sung; <em style='color: pink; font-size: 150%;'>how exciting!</em> &sung; We're starting the <a href='https://en.wikipedia.org/wiki/Text_(literary_theory)' target='_blank'>text</a> tutorial."
       bestTutorial:
-        tagless: "Wait? Did you say we're starting the best tutorial?"
-        pause: "Wait? [[pause 1000]] Did you say we're starting the best tutorial?"
-        cb: "Wait? [[cb shake 1000 15deg]] [[pause 1000]] Did you say we're starting the [[cb jump 1000 height]] [[pause 1000]] best tutorial?"
+        tagless: "Wait? Did you say we're starting the next tutorial?"
+        pause: "Wait? [[pause 1000]] Did you say we're starting the next tutorial?"
+        cb: "Wait? [[cb flash 1000 2]] [[pause 1000]] Did you say we're starting the [[cb spin 1000]] [[pause 1000]] next tutorial?"
       favorite:
         tagless: "Well, kind of! We're starting the text tutorial, but words are one of my favorite things."
         rate: "Well, kind of! We're starting the [[rate 3]] text tutorial, but words are one of my favorite things."

@@ -28,13 +28,13 @@ export default Scene.extend(ReplayableScriptMixin, {
 
     yield diy._.text("engines.tutorial.text.textTutorial.entity");
 
-    const shake = (duration, rotation) => {
-      script.layer('stage').transition({ effect: { rotateZ: rotation }, duration: duration / 8, loop: 4, easing: 'easeInOutSine' });
+    const flash = (duration, loops) => {
+      script.layer('stage').transition({ effect: { opacity: 0 }, duration: duration / (loops * 2), loop: loops });
     }
-    const jump = (duration) => {
-      script.layer('stage').transition({ effect: { translateY: '-15%' }, duration: duration / 8, loop: 4, easing: 'easeInOutSine' });
+    const spin = (duration) => {
+      script.layer('stage').transition({ effect: { rotateZ: '360deg' }, duration: duration });
     }
-    yield ember._.text("engines.tutorial.text.bestTutorial.cb", { callbacks: { shake, jump } });
+    yield ember._.text("engines.tutorial.text.bestTutorial.cb", { callbacks: { flash, spin } });
     yield diy._.text("engines.tutorial.text.favorite.rateClosing");
 
     this.get('replay').perform(script);
