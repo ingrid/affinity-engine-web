@@ -13,6 +13,6 @@ engines:
         pause: "Wait? [[pause 1000]] Did you say we're starting the next tutorial?"
         cb: "Wait? [[cb flash 1000 2]] [[pause 1000]] Did you say we're starting the [[cb spin 1000]] [[pause 1000]] next tutorial?"
       favorite:
-        tagless: "Well, kind of! We're starting the text tutorial, but words are one of my favorite things."
-        rate: "Well, kind of! We're starting the [[rate 3]] text tutorial, but words are one of my favorite things."
-        rateClosing: "Well, kind of! We're starting the [[#rate 3]] text [[/rate]] tutorial, but words are one of my favorite things."
+        tagless: "Well, kind of! We're starting the text tutorial, but it's also the next one."
+        rate: "Well, kind of! We're starting the [[rate 3]] text tutorial, but it's also the next one."
+        rateClosing: "Well, kind of! We're starting the [[#rate 3]] text [[/rate]] tutorial, but it's also the next one."
