@@ -16,8 +16,8 @@ export default Scene.extend(ReplayableScriptMixin, {
         }
       }
     }, {
-      key: 'engines.tutorial.menu.multiSubmit.key',
-      text: 'engines.tutorial.menu.multiSubmit.text',
+      key: 'engines.tutorial.menu.sliderSubmit.key',
+      text: 'engines.tutorial.menu.sliderSubmit.text',
       multiSubmit: true
     }])
 

@@ -19,5 +19,8 @@ engines:
         key: "custom"
         text: "I want something else."
       multiSubmit:
+        key: "submit"
+        text: "And that should do!"
+      sliderSubmit:
         key: "multiSubmit"
         text: "Select Amount"

@@ -45,6 +45,7 @@ Router.map(function() {
       this.route('slider');
       this.route('inputable');
       this.route('key');
+      this.route('multi');
     });
   });
   this.route('api', function() {

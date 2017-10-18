@@ -48,6 +48,7 @@ application:
     menu: "menu"
     Menu: "Menu"
     menuBar: "Menu Bar"
+    multi: "multi"
     overview: "Overview"
     pause: "pause"
     plugins: "Plugins"

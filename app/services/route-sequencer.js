@@ -120,6 +120,8 @@ export default Service.extend({
                   name: t('key')
                 }, inputable: {
                   name: t('inputable')
+                }, multi: {
+                  name: t('multi')
                 }, slider: {
                   name: t('slider')
                 }
