@@ -11,7 +11,13 @@ export default Component.extend({
   isFocused: true,
   intl: service(),
 
-  config: {},
+  config: {
+    all: {
+      attrs: {
+        classNames: ['ae-coastal', 'ae-block']
+      }
+    }
+  },
 
   fixtures: {
     characters: [{

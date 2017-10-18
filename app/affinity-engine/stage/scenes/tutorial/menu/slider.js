@@ -8,8 +8,8 @@ export default Scene.extend(ReplayableScriptMixin, {
     const amount = yield script.menu([{
       text: 'engines.tutorial.menu.text2',
       slider: {
+        showValue: true,
         start: 1,
-        step: 1,
         range: {
           min: 1,
           max: 100
