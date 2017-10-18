@@ -1,0 +1,23 @@
+engines:
+  tutorial:
+    menu:
+      text1: "What would you like?"
+      text2: "How much would you like?"
+      kale:
+        key: "kale"
+        text: "How about some kale?"
+        choice: "Sure, I could get you some kale."
+      kimchi:
+        key: "kimchi"
+        text: "I could use some kimchi."
+        choice: "Having some stomach problems? I hear kimchi helps."
+      almonds:
+        key: "almonds"
+        text: "I love almonds."
+        choice: "Yeah? I love almonds, too!"
+      custom:
+        key: "custom"
+        text: "I want something else."
+      multiSubmit:
+        key: "multiSubmit"
+        text: "Select Amount"

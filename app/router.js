@@ -42,9 +42,9 @@ Router.map(function() {
     this.route('menu', function() {
       this.route('text');
       this.route('return-value');
-      this.route('keys');
       this.route('slider');
       this.route('inputable');
+      this.route('key');
     });
   });
   this.route('api', function() {

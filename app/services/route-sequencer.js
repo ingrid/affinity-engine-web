@@ -107,6 +107,23 @@ export default Service.extend({
                   name: t('translations')
                 }
               }
+            }, menu: {
+              name: t('Menu'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, text: {
+                  name: t('text')
+                }, 'return-value': {
+                  name: t('returnValue'),
+                }, key: {
+                  name: t('key')
+                }, inputable: {
+                  name: t('inputable')
+                }, slider: {
+                  name: t('slider')
+                }
+              }
             }
           }
         }, api: {
