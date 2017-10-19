@@ -1,0 +1,4 @@
+engines:
+  tutorial:
+    image:
+      character: "My expression is neutral. [[expression 'smiling']] But now I'm smiling! [[state (hash expression='sad')]] And now I'm sad. . . ."

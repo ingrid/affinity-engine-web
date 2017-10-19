@@ -1,1 +1,1 @@
-###### `position(position, duration, options)`
+###### `position(position, options)`

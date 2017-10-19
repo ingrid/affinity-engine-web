@@ -126,6 +126,29 @@ export default Service.extend({
                   name: t('slider')
                 }
               }
+            }, image: {
+              name: t('Image'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, fade: {
+                  name: t('fade')
+                }, height: {
+                  name: t('height')
+                }, position: {
+                  name: t('position')
+                }, transition: {
+                  name: t('transition')
+                }, keyframe: {
+                  name: t('keyframe')
+                }, state: {
+                  name: t('state')
+                }, backdrop: {
+                  name: t('backdrop')
+                }, character: {
+                  name: t('character')
+                }
+              }
             }
           }
         }, api: {

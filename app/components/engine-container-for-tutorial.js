@@ -16,6 +16,33 @@ export default Component.extend({
   fixtures: {
     characters: [{
       id: 'diy',
+      attrs: {
+        defaultState: { pose: 'standing', expression: 'neutral' },
+        layerOrder: [
+          'base',
+          'eyes',
+          'mouth'
+        ],
+        states: [{
+          key: { pose: 'standing' },
+          layers: {
+            base: 'diy-base',
+            eyes: 'diy-eyes-neutral',
+            mouth: 'diy-mouth-neutral'
+          }
+        }, {
+          key: { pose: 'standing', expression: 'smiling' },
+          layers: {
+            mouth: 'diy-mouth-smiling'
+          }
+        }, {
+          key: { pose: 'standing', expression: 'sad' },
+          layers: {
+            eyes: 'diy-eyes-right',
+            mouth: 'diy-mouth-pout'
+          }
+        }]
+      },
       links: {
         all: {
           attrs: {
@@ -45,7 +72,120 @@ export default Component.extend({
         }
       }
     }],
-    keyframes: [],
+    backdrops: [{
+      id: 'bedroom',
+      attrs: {
+        keyframe: 'diy-bedroom',
+        height: 150
+      }
+    }],
+    images: [{
+      id: 'bedroom',
+      attrs: {
+        keyframe: 'diy-bedroom',
+        height: 150
+      }
+    }, {
+      id: 'diy',
+      attrs: {
+        keyframe: 'diy-keyframe-true-neutral',
+        keyframes: [{
+          default: true,
+          id: 'true-neutral',
+          keyframe: 'diy-keyframe-true-neutral'
+        }, {
+          id: 'neutral-mouth-eyes-right',
+          keyframe: 'diy-keyframe-neutral-mouth-eyes-right'
+        }, {
+          id: 'pout-eyes-right',
+          keyframe: 'diy-keyframe-pout-eyes-right'
+        }, {
+          id: 'pout-neutral-eyes',
+          keyframe: 'diy-keyframe-pout-neutral-eyes'
+        }],
+        defaultState: { pose: 'standing', expression: 'neutral' },
+        layerOrder: [
+          'base',
+          'eyes',
+          'mouth'
+        ],
+        states: [{
+          key: { pose: 'standing' },
+          layers: {
+            base: 'diy-base',
+            eyes: 'diy-eyes-neutral',
+            mouth: 'diy-mouth-neutral'
+          }
+        }, {
+          key: { pose: 'standing', expression: 'smiling' },
+          layers: {
+            mouth: 'diy-mouth-smiling'
+          }
+        }, {
+          key: { pose: 'standing', expression: 'sad' },
+          layers: {
+            eyes: 'diy-eyes-right',
+            mouth: 'diy-mouth-pout'
+          }
+        }]
+      }
+    }],
+    keyframes: [{
+      id: 'diy-bedroom',
+      attrs: {
+        src: 'tutorial/diy-bedroom.png'
+      }
+    }, {
+      id: 'diy-keyframe-true-neutral',
+      attrs: {
+        src: 'tutorial/diy-keyframe-true-neutral.png'
+      }
+    }, {
+      id: 'diy-keyframe-neutral-mouth-eyes-right',
+      attrs: {
+        src: 'tutorial/diy-keyframe-neutral-mouth-eyes-right.png'
+      }
+    }, {
+      id: 'diy-keyframe-pout-eyes-right',
+      attrs: {
+        src: 'tutorial/diy-keyframe-pout-eyes-right.png'
+      }
+    }, {
+      id: 'diy-keyframe-pout-neutral-eyes',
+      attrs: {
+        src: 'tutorial/diy-keyframe-pout-neutral-eyes.png'
+      }
+    }, {
+      id: 'diy-base',
+      attrs: {
+        src: 'tutorial/diy-base.png'
+      }
+    }, {
+      id: 'diy-eyes-neutral',
+      attrs: {
+        src: 'tutorial/diy-eyes-neutral.png'
+      }
+    }, {
+      id: 'diy-eyes-right',
+      attrs: {
+        src: 'tutorial/diy-eyes-right.png'
+      }
+    }, {
+      id: 'diy-mouth-neutral',
+      attrs: {
+        src: 'tutorial/diy-mouth-neutral.png'
+      }
+    }, {
+      id: 'diy-mouth-smiling',
+      attrs: {
+        src: 'tutorial/diy-mouth-smiling.png'
+      }
+    }, {
+      id: 'diy-mouth-pout',
+      attrs: {
+        src: 'tutorial/diy-mouth-pout.png'
+      }
+    }],
     sounds: []
   },
 

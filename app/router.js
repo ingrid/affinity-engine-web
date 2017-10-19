@@ -47,6 +47,16 @@ Router.map(function() {
       this.route('key');
       this.route('multi');
     });
+    this.route('image', function() {
+      this.route('keyframe');
+      this.route('position');
+      this.route('transition');
+      this.route('character');
+      this.route('backdrop');
+      this.route('height');
+      this.route('fade');
+      this.route('state');
+    });
   });
   this.route('api', function() {
     this.route('engine', function() {

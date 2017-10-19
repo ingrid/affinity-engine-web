@@ -1,1 +1,1 @@
-###### `fadeOut(duration, options)`
+###### `fadeOut(options)`
