@@ -186,7 +186,12 @@ export default Component.extend({
         src: 'tutorial/diy-mouth-pout.png'
       }
     }],
-    sounds: []
+    sounds: [{
+      id: 'spacewolf',
+      attrs: {
+        src: 'tutorial/spacewolf.mp3'
+      }
+    }]
   },
 
   progressBarOptions: {

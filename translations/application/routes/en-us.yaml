@@ -49,6 +49,7 @@ application:
     layer: "layer"
     links: "Links"
     load: "Load"
+    loop: "loop"
     lxlTags: 'lxl-tags'
     menu: "menu"
     Menu: "Menu"
@@ -56,6 +57,7 @@ application:
     multi: "multi"
     overview: "Overview"
     pause: "pause"
+    play: "play"
     plugins: "Plugins"
     position: "position"
     preloaderCreatejs: "preloader-createjs"
@@ -72,6 +74,7 @@ application:
     scenes: "Scenes"
     scripts: "Scripts"
     slider: "slider"
+    Sound: "Sound"
     sound: "sound"
     soundManagerCreatejs: "sound-manager-createjs"
     stage: "Stage"

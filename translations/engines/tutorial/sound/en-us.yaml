@@ -1,0 +1,6 @@
+engines:
+  tutorial:
+    sound:
+      pause: "pause"
+      fadeTo: "fade to half volume"
+      fadeOut: "fade out"

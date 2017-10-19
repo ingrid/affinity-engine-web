@@ -57,6 +57,11 @@ Router.map(function() {
       this.route('fade');
       this.route('state');
     });
+    this.route('sound', function() {
+      this.route('play');
+      this.route('fade');
+      this.route('loop');
+    });
   });
   this.route('api', function() {
     this.route('engine', function() {

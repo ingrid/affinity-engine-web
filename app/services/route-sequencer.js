@@ -149,6 +149,19 @@ export default Service.extend({
                   name: t('character')
                 }
               }
+            }, sound: {
+              name: t('Sound'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, play: {
+                  name: t('play')
+                }, fade: {
+                  name: t('fade')
+                }, loop: {
+                  name: t('loop')
+                }
+              }
             }
           }
         }, api: {
