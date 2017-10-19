@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 const {
-  Component
+  Component,
+  computed
 } = Ember;
 
 const { inject: { service } } = Ember;
@@ -12,6 +13,12 @@ export default Component.extend({
   intl: service(),
 
   config: { },
+
+  engineIdOrScene: computed({
+    get() {
+      return this.get('engineId') || this.get('scene');
+    }
+  }),
 
   fixtures: {
     characters: [{
