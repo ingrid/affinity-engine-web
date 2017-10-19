@@ -1,0 +1,8 @@
+engines:
+  tutorial:
+    data:
+      question: "What's your name?"
+      answer: "My name is. . . ."
+      response: "Cool! Your name is {name}."
+      response2: "Oh! I remember you, {name}."
+      oops: "Hello. . . . Oh, I forgot what your name is."

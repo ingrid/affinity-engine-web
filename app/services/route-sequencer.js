@@ -162,6 +162,15 @@ export default Service.extend({
                   name: t('loop')
                 }
               }
+            }, data: {
+              name: t('Data'),
+              routes: {
+                index: {
+                  name: t('overview')
+                }, get: {
+                  name: t('get')
+                }
+              }
             }
           }
         }, api: {

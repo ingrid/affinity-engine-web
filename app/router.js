@@ -62,6 +62,9 @@ Router.map(function() {
       this.route('fade');
       this.route('loop');
     });
+    this.route('data', function() {
+      this.route('get');
+    });
   });
   this.route('api', function() {
     this.route('engine', function() {
