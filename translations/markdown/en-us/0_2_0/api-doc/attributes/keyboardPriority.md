@@ -1,1 +1,1 @@
-Used to determine which direction responds to a keyboard event. Higher numbers have precedence over lower numbers. To find out more, consult the [`ember-keyboard`](http://null-null-null.github.io/ember-keyboard/#/priority) guides.
+Used to determine which direction responds to a keyboard event. Higher numbers have precedence over lower numbers. To find out more, consult the [`ember-keyboard`](http://patience-tema-baron.github.io/ember-keyboard/#/priority) guides.
