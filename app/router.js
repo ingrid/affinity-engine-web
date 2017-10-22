@@ -65,6 +65,7 @@ Router.map(function() {
     this.route('data', function() {
       this.route('get');
     });
+    this.route('publishing');
   });
   this.route('api', function() {
     this.route('engine', function() {

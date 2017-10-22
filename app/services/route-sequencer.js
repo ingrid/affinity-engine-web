@@ -171,6 +171,8 @@ export default Service.extend({
                   name: t('get')
                 }
               }
+            }, publishing: {
+              name: t('Publishing')
             }
           }
         }, api: {

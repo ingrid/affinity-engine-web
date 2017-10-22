@@ -63,6 +63,7 @@ application:
     plugins: "Plugins"
     position: "position"
     preloaderCreatejs: "preloader-createjs"
+    Publishing: "Publishing"
     quickstart: "Quickstart"
     quickstarts: "Bundles and Quickstarts"
     random: "random"
