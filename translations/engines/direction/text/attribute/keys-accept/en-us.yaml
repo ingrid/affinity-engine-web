@@ -1,0 +1,8 @@
+engines:
+  direction:
+    text:
+      attribute:
+        keys-accept:
+          title: "keys.accept"
+          diy1: "I spy with my little eye...the 'I' key. Can you find the 'I' key?"
+          diy2: "Yay! You found it!"
